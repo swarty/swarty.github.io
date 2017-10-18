@@ -1,0 +1,110 @@
+body{
+	font-family: 'Montserrat light', sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	line-height: 1.6;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Raleway bold', sans-serif;
+}
+.wrapper{
+	background-image: url("../img/bg_slider.jpg");
+	height: 100vh;
+}
+.wrapper .row{
+	padding-top: 20px;
+}
+.nav>li i{
+	font-size: 20px;
+}
+.nav>li:nth-child(9){
+	padding-left: 15px;
+}
+.nav>li>a:hover{
+	background-color: inherit;
+	color: #998675;
+}
+.nav>li>a:focus{
+	color: white;
+	background-color: #998675;
+}
+.logo_nav{
+	margin-top: 5px;
+}
+.nav_menu{
+	margin-top: 15px;
+}
+.nav_menu a,i{
+	color: white;
+}
+.jumbotron{
+	padding-top: 35vh;
+	color: white;
+	background-color: inherit;
+}
+.jumbotron small{
+	color: white;
+}
+.btn-primary{
+	margin-top: 10px;
+	background-color: inherit;
+	border: 2px solid  #998675;
+	border-color: #998675;
+}
+.btn-primary:hover{
+	background-color: #998675;
+	border-color: #998675;
+}
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover{
+	background-color: #998675;
+	border-color: #998675;
+}
+.btn-primary:focus{
+	background-color: #998675;
+	border-color: #998675;
+}
+.my_carusel{
+	margin: 0 5px;
+	position: relative;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	bottom:-150px;
+	background-color: #908e8f;
+	display: inline-block;
+}
+.my_carusel:hover{
+	border: 2px solid white;
+	background-color: inherit;
+}
+footer{
+	margin-top: 80px;
+}
+
+section h3{
+	font-family: 'Raleway semibold';
+}
+section{
+	margin-bottom: 80px;
+}
+section img{
+	margin-bottom: 10px;
+}
+section h3::after{
+	left: 35%;
+	display: block;
+	position: relative;
+	content: " ";
+	top: 115px;
+	width: 30%;
+	height: 3px;
+	background-color: #f1eee9;
+}
+section:hover h3::after{
+	color: #c7b299;
+background-color: #c7b299;
+}
+section:hover h3{
+	color: #c7b299;
+}
