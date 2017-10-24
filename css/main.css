@@ -1,16 +1,19 @@
-
-@media (max-width:2550px ){
-	.wrapper{
+@media (min-width: 768px){
+		.middle_wrap{
+		position: relative;
+		top: 25vh;
+	}
+		.wrapper{
 		height: 100vh;
 	}
 }
 @media (max-width: 414px){
+	.nav{
+		display: none;
+	}
 	.middle_wrap{
 		position: relative;
-		top: 0px;
-	}
-	.wrapper{
-		height: auto;
+		top: 7vh;
 	}
 }
 @media (max-width:768px ){
@@ -26,9 +29,6 @@
 	}
 	.navbar-nav ul>li{
 		display: block;
-	}
-	.middle_wrap{
-		top: 30vh;
 	}
 	.jumbotron{
 		padding-top: 0;
@@ -61,8 +61,7 @@ h1,h2,h3,h4,h5,h6{
 
 .middle_wrap{
 	position: relative;
-	top: 25vh;
-	} /*ssssssssssssssssssssssssssssssssssssssssssssss*/
+}
 
 .navbar_padding>li a{
 	color: #fff;
@@ -107,14 +106,16 @@ footer img{
 	width: 47px;
 	height: auto;
 }
-
-section h3::after{
+article{
+	margin-bottom: 20px;
+}
+article::after{
 	left: 35%;
 	display: block;
 	position: relative;
 	content: " ";
-	top: 115px;
 	width: 30%;
+	top: 10px;
 	height: 3px;
 	background-color: #f1eee9;
 }
