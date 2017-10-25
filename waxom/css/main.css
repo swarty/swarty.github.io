@@ -33,6 +33,9 @@
 	.jumbotron{
 		padding-top: 0;
 	}
+	article:hover::after{
+		background-color: #fff;
+	}
 }
 
 body{
@@ -98,6 +101,26 @@ aside{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 }
+.btn-primary{
+	background-color: #998675;
+	border: 2px solid #998675;
+}
+.btn-primary:hover{
+	background-color: #998675;
+	border: 2px solid #5d4d3d;
+}
+.btn-primary:focus{
+	background-color: #998675;
+	border: 2px solid #998675;
+}
+.btn-primary:active{
+	border: 2px solid #5d4d3d;
+	background-color: inherit;
+}
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover{
+	background-color: inherit;
+	border: 2px solid #5d4d3d;
+}
 
 section{
 	margin-bottom: 50px;
@@ -107,15 +130,28 @@ footer img{
 	height: auto;
 }
 article{
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
-article::after{
+/*article::after{
 	left: 35%;
 	display: block;
 	position: relative;
 	content: " ";
 	width: 30%;
 	top: 10px;
-	height: 3px;
+	height: 5px;
 	background-color: #f1eee9;
-}
+}*/
+ article:hover h3{
+	color: #998675;
+ }
+ article:hover::after{
+ 	left: 35%;
+	display: block;
+	position: absolute;
+	content: " ";
+	width: 30%;
+	top: 180px;
+	height: 3px;
+	background-color: #998675;
+ }
