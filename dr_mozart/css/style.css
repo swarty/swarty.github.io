@@ -21,6 +21,30 @@ header{
 	text-transform: uppercase;
 	padding-top: 10px;
 }
+.top_menu_adaptive{
+		width: 26px;
+    height: 2px;
+    background-color: #333333;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+}
+.top_menu_adaptive::before{
+		width: 26px;
+    height: 2px;
+    background-color: #333333;
+    position: absolute;
+    top: -10px;
+    content: " ";
+}
+.top_menu_adaptive::after{
+		width: 26px;
+    height: 2px;
+    background-color: #333333;
+    position: absolute;
+    top: 10px;
+    content: " ";
+}
 header img{
 	max-width: 175px;
 }
@@ -37,11 +61,12 @@ header li{
 }
 .list:hover .drop_down_list{
 	display: flex;
+	margin-top: 10px;
 	vertical-align: middle;
 	flex-direction: column;
 	position: absolute;
 	left: -50%;
-	top: 30px;
+	top: 20px;
 	z-index: 100;
 	background-color: white;
 	width: 100%;
@@ -53,7 +78,7 @@ header li{
 }
 
 .drop_down_list a{
-	padding-top: 12px;
+	padding-top: 2px;
 	padding-bottom: 16px;
 	border-bottom: 1px solid #c2caca;
 	display: inline-block;
@@ -210,6 +235,7 @@ figure h3{
 .section_two ul{
 	margin-left: 30px;
 	text-transform: uppercase;
+	text-align: left;
 }
 .section_two li{
 	padding: 10px 0;
@@ -226,7 +252,6 @@ figure h3{
 	font-size: 1px;
 	position: absolute;
 	display: inline-block;
-	/* top: 10px; */
 	top: 43%;
 	left: -20px;
 }
@@ -272,7 +297,7 @@ footer ul{
 }
 address{
 	text-transform: uppercase;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 	display: flex;
 	justify-content: space-around;
 }
@@ -285,7 +310,7 @@ address div a{
 	color: white;
 }
 address div:nth-child(2) a{
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: bold;
 	text-decoration: none;
 	line-height: 1.3em;
@@ -295,6 +320,7 @@ address div:nth-child(2) a{
 address div:nth-child(3) ul{
 	display: flex;
 	flex-direction: row;
+	padding: 0 40px;
 	justify-content: space-around;
 	padding-top: 0;
 }
@@ -306,6 +332,7 @@ footer::after{
 	content: "Mozart clinic \00A9 \00A0 2017";
 	display: block;
 	text-align: center;
+	margin-top: 20px;
 	padding: 20px;
 	text-transform: uppercase;
 	color: white;
