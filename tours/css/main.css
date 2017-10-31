@@ -1,0 +1,221 @@
+body {
+  font-family: 'OpenSans-light' sans-serif;
+  font-size: 15px;
+}
+
+h1, h2, h3, h4 {
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 46px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+.navbar-fixed-top {
+  position: absolute;
+  height: 85px;
+}
+
+.page-header {
+  border: none;
+}
+
+.navbar-default {
+  background-color: inherit;
+}
+
+.navbar-nav {
+  padding: 20px;
+}
+
+.nav > li > a {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 14px 25px;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  color: #5ac8fb;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-brand {
+  padding: 30px;
+}
+
+.navbar-brand > img {
+  display: inline-block;
+}
+
+.navbar-brand p {
+  color: #fff;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control.left {
+  background-image: none;
+}
+
+section {
+  padding-bottom: 50px;
+}
+
+.text-caption {
+  padding-bottom: 50px;
+}
+
+.section {
+  padding-top: 50px;
+}
+
+.gallery {
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+.gallery section {
+  padding: 0;
+  margin: 0;
+}
+
+.gallery .img-gallery img {
+  max-width: 290px;
+  height: auto;
+}
+
+.img-rounded {
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #5ac8fb;
+}
+
+.img-rounded img {
+  padding: 30px 0;
+}
+
+.achivs img {
+  padding: 20px 0;
+}
+
+.claims {
+  color: #000;
+  height: 600px;
+  background-color: #f7f7f7;
+}
+
+.claims .item {
+  margin-top: 370px;
+}
+
+.claims h1 {
+  padding-top: 60px;
+}
+
+.claims h3 {
+  margin: 0;
+}
+
+.claims img {
+  margin-bottom: 15px;
+}
+
+.claims p {
+  margin-top: 25px;
+}
+
+.claims .carousel-control {
+  margin-top: 150px;
+}
+
+.content_field {
+  color: #fff;
+  background-image: url("../img/bg_content.jpg");
+  background-repeat: no-repeat;
+}
+
+.content_field .text-caption {
+  padding-top: 50px;
+}
+
+.content_field .row {
+  margin: 0;
+  padding: 0;
+}
+
+.content_field3 {
+  color: #fff;
+  background-color: #333;
+}
+
+.content_field3 .text-caption {
+  padding-top: 50px;
+}
+
+.content_field3 .row {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'OpenSans-bold';
+  src: url("../fonts/OpenSans-Bold.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Extrabold';
+  src: url("../fonts/OpenSans-ExtraBold.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-italic';
+  src: url("../fonts/OpenSans-Italic.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-light';
+  src: url("../fonts/OpenSans-Light.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-regular';
+  src: url("../fonts/OpenSans-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-semibold';
+  src: url("../fonts/OpenSans-SemiBold.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
