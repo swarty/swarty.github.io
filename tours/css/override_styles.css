@@ -1,28 +1,10 @@
-body {
-  font-family: 'OpenSans-light' sans-serif;
-  font-size: 15px; }
-
-h1, h2, h3, h4 {
-  text-transform: capitalize; }
-
-h1 {
-  font-size: 46px; }
-
-h2 {
-  font-size: 30px; }
-
-h3 {
-  font-size: 21px; }
-
-h4 {
-  font-size: 15px; }
-
 .navbar-fixed-top {
   position: absolute;
   height: 85px; }
 
 .page-header {
-  border: none; }
+  border: none;
+  margin: 0 20px; }
 
 .navbar-default {
   background-color: inherit; }
@@ -31,6 +13,7 @@ h4 {
   padding: 20px; }
 
 .nav > li > a {
+  font-family: 'OpenSans-regular' sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   padding: 14px 25px; }
@@ -50,24 +33,47 @@ h4 {
     display: inline-block;
     padding-left: 10px; }
 
+.carousel-caption {
+  padding-bottom: 40px; }
+  .carousel-caption h1 {
+    font-size: 46px;
+    font-weight: bold; }
+  .carousel-caption h4 {
+    font-family: "OpenSans-regular";
+    font-weight: 100; }
+  .carousel-caption .fa {
+    color: #fff;
+    font-size: 24px; }
+  .carousel-caption p {
+    color: #000;
+    border: none;
+    text-shadow: none; }
+
+.carousel-indicators li {
+  border: 1px solid #5ac8fb;
+  background-color: #5ac8fb; }
+
+button {
+  width: 120px; }
+
 .carousel-control.right {
   background-image: none; }
 
 .carousel-control.left {
   background-image: none; }
 
-section {
+.text-caption h4 {
   padding-bottom: 50px; }
 
-.text-caption {
-  padding-bottom: 50px; }
+h2.text-caption {
+  padding-bottom: 20px; }
 
 .section {
   padding-top: 50px; }
 
 .gallery {
   margin: 0;
-  padding: 20px 0 0 0; }
+  padding: 0; }
   .gallery section {
     padding: 0;
     margin: 0; }
@@ -89,29 +95,29 @@ section {
 
 .claims {
   color: #000;
-  height: 600px;
   background-color: #f7f7f7; }
   .claims .item {
-    margin-top: 370px; }
+    margin-top: 350px; }
   .claims h1 {
-    padding-top: 60px; }
+    padding-top: 30px; }
   .claims h3 {
     margin: 0; }
   .claims img {
     margin-bottom: 15px; }
   .claims p {
     margin-top: 25px; }
-  .claims .carousel-control {
-    margin-top: 150px; }
 
 .content_field {
   color: #fff;
   background-image: url("../img/bg_content.jpg");
-  background-repeat: no-repeat; }
+  background-repeat: repeat-y; }
   .content_field .text-caption {
-    padding-top: 50px; }
+    padding-top: 50px;
+    padding-bottom: 0; }
   .content_field .row {
     margin: 0;
+    padding: 0; }
+  .content_field h4 {
     padding: 0; }
 
 .content_field3 {
