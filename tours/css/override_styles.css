@@ -81,6 +81,13 @@ h2.text-caption {
     max-width: 290px;
     height: auto; }
 
+.skills li {
+  margin-bottom: 0; }
+
+.progress {
+  margin-bottom: 15px;
+  height: 5px; }
+
 .img-rounded {
   margin: 0 auto;
   width: 80px;

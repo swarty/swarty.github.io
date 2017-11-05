@@ -114,6 +114,15 @@ h2.text-caption {
   height: auto;
 }
 
+.skills li {
+  margin-bottom: 0;
+}
+
+.progress {
+  margin-bottom: 15px;
+  height: 5px;
+}
+
 .img-rounded {
   margin: 0 auto;
   width: 80px;
@@ -267,7 +276,7 @@ section {
 
 section li {
   list-style: none;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 section p {
@@ -338,5 +347,6 @@ h4 {
 
 img[alt="i_picture"] {
   width: 60px;
+  margin: 2px;
   height: auto;
 }
