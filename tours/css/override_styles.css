@@ -71,6 +71,10 @@ h2.text-caption {
 .section {
   padding-top: 50px; }
 
+.section_img {
+  padding-top: 50px;
+  width: 100%; }
+
 .gallery {
   margin: 0;
   padding: 0; }
@@ -78,7 +82,7 @@ h2.text-caption {
     padding: 0;
     margin: 0; }
   .gallery .img-gallery img {
-    max-width: 290px;
+    width: 100%;
     height: auto; }
 
 .skills li {

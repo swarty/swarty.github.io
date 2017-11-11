@@ -99,6 +99,11 @@ h2.text-caption {
   padding-top: 50px;
 }
 
+.section_img {
+  padding-top: 50px;
+  width: 100%;
+}
+
 .gallery {
   margin: 0;
   padding: 0;
@@ -110,7 +115,7 @@ h2.text-caption {
 }
 
 .gallery .img-gallery img {
-  max-width: 290px;
+  width: 100%;
   height: auto;
 }
 
@@ -246,6 +251,15 @@ h2.text-caption {
   }
 }
 
+@media (max-width: 960px) {
+  .carousel {
+    display: none;
+  }
+  img[alt="partners"] {
+    display: none;
+  }
+}
+
 body {
   font-family: 'OpenSans-light';
   font-size: 15px;
@@ -305,6 +319,10 @@ h3 span {
   border-left: 3px solid #5ac8fb;
 }
 
+.skills p {
+  padding-bottom: 0;
+}
+
 .padd_top_head {
   padding: 20px 0;
 }
@@ -330,6 +348,13 @@ h4 {
   font-size: 30px;
   left: 15px;
   position: absolute;
+}
+
+.chevron .fa {
+  color: #5ac8fb;
+  font-size: inherit;
+  left: -20px;
+  position: relative;
 }
 
 .contacts .fa {
