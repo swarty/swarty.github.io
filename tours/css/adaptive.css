@@ -6,4 +6,15 @@
   .carousel {
     display: none; }
   img[alt="partners"] {
-    display: none; } }
+    display: none; }
+  .carousel-control {
+    display: none; }
+  .first {
+    padding-top: 50px;
+    background-image: url("..img/bgc_slider.jpg"); }
+    .first h1 {
+      font-size: 36px;
+      padding-bottom: 10px; }
+    .first a {
+      text-transform: none;
+      text-decoration: none; } }
