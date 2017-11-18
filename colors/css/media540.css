@@ -22,7 +22,8 @@
       border: 50%;
       display: block;
       text-align: center;
-      padding: 10px 0; }
+      padding: 10px 0;
+      margin: 0; }
     header ul > li::before {
       content: " ";
       position: absolute;
