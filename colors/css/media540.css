@@ -45,6 +45,9 @@
       width: 2px;
       height: 24px;
       right: 70px; }
+  header ul > li:nth-child(3):hover {
+    content: " ";
+    background-color: #ee732f; }
   article {
     margin: 50px auto; }
     article .content {
