@@ -29,7 +29,7 @@
       position: absolute;
       width: 2px;
       height: 24px;
-      left: 70px; }
+      left: 50px; }
     header ul > li:nth-child(1)::before, header ul > li:nth-child(2)::after {
       background-color: #82A2AD;
       content: " "; }
@@ -44,7 +44,7 @@
       position: absolute;
       width: 2px;
       height: 24px;
-      right: 70px; }
+      right: 50px; }
   header ul > li:nth-child(3):hover {
     content: " ";
     background-color: #ee732f; }
