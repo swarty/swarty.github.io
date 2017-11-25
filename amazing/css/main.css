@@ -1,0 +1,181 @@
+p {
+  font-size: 14px; }
+
+h1 {
+  font-size: 64px; }
+
+h2 {
+  font-size: 60px; }
+
+h4 {
+  font-size: 24px;
+  text-transform: capitalize; }
+
+a {
+  text-decoration: none; }
+
+ul > li {
+  display: inline-block; }
+
+.row {
+  padding-bottom: 50px; }
+
+.first-row {
+  padding-top: 62px; }
+
+.last-row {
+  padding-bottom: 108px; }
+
+button.button {
+  background-color: inherit;
+  border: none;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 12px 0; }
+  button.button a {
+    padding: 12px 17px;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase; }
+
+button.button:active {
+  background-color: #fff;
+  border: none;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 12px 0px; }
+  button.button:active a {
+    padding: 12px 17px;
+    font-size: 20px;
+    color: #4f5b5d;
+    text-transform: uppercase; }
+
+button.button:visited {
+  background-color: #fff;
+  border: none;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 12px 0px; }
+  button.button:visited a {
+    padding: 12px 17px;
+    font-size: 20px;
+    color: #4f5b5d;
+    text-transform: uppercase; }
+
+button.button_active {
+  background-color: #fff;
+  border: none;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 12px 0px; }
+  button.button_active a {
+    padding: 12px 17px;
+    font-size: 20px;
+    color: #4f5b5d;
+    text-transform: uppercase; }
+
+.sec_01 {
+  background-color: #FFF;
+  padding-top: 52px; }
+  .sec_01 .icon img {
+    width: 51px;
+    height: auto; }
+  .sec_01 .icon a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    text-transform: uppercase; }
+  .sec_01 .icon span {
+    margin: auto 0;
+    color: #4f5b5d;
+    font-size: 40px;
+    margin-left: 10px; }
+  .sec_01 ul {
+    text-align: right; }
+  .sec_01 ul > li {
+    position: relative;
+    font-size: 18px;
+    margin-right: 30px;
+    text-transform: capitalize;
+    padding: 15px 0;
+    z-index: 2; }
+    .sec_01 ul > li a {
+      color: #035d6e; }
+  .sec_01 ul > li:nth-child(3)::before {
+    width: 107px;
+    height: 52px;
+    background-color: #3a494c;
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: -6%;
+    z-index: -1;
+    -webkit-border-radius: 5px;
+            border-radius: 5px; }
+
+.sec_02 {
+  color: #fff;
+  background-image: url("../img/sec2_bg.jpg");
+  background-position: 100% 45%;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .sec_02 article {
+    padding-top: 95px;
+    padding-bottom: 93px; }
+    .sec_02 article h1 {
+      width: 500px;
+      padding-bottom: 35px; }
+    .sec_02 article p {
+      line-height: 24px;
+      padding-bottom: 35px; }
+
+.sec_03 .grid_4 {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center; }
+  .sec_03 .grid_4 p {
+    line-height: 24px;
+    padding: 0 15px; }
+  .sec_03 .grid_4 h4 {
+    padding-bottom: 25px; }
+  .sec_03 .grid_4 img {
+    padding-bottom: 25px; }
+
+.sec_03 .grid_4:nth-child(2n-1) img {
+  position: relative;
+  margin-bottom: 12px; }
+
+.sec_03 .grid_4:nth-child(2) {
+  position: relative;
+  top: -20px; }
+
+.sec_04 {
+  text-align: center;
+  color: #fff;
+  background-color: #98d2a4; }
+  .sec_04 .wrap {
+    width: 100%;
+    height: 277px; }
+  .sec_04 .wrap1 {
+    background-position: 50% 100%;
+    background-image: url("../img/img_bar_1.jpg"); }
+  .sec_04 .wrap2 {
+    background-position: 55% 40%;
+    background-image: url("../img/img_bar_2.jpg"); }
+  .sec_04 .wrap3 {
+    background-position: 25% 80%;
+    background-image: url("../img/img_bar_3.jpg"); }
+  .sec_04 .wrap4 {
+    background-position: 0% 35%;
+    background-image: url("../img/img_bar_4.jpg"); }
+  .sec_04 .wrap5 {
+    background-position: 60% 10%;
+    background-image: url("../img/img_bar_5.jpg"); }
+  .sec_04 .wrap6 {
+    background-position: 20% 100%;
+    background-image: url("../img/img_bar_6.jpg"); }
