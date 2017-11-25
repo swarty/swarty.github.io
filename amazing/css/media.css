@@ -1,0 +1,29 @@
+@media (max-width: 414px) {
+  .sticky {
+    padding: 0; } }
+
+@media (max-width: 767px) {
+  .sec_01 ul {
+    text-align: center; }
+  .sticky + .sec_02 {
+    padding-top: 100px; }
+  .icon span {
+    font-size: 30px !important; }
+  .icon img {
+    width: 51px;
+    max-height: 55px; }
+  .container [class*="grid_"] {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-left: 10;
+    margin-top: 10px; } }
+
+@media (max-width: 1023px) {
+  .sec_01 ul > li {
+    margin-right: 12px; }
+  .icon img {
+    width: 51px;
+    max-height: 55px; }
+  .icon span {
+    font-size: 30px !important; } }

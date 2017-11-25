@@ -1,3 +1,16 @@
+.sticky {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .sticky .container .row {
+    padding: 0; }
+
+.sticky + .sec_02 {
+  padding-top: 152px; }
+
 p {
   font-size: 14px; }
 
@@ -50,18 +63,6 @@ button.button:active {
     color: #4f5b5d;
     text-transform: uppercase; }
 
-button.button:visited {
-  background-color: #fff;
-  border: none;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-  padding: 12px 0px; }
-  button.button:visited a {
-    padding: 12px 17px;
-    font-size: 20px;
-    color: #4f5b5d;
-    text-transform: uppercase; }
-
 button.button_active {
   background-color: #fff;
   border: none;
@@ -75,8 +76,9 @@ button.button_active {
     text-transform: uppercase; }
 
 .sec_01 {
-  background-color: #FFF;
-  padding-top: 52px; }
+  background-color: #FFF; }
+  .sec_01 .row {
+    padding-top: 52px; }
   .sec_01 .icon img {
     width: 51px;
     height: auto; }
@@ -114,8 +116,27 @@ button.button_active {
     z-index: -1;
     -webkit-border-radius: 5px;
             border-radius: 5px; }
+  .sec_01 nav .dropdown:hover .dropdown-list {
+    display: block; }
+  .sec_01 nav .dropdown-list {
+    margin-top: 10px;
+    text-align: center;
+    max-width: 100px;
+    display: none;
+    position: absolute; }
+    .sec_01 nav .dropdown-list li {
+      border-bottom: 2px solid #4f5b5d;
+      -webkit-border-radius: 4px;
+              border-radius: 4px; }
+    .sec_01 nav .dropdown-list li::before {
+      background-color: inherit;
+      width: auto; }
+    .sec_01 nav .dropdown-list li:hover {
+      background-color: #98d2a4; }
 
 .sec_02 {
+  position: relative;
+  min-height: 600px;
   color: #fff;
   background-image: url("../img/sec2_bg.jpg");
   background-position: 100% 45%;
@@ -125,11 +146,34 @@ button.button_active {
     padding-top: 95px;
     padding-bottom: 93px; }
     .sec_02 article h1 {
-      width: 500px;
+      max-width: 500px;
       padding-bottom: 35px; }
     .sec_02 article p {
+      max-width: 800px;
       line-height: 24px;
       padding-bottom: 35px; }
+  .sec_02 .ind {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .sec_02 .ind .slider_select {
+      background-color: #fff; }
+  .sec_02 .article_slides {
+    display: none; }
+  .sec_02 .slider-pos {
+    cursor: pointer;
+    margin: 5px;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #fff;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
 
 .sec_03 .grid_4 {
   padding-top: 30px;
@@ -158,6 +202,13 @@ button.button_active {
   text-align: center;
   color: #fff;
   background-color: #98d2a4; }
+  .sec_04 h2 {
+    margin: 0 auto;
+    max-width: 600px;
+    padding-bottom: 10px; }
+  .sec_04 p {
+    margin: 0 auto;
+    max-width: 600px; }
   .sec_04 .wrap {
     width: 100%;
     height: 277px; }
