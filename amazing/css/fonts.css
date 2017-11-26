@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "BreeSerif";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/BreeSerif-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MyraidPro";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Myriad-Pro-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Ubuntu-Regular.ttf") format("truetype"); }

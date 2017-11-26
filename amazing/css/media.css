@@ -1,6 +1,8 @@
 @media (max-width: 414px) {
   .sticky {
-    padding: 0; } }
+    padding: 0; }
+  .sec_01, .sec_03, .sec_02, .sec_04 {
+    padding-left: 15px; } }
 
 @media (max-width: 767px) {
   .sec_01 ul {
@@ -8,16 +10,10 @@
   .sticky + .sec_02 {
     padding-top: 100px; }
   .icon span {
-    font-size: 30px !important; }
+    font-size: 26px !important; }
   .icon img {
     width: 51px;
-    max-height: 55px; }
-  .container [class*="grid_"] {
-    float: none;
-    display: block;
-    width: 100%;
-    margin-left: 10;
-    margin-top: 10px; } }
+    max-height: 55px; } }
 
 @media (max-width: 1023px) {
   .sec_01 ul > li {
@@ -26,4 +22,4 @@
     width: 51px;
     max-height: 55px; }
   .icon span {
-    font-size: 30px !important; } }
+    font-size: 26px !important; } }
