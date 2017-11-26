@@ -301,7 +301,20 @@ button.button_active {
       max-height: 70%;
       margin-top: 10%; }
   .sec_04 .lightbox:target {
+    outline: none;
     display: block; }
+  .sec_04 .button.accordion {
+    max-width: 100px;
+    outline: none; }
+  .sec_04 .hide_field {
+    padding: 0px;
+    margin-bottom: 50px;
+    background-color: inherit;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.2s ease-out;
+    -o-transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-out; }
 
 @media (max-width: 414px) {
   .sticky {
