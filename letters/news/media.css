@@ -1,0 +1,9 @@
+@media only screen and (max-device-width: 480px) {
+  table[class=contenttable], td[class=contenttable] {
+    width: 325px !important;
+  }
+}
+
+table.contenttable {
+  width: 600px;
+}
