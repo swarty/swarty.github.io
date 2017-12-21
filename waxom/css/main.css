@@ -201,9 +201,15 @@ p {
   text-align: center; }
 
 .sec_02 article:hover h4 {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   color: #c7b299; }
 
 .sec_02 article:hover p:after {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   background-color: #c7b299; }
 
 .sec_02 article:nth-child(1):hover .wrap img {
@@ -277,6 +283,10 @@ p {
     vertical-align: middle; }
   .sec_04 button {
     color: #fff; }
+  .sec_04 button:hover {
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
 
 .sec_05 {
   text-align: center; }
@@ -290,6 +300,9 @@ p {
     -webkit-box-shadow: 0px 1px 1px 0px #736357;
     box-shadow: 0px 1px 1px 0px #736357; }
   .sec_05 button:hover {
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
     color: #fff;
     background-color: #998675;
     -webkit-box-shadow: 0px 1px 1px 0px #736357;
@@ -299,30 +312,23 @@ p {
     background-color: #998675;
     -webkit-box-shadow: 0px 1px 1px 0px #736357;
     box-shadow: 0px 1px 1px 0px #736357; }
+  .sec_05 [class*="wrap"] {
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 250px; }
   .sec_05 .wrap1 {
-    background-image: url("../img/works_1.jpg");
-    width: 100%;
-    height: 250px; }
+    background-image: url("../img/works_1.jpg"); }
   .sec_05 .wrap2 {
-    background-image: url("../img/works_2.jpg");
-    width: 100%;
-    height: 250px; }
+    background-image: url("../img/works_2.jpg"); }
   .sec_05 .wrap3 {
-    background-image: url("../img/works_3.jpg");
-    width: 100%;
-    height: 250px; }
+    background-image: url("../img/works_3.jpg"); }
   .sec_05 .wrap4 {
-    background-image: url("../img/works_4.jpg");
-    width: 100%;
-    height: 250px; }
+    background-image: url("../img/works_4.jpg"); }
   .sec_05 .wrap5 {
-    background-image: url("../img/works_5.jpg");
-    width: 100%;
-    height: 250px; }
+    background-image: url("../img/works_5.jpg"); }
   .sec_05 .wrap6 {
-    background-image: url("../img/works_6.jpg");
-    width: 100%;
-    height: 250px; }
+    background-image: url("../img/works_6.jpg"); }
   .sec_05 .lightbox {
     display: none;
     position: fixed;
@@ -339,3 +345,43 @@ p {
   .sec_05 .lightbox:target {
     outline: none;
     display: block; }
+  .sec_05 a:focus, .sec_05 a:hover {
+    color: #c7b299; }
+  .sec_05 figure {
+    background-color: #fbfaf8;
+    text-align: left;
+    padding: 15px 20px;
+    height: 100px; }
+    .sec_05 figure h4 {
+      color: #c7b299; }
+  .sec_05 figure::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #fbfaf8;
+    border-right: 2px solid #fbfaf8;
+    left: 40px;
+    top: 240px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background-color: #fbfaf8; }
+  .sec_05 .col-md-4:hover a {
+    text-decoration: none; }
+  .sec_05 .col-md-4:hover figure {
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    background-color: #362f2d; }
+    .sec_05 .col-md-4:hover figure h4 {
+      color: #fff; }
+    .sec_05 .col-md-4:hover figure p {
+      color: #c7b299; }
+  .sec_05 .col-md-4:hover figure::before {
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    background-color: #362f2d;
+    border-top: 2px solid #362f2d;
+    border-right: 2px solid #362f2d; }
