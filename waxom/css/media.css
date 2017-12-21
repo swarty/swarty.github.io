@@ -11,5 +11,7 @@
   .sec_01 .jumbotron {
     margin-top: 0;
     margin-bottom: 0; }
+  .sec_05 .content-divider-bottom:nth-child(3) {
+    padding: 0; }
   .sec_05 .col-md-4 {
     padding: 0; } }
