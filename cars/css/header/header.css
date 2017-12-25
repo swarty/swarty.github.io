@@ -1,0 +1,68 @@
+.sec_01 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.first_block {
+  background-color: #ff0000; }
+
+.header_row {
+  width: 34%;
+  height: 40px;
+  -webkit-transform: skewX(-45deg);
+      -ms-transform: skewX(-45deg);
+          transform: skewX(-45deg);
+  position: relative;
+  left: -20px; }
+
+.row_sec-left {
+  left: -20px; }
+
+.row_sec-middle {
+  left: -21px; }
+
+.row-grey {
+  background-color: #555555; }
+
+.row_dark-grey {
+  background-color: #2d2d2d; }
+
+.row-red {
+  background-color: #ff0000; }
+
+.row-white {
+  background-color: #FFF; }
+
+.second_block {
+  background-color: #FFF; }
+
+.header_row-menu {
+  width: 100%;
+  height: 70px;
+  -webkit-transform: skewX(-45deg);
+      -ms-transform: skewX(-45deg);
+          transform: skewX(-45deg);
+  position: relative; }
+
+.header_row-menu.row_sec-left {
+  left: -40px; }
+
+.header_row-menu.row.sec-right {
+  left: -40px; }
