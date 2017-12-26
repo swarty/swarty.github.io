@@ -1,17 +1,23 @@
 @font-face {
-  font-family: "Roboto-regular";
+  font-family: "avenirNext-bold";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/Roboto-Regular.ttf") format("truetype"); }
+  src: url("../fonts/avenirnext-bold.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "Roboto-medium";
+  font-family: "avenirNext-regular";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/Roboto-Medium.ttf") format("truetype"); }
+  src: url("../fonts/avenirnext-regular.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "Roboto-bold";
+  font-family: "avenirNext-medium";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/Roboto-Bold.ttf") format("truetype"); }
+  src: url("../fonts/AvenirNext-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "avenirNext-demibold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/AvenirNext-DemiBold.ttf") format("truetype"); }
