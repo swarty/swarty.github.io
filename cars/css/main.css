@@ -498,10 +498,12 @@ input[type="text"] {
         width: 340px; }
 
 .why_us {
-  height: 100vh;
   padding-top: 80px;
   background-image: url("../img/why_us_bg_image.jpg");
-  background-position: -20% 100%;
+  background-position: 0% bottom;
+  padding-bottom: 30vw;
+  -webkit-background-size: 70% 70%;
+          background-size: 70%;
   background-repeat: no-repeat; }
   .why_us .wrap:nth-child(1) {
     -webkit-box-pack: center;
