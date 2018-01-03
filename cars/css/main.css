@@ -1052,7 +1052,7 @@ header .menu {
       .footer .wrap section:nth-child(2) aside:nth-child(1):hover div[class*="bg"] {
         background: url("../img/css_sprites.png") -517px -170px; }
       .footer .wrap section:nth-child(2) aside:nth-child(2):hover div[class*="bg"] {
-        content: url(../img/footer_email_icon_3_hover.png); }
+        content: url("../img/footer_email_icon_3_hover.png"); }
       .footer .wrap section:nth-child(2) aside:nth-child(3):hover div[class*="bg"] {
         background: url("../img/css_sprites.png") -517px -304px; }
     .footer .wrap section:nth-child(3) {
