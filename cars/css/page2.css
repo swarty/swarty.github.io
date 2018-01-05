@@ -590,11 +590,7 @@ header .menu {
           -webkit-box-align: center;
           -webkit-align-items: center;
               -ms-flex-align: center;
-                  align-items: center;
-          -webkit-box-pack: justify;
-          -webkit-justify-content: space-between;
-              -ms-flex-pack: justify;
-                  justify-content: space-between; }
+                  align-items: center; }
           .content_main .wrap .right article .abt_car .details .icons h5 {
             margin-left: 20px; }
         .content_main .wrap .right article .abt_car .details button {
@@ -637,7 +633,7 @@ header .menu {
             .content_main .wrap .right article .abt_car .details .col:nth-child(2) .soc div[class*="bg"]:nth-child(3):hover {
               background: url("../img/css_sprites_pg2.png") -62px -10px; }
           .content_main .wrap .right article .abt_car .details .col:nth-child(2) button {
-            margin-bottom: 1px; }
+            margin-top: 20px; }
 
 .bg-shop_1 {
   width: 32px;
