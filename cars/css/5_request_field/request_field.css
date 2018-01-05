@@ -1,0 +1,30 @@
+.request_field {
+  background-image: url("../img/contact_us_car_bg_image.jpg");
+  background-repeat: no-repeat;
+  padding-bottom: 110px; }
+  .request_field .wrap {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .request_field .wrap .text {
+      padding-top: 30px;
+      padding-bottom: 60px;
+      text-align: center;
+      max-width: 1280px; }
+      .request_field .wrap .text h2 {
+        color: #fff; }
+      .request_field .wrap .text h3 {
+        color: #fff; }
+    .request_field .wrap .request {
+      width: 950px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .request_field .wrap .request input {
+        width: 340px; }

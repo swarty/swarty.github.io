@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.5em; }
+
+h1, h2, h3, h4, h5, p {
+  color: #2d2d2d; }
+
+h1, h2, h3 {
+  font-family: "avenir-bold", sans-serif; }
+
+h4, h5, p {
+  font-family: "avenir-medium", sans-serif;
+  font-weight: 100; }
+
+h1, h2 {
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 48px; }
+
+h2 {
+  font-size: 36px;
+  font-weight: 900; }
+  h2 span.red {
+    color: #f00;
+    font-size: 36px; }
+
+h3 {
+  font-size: 24px;
+  font-weight: 100; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-size: 16px; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+p {
+  font-size: 14px; }
+
+header {
+  max-height: 123px;
+  background-color: #9f9f9f; }
+
+span.red {
+  color: #f00; }
+
+.btn {
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  border: 1px solid #fff;
+  line-height: 1.8em;
+  background-color: inherit; }
+  .btn__red {
+    font-size: 18px;
+    width: 200px;
+    text-align: center;
+    border: 1px solid #f00;
+    background-color: #f00;
+    font-family: "avenir-demibold"; }
+  .btn__red:hover {
+    background-color: #fff;
+    color: #f00;
+    border: 1px solid #f00; }
+
+input[type="text"] {
+  height: 40px;
+  padding: 5px 15px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  border: none;
+  outline: none; }
+
+div[class*="bg-"] {
+  margin-right: 10px; }
+
+select {
+  outline: none; }
+
+.left_arrow {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  border-left: 3px solid #f00;
+  border-bottom: 3px solid #f00;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.left_arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-left: 3px solid #f00;
+  border-bottom: 3px solid #f00;
+  content: "";
+  left: -14px;
+  top: 11px; }
+
+.left_arrow::after {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-left: 3px solid #f00;
+  border-bottom: 3px solid #f00;
+  content: "";
+  left: 8px;
+  bottom: 8px; }
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1280px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.active {
+  color: #f00; }

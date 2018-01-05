@@ -1,0 +1,54 @@
+.feedbacks {
+  padding-top: 70px; }
+  .feedbacks .wrap:nth-child(2) a[class*="bg"]:hover {
+    background: url("../img/css_sprites.png") -341px -216px; }
+  .feedbacks .wrap {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    .feedbacks .wrap .text {
+      padding-bottom: 80px; }
+    .feedbacks .wrap button {
+      margin-top: 60px;
+      margin-bottom: 130px; }
+    .feedbacks .wrap section {
+      width: 33%; }
+      .feedbacks .wrap section fieldset {
+        border: 1px solid #555555;
+        margin: 10px;
+        padding-left: 30px;
+        position: relative; }
+        .feedbacks .wrap section fieldset p {
+          padding: 30px 30px 35px 0px; }
+        .feedbacks .wrap section fieldset .left_arrow {
+          position: absolute;
+          right: 40px;
+          top: 90px; }
+        .feedbacks .wrap section fieldset .circle img {
+          width: 115px;
+          height: 115px;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%; }
+        .feedbacks .wrap section fieldset .social {
+          background-color: #555555;
+          padding: 10px 30px;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          margin-left: -30px; }
+          .feedbacks .wrap section fieldset .social h4 {
+            color: #fff; }
+            .feedbacks .wrap section fieldset .social h4 p {
+              display: inline;
+              color: #fff;
+              font-size: 14px;
+              padding: 0; }

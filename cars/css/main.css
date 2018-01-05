@@ -154,6 +154,9 @@ select {
       -ms-flex-align: center;
           align-items: center; }
 
+.active {
+  color: #f00; }
+
 header aside {
   display: -webkit-box;
   display: -webkit-flex;
@@ -959,11 +962,11 @@ header .menu {
               font-size: 14px;
               padding: 0; }
 
-.footer {
+.footer_contacts {
   padding-top: 50px;
   background-image: url("../img/footer_bg_image.jpg");
   background-repeat: no-repeat; }
-  .footer .wrap {
+  .footer_contacts .wrap {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
@@ -971,13 +974,13 @@ header .menu {
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start; }
-    .footer .wrap .text h2 {
+    .footer_contacts .wrap .text h2 {
       color: #fff;
       font-size: 18px;
       padding-bottom: 40px; }
-      .footer .wrap .text h2 span {
+      .footer_contacts .wrap .text h2 span {
         font-size: 18px; }
-    .footer .wrap section:nth-child(1) {
+    .footer_contacts .wrap section:nth-child(1) {
       width: 20%;
       display: -webkit-box;
       display: -webkit-flex;
@@ -993,24 +996,24 @@ header .menu {
           -ms-flex-align: center;
               align-items: center;
       position: relative; }
-      .footer .wrap section:nth-child(1) a {
+      .footer_contacts .wrap section:nth-child(1) a {
         padding-bottom: 10px;
         color: #fff; }
-      .footer .wrap section:nth-child(1) button {
+      .footer_contacts .wrap section:nth-child(1) button {
         margin-top: 5px;
         font-size: 18px;
         line-height: 1.5em; }
-    .footer .wrap section:nth-child(1)::before {
+    .footer_contacts .wrap section:nth-child(1)::before {
       position: absolute;
       left: 0;
       content: url(../img/footer_email_icon_1.png);
       width: 22px;
       height: 22px; }
-      .footer .wrap section:nth-child(1)::before a {
+      .footer_contacts .wrap section:nth-child(1)::before a {
         font-size: 16px; }
-    .footer .wrap section:nth-child(1):hover::before {
+    .footer_contacts .wrap section:nth-child(1):hover::before {
       content: url(../img/footer_email_icon_1_hover.png); }
-    .footer .wrap section:nth-child(2) {
+    .footer_contacts .wrap section:nth-child(2) {
       width: 80%;
       display: -webkit-box;
       display: -webkit-flex;
@@ -1025,7 +1028,7 @@ header .menu {
           -ms-flex-pack: distribute;
               justify-content: space-around;
       padding: 0 200px; }
-      .footer .wrap section:nth-child(2) aside {
+      .footer_contacts .wrap section:nth-child(2) aside {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -1042,20 +1045,20 @@ header .menu {
         -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center; }
-        .footer .wrap section:nth-child(2) aside div[class*="bg"] {
+        .footer_contacts .wrap section:nth-child(2) aside div[class*="bg"] {
           margin-bottom: 20px; }
-        .footer .wrap section:nth-child(2) aside a {
+        .footer_contacts .wrap section:nth-child(2) aside a {
           color: #fff;
           font-size: 16px; }
-      .footer .wrap section:nth-child(2) aside:hover a {
+      .footer_contacts .wrap section:nth-child(2) aside:hover a {
         color: #f00; }
-      .footer .wrap section:nth-child(2) aside:nth-child(1):hover div[class*="bg"] {
+      .footer_contacts .wrap section:nth-child(2) aside:nth-child(1):hover div[class*="bg"] {
         background: url("../img/css_sprites.png") -517px -170px; }
-      .footer .wrap section:nth-child(2) aside:nth-child(2):hover div[class*="bg"] {
+      .footer_contacts .wrap section:nth-child(2) aside:nth-child(2):hover div[class*="bg"] {
         content: url("../img/footer_email_icon_3_hover.png"); }
-      .footer .wrap section:nth-child(2) aside:nth-child(3):hover div[class*="bg"] {
+      .footer_contacts .wrap section:nth-child(2) aside:nth-child(3):hover div[class*="bg"] {
         background: url("../img/css_sprites.png") -517px -304px; }
-    .footer .wrap section:nth-child(3) {
+    .footer_contacts .wrap section:nth-child(3) {
       width: 20%;
       display: -webkit-box;
       display: -webkit-flex;
@@ -1070,33 +1073,33 @@ header .menu {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center; }
-      .footer .wrap section:nth-child(3) aside {
+      .footer_contacts .wrap section:nth-child(3) aside {
         position: relative;
         margin-bottom: 20px;
         width: 100%; }
-        .footer .wrap section:nth-child(3) aside p {
+        .footer_contacts .wrap section:nth-child(3) aside p {
           color: #fff;
           font-size: 16px; }
-        .footer .wrap section:nth-child(3) aside a {
+        .footer_contacts .wrap section:nth-child(3) aside a {
           color: #fff;
           font-size: 16px; }
-        .footer .wrap section:nth-child(3) aside .sprite {
+        .footer_contacts .wrap section:nth-child(3) aside .sprite {
           margin-right: 15px; }
-      .footer .wrap section:nth-child(3) aside:nth-child(1)::before {
+      .footer_contacts .wrap section:nth-child(3) aside:nth-child(1)::before {
         content: url(../img/footer_email_icon_5.png);
         position: absolute;
         left: -40px;
         top: 3px; }
-      .footer .wrap section:nth-child(3) aside:nth-child(1):hover::before {
+      .footer_contacts .wrap section:nth-child(3) aside:nth-child(1):hover::before {
         content: url(../img/footer_email_icon_5_hover.png); }
-      .footer .wrap section:nth-child(3) aside:nth-child(2)::before {
+      .footer_contacts .wrap section:nth-child(3) aside:nth-child(2)::before {
         content: url(../img/footer_email_icon_6.png);
         position: absolute;
         left: -40px;
         top: 3px; }
-      .footer .wrap section:nth-child(3) aside:nth-child(2):hover::before {
+      .footer_contacts .wrap section:nth-child(3) aside:nth-child(2):hover::before {
         content: url(../img/footer_email_icon_6_hover.png); }
-  .footer .wrap aside {
+  .footer_contacts .wrap aside {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1105,10 +1108,10 @@ header .menu {
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
-  .footer .wrap img {
+  .footer_contacts .wrap img {
     margin-left: 20px;
     margin-right: 15px; }
-  .footer .wrap:nth-child(2) {
+  .footer_contacts .wrap:nth-child(2) {
     padding-bottom: 60px; }
 
 footer {

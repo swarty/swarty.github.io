@@ -1,0 +1,147 @@
+.why_us {
+  padding-top: 80px;
+  background-image: url("../img/why_us_bg_image.jpg");
+  background-position: 0% bottom;
+  padding-bottom: 30vw;
+  -webkit-background-size: 70% 70%;
+          background-size: 70%;
+  background-repeat: no-repeat; }
+  .why_us .wrap:nth-child(1) {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .why_us .one:nth-child(1)::before {
+    content: "1";
+    position: absolute;
+    font-size: 24px;
+    color: #f00;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #f00;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    top: 5px;
+    left: -50px;
+    font-family: "avenir-bold"; }
+  .why_us .two.list:nth-child(2)::before {
+    content: "3";
+    position: absolute;
+    font-size: 24px;
+    color: #f00;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #f00;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    top: 5px;
+    left: -50px;
+    font-family: "avenir-bold"; }
+  .why_us .three.list:nth-child(3)::before {
+    content: "2";
+    position: absolute;
+    font-size: 24px;
+    color: #f00;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #f00;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    top: 5px;
+    left: -50px;
+    font-family: "avenir-bold"; }
+  .why_us .four.list:nth-child(4)::before {
+    content: "4";
+    position: absolute;
+    font-size: 24px;
+    color: #f00;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #f00;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    top: 5px;
+    left: -50px;
+    font-family: "avenir-bold"; }
+  .why_us .wrap {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .why_us .wrap .text {
+      margin-bottom: 80px; }
+    .why_us .wrap .list {
+      position: relative;
+      padding-bottom: 50px;
+      max-width: 34%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .why_us .wrap .list h4 {
+        width: 500px;
+        padding-bottom: 5px;
+        font-weight: 600;
+        text-transform: uppercase; }
+      .why_us .wrap .list p {
+        max-width: 300px;
+        font-weight: 500; }
+    .why_us .wrap .left_arrow {
+      position: absolute;
+      top: 7px;
+      right: 60px; }
