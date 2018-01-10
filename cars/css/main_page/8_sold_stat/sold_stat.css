@@ -1,6 +1,8 @@
 .sold_stat {
   padding-top: 80px;
   padding-bottom: 170px; }
+  .sold_stat div[class*="bg"] {
+    margin-right: 10px; }
   .sold_stat .wrap {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;

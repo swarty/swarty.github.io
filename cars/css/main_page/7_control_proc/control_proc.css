@@ -12,12 +12,6 @@
       margin-bottom: 50px; }
     .control_proc .wrap button {
       margin-bottom: 80px; }
-    .control_proc .wrap .icon:nth-child(1):hover div[class*="bg"] {
-      background: url("../img/css_sprites.png") -294px -113px; }
-    .control_proc .wrap .icon:nth-child(2):hover div[class*="bg"] {
-      background: url("../img/css_sprites.png") -123px -137px; }
-    .control_proc .wrap .icon:nth-child(3):hover div[class*="bg"] {
-      background: url("../img/css_sprites.png") -152px -10px; }
   .control_proc .wrap:nth-child(2) {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;

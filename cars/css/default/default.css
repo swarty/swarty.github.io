@@ -46,12 +46,11 @@ a {
 p {
   font-size: 14px; }
 
-header {
-  max-height: 123px;
-  background-color: #9f9f9f; }
-
 span.red {
   color: #f00; }
+
+div[class*="bg"] {
+  cursor: pointer; }
 
 .btn {
   width: 150px;
@@ -84,8 +83,8 @@ input[type="text"] {
   border: none;
   outline: none; }
 
-div[class*="bg-"] {
-  margin-right: 10px; }
+button {
+  outline: none; }
 
 select {
   outline: none; }

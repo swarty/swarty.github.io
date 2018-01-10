@@ -33,3 +33,92 @@
     right: -150px; }
   .footer .wrap section:nth-child(1)::before {
     left: 50px; } }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-resolution: 1.5dppx), only screen and (min-resolution: 144dpi) {
+  .bg-footer_email_icon_2 {
+    background: url("../img/css_sprites2x.png") -810px -698px; }
+  .bg-footer_email_icon_2:hover {
+    background: url("../img/css_sprites2x.png") -960px -10px; }
+  .bg-footer_email_icon_3 {
+    background: url("../img/css_sprites2x.png") -762px -572px; }
+  .bg-footer_email_icon_3:hover {
+    background: url("../img/css_sprites2x.png") -538px -382px; }
+  .bg-footer_email_icon_4 {
+    background: url("../img/css_sprites2x.png") -960px -124px; }
+  .bg-footer_email_icon_4:hover {
+    background: url("../img/css_sprites2x.png") -960px -238px; }
+  .bg-footer_email_icon_5 {
+    background: url("../img/css_sprites2x.png") -10px -968px; }
+  .bg-footer_email_icon_5:hover {
+    background: url("../img/css_sprites2x.png") -958px -892px; }
+  .bg-footer_email_icon_6 {
+    background: url("../img/css_sprites2x.png") -892px -892px; }
+  .bg-footer_email_icon_6:hover {
+    background: url("../img/css_sprites2x.png") -826px -892px; }
+  background: url("../img/css_sprites2x.png") -160px -892px;
+  .bg-header_menu_icon_1_hover {
+    background: url("../img/css_sprites2x.png") -678px -892px; }
+  background: url("../img/css_sprites2x.png") -752px -892px;
+  .bg-header_menu_icon_2_hover {
+    background: url("../img/css_sprites2x.png") -604px -892px; }
+  background: url("../img/css_sprites2x.png") -530px -892px;
+  .bg-header_menu_icon_3_hover {
+    background: url("../img/css_sprites2x.png") -456px -892px; }
+  background: url("../img/css_sprites2x.png") -382px -892px;
+  .bg-header_menu_icon_4_hover {
+    background: url("../img/css_sprites2x.png") -960px -436px; }
+  background: url("../img/css_sprites2x.png") -308px -892px;
+  .bg-header_menu_icon_5_hover {
+    background: url("../img/css_sprites2x.png") -86px -892px; }
+  .bg-header_menu_icon_6 {
+    background: url("../img/css_sprites2x.png") -234px -892px; }
+  .bg-tutorial_img_1 {
+    background: url("../img/css_sprites2x.png") -608px -500px; }
+  .bg-tutorial_img_1_hover {
+    background: url("../img/css_sprites2x.png") -322px -698px; }
+  .bg-tutorial_img_2 {
+    background: url("../img/css_sprites2x.png") -210px -500px; }
+  .bg-tutorial_img_2_hover {
+    background: url("../img/css_sprites2x.png") -10px -500px; }
+  background: url("../img/css_sprites2x.png") -762px -390px;
+  .bg-tutorial_img_3_hover {
+    background: url("../img/css_sprites2x.png") -762px -208px; }
+  background: url("../img/css_sprites2x.png") -642px -698px;
+  .bg-tutorial_img_4_hover {
+    background: url("../img/css_sprites2x.png") -474px -698px; }
+  background: url("../img/css_sprites2x.png") -166px -698px;
+  .bg-tutorial_img_5_hover {
+    background: url("../img/css_sprites2x.png") -10px -698px; }
+  background: url("../img/css_sprites2x.png") -410px -500px;
+  .bg-tutorial_img_6_hover {
+    background: url("../img/css_sprites2x.png") -762px -10px; }
+  background: url("../img/css_sprites2x.png") -538px -10px;
+  .bg-control_process_icon_1_hover {
+    background: url("../img/css_sprites2x.png") -538px -196px; }
+  background: url("../img/css_sprites2x.png") -10px -244px;
+  .bg-control_process_icon_2_hover {
+    background: url("../img/css_sprites2x.png") -216px -244px; }
+  background: url("../img/css_sprites2x.png") -10px -10px;
+  .bg-control_process_icon_3_hover {
+    background: url("../img/css_sprites2x.png") -274px -10px; }
+  background: url("../img/css_sprites2x.png") -204px -968px;
+  background: url("../img/css_sprites2x.png") -960px -836px;
+  .bg-shop_1 {
+    background: url("../img/css_sprites2x.png") -960px -352px; }
+  background: url("../img/css_sprites2x.png") -960px -596px;
+  background: url("../img/css_sprites2x.png") -10px -892px;
+  background: url("../img/css_sprites2x.png") -422px -404px;
+  background: url("../img/css_sprites2x.png") -422px -324px;
+  background: url("../img/css_sprites2x.png") -878px -572px;
+  .bg-shop_soc_1_hover {
+    background: url("../img/css_sprites2x.png") -960px -756px; }
+  background: url("../img/css_sprites2x.png") -960px -676px;
+  .bg-shop_soc_2_hover {
+    background: url("../img/css_sprites2x.png") -960px -516px; }
+  background: url("../img/css_sprites2x.png") -422px -244px;
+  .bg-shop_soc_3_hover {
+    background: url("../img/css_sprites2x.png") -654px -382px; }
+  div[class*="bg"] {
+    -webkit-background-size: 50% 50%;
+            background-size: 50%;
+    background-position: center; } }

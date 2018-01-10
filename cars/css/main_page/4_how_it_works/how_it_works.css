@@ -4,18 +4,6 @@
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around; }
-    .how_it_works .wrap .icon:nth-child(1):hover div[class*="bg"] {
-      background: url("../img/css_sprites.png") -186px -384px; }
-    .how_it_works .wrap .icon:nth-child(2):hover div[class*="bg"] {
-      background: url("../img/css_sprites.png") -416px -210px; }
-    .how_it_works .wrap .icon:nth-child(3):hover div[class*="bg"] {
-      background: url("../img/css_sprites.png") -416px -10px; }
-    .how_it_works .wrap .icon:nth-child(4):hover div[class*="bg"] {
-      background: url("../img/css_sprites.png") -517px -10px; }
-    .how_it_works .wrap .icon:nth-child(5):hover div[class*="bg"] {
-      background: url("../img/css_sprites.png") -10px -384px; }
-    .how_it_works .wrap .icon:nth-child(6):hover div[class*="bg"] {
-      background: url("../img/css_sprites.png") -119px -275px; }
     .how_it_works .wrap .icon {
       margin-bottom: 150px;
       min-width: 100px;
@@ -59,13 +47,19 @@
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center; }
-        .how_it_works .wrap .icon .img div[class*="bg"] {
-          margin-left: 10px; }
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                align-items: flex-start; }
       .how_it_works .wrap .icon .img::after {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         content: " ";
         border-left: 3px solid #fff;
         border-bottom: 3px solid #fff;
@@ -73,8 +67,6 @@
         height: 10px;
         position: absolute;
         top: 95px;
-        left: -webkit-calc(50% - 8px);
-        left: calc(50% - 8px);
         -webkit-transform: rotate(-45deg);
             -ms-transform: rotate(-45deg);
                 transform: rotate(-45deg); }

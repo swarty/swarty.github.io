@@ -1,3 +1,6 @@
+div[class*="bg"] {
+  margin: 0; }
+
 .footer_contacts {
   padding-top: 50px;
   background-image: url("../img/footer_bg_image.jpg");
@@ -42,13 +45,14 @@
     .footer_contacts .wrap section:nth-child(1)::before {
       position: absolute;
       left: 0;
-      content: url(../img/footer_email_icon_1.png);
       width: 22px;
-      height: 22px; }
+      height: 22px;
+      background: url("../img/css_sprites.png") -276px -541px;
+      content: ""; }
       .footer_contacts .wrap section:nth-child(1)::before a {
         font-size: 16px; }
     .footer_contacts .wrap section:nth-child(1):hover::before {
-      content: url(../img/footer_email_icon_1_hover.png); }
+      background: url("../img/css_sprites.png") -569px -434px; }
     .footer_contacts .wrap section:nth-child(2) {
       width: 80%;
       display: -webkit-box;
@@ -81,21 +85,14 @@
         -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center; }
-        .footer_contacts .wrap section:nth-child(2) aside div[class*="bg"] {
-          margin-bottom: 20px; }
         .footer_contacts .wrap section:nth-child(2) aside a {
+          margin-top: 20px;
           color: #fff;
           font-size: 16px;
           border-bottom: 1px solid #fff; }
       .footer_contacts .wrap section:nth-child(2) aside:hover a {
         color: #f00;
         border-bottom: 1px solid #f00; }
-      .footer_contacts .wrap section:nth-child(2) aside:nth-child(1):hover div[class*="bg"] {
-        background: url("../img/css_sprites.png") -517px -170px; }
-      .footer_contacts .wrap section:nth-child(2) aside:nth-child(2):hover div[class*="bg"] {
-        content: url("../img/footer_email_icon_3_hover.png"); }
-      .footer_contacts .wrap section:nth-child(2) aside:nth-child(3):hover div[class*="bg"] {
-        background: url("../img/css_sprites.png") -517px -304px; }
     .footer_contacts .wrap section:nth-child(3) {
       width: 20%;
       display: -webkit-box;
@@ -124,19 +121,24 @@
         .footer_contacts .wrap section:nth-child(3) aside .sprite {
           margin-right: 15px; }
       .footer_contacts .wrap section:nth-child(3) aside:nth-child(1)::before {
-        content: url(../img/footer_email_icon_5.png);
         position: absolute;
         left: -40px;
-        top: 3px; }
+        top: 5px;
+        width: 23px;
+        height: 23px;
+        background: url("../img/css_sprites.png") -233px -541px;
+        content: ""; }
       .footer_contacts .wrap section:nth-child(3) aside:nth-child(1):hover::before {
-        content: url(../img/footer_email_icon_5_hover.png); }
+        background: url("../img/css_sprites.png") -190px -541px; }
       .footer_contacts .wrap section:nth-child(3) aside:nth-child(2)::before {
-        content: url(../img/footer_email_icon_6.png);
         position: absolute;
         left: -40px;
-        top: 3px; }
+        width: 23px;
+        height: 23px;
+        background: url("../img/css_sprites.png") -147px -541px;
+        content: ""; }
       .footer_contacts .wrap section:nth-child(3) aside:nth-child(2):hover::before {
-        content: url(../img/footer_email_icon_6_hover.png); }
+        background: url("../img/css_sprites.png") -104px -541px; }
   .footer_contacts .wrap aside {
     display: -webkit-box;
     display: -webkit-flex;
@@ -153,7 +155,7 @@
     padding-bottom: 60px; }
 
 footer {
-  background-color: #555555; }
+  background-color: #2d2d2d; }
   footer .wrap {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -175,3 +177,23 @@ footer {
       footer .wrap section .left_arrow::after {
         border-left: 3px solid #fff;
         border-bottom: 3px solid #fff; }
+    footer .wrap section:nth-child(1) {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      padding-right: 225px;
+      background-color: #555555;
+      width: 100%;
+      left: -65%;
+      -webkit-transform: skewX(-45deg);
+          -ms-transform: skewX(-45deg);
+              transform: skewX(-45deg); }
+      footer .wrap section:nth-child(1) .text {
+        -webkit-transform: skewX(45deg);
+            -ms-transform: skewX(45deg);
+                transform: skewX(45deg); }

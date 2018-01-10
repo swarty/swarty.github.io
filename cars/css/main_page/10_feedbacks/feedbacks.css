@@ -1,7 +1,5 @@
 .feedbacks {
   padding-top: 70px; }
-  .feedbacks .wrap:nth-child(2) a[class*="bg"]:hover {
-    background: url("../img/css_sprites.png") -341px -216px; }
   .feedbacks .wrap {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
