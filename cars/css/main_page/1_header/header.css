@@ -1,9 +1,6 @@
 header {
-  background-color: #555555;
-  max-height: 123px; }
-  header div[class*="bg"] {
-    margin-right: 15px; }
-  header aside {
+  background-color: #f00; }
+  header .wrap:nth-child(1) {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -13,49 +10,25 @@ header {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
     position: relative;
-    z-index: 1;
-    overflow: hidden; }
-    header aside .contacts {
-      -webkit-transform: skewX(45deg);
-          -ms-transform: skewX(45deg);
-              transform: skewX(45deg); }
-  header aside:nth-child(1) {
-    width: 25%; }
-  header aside:nth-child(2) {
-    color: #fff;
-    width: 50%;
-    background-color: #2d2d2d;
-    -webkit-transform: skewX(-45deg);
-        -ms-transform: skewX(-45deg);
-            transform: skewX(-45deg); }
-    header aside:nth-child(2) .btn:hover {
-      border: 1px solid #f00;
-      background-color: #f00; }
-  header aside:nth-child(3) {
-    background-color: #f00;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    position: absolute;
-    left: 66.8%;
-    -webkit-transform: skewX(-45deg);
-        -ms-transform: skewX(-45deg);
-            transform: skewX(-45deg);
-    padding: 0 40px;
-    width: 35%; }
-    header aside:nth-child(3) .contacts:nth-child(4) a:hover {
-      background-color: #fff;
+    height: 42px;
+    background-color: #f00; }
+    header .wrap:nth-child(1) aside {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+    header .wrap:nth-child(1) aside:nth-child(1) {
+      width: 100%;
+      height: 42px;
+      background-color: #555555;
       position: absolute;
-      left: -200px;
+      left: -26%;
+      -webkit-transform: skewX(-45deg);
+          -ms-transform: skewX(-45deg);
+              transform: skewX(-45deg);
+      overflow: none; }
+    header .wrap:nth-child(1) aside:nth-child(2) {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -64,36 +37,66 @@ header {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center;
-      width: 240px;
-      height: 33px;
-      -webkit-border-radius: 20px;
-              border-radius: 20px; }
-    header aside:nth-child(3) .contacts {
-      position: relative;
-      margin: 0 8px;
-      -webkit-box-pack: start;
-      -webkit-justify-content: flex-start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
-      height: 100%; }
-  header .contacts {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding: 10px 0;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    header .contacts img {
-      padding-right: 10px; }
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      padding: 0 30px;
+      width: 50%;
+      height: 42px;
+      background-color: #2d2d2d;
+      position: absolute;
+      left: 24.8%;
+      -webkit-transform: skewX(-45deg);
+          -ms-transform: skewX(-45deg);
+              transform: skewX(-45deg);
+      overflow: none; }
+      header .wrap:nth-child(1) aside:nth-child(2) button {
+        margin: 0;
+        padding: 0;
+        height: 30px;
+        width: 150px;
+        -webkit-transform: skewX(45deg);
+            -ms-transform: skewX(45deg);
+                transform: skewX(45deg);
+        -webkit-align-self: center;
+            -ms-flex-item-align: center;
+                align-self: center;
+        text-align: center; }
+      header .wrap:nth-child(1) aside:nth-child(2) button:hover {
+        background-color: #f00;
+        border: 1px solid #f00; }
+      header .wrap:nth-child(1) aside:nth-child(2) span {
+        color: #fff;
+        -webkit-transform: skewX(45deg);
+            -ms-transform: skewX(45deg);
+                transform: skewX(45deg); }
+      header .wrap:nth-child(1) aside:nth-child(2) div {
+        -webkit-transform: skewX(45deg);
+            -ms-transform: skewX(45deg);
+                transform: skewX(45deg); }
+      header .wrap:nth-child(1) aside:nth-child(2) a {
+        color: #fff;
+        -webkit-transform: skewX(45deg);
+            -ms-transform: skewX(45deg);
+                transform: skewX(45deg); }
+    header .wrap:nth-child(1) aside:nth-child(3) {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 20%;
+      position: absolute;
+      right: 2%;
+      height: 42px; }
+  header div[class*=".bg-"] {
+    margin-right: 5px; }
   header nav {
     color: #2d2d2d; }
     header nav ul, header nav li {
@@ -171,6 +174,9 @@ header {
           -ms-transform: skewX(-45deg);
               transform: skewX(-45deg); }
       header .wrap:nth-child(2) aside p {
+        -webkit-align-self: center;
+            -ms-flex-item-align: center;
+                align-self: center;
         -webkit-transform: skewX(45deg);
             -ms-transform: skewX(45deg);
                 transform: skewX(45deg);

@@ -245,15 +245,9 @@
             display: -webkit-flex;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: end;
-            -webkit-justify-content: flex-end;
-                -ms-flex-pack: end;
-                    justify-content: flex-end; }
-            .content_main .wrap .right article .abt_car .details .col:nth-child(2) .soc div[class*="bg"]:nth-child(1):hover {
-              background: url("../img/css_sprites_pg2.png") -10px -112px; }
-            .content_main .wrap .right article .abt_car .details .col:nth-child(2) .soc div[class*="bg"]:nth-child(2):hover {
-              background: url("../img/css_sprites_pg2.png") -110px -112px; }
-            .content_main .wrap .right article .abt_car .details .col:nth-child(2) .soc div[class*="bg"]:nth-child(3):hover {
-              background: url("../img/css_sprites_pg2.png") -62px -10px; }
+            -webkit-justify-content: space-around;
+                -ms-flex-pack: distribute;
+                    justify-content: space-around;
+            margin-left: 15px; }
           .content_main .wrap .right article .abt_car .details .col:nth-child(2) button {
             margin-top: 20px; }

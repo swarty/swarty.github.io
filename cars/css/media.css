@@ -118,7 +118,7 @@
   background: url("../img/css_sprites2x.png") -422px -244px;
   .bg-shop_soc_3_hover {
     background: url("../img/css_sprites2x.png") -654px -382px; }
-  div[class*="bg"] {
+  div[class*=".bg-"] {
     -webkit-background-size: 50% 50%;
             background-size: 50%;
     background-position: center; } }
