@@ -460,6 +460,8 @@ header {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
+    .content_main .wrap .left input {
+      outline: none; }
     .content_main .wrap .left .filters {
       margin-bottom: 30px;
       background-color: #e8e8e8; }
