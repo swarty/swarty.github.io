@@ -34,7 +34,7 @@
   .footer .wrap section:nth-child(1)::before {
     left: 50px; } }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-resolution: 1.5dppx), only screen and (min-resolution: 144dpi) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.33), only screen and (-o-min-device-pixel-ratio: 133/100), only screen and (min-resolution: 1.33dppx), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi) {
   .bg-footer_email_icon_2 {
     background: url("../img/css_sprites2x.png") -810px -698px; }
   .bg-footer_email_icon_2:hover {
@@ -117,8 +117,4 @@
     background: url("../img/css_sprites2x.png") -960px -516px; }
   background: url("../img/css_sprites2x.png") -422px -244px;
   .bg-shop_soc_3_hover {
-    background: url("../img/css_sprites2x.png") -654px -382px; }
-  div[class*=".bg-"] {
-    -webkit-background-size: 50% 50%;
-            background-size: 50%;
-    background-position: center; } }
+    background: url("../img/css_sprites2x.png") -654px -382px; } }
