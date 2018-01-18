@@ -1,0 +1,46 @@
+.wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .wrap section:nth-child(1) .head {
+    background-color: #f00;
+    margin-bottom: 30px; }
+  .wrap section:nth-child(1) h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff; }
+  .wrap section:nth-child(1) .descr {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .wrap section:nth-child(1) .descr h5 {
+      margin: 8px 0;
+      width: 90px;
+      margin-left: 30px; }
+    .wrap section:nth-child(1) .descr h5:last-child {
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+    .wrap section:nth-child(1) .descr button {
+      width: 240px;
+      margin-top: 35px; }
+  .wrap section:nth-child(1) .descr:last-child {
+    margin-top: 30px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 40px; }
+    .wrap section:nth-child(1) .descr:last-child div {
+      margin-right: 20px; }
