@@ -23,8 +23,6 @@
       margin: 0 25px; }
     .topnav nav ul li:first-child {
       margin-left: 0; }
-    .topnav nav ul li:last-child {
-      text-transform: uppercase; }
 
 .topnav nav:nth-child(1) {
   -webkit-box-pack: justify;

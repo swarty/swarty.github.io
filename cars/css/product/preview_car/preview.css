@@ -6,7 +6,11 @@
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
   .wrap section:nth-child(1) .head {
     background-color: #f00;
     margin-bottom: 30px; }
@@ -24,7 +28,7 @@
     display: -ms-flexbox;
     display: flex; }
     .wrap section:nth-child(1) .descr h5 {
-      margin: 8px 0;
+      margin: 12px 0;
       width: 90px;
       margin-left: 30px; }
     .wrap section:nth-child(1) .descr h5:last-child {
@@ -43,3 +47,22 @@
     margin: 30px 15px; }
     .wrap section:nth-child(1) .descr:last-child div {
       margin-right: 20px; }
+  .wrap section:nth-child(2) .img {
+    position: relative; }
+    .wrap section:nth-child(2) .img img {
+      position: relative;
+      width: 100%; }
+    .wrap section:nth-child(2) .img .bg-shop_1 {
+      position: absolute;
+      right: 50px;
+      bottom: 30px; }
+  .wrap section:nth-child(2) .img:hover .bg-shop_1 {
+    display: block; }
+  .wrap section:nth-child(2) .gallery img {
+    margin: 15px 5px 0 5px;
+    width: 140px;
+    height: auto; }
+  .wrap section:nth-child(2) .gallery img:first-child {
+    margin-left: 0; }
+  .wrap section:nth-child(2) .gallery img:last-child {
+    margin-right: 0; }
