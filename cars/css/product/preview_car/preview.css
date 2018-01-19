@@ -36,11 +36,10 @@
       width: 240px;
       margin-top: 35px; }
   .wrap section:nth-child(1) .descr:last-child {
-    margin-top: 30px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-right: 40px; }
+    margin: 30px 15px; }
     .wrap section:nth-child(1) .descr:last-child div {
       margin-right: 20px; }
