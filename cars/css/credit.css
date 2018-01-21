@@ -25,6 +25,7 @@
   font-size: 14px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  letter-spacing: .02em;
   line-height: 1.5em;
   font-family: "avenir-medium", sans-serif; }
 
@@ -256,7 +257,7 @@ header {
       height: 42px;
       background-color: #555555;
       position: absolute;
-      left: -26%;
+      left: -26.5%;
       -webkit-transform: skewX(-45deg);
           -ms-transform: skewX(-45deg);
               transform: skewX(-45deg);
@@ -278,7 +279,7 @@ header {
       height: 42px;
       background-color: #2d2d2d;
       position: absolute;
-      left: 24.8%;
+      left: 25%;
       -webkit-transform: skewX(-45deg);
           -ms-transform: skewX(-45deg);
               transform: skewX(-45deg);
@@ -336,7 +337,7 @@ header {
       display: inline-block; }
       header nav ul li, header nav li li {
         position: relative;
-        padding: 0 25px; }
+        padding: 0 20px; }
       header nav ul li::before, header nav li li::before {
         position: absolute;
         left: 10px;
@@ -402,7 +403,7 @@ header {
       padding-right: 100px;
       width: 100%;
       height: 100%;
-      left: -79.5%;
+      left: -79%;
       -webkit-transform: skewX(-45deg);
           -ms-transform: skewX(-45deg);
               transform: skewX(-45deg); }
@@ -430,7 +431,7 @@ header {
           -ms-flex-align: center;
               align-items: center;
       position: absolute;
-      left: 24.3%;
+      left: 25%;
       width: 100%;
       height: 100%; }
 
@@ -450,6 +451,86 @@ header {
     color: #fff;
     text-transform: uppercase;
     padding-left: 80px; }
+
+.credit_body h3 {
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 780px;
+  margin: 0 auto; }
+
+.credit_body .wrap {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .credit_body .wrap section {
+    padding-bottom: 95px; }
+  .credit_body .wrap section:nth-child(1) {
+    padding-top: 45px; }
+    .credit_body .wrap section:nth-child(1) h3:nth-child(2) {
+      text-transform: lowercase;
+      padding-bottom: 50px; }
+    .credit_body .wrap section:nth-child(1) table {
+      width: 890px;
+      border-collapse: collapse; }
+      .credit_body .wrap section:nth-child(1) table td {
+        width: 50%;
+        padding-left: 30px;
+        border: 1px solid #2d2d2d;
+        font-size: 18px;
+        padding-top: 5px;
+        padding-bottom: 5px; }
+        .credit_body .wrap section:nth-child(1) table td span {
+          display: block; }
+  .credit_body .wrap section:nth-child(2) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .credit_body .wrap section:nth-child(2) article {
+      width: 45%; }
+      .credit_body .wrap section:nth-child(2) article h5:nth-child(1) {
+        font-weight: bold;
+        padding-bottom: 35px;
+        padding-top: 0; }
+      .credit_body .wrap section:nth-child(2) article h5 {
+        padding: 30px 0; }
+      .credit_body .wrap section:nth-child(2) article li {
+        margin-left: 17px; }
+      .credit_body .wrap section:nth-child(2) article table {
+        border-collapse: collapse;
+        text-align: center; }
+        .credit_body .wrap section:nth-child(2) article table tr td:nth-child(1) {
+          width: 30%;
+          background-color: #2d2d2d;
+          color: #fff; }
+        .credit_body .wrap section:nth-child(2) article table tr td {
+          border: 1px solid #fff;
+          padding: 15px 15px; }
+        .credit_body .wrap section:nth-child(2) article table tr td:nth-child(n+2) {
+          font-weight: bold; }
+        .credit_body .wrap section:nth-child(2) article table tr:nth-child(1) td:nth-child(2) {
+          font-weight: 100;
+          text-align: left;
+          padding-top: 0;
+          background-color: #2d2d2d;
+          color: #fff; }
+        .credit_body .wrap section:nth-child(2) article table tr:nth-child(2) {
+          border: none; }
+          .credit_body .wrap section:nth-child(2) article table tr:nth-child(2) td:nth-child(n+2) {
+            background-color: #555555; }
+        .credit_body .wrap section:nth-child(2) article table tr:nth-child(2n+2) td:nth-child(n+2) {
+          background-color: #555555;
+          color: #fff; }
 
 .footer_contacts {
   padding-top: 50px;

@@ -25,6 +25,7 @@
   font-size: 14px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  letter-spacing: .02em;
   line-height: 1.5em;
   font-family: "avenir-medium", sans-serif; }
 
@@ -256,7 +257,7 @@ header {
       height: 42px;
       background-color: #555555;
       position: absolute;
-      left: -26%;
+      left: -26.5%;
       -webkit-transform: skewX(-45deg);
           -ms-transform: skewX(-45deg);
               transform: skewX(-45deg);
@@ -278,7 +279,7 @@ header {
       height: 42px;
       background-color: #2d2d2d;
       position: absolute;
-      left: 24.8%;
+      left: 25%;
       -webkit-transform: skewX(-45deg);
           -ms-transform: skewX(-45deg);
               transform: skewX(-45deg);
@@ -336,7 +337,7 @@ header {
       display: inline-block; }
       header nav ul li, header nav li li {
         position: relative;
-        padding: 0 25px; }
+        padding: 0 20px; }
       header nav ul li::before, header nav li li::before {
         position: absolute;
         left: 10px;
@@ -402,7 +403,7 @@ header {
       padding-right: 100px;
       width: 100%;
       height: 100%;
-      left: -79.5%;
+      left: -79%;
       -webkit-transform: skewX(-45deg);
           -ms-transform: skewX(-45deg);
               transform: skewX(-45deg); }
@@ -430,7 +431,7 @@ header {
           -ms-flex-align: center;
               align-items: center;
       position: absolute;
-      left: 24.3%;
+      left: 25%;
       width: 100%;
       height: 100%; }
 
