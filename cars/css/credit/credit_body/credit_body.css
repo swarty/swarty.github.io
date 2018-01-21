@@ -77,3 +77,108 @@
         .credit_body .wrap section:nth-child(2) article table tr:nth-child(2n+2) td:nth-child(n+2) {
           background-color: #555555;
           color: #fff; }
+  .credit_body .wrap section:nth-child(4) {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    .credit_body .wrap section:nth-child(4) article .row {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 10px 0; }
+      .credit_body .wrap section:nth-child(4) article .row .label {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 330px;
+        height: 55px;
+        background-color: #555555;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center; }
+        .credit_body .wrap section:nth-child(4) article .row .label p {
+          color: #fff; }
+      .credit_body .wrap section:nth-child(4) article .row input {
+        background-color: #e8e8e8;
+        -webkit-border-radius: 0;
+                border-radius: 0;
+        margin-left: 20px;
+        width: 185px;
+        height: 55px;
+        text-align: center;
+        color: #555555; }
+      .credit_body .wrap section:nth-child(4) article .row .inputs {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+    .credit_body .wrap section:nth-child(4) article .row:last-child input {
+      width: 185px;
+      height: 24px;
+      background-color: #555555;
+      color: #fff; }
+    .credit_body .wrap section:nth-child(4) article:nth-child(2) .row:last-child .label:first-child {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      background-color: #FFF;
+      margin-right: 10px; }
+      .credit_body .wrap section:nth-child(4) article:nth-child(2) .row:last-child .label:first-child p {
+        background-color: #555555;
+        width: 100%; }
+    .credit_body .wrap section:nth-child(4) article:nth-child(2) .row:last-child .label:last-child {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      background-color: #FFF;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 185px; }
+      .credit_body .wrap section:nth-child(4) article:nth-child(2) .row:last-child .label:last-child p {
+        background-color: #555555;
+        margin-left: 20px;
+        width: 185px; }
+      .credit_body .wrap section:nth-child(4) article:nth-child(2) .row:last-child .label:last-child input {
+        width: 185px; }
+    .credit_body .wrap section:nth-child(4) article:nth-child(2) .row .active {
+      background-color: #555555; }
