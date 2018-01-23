@@ -1,13 +1,13 @@
 @font-face {
-  font-family: "raleway-bold";
+  font-family: "altair-bold";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/Raleway-Bold.eot");
-  src: url("../fonts/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.ttf") format("truetype"); }
+  src: url("../fonts/altair.bold.eot");
+  src: url("../fonts/altair.bold.eot?#iefix") format("embedded-opentype"), url("../fonts/altair.bold.woff") format("woff"), url("../fonts/altair.bold.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "raleway-thin";
+  font-family: "altair-thin";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/Raleway-Thin.eot");
-  src: url("../fonts/Raleway-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Thin.woff") format("woff"), url("../fonts/Raleway-Thin.ttf") format("truetype"); }
+  src: url("../fonts/altair.thin.eot");
+  src: url("../fonts/altair.thin.eot?#iefix") format("embedded-opentype"), url("../fonts/altair.thin.woff") format("woff"), url("../fonts/altair.thin.ttf") format("truetype"); }
