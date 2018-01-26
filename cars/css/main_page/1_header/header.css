@@ -48,8 +48,7 @@ header {
       left: 25%;
       -webkit-transform: skewX(-45deg);
           -ms-transform: skewX(-45deg);
-              transform: skewX(-45deg);
-      overflow: none; }
+              transform: skewX(-45deg); }
       header .wrap:nth-child(1) aside:nth-child(2) button {
         margin: 0;
         padding: 0;
