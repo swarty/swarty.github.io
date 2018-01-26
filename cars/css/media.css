@@ -4,7 +4,7 @@
   .why-us.why_us.wrap.list h4 {
     width: 500px; } }
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
   .header_bg {
     -webkit-background-size: cover;
             background-size: cover; }
