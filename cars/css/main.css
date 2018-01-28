@@ -49,7 +49,8 @@ h2 {
   font-weight: 900; }
   h2 span.red {
     color: #f00;
-    font-size: 36px; }
+    font-size: 36px;
+    font-family: "avenir-bold", sans-serif; }
 
 h3 {
   font-size: 24px;
@@ -76,20 +77,19 @@ div[class*=".bg-"] {
   cursor: pointer; }
 
 .btn {
-  width: 150px;
-  height: 37px;
-  text-align: center;
+  height: 36px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 2px;
+  width: 200px;
   cursor: pointer;
   font-size: 16px;
   color: #fff;
   -webkit-border-radius: 20px;
           border-radius: 20px;
   border: 1px solid #fff;
-  line-height: 1.8em;
   background-color: inherit; }
   .btn__red {
-    font-size: 16px;
-    width: 200px;
     text-align: center;
     border: 1px solid #f00;
     background-color: #f00;
@@ -181,8 +181,7 @@ select {
       -ms-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
   top: 30%;
-  width: 512px;
-  height: 300px; }
+  width: 512px; }
   .modal .content {
     display: -webkit-box;
     display: -webkit-flex;
@@ -256,10 +255,10 @@ select {
         cursor: pointer;
         padding: 2px; }
     .modal .content button {
-      height: 35px;
-      margin-top: 10px; }
+      margin-top: 10px;
+      margin-bottom: 30px; }
       .modal .content button a {
-        font-size: 18px; }
+        font-size: 16px; }
     .modal .content input {
       margin-bottom: 25px;
       height: 33px;
@@ -394,25 +393,24 @@ header {
       padding: 15px 20px;
       left: -20px;
       display: none;
-      width: 200px;
-      height: 120px;
+      width: 245px;
       background-color: #fff; }
-      .header_menu nav ul .dropdown ul, .header_menu nav li .dropdown ul {
-        width: 100%; }
-        .header_menu nav ul .dropdown ul li, .header_menu nav li .dropdown ul li {
-          color: #2d2d2d;
-          display: block;
-          margin-bottom: 10px;
-          padding-bottom: 4px;
-          border-bottom: 1px solid #2d2d2d; }
-        .header_menu nav ul .dropdown ul li:last-child, .header_menu nav li .dropdown ul li:last-child {
-          border: none; }
-        .header_menu nav ul .dropdown ul li:hover, .header_menu nav li .dropdown ul li:hover {
-          color: #f00;
-          border-bottom: 1px solid #f00; }
-        .header_menu nav ul .dropdown ul li:last-child:hover, .header_menu nav li .dropdown ul li:last-child:hover {
-          color: #f00;
-          border: none; }
+      .header_menu nav ul .dropdown ul li, .header_menu nav li .dropdown ul li {
+        color: #2d2d2d;
+        display: block;
+        margin-bottom: 8px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #2d2d2d; }
+      .header_menu nav ul .dropdown ul li:last-child, .header_menu nav li .dropdown ul li:last-child {
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 0; }
+      .header_menu nav ul .dropdown ul li:hover, .header_menu nav li .dropdown ul li:hover {
+        color: #f00;
+        border-bottom: 1px solid #f00; }
+      .header_menu nav ul .dropdown ul li:last-child:hover, .header_menu nav li .dropdown ul li:last-child:hover {
+        color: #f00;
+        border: none; }
     .header_menu nav ul li:nth-child(1):hover .dropdown, .header_menu nav li li:nth-child(1):hover .dropdown {
       display: block; }
 
@@ -442,7 +440,7 @@ header {
     -webkit-transform: skewX(-45deg);
         -ms-transform: skewX(-45deg);
             transform: skewX(-45deg); }
-    .header_menu .wrap aside p {
+    .header_menu .wrap aside a {
       -webkit-align-self: center;
           -ms-flex-item-align: center;
               align-self: center;
@@ -1150,7 +1148,7 @@ header {
               padding: 0; }
 
 .footer_contacts {
-  padding-top: 50px;
+  padding-top: 40px;
   background-image: url("../img/footer_bg_image.jpg");
   background-repeat: no-repeat; }
   .footer_contacts .wrap {
@@ -1188,8 +1186,7 @@ header {
         color: #fff; }
       .footer_contacts .wrap section:nth-child(1) button {
         margin-top: 5px;
-        font-size: 18px;
-        line-height: 1.5em; }
+        height: 26px; }
     .footer_contacts .wrap section:nth-child(1)::before {
       position: absolute;
       left: 0;

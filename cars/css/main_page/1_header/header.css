@@ -126,25 +126,24 @@ header {
       padding: 15px 20px;
       left: -20px;
       display: none;
-      width: 200px;
-      height: 120px;
+      width: 245px;
       background-color: #fff; }
-      .header_menu nav ul .dropdown ul, .header_menu nav li .dropdown ul {
-        width: 100%; }
-        .header_menu nav ul .dropdown ul li, .header_menu nav li .dropdown ul li {
-          color: #2d2d2d;
-          display: block;
-          margin-bottom: 10px;
-          padding-bottom: 4px;
-          border-bottom: 1px solid #2d2d2d; }
-        .header_menu nav ul .dropdown ul li:last-child, .header_menu nav li .dropdown ul li:last-child {
-          border: none; }
-        .header_menu nav ul .dropdown ul li:hover, .header_menu nav li .dropdown ul li:hover {
-          color: #f00;
-          border-bottom: 1px solid #f00; }
-        .header_menu nav ul .dropdown ul li:last-child:hover, .header_menu nav li .dropdown ul li:last-child:hover {
-          color: #f00;
-          border: none; }
+      .header_menu nav ul .dropdown ul li, .header_menu nav li .dropdown ul li {
+        color: #2d2d2d;
+        display: block;
+        margin-bottom: 8px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #2d2d2d; }
+      .header_menu nav ul .dropdown ul li:last-child, .header_menu nav li .dropdown ul li:last-child {
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 0; }
+      .header_menu nav ul .dropdown ul li:hover, .header_menu nav li .dropdown ul li:hover {
+        color: #f00;
+        border-bottom: 1px solid #f00; }
+      .header_menu nav ul .dropdown ul li:last-child:hover, .header_menu nav li .dropdown ul li:last-child:hover {
+        color: #f00;
+        border: none; }
     .header_menu nav ul li:nth-child(1):hover .dropdown, .header_menu nav li li:nth-child(1):hover .dropdown {
       display: block; }
 
@@ -174,7 +173,7 @@ header {
     -webkit-transform: skewX(-45deg);
         -ms-transform: skewX(-45deg);
             transform: skewX(-45deg); }
-    .header_menu .wrap aside p {
+    .header_menu .wrap aside a {
       -webkit-align-self: center;
           -ms-flex-item-align: center;
               align-self: center;

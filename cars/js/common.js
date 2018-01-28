@@ -18,6 +18,18 @@ but.onclick = function() {
     modal.style.display = "none";
 }
 
+//popupProduct
+var newWind = document.getElementById('sendRequest');
+var btnReq = document.getElementById("btn_req");
+var close = document.getElementById("close");
+
+btnReq.onclick = function() {
+    newWind.style.display = "block";
+}
+
+close.onclick = function() {
+    newWind.style.display = "none";
+}
 
 //yputube api
 var tag = document.createElement('script');

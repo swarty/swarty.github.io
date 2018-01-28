@@ -1,5 +1,5 @@
 .footer_contacts {
-  padding-top: 50px;
+  padding-top: 40px;
   background-image: url("../img/footer_bg_image.jpg");
   background-repeat: no-repeat; }
   .footer_contacts .wrap {
@@ -37,8 +37,7 @@
         color: #fff; }
       .footer_contacts .wrap section:nth-child(1) button {
         margin-top: 5px;
-        font-size: 18px;
-        line-height: 1.5em; }
+        height: 26px; }
     .footer_contacts .wrap section:nth-child(1)::before {
       position: absolute;
       left: 0;

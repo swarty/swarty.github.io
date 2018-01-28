@@ -109,6 +109,7 @@
                   border-radius: 20px;
           height: 20px; }
         .content_main .wrap .left .filters .calc button {
+          padding: 5px 40px;
           -webkit-align-self: center;
               -ms-flex-item-align: center;
                   align-self: center;
@@ -141,6 +142,7 @@
         color: #fff;
         text-transform: uppercase; }
       .content_main .wrap .left .docs_adv button {
+        height: 30px;
         margin-top: 60px; }
   .content_main .wrap .right article:last-child {
     margin-bottom: 0; }
@@ -228,8 +230,12 @@
           .content_main .wrap .right article .abt_car .details .icons h5 {
             margin-left: 20px; }
         .content_main .wrap .right article .abt_car .details button {
-          font-weight: 700;
-          width: 170px; }
+          width: 170px;
+          height: 28px;
+          padding: 0 10px;
+          font-weight: 700; }
+          .content_main .wrap .right article .abt_car .details button a {
+            font-size: 16px; }
         .content_main .wrap .right article .abt_car .details .col:nth-child(1) .btn {
           color: #f00;
           border: 1px solid #f00; }
@@ -259,4 +265,5 @@
                     justify-content: space-around;
             margin-left: 15px; }
           .content_main .wrap .right article .abt_car .details .col:nth-child(2) button {
+            height: 28px;
             margin-top: 20px; }
