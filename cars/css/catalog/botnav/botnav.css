@@ -5,6 +5,8 @@
           justify-content: flex-end; }
 
 .botnav ul {
+  position: relative;
+  right: 15px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

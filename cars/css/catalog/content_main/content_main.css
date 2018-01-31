@@ -6,7 +6,11 @@
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
-          align-items: flex-start; }
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   .content_main .wrap .left {
     width: 23%;
     display: -webkit-box;
@@ -151,21 +155,13 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    height: 275px;
-    margin-bottom: 72px;
-    margin-left: 30px; }
-    .content_main .wrap .right article .img {
-      width: 515px;
-      height: 100%;
-      background-image: url(../img/shop_car_pg2.jpg);
-      background-position: 50% 70%;
-      margin-right: 60px;
-      position: relative; }
-      .content_main .wrap .right article .img .hover {
-        display: none;
-        right: 30px;
-        bottom: 15px;
-        position: absolute; }
+    margin-bottom: 71px; }
+    .content_main .wrap .right article img {
+      -webkit-background-size: cover;
+              background-size: cover;
+      width: auto;
+      height: 275px;
+      margin-right: 20px; }
     .content_main .wrap .right article .img:hover .hover {
       cursor: pointer;
       display: block; }
@@ -179,12 +175,45 @@
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
-              flex-direction: column; }
-      .content_main .wrap .right article .abt_car h3 {
-        padding-bottom: 20px;
-        color: #2d2d2d;
-        text-transform: uppercase; }
+              flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .content_main .wrap .right article .abt_car .h3_wr {
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .content_main .wrap .right article .abt_car .h3_wr h3 {
+          color: #2d2d2d;
+          text-transform: uppercase; }
+        .content_main .wrap .right article .abt_car .h3_wr h3:nth-child(2) {
+          display: none; }
+      .content_main .wrap .right article .abt_car .buttons {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around; }
+        .content_main .wrap .right article .abt_car .buttons button {
+          width: 48%;
+          height: 30px;
+          font-weight: bold;
+          font-size: 14px; }
       .content_main .wrap .right article .abt_car .details {
+        height: 60%;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -199,7 +228,6 @@
             -ms-flex-direction: row;
                 flex-direction: row; }
         .content_main .wrap .right article .abt_car .details .col {
-          height: 220px;
           -webkit-box-pack: justify;
           -webkit-justify-content: space-between;
               -ms-flex-pack: justify;
@@ -229,19 +257,6 @@
                   align-items: center; }
           .content_main .wrap .right article .abt_car .details .icons h5 {
             margin-left: 20px; }
-        .content_main .wrap .right article .abt_car .details button {
-          width: 170px;
-          height: 28px;
-          padding: 0 10px;
-          font-weight: 700; }
-          .content_main .wrap .right article .abt_car .details button a {
-            font-size: 16px; }
-        .content_main .wrap .right article .abt_car .details .col:nth-child(1) .btn {
-          color: #f00;
-          border: 1px solid #f00; }
-        .content_main .wrap .right article .abt_car .details .col:nth-child(1) .btn:hover {
-          color: #fff;
-          background-color: #f00; }
         .content_main .wrap .right article .abt_car .details .col:nth-child(2) {
           text-align: right; }
           .content_main .wrap .right article .abt_car .details .col:nth-child(2) h2 {
@@ -264,6 +279,3 @@
                 -ms-flex-pack: distribute;
                     justify-content: space-around;
             margin-left: 15px; }
-          .content_main .wrap .right article .abt_car .details .col:nth-child(2) button {
-            height: 28px;
-            margin-top: 20px; }
