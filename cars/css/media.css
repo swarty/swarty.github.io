@@ -40,7 +40,8 @@
             background-size: cover;
     height: 50vh; }
     .header_bg .wrap {
-      padding-top: 100px; }
+      padding-top: 100px;
+      height: 100%; }
       .header_bg .wrap .text {
         margin-right: 0;
         padding-top: 25px; }
@@ -211,7 +212,6 @@
         -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center;
-        padding: 25% 0;
         margin: 0 auto;
         width: 100%;
         height: 100%;
@@ -224,7 +224,8 @@
           color: #fff; }
         .header_bg .wrap .text button {
           padding: 0;
-          margin: 20px 0; }
+          margin: 10px 0;
+          height: 26px; }
   .abt_us {
     -webkit-background-size: 100% 100%;
             background-size: 100%;
@@ -244,10 +245,14 @@
           -ms-flex-align: center;
               align-items: center; }
       .abt_us .wrap form .sec_header h4 {
+        font-size: 16px;
         -webkit-box-pack: center;
         -webkit-justify-content: center;
             -ms-flex-pack: center;
-                justify-content: center; }
+                justify-content: center;
+        height: 24px; }
+        .abt_us .wrap form .sec_header h4 span {
+          font-size: 16px; }
       .abt_us .wrap form .sec {
         width: 100%;
         -webkit-box-orient: vertical;
@@ -683,6 +688,9 @@
     padding: 0 30px; } }
 
 @media (max-width: 414px) {
+  .btn {
+    font-size: 12px;
+    height: 30px; }
   .left_arrow {
     width: 6px;
     height: 6px; }
@@ -736,17 +744,15 @@
     -webkit-background-size: cover;
             background-size: cover;
     background-position: 40% 50%; }
-    .header_bg .wrap .text {
-      padding: 100px 0; }
-      .header_bg .wrap .text h1 {
-        font-size: 21px; }
-      .header_bg .wrap .text h4 {
-        text-align: center;
-        font-size: 13px;
-        width: auto; }
-      .header_bg .wrap .text button {
-        font-size: 12px;
-        width: 160px; }
+    .header_bg .wrap .text h1 {
+      font-size: 21px; }
+    .header_bg .wrap .text h4 {
+      text-align: center;
+      font-size: 13px;
+      width: auto; }
+    .header_bg .wrap .text button {
+      font-size: 12px;
+      width: 160px; }
   .abt_us .wrap:first-child form {
     width: 100%; }
     .abt_us .wrap:first-child form .sec_header {
@@ -940,8 +946,8 @@
     font-size: 14px; } }
 
 @media (max-width: 320px) {
-  .header_bg .wrap .text {
-    padding: 50px 0; }
+  .header_bg .wrap .text h4 {
+    font-size: 10px; }
   .content_main .wrap .right article .abt_car .buttons button {
     font-size: 10px;
     padding: 0; }
