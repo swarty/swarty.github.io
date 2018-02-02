@@ -831,6 +831,8 @@ header {
                   align-items: center; }
           .content_main .wrap .right article .abt_car .details .icons h5 {
             margin-left: 20px; }
+          .content_main .wrap .right article .abt_car .details .icons .mob {
+            display: none; }
         .content_main .wrap .right article .abt_car .details .col:nth-child(2) {
           text-align: right; }
           .content_main .wrap .right article .abt_car .details .col:nth-child(2) h2 {
