@@ -638,7 +638,6 @@ header {
           font-family: "avenir-bold", sans-serif;
           text-transform: uppercase;
           padding-left: 30px;
-          margin-bottom: 40px;
           position: relative; }
         .content_main .wrap .left .filters .calc h5::after {
           right: 20px;
@@ -651,9 +650,12 @@ header {
         .content_main .wrap .left .filters .calc .short::after {
           width: 40%; }
         .content_main .wrap .left .filters .calc div {
-          margin-top: 30px; }
+          margin-top: 30px;
+          margin-bottom: 40px; }
           .content_main .wrap .left .filters .calc div h5 {
             color: #2d2d2d; }
+          .content_main .wrap .left .filters .calc div .mob {
+            display: none; }
         .content_main .wrap .left .filters .calc p {
           display: -webkit-box;
           display: -webkit-flex;

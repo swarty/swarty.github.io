@@ -541,7 +541,9 @@
         -ms-flex-pack: distribute;
             justify-content: space-around; }
   .botnav ul {
-    margin: 40px 0; } }
+    margin: 40px 0; }
+  .content_main .wrap .left .filters .calc div .mob {
+    display: none; } }
 
 @media (max-width: 768px) {
   .content_main .wrap {
@@ -636,7 +638,7 @@
   .content_main .wrap .left .filters .calc p {
     margin: 5px 0; }
     .content_main .wrap .left .filters .calc p label {
-      font-size: 13px; }
+      font-size: 18px; }
   .content_main .wrap .left .filters .calc h5::after {
     width: 0; }
   .content_main .wrap .left .filters .calc .short::after {
@@ -644,7 +646,41 @@
   .content_main .wrap .right article .abt_car .details .icons .desc {
     display: none; }
   .content_main .wrap .right article .abt_car .details .icons .mob {
-    display: block; } }
+    display: block; }
+  .content_main .wrap .left .filters .calc .price h5 {
+    display: none; }
+  .content_main .wrap .left .filters .calc .goal p {
+    display: block; }
+  .content_main .wrap .left .filters .calc div h5 {
+    padding-left: 0; }
+  .content_main .wrap .left .filters .calc div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 100%; }
+    .content_main .wrap .left .filters .calc div .mob {
+      height: 24px;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      width: 55%;
+      position: absolute;
+      right: 0;
+      display: block;
+      -webkit-border-radius: 20px;
+              border-radius: 20px;
+      border: none;
+      padding-left: 10px; }
+    .content_main .wrap .left .filters .calc div p {
+      display: none; }
+  .content_main .wrap .left .filters .calc div {
+    margin: 20px auto;
+    width: 80%; }
+  .content_main .wrap .left .filters .calc button {
+    margin: 25px 0;
+    padding: 0 30px; } }
 
 @media (max-width: 414px) {
   .left_arrow {
@@ -888,19 +924,20 @@
     padding-left: 20px;
     padding-right: 20px; }
   .content_main .wrap .left .filters .calc p label {
-    font-size: 14px; }
+    font-size: 15px; }
   .content_main .wrap .left .filters .calc p input {
-    margin-right: 5px; }
-  .content_main .wrap .left .filters .calc h5 {
-    padding-left: 0;
-    text-align: center; }
+    margin-right: 0; }
   .content_main .wrap .left .filters .calc {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
   .content_main .wrap .left .filters .calc div {
-    width: 80%; } }
+    width: 80%; }
+  .head-bg .text h2 {
+    margin-bottom: 5px; }
+  .content_main .wrap .left .filters .calc div h5 {
+    font-size: 14px; } }
 
 @media (max-width: 320px) {
   .header_bg .wrap .text {
@@ -914,4 +951,6 @@
     font-size: 10px;
     width: auto; }
   .content_main .wrap .right article .abt_car .details .icons h5 {
-    font-size: 10px; } }
+    font-size: 10px; }
+  .content_main .wrap .left .filters .calc p label {
+    font-size: 13px; } }
