@@ -159,11 +159,11 @@
     .header_menu .menu_burger {
       display: block;
       position: absolute;
-      top: 25%;
-      right: 40px;
+      top: 30%;
+      right: 30px;
       cursor: pointer; }
       .header_menu .menu_burger .burger {
-        z-index: 1;
+        z-index: 3;
         position: absolute;
         height: 5px;
         -webkit-border-radius: 10px;
@@ -191,6 +191,8 @@
                   border-radius: 10px; }
     .header_menu .wrap {
       height: 55px;
+      position: relative;
+      z-index: 2;
       background-color: #f00; }
       .header_menu .wrap aside:first-child {
         left: -25%;
@@ -211,13 +213,13 @@
         .header_menu .wrap aside:last-child div {
           margin-right: 0; }
       .header_menu .wrap .open {
-        -webkit-transform: translateX(100%);
-            -ms-transform: translateX(100%);
-                transform: translateX(100%); }
+        -webkit-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+                transform: translateX(-100%); }
       .header_menu .wrap nav {
-        -webkit-transition: all .5s ease-in-out;
-        -o-transition: all .5s ease-in-out;
-        transition: all .5s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
         padding: 15px 0;
         left: 0;
         width: 100%;
