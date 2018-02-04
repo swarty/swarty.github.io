@@ -1,7 +1,9 @@
 .control_proc {
   padding-top: 70px;
   background-image: url("../img/control_proc_bg_image.jpg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
   .control_proc .wrap {
     -webkit-box-pack: center;
     -webkit-justify-content: center;

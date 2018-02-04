@@ -2,6 +2,8 @@
   background-image: url("../img/about_us_cars.png");
   background-position: 50% 90%;
   background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
   height: 100vh; }
   .abt_us .wrap {
     -webkit-box-pack: center;
@@ -38,15 +40,12 @@
         display: flex;
         position: relative;
         top: -20px;
-        height: 50px;
         width: 100%;
-        background-color: #2d2d2d; }
+        background-color: #2d2d2d;
+        padding: 10px 20px; }
         .abt_us .wrap form .sec_header h4 {
-          margin-top: 12px;
           color: #fff;
           text-transform: uppercase;
-          width: 100%;
-          padding: 0 50px;
           display: -webkit-box;
           display: -webkit-flex;
           display: -ms-flexbox;
@@ -55,12 +54,12 @@
           -webkit-align-items: flex-start;
               -ms-flex-align: start;
                   align-items: flex-start; }
-          .abt_us .wrap form .sec_header h4 span {
-            font-size: 18px; }
+        .abt_us .wrap form .sec_header h4:last-child {
+          color: #f00; }
       .abt_us .wrap form .left_arrow {
         position: relative;
         top: 7px;
-        right: -335px;
+        right: -380px;
         border-left: 3px solid #fff;
         border-bottom: 3px solid #fff; }
       .abt_us .wrap form .left_arrow::before {

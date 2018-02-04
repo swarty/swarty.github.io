@@ -1,7 +1,9 @@
 .footer_contacts {
   padding-top: 40px;
   background-image: url("../img/footer_bg_image.jpg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
   .footer_contacts .wrap {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;

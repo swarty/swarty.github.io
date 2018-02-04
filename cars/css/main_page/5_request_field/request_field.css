@@ -1,7 +1,9 @@
 .request_field {
   background-image: url("../img/contact_us_car_bg_image.jpg");
   background-repeat: no-repeat;
-  padding-bottom: 110px; }
+  padding-bottom: 110px;
+  -webkit-background-size: cover;
+          background-size: cover; }
   .request_field .wrap {
     -webkit-box-pack: center;
     -webkit-justify-content: center;

@@ -2,7 +2,9 @@
   padding-top: 70px;
   padding-bottom: 115px;
   background-image: url("../img/menu_fing_question_bg_image.jpg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
   .menu_find .wrap {
     -webkit-box-pack: center;
     -webkit-justify-content: center;

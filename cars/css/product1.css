@@ -487,6 +487,11 @@ header {
     left: 25%;
     height: 100%; }
 
+.header_menu .menu_burger {
+  display: none;
+  width: 50px;
+  height: 30px; }
+
 .head-bg {
   background-image: url("../img/product_header_bg.jpg");
   background-position: left;
@@ -796,7 +801,9 @@ header {
 .footer_contacts {
   padding-top: 40px;
   background-image: url("../img/footer_bg_image.jpg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
   .footer_contacts .wrap {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;

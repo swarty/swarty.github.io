@@ -487,12 +487,19 @@ header {
     left: 25%;
     height: 100%; }
 
+.header_menu .menu_burger {
+  display: none;
+  width: 50px;
+  height: 30px; }
+
 .header_bg {
   height: -webkit-calc(100vh - 123px);
   height: calc(100vh - 123px);
   background-image: url("../img/header_bg_image.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 30%; }
+  background-position: 50% 30%;
+  -webkit-background-size: cover;
+          background-size: cover; }
   .header_bg .wrap {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
@@ -513,6 +520,8 @@ header {
   background-image: url("../img/about_us_cars.png");
   background-position: 50% 90%;
   background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
   height: 100vh; }
   .abt_us .wrap {
     -webkit-box-pack: center;
@@ -549,15 +558,12 @@ header {
         display: flex;
         position: relative;
         top: -20px;
-        height: 50px;
         width: 100%;
-        background-color: #2d2d2d; }
+        background-color: #2d2d2d;
+        padding: 10px 20px; }
         .abt_us .wrap form .sec_header h4 {
-          margin-top: 12px;
           color: #fff;
           text-transform: uppercase;
-          width: 100%;
-          padding: 0 50px;
           display: -webkit-box;
           display: -webkit-flex;
           display: -ms-flexbox;
@@ -566,12 +572,12 @@ header {
           -webkit-align-items: flex-start;
               -ms-flex-align: start;
                   align-items: flex-start; }
-          .abt_us .wrap form .sec_header h4 span {
-            font-size: 18px; }
+        .abt_us .wrap form .sec_header h4:last-child {
+          color: #f00; }
       .abt_us .wrap form .left_arrow {
         position: relative;
         top: 7px;
-        right: -335px;
+        right: -380px;
         border-left: 3px solid #fff;
         border-bottom: 3px solid #fff; }
       .abt_us .wrap form .left_arrow::before {
@@ -756,7 +762,9 @@ header {
 .request_field {
   background-image: url("../img/contact_us_car_bg_image.jpg");
   background-repeat: no-repeat;
-  padding-bottom: 110px; }
+  padding-bottom: 110px;
+  -webkit-background-size: cover;
+          background-size: cover; }
   .request_field .wrap {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -936,7 +944,9 @@ header {
 .control_proc {
   padding-top: 70px;
   background-image: url("../img/control_proc_bg_image.jpg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
   .control_proc .wrap {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -1059,7 +1069,9 @@ header {
   padding-top: 70px;
   padding-bottom: 115px;
   background-image: url("../img/menu_fing_question_bg_image.jpg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
   .menu_find .wrap {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -1150,7 +1162,9 @@ header {
 .footer_contacts {
   padding-top: 40px;
   background-image: url("../img/footer_bg_image.jpg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
   .footer_contacts .wrap {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
