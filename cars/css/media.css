@@ -136,7 +136,13 @@
     margin-top: 0;
     margin-bottom: 30px; }
   .content_main .wrap .right article .abt_car .h3_wr h3 {
-    font-size: 22px; } }
+    font-size: 22px; }
+  iframe {
+    display: none; }
+  .wrap section:nth-child(2) .gallery {
+    display: none; }
+  .description .wrap section:nth-child(1) {
+    width: 100%; } }
 
 @media (max-width: 1023px) {
   .text h2 {
@@ -627,7 +633,16 @@
   .content_main .wrap .right article .abt_car .details .col:nth-child(2) h2 {
     font-size: 18px; }
   .content_main .wrap .right article .abt_car .details .col:nth-child(2) h5 a {
-    font-size: 12px; } }
+    font-size: 12px; }
+  iframe {
+    display: none; }
+  .gallery {
+    display: none; }
+  .sold_stat .wrap:nth-child(2) section:nth-child(2) {
+    margin: 0; }
+  body > div > div {
+    padding-left: 10px;
+    padding-right: 10px; } }
 
 @media (max-width: 830px) {
   .content_main .wrap {
