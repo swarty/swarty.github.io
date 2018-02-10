@@ -1,71 +1,196 @@
-.sold_stat {
+.sold_stat .slick-slide {
+  outline: none; }
+
+.sold_stat .slick-dots {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80px;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin: 70px auto;
+  list-style: none; }
+  .sold_stat .slick-dots li {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #555555; }
+    .sold_stat .slick-dots li:hover {
+      background-color: #2d2d2d; }
+    .sold_stat .slick-dots li button {
+      display: none; }
+
+.sold_stat__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%; }
+
+.sold_stat__header {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 80px;
-  padding-bottom: 170px; }
-  .sold_stat div[class*="bg"] {
-    margin-right: 10px; }
-  .sold_stat .wrap {
+  margin-bottom: 75px; }
+
+.sold_stat__product {
+  max-width: 400px;
+  width: 100%; }
+  .sold_stat__product img {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.sold_stat__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #2d2d2d; }
+
+.sold_stat__car-title {
+  text-transform: uppercase; }
+
+.sold_stat__price {
+  font-weight: bold;
+  padding-right: 15px; }
+
+.sold_stat__services {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.sold_stat__oil, .sold_stat__motor {
+  margin-left: -25px; }
+
+.sold_stat__button {
+  max-width: 165px;
+  width: 100%;
+  border: none;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  height: 30px;
+  background-color: #f00;
+  outline: none;
+  color: #fff;
+  font-size: 18px; }
+
+@media (max-width: 1200px) {
+  .sold_stat__header {
+    padding-top: 50px;
+    margin-bottom: 50px; }
+  .sold_stat__product {
+    max-width: 320px; }
+    .sold_stat__product img {
+      margin-bottom: 10px; }
+  .sold_stat__car-title, .sold_stat__price {
+    font-size: 14px; }
+  .sold_stat__oil, .sold_stat__motor {
+    font-size: 12px;
+    margin-left: 0; }
+  .sold_stat__button {
+    font-size: 14px;
+    width: 140px;
+    height: 26px; } }
+
+@media (max-width: 999px) {
+  .sold_stat .slick-dots {
+    margin: 40px auto; }
+    .sold_stat .slick-dots li {
+      width: 10px;
+      height: 10px; }
+  .sold_stat__content {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around; }
-    .sold_stat .wrap .text {
-      padding-bottom: 70px; }
-    .sold_stat .wrap .sprite {
-      margin-right: 5px; }
-  .sold_stat .wrap:nth-child(2) {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-    .sold_stat .wrap:nth-child(2) section {
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      .sold_stat .wrap:nth-child(2) section img {
-        width: 100%;
-        height: auto; }
-      .sold_stat .wrap:nth-child(2) section .price:nth-child(3) {
-        border: none; }
-      .sold_stat .wrap:nth-child(2) section .price {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -webkit-justify-content: space-between;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        border-bottom: 1px solid #2d2d2d; }
-        .sold_stat .wrap:nth-child(2) section .price h4 {
-          font-family: "avenir-demibold";
-          padding: 5px 5px;
-          text-transform: uppercase; }
-        .sold_stat .wrap:nth-child(2) section .price h4:nth-child(2) {
-          font-family: "avenir-bold";
-          font-weight: 900; }
-        .sold_stat .wrap:nth-child(2) section .price button {
-          max-width: 170px; }
-        .sold_stat .wrap:nth-child(2) section .price .logo {
-          padding-top: 15px;
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -webkit-align-items: center;
-              -ms-flex-align: center;
-                  align-items: center; }
-          .sold_stat .wrap:nth-child(2) section .price .logo img {
-            width: 100%;
-            height: auto;
-            padding-right: 10px; }
-    .sold_stat .wrap:nth-child(2) section:nth-child(2n) {
-      margin: 0 25px; }
+  .sold_stat__product {
+    max-width: 250px; }
+  .sold_stat__car-title, .sold_stat__price {
+    font-size: 12px; }
+  .sold_stat__oil, .sold_stat__motor {
+    font-size: 10px; }
+  .sold_stat__button {
+    font-size: 12px;
+    width: 120px;
+    height: 24px; } }
+
+@media (max-width: 769px) {
+  .sold_stat .slick-dots {
+    width: 200px;
+    margin: 40px auto; }
+    .sold_stat .slick-dots li {
+      width: 10px;
+      height: 10px; }
+  .sold_stat__header {
+    padding-top: 25px;
+    margin-bottom: 25px; }
+  .sold_stat__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .sold_stat__product {
+    max-width: 640px;
+    margin: 0 auto; }
+  .sold_stat__info {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px; }
+  .sold_stat__services {
+    width: 90%;
+    margin: 0 auto; }
+  .sold_stat__car-title, .sold_stat__price {
+    font-size: 18px; }
+  .sold_stat__oil, .sold_stat__motor {
+    font-size: 16px; }
+  .sold_stat__button {
+    font-size: 16px;
+    max-width: 180px;
+    height: 26px; } }
+
+@media (max-width: 479px) {
+  .sold_stat__content {
+    margin-bottom: 30px; }
+  .sold_stat__info {
+    width: 98%;
+    margin: 0 auto;
+    margin-bottom: 10px; }
+  .sold_stat__services {
+    width: 98%;
+    margin: 0 auto; }
+  .sold_stat__car-title, .sold_stat__price {
+    font-size: 16px; }
+  .sold_stat__oil, .sold_stat__motor {
+    font-size: 12px; }
+  .sold_stat__button {
+    font-size: 13px;
+    width: 180px;
+    height: 26px; } }
