@@ -56,15 +56,6 @@
           padding: 10px 0; }
         .header_bg .wrap .text button {
           margin-top: 25px; }
-  .abt_us {
-    height: auto;
-    padding-bottom: 25vh;
-    -webkit-background-size: contain;
-            background-size: contain;
-    position: relative; }
-    .abt_us .wrap:nth-child(1) form {
-      width: 100%;
-      max-width: 100%; }
   .how_it_works .wrap .icon {
     margin-bottom: 80px; }
   .why_us {
@@ -289,46 +280,6 @@
           padding: 0;
           margin: 10px 0;
           height: 26px; }
-  .abt_us {
-    -webkit-background-size: 100% 100%;
-            background-size: 100%;
-    padding-bottom: 60px;
-    background-position: 50% 100%;
-    overflow: hidden; }
-    .abt_us .wrap form {
-      margin-bottom: 20px;
-      top: 15px;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .abt_us .wrap form .sec_header h4 {
-        font-size: 16px;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
-      .abt_us .wrap form .sec {
-        width: 100%;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column; }
-        .abt_us .wrap form .sec .col {
-          margin: 5px auto; }
-      .abt_us .wrap form button {
-        margin-top: 20px; }
-    .abt_us .wrap:last-child .text {
-      width: 500px; }
-      .abt_us .wrap:last-child .text button {
-        width: 150px;
-        height: 30px; }
   .how_it_works {
     overflow: hidden; }
     .how_it_works .wrap:first-child .text {
@@ -756,45 +707,6 @@
     .header_bg .wrap .text button {
       font-size: 12px;
       width: 160px; }
-  .abt_us .wrap:first-child form {
-    width: 100%; }
-    .abt_us .wrap:first-child form .sec_header {
-      text-align: center;
-      height: auto;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .abt_us .wrap:first-child form .sec_header h4 {
-        font-family: "avenir-bold", sans-serif;
-        font-size: 14px;
-        display: block; }
-      .abt_us .wrap:first-child form .sec_header .left_arrow {
-        display: none; }
-    .abt_us .wrap:first-child form button {
-      margin-top: 10px;
-      height: 36px; }
-    .abt_us .wrap:first-child form .sec .col {
-      width: 90%;
-      margin-bottom: 15px; }
-      .abt_us .wrap:first-child form .sec .col label {
-        font-size: 12px; }
-      .abt_us .wrap:first-child form .sec .col select, .abt_us .wrap:first-child form .sec .col input {
-        border: none;
-        width: 60%; }
-  .abt_us .wrap:last-child {
-    margin-top: 15px; }
-    .abt_us .wrap:last-child .text h2 {
-      padding-bottom: 10px; }
-    .abt_us .wrap:last-child .text h4 {
-      margin: 0; }
-    .abt_us .wrap:last-child .text h5 {
-      width: 95%;
-      margin: 0 auto; }
-    .abt_us .wrap:last-child .text button {
-      margin-top: 25px;
-      margin-bottom: 10px; }
   .how_it_works .wrap:last-child {
     margin-left: 20px; }
     .how_it_works .wrap:last-child .icon {

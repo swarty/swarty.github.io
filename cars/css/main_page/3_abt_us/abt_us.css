@@ -1,123 +1,71 @@
 .abt_us {
   background-image: url("../img/about_us_cars.png");
-  background-position: 50% 90%;
+  background-position: 50% 100%;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
           background-size: contain;
-  height: 100vh; }
-  .abt_us .wrap {
+  height: 80vh;
+  padding-top: 65px; }
+  .abt_us__wrap {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .abt_us .wrap form {
-      padding-bottom: 30px;
-      position: relative;
-      top: -80px;
-      background-color: #e8e8e8;
-      max-width: 1060px;
-      height: 350px;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-justify-content: space-around;
-          -ms-flex-pack: distribute;
-              justify-content: space-around;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .abt_us .wrap form .sec_header {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        position: relative;
-        top: -20px;
-        width: 100%;
-        background-color: #2d2d2d;
-        padding: 10px 20px; }
-        .abt_us .wrap form .sec_header h4 {
-          color: #fff;
-          text-transform: uppercase;
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: start;
-          -webkit-align-items: flex-start;
-              -ms-flex-align: start;
-                  align-items: flex-start; }
-        .abt_us .wrap form .sec_header h4:last-child {
-          color: #f00; }
-      .abt_us .wrap form .left_arrow {
-        position: relative;
-        top: 7px;
-        right: -380px;
-        border-left: 3px solid #fff;
-        border-bottom: 3px solid #fff; }
-      .abt_us .wrap form .left_arrow::before {
-        border-left: 3px solid #fff;
-        border-bottom: 3px solid #fff; }
-      .abt_us .wrap form .left_arrow::after {
-        border-left: 3px solid #fff;
-        border-bottom: 3px solid #fff; }
-      .abt_us .wrap form caption {
-        background-color: #2d2d2d; }
-      .abt_us .wrap form .sec {
-        width: 100%;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -webkit-justify-content: space-between;
-            -ms-flex-pack: justify;
-                justify-content: space-between; }
-        .abt_us .wrap form .sec .col {
-          margin: 0 50px;
-          width: 50%;
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-          -webkit-flex-direction: row;
-              -ms-flex-direction: row;
-                  flex-direction: row;
-          -webkit-box-pack: justify;
-          -webkit-justify-content: space-between;
-              -ms-flex-pack: justify;
-                  justify-content: space-between;
-          -webkit-box-align: center;
-          -webkit-align-items: center;
-              -ms-flex-align: center;
-                  align-items: center; }
-          .abt_us .wrap form .sec .col label {
-            width: 150px;
-            padding-right: 20px; }
-          .abt_us .wrap form .sec .col select, .abt_us .wrap form .sec .col input {
-            -webkit-border-radius: 0;
-                    border-radius: 0;
-            width: 250px;
-            height: 32px;
-            border: 1px solid #c8c8c8;
-            padding: 0 15px; }
-  .abt_us .text {
-    padding: 0 15px;
-    text-align: center; }
-    .abt_us .text h2 {
-      padding-top: 0;
-      padding-bottom: 25px; }
-    .abt_us .text h5 {
-      max-width: 630px; }
-    .abt_us .text button {
-      margin-top: 50px;
-      margin-left: 0; }
+  .abt_us__content {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 680px;
+    width: 100%; }
+  .abt_us__title {
+    margin-bottom: 40px; }
+  .abt_us__text {
+    margin-bottom: 60px; }
+  .abt_us button.abt_us__button {
+    margin-top: 0;
+    margin-left: 0; }
+
+@media (max-width: 1200px) {
+  .abt_us {
+    min-height: 400px; } }
+
+@media (max-width: 999px) {
+  .abt_us {
+    padding-top: 30px; }
+    .abt_us__content {
+      max-width: 550px; }
+    .abt_us__title {
+      margin-bottom: 30px; } }
+
+@media (max-width: 767px) {
+  .abt_us__content {
+    max-width: 500px; } }
+
+@media (max-width: 479px) {
+  .abt_us {
+    min-height: 450px;
+    padding-top: 15px; }
+    .abt_us__content {
+      padding: 0 15px;
+      max-width: 450px; }
+    .abt_us__title {
+      margin-bottom: 15px; }
+    .abt_us__text {
+      margin-bottom: 20px; }
+    .abt_us__button {
+      max-width: 200px; } }

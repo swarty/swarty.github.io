@@ -53,7 +53,7 @@
   position: relative; }
   .feedbacks__form .left_arrow {
     position: absolute;
-    top: 35%;
+    top: 30%;
     right: 10%; }
 
 .feedbacks__form-wr {
@@ -147,6 +147,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 30px; }
+  .feedbacks__name {
+    margin-right: 10px; }
+  .feedbacks__name, .feedbacks__date {
+    font-size: 12px; }
   .feedbacks__form {
     max-width: 85%;
     margin: 0 auto; }
@@ -164,10 +168,10 @@
   .feedbacks__form {
     max-width: 90%;
     margin-bottom: 40px; }
-    .feedbacks__form .left_arrow {
-      top: 30%; }
   .feedbacks__text {
     font-size: 13px; }
+  .feedbacks__name, .feedbacks__date {
+    font-size: 18px; }
   .feedbacks__name, .feedbacks__date {
     font-size: 14px; }
   .feedbacks__button {
