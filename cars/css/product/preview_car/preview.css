@@ -37,8 +37,11 @@
           -ms-flex-pack: end;
               justify-content: flex-end; }
     .wrap section:nth-child(1) .descr button {
-      width: 240px;
-      margin-top: 35px; }
+      max-width: 230px;
+      margin-top: 35px;
+      width: 100%; }
+      .wrap section:nth-child(1) .descr button a {
+        font-weight: bold; }
   .wrap section:nth-child(1) .descr:last-child {
     -webkit-box-pack: center;
     -webkit-justify-content: center;

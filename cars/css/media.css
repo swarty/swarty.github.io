@@ -1,3 +1,7 @@
+@media (min-width: 1284px) {
+  h2 span.red {
+    font-size: 36px; } }
+
 @media (max-width: 1500px) {
   .header_bg .wrap {
     padding-top: 100px; } }
@@ -80,9 +84,6 @@
     padding-bottom: 40px; }
   .control_proc .wrap button {
     margin-bottom: 50px; }
-  .menu_find {
-    padding-top: 40px;
-    padding-bottom: 50px; }
   .footer_contacts .wrap:last-child {
     padding-bottom: 40px; }
     .footer_contacts .wrap:last-child section:first-child {
@@ -149,32 +150,32 @@
     .header_menu .menu_burger {
       display: block;
       position: absolute;
-      top: 30%;
-      right: 30px;
+      top: 37%;
+      right: 20px;
       cursor: pointer; }
       .header_menu .menu_burger .burger {
         z-index: 3;
         position: absolute;
-        height: 5px;
+        height: 3px;
         -webkit-border-radius: 10px;
                 border-radius: 10px;
         background-color: #fff; }
         .header_menu .menu_burger .burger::before {
           content: "";
-          width: 50px;
-          height: 5px;
+          width: 30px;
+          height: 3px;
           background-color: #fff;
-          top: 20px;
+          top: 12px;
           display: block;
           position: relative;
           -webkit-border-radius: 10px;
                   border-radius: 10px; }
         .header_menu .menu_burger .burger::after {
           content: "";
-          width: 50px;
-          height: 5px;
+          width: 30px;
+          height: 3px;
           background-color: #fff;
-          top: 5px;
+          top: 3px;
           display: block;
           position: relative;
           -webkit-border-radius: 10px;
@@ -185,7 +186,7 @@
       z-index: 2;
       background-color: #f00; }
       .header_menu .wrap aside:first-child {
-        left: -25%;
+        left: -30%;
         position: relative; }
       .header_menu .wrap aside:last-child {
         display: -webkit-box;
@@ -473,41 +474,8 @@
         padding-top: 20px;
         padding-bottom: 40px; }
     .control_proc .wrap:last-child button {
-      margin-bottom: 40px; }
-  .menu_find {
-    overflow: hidden;
-    padding-top: 40px;
-    padding-bottom: 60px;
-    -webkit-background-size: cover;
-            background-size: cover;
-    background-position: 100% 0%; }
-    .menu_find .wrap:first-child {
-      padding-bottom: 30px; }
-      .menu_find .wrap:first-child .text h2 span {
-        display: block; }
-      .menu_find .wrap:first-child .text h5 {
-        display: none; }
-    .menu_find .wrap:nth-child(2), .menu_find .wrap:last-child {
-      padding-bottom: 0; }
-      .menu_find .wrap:nth-child(2) .request, .menu_find .wrap:last-child .request {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: justify;
-        -webkit-justify-content: space-between;
-            -ms-flex-pack: justify;
-                justify-content: space-between; }
-        .menu_find .wrap:nth-child(2) .request input, .menu_find .wrap:last-child .request input {
-          margin: 15px 0;
-          width: 60%; }
-        .menu_find .wrap:nth-child(2) .request button, .menu_find .wrap:last-child .request button {
-          margin-top: 35px; }
+      margin-bottom: 50px;
+      margin-top: 20px; }
   .footer_contacts {
     overflow: hidden;
     background-position: 50% 50%; }
@@ -528,7 +496,7 @@
         -webkit-order: 1;
             -ms-flex-order: 1;
                 order: 1;
-        padding: 0 25%;
+        padding: 0 15%;
         margin-bottom: 20px; }
         .footer_contacts .wrap:last-child section:nth-child(2) aside a:last-child {
           display: none; }
@@ -774,7 +742,7 @@
       padding-right: 0; }
     .header_menu .wrap aside:last-child a {
       margin-right: 0;
-      font-size: 10px; }
+      font-size: 13px; }
   .header_bg {
     -webkit-background-size: cover;
             background-size: cover;
@@ -865,13 +833,8 @@
     margin-bottom: 30px; }
   .control_proc .wrap:nth-child(2) .icon h4 {
     font-size: 13px;
-    padding-bottom: 20px; }
-  .menu_find {
-    padding-top: 25px; }
-    .menu_find .wrap:first-child {
-      padding-bottom: 20px; }
-    .menu_find .wrap:nth-child(2) .request input, .menu_find .wrap:last-child .request input {
-      width: 80%; }
+    padding-bottom: 20px;
+    max-width: 70%; }
   .footer_contacts .wrap:last-child {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;

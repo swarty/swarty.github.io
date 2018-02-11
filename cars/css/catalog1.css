@@ -49,7 +49,6 @@ h2 {
   font-weight: 900; }
   h2 span.red {
     color: #f00;
-    font-size: 36px;
     font-family: "avenir-bold", sans-serif; }
 
 h3 {
@@ -490,8 +489,8 @@ header {
 
 .header_menu .menu_burger {
   display: none;
-  width: 50px;
-  height: 30px; }
+  width: 30px;
+  height: 20px; }
 
 .head-bg {
   background-image: url("../img/header_bg_page2.jpg");
@@ -730,6 +729,30 @@ header {
       .content_main .wrap .left .docs_adv button {
         height: 30px;
         margin-top: 60px; }
+    .content_main .wrap .left .dots-cla {
+      position: absolute;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      top: 90%;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+          -ms-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
+      list-style: none; }
+      .content_main .wrap .left .dots-cla button {
+        width: 15px;
+        height: 15px;
+        border: none;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        background-color: #fff;
+        font-size: 0;
+        margin: 0 3px; }
+      .content_main .wrap .left .dots-cla .slick-active button {
+        border: none;
+        background-color: red; }
   .content_main .wrap .right article:last-child {
     margin-bottom: 0; }
   .content_main .wrap .right article {
