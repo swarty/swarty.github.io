@@ -53,8 +53,10 @@
       margin-bottom: 30px; } }
 
 @media (max-width: 767px) {
-  .abt_us__content {
-    max-width: 500px; } }
+  .abt_us {
+    height: auto; }
+    .abt_us__content {
+      max-width: 500px; } }
 
 @media (max-width: 479px) {
   .abt_us {
