@@ -31,3 +31,8 @@
               justify-content: space-between; }
       .request_field .wrap .request input {
         width: 340px; }
+
+@media (max-width: 999px) {
+  .request_field .request button {
+    max-width: 285px;
+    width: 100%; } }

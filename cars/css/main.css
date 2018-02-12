@@ -222,38 +222,37 @@ select {
         font-family: "avenir-bold", sans-serif;
         text-transform: uppercase;
         color: #fff; }
-      .modal .content .head span {
-        width: 10px;
-        height: 10px;
+      .modal .content .head .close {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 20px;
+        top: 35%;
+        -webkit-transform: translate(0, -20%);
+            -ms-transform: translate(0, -20%);
+                transform: translate(0, -20%);
         cursor: pointer; }
-      .modal .content .head span::before {
-        background-color: #f00;
-        width: 0px;
-        height: 16px;
-        content: " ";
-        display: block;
-        position: absolute;
-        -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-                transform: rotate(45deg);
-        right: 26px;
-        top: 30%;
-        cursor: pointer;
-        padding: 2px; }
-      .modal .content .head span::after {
-        background-color: #f00;
-        width: 0px;
-        height: 16px;
-        content: " ";
-        display: block;
-        position: absolute;
-        -webkit-transform: rotate(-45deg);
-            -ms-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-        right: 26px;
-        top: 30%;
-        cursor: pointer;
-        padding: 2px; }
+        .modal .content .head .close span {
+          display: block;
+          -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+                  transform: rotate(45deg);
+          width: 20px;
+          height: 3px;
+          background-color: #f00;
+          top: 10px;
+          position: relative; }
+          .modal .content .head .close span::before {
+            position: absolute;
+            content: "";
+            width: 20px;
+            height: 3px;
+            background-color: #f00;
+            -webkit-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                    transform: rotate(90deg);
+            top: 0px;
+            left: 0px; }
     .modal .content button {
       margin-top: 10px;
       margin-bottom: 30px; }
@@ -743,6 +742,11 @@ header {
       .request_field .wrap .request input {
         width: 340px; }
 
+@media (max-width: 999px) {
+  .request_field .request button {
+    max-width: 285px;
+    width: 100%; } }
+
 .why_us {
   padding-top: 80px;
   background-image: url("../img/why_us_bg_image.jpg");
@@ -978,7 +982,8 @@ header {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 100px; }
 
 .sold_stat__header {
   -webkit-box-pack: center;
@@ -1088,7 +1093,7 @@ header {
 
 @media (max-width: 769px) {
   .sold_stat .slick-dots {
-    width: 200px;
+    width: 70px;
     margin: 20px auto; }
     .sold_stat .slick-dots li {
       width: 10px;
@@ -1102,7 +1107,8 @@ header {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-bottom: 0; }
   .sold_stat__product {
     max-width: 640px;
     margin: 0 auto; }
@@ -1362,6 +1368,7 @@ header {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
+  padding-top: 30px;
   margin-bottom: 135px; }
 
 @media (max-width: 1599px) {
@@ -1384,7 +1391,7 @@ header {
 
 @media (max-width: 999px) {
   .feedbacks .slick-dots {
-    width: 200px;
+    width: 70px;
     margin: 30px auto; }
     .feedbacks .slick-dots li {
       width: 10px;
@@ -1416,7 +1423,15 @@ header {
     max-width: 85%;
     margin: 0 auto; }
   .feedbacks__button {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+  .feedbacks .left_arrow {
+    top: 25%; } }
+
+@media (max-width: 769px) {
+  .feedbacks__button {
+    padding-top: 0; }
+  .feedbacks .left_arrow {
+    top: 30%; } }
 
 @media (max-width: 479px) {
   .feedbacks .slick-dots {

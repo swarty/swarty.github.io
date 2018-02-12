@@ -99,16 +99,18 @@ $(".sold_stat__content").slick({
   slidesToScroll: 3,
   infinite: true,
   adaptiveHeight: true,
-  autoplay: true,
-  autoplaySpeed: 4000,
+  autoPlay: false,
   arrows: false,
-  dots: true,
+  dots: false,
   responsive: [
   {
     breakpoint: 769,
     settings: {
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
     }
   }
   ]
@@ -123,13 +125,16 @@ $(".feedbacks-slider").slick({
   autoplay: true,
   autoplaySpeed: 4000,
   arrows: false,
-  dots: true,
+  dots: false,
   responsive: [
   {
     breakpoint: 769,
     settings: {
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
     }
   }
   ]

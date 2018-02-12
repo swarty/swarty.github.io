@@ -101,6 +101,7 @@
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
+  padding-top: 30px;
   margin-bottom: 135px; }
 
 @media (max-width: 1599px) {
@@ -123,7 +124,7 @@
 
 @media (max-width: 999px) {
   .feedbacks .slick-dots {
-    width: 200px;
+    width: 70px;
     margin: 30px auto; }
     .feedbacks .slick-dots li {
       width: 10px;
@@ -155,7 +156,15 @@
     max-width: 85%;
     margin: 0 auto; }
   .feedbacks__button {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+  .feedbacks .left_arrow {
+    top: 25%; } }
+
+@media (max-width: 769px) {
+  .feedbacks__button {
+    padding-top: 0; }
+  .feedbacks .left_arrow {
+    top: 30%; } }
 
 @media (max-width: 479px) {
   .feedbacks .slick-dots {

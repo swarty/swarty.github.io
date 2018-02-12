@@ -33,7 +33,8 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 100px; }
 
 .sold_stat__header {
   -webkit-box-pack: center;
@@ -143,7 +144,7 @@
 
 @media (max-width: 769px) {
   .sold_stat .slick-dots {
-    width: 200px;
+    width: 70px;
     margin: 20px auto; }
     .sold_stat .slick-dots li {
       width: 10px;
@@ -157,7 +158,8 @@
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-bottom: 0; }
   .sold_stat__product {
     max-width: 640px;
     margin: 0 auto; }

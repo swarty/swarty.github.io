@@ -222,38 +222,37 @@ select {
         font-family: "avenir-bold", sans-serif;
         text-transform: uppercase;
         color: #fff; }
-      .modal .content .head span {
-        width: 10px;
-        height: 10px;
+      .modal .content .head .close {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 20px;
+        top: 35%;
+        -webkit-transform: translate(0, -20%);
+            -ms-transform: translate(0, -20%);
+                transform: translate(0, -20%);
         cursor: pointer; }
-      .modal .content .head span::before {
-        background-color: #f00;
-        width: 0px;
-        height: 16px;
-        content: " ";
-        display: block;
-        position: absolute;
-        -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-                transform: rotate(45deg);
-        right: 26px;
-        top: 30%;
-        cursor: pointer;
-        padding: 2px; }
-      .modal .content .head span::after {
-        background-color: #f00;
-        width: 0px;
-        height: 16px;
-        content: " ";
-        display: block;
-        position: absolute;
-        -webkit-transform: rotate(-45deg);
-            -ms-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-        right: 26px;
-        top: 30%;
-        cursor: pointer;
-        padding: 2px; }
+        .modal .content .head .close span {
+          display: block;
+          -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+                  transform: rotate(45deg);
+          width: 20px;
+          height: 3px;
+          background-color: #f00;
+          top: 10px;
+          position: relative; }
+          .modal .content .head .close span::before {
+            position: absolute;
+            content: "";
+            width: 20px;
+            height: 3px;
+            background-color: #f00;
+            -webkit-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                    transform: rotate(90deg);
+            top: 0px;
+            left: 0px; }
     .modal .content button {
       margin-top: 10px;
       margin-bottom: 30px; }
