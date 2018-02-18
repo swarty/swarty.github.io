@@ -41,10 +41,7 @@
     top: 5px; }
 
 .faq_content__text {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -175,3 +172,9 @@
         margin-bottom: 10px; }
   .faq_content__request {
     font-size: 20px; } }
+
+.openAcc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }

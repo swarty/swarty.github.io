@@ -130,3 +130,19 @@ if(document.querySelector(".header_bg__wrap")){
   arrows: false
 });
 }
+
+// faq accordion
+if(document.querySelector(".faq_content__carousel")){
+  let accordion = document.querySelectorAll(".faq_content__header");
+  accordion.forEach( (elemAccord) => {
+    elemAccord.addEventListener("click", openItemAcc(elemAccord));
+  });
+}
+
+// todo дописать функцию открывающую итем аккордиона
+
+function openItemAcc(value){
+  let nextElem = value.nextSibling;
+  console.log(nextElem)
+  nextElem.classList.toggle('openAcc');
+}

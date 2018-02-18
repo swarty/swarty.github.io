@@ -6,6 +6,8 @@
           background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+  .faq_header__wrap {
+    padding: 0 !important; }
   .faq_header__title {
     color: #fff;
     line-height: 1; }
@@ -32,7 +34,8 @@
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
-            align-items: flex-start; }
+            align-items: flex-start;
+    padding-left: 25px !important; }
   .faq_header__title {
     font-size: 30px; }
     .faq_header__title:last-child {
