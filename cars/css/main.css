@@ -26,7 +26,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   letter-spacing: .02em;
-  line-height: 1.5em;
   font-family: "avenir-medium", sans-serif; }
 
 h1, h2, h3, h4, h5, p {
@@ -492,28 +491,35 @@ header {
   height: 20px; }
 
 .header_bg {
-  height: -webkit-calc(100vh - 123px);
-  height: calc(100vh - 123px);
-  background-image: url("../img/header_bg_image.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 30%;
+  background-position: center;
   -webkit-background-size: cover;
-          background-size: cover; }
-  .header_bg .wrap {
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    padding-top: 170px; }
-
-.text {
+          background-size: cover;
+  background-repeat: no-repeat;
   position: relative; }
-  .text h4 {
-    width: 630px;
-    padding: 15px; }
-  .text button {
-    margin-top: 90px;
-    margin-left: 50%; }
+  .header_bg__contant {
+    margin-top: 130px;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    .header_bg__contant button {
+      margin-right: 85px; }
+  .header_bg__title {
+    margin-bottom: 48px; }
+  .header_bg__text {
+    font-size: 18px;
+    max-width: 630px;
+    margin-bottom: 95px; }
 
 .abt_us {
   background-image: url("../img/about_us_cars.png");

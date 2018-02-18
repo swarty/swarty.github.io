@@ -49,136 +49,84 @@ if(document.getElementById('sendRequest')){
 }
 
 //yputube api
-function youtube(){
-  var tag = document.createElement('script');
 
-  tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-// 3. This function creates an <iframe> (and YouTube player)
-//    after the API code downloads.
-var player;
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('player', {
-    height: '360',
-    width: '640',
-    videoId: 'pVuqMFgmny4',
-    events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
+if(document.querySelector(".sold_stat__content")){
+  $(".sold_stat__content").slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    infinite: true,
+    adaptiveHeight: true,
+    autoPlay: false,
+    arrows: false,
+    dots: false,
+    responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+      }
     }
+    ]
   });
 }
 
-// 4. The API will call this function when the video player is ready.
-function onPlayerReady(event) {
-  event.target.playVideo();
-}
-
-// 5. The API calls this function when the player's state changes.
-//    The function indicates that when playing a video (state=1),
-//    the player should play for six seconds and then stop.
-var done = false;
-function onPlayerStateChange(event) {
-  if (event.data == YT.PlayerState.PLAYING && !done) {
-    setTimeout(stopVideo, 6000);
-    done = true;
-  }
-}
-function stopVideo() {
-  player.stopVideo();
-}
-}
-youtube();
-
-
-
-$(".sold_stat__content").slick({
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  infinite: true,
-  adaptiveHeight: true,
-  autoPlay: false,
-  arrows: false,
-  dots: false,
-  responsive: [
-  {
-    breakpoint: 769,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: true,
-      autoplay: true,
-      autoplaySpeed: 4000,
+if(document.querySelector(".feedbacks-slider")){
+  $(".feedbacks-slider").slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    infinite: true,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    arrows: false,
+    dots: false,
+    responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+      }
     }
-  }
-  ]
-});
+    ]
+  });
+}
 
+if(document.querySelector(".slider-content-main")){
+  $(".slider-content-main").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    arrows: false,
+    dots: true,
+    dotsClass: 'dots-cla',
+    responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    ]
+  });
+}
 
-$(".feedbacks-slider").slick({
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  infinite: true,
-  adaptiveHeight: true,
-  autoplay: true,
+if(document.querySelector(".header_bg__wrap")){
+  $(".header_bg__wrap").slick({
+  // autoplay: true,
   autoplaySpeed: 4000,
-  arrows: false,
-  dots: false,
-  responsive: [
-  {
-    breakpoint: 769,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: true,
-      autoplay: true,
-      autoplaySpeed: 4000,
-    }
-  }
-  ]
+  arrows: false
 });
-
-$(".slider-content-main").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  infinite: true,
-  adaptiveHeight: true,
-  autoplay: true,
-  autoplaySpeed: 4000,
-  arrows: false,
-  dots: true,
-  dotsClass: 'dots-cla',
-  responsive: [
-  {
-    breakpoint: 769,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-  }
-  ]
-});
-
-
-
-// $(".slider_bg-wrap").slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   infinite: true,
-//   adaptiveHeight: true,
-//   autoplay: true,
-//   autoplaySpeed: 4000,
-//   arrows: false,
-//   dots: true,
-//   responsive: [
-//   {
-//     breakpoint: 769,
-//     settings: {
-//       slidesToShow: 1,
-//       slidesToScroll: 1
-//     }
-//   }
-//   ]
-// });
+}
