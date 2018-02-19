@@ -27,20 +27,25 @@
     display: flex;
     position: absolute;
     left: 0;
-    top: -10%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     font-size: 28px;
     color: #fff;
     background-color: #f00;
     width: 41px;
     height: 41px; }
-  .faq_content__header::after {
-    content: url("../../img/faq-arrow-down.png");
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 5px; }
+
+.faq_content__arrow {
+  position: absolute;
+  right: 0;
+  top: 0; }
 
 .faq_content__text {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
   display: none;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;

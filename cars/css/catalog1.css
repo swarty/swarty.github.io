@@ -30,6 +30,10 @@
 
 h1, h2, h3, h4, h5, p {
   color: #2d2d2d; }
+  h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, p::-moz-selection {
+    background-color: #f00; }
+  h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, p::selection {
+    background-color: #f00; }
 
 h1, h2, h3 {
   font-family: "avenir-bold", sans-serif; }
@@ -87,7 +91,10 @@ div[class*=".bg-"] {
   -webkit-border-radius: 20px;
           border-radius: 20px;
   border: 1px solid #fff;
-  background-color: inherit; }
+  background-color: inherit;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; }
   .btn__red {
     text-align: center;
     border: 1px solid #f00;

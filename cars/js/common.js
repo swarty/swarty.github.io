@@ -123,26 +123,44 @@ if(document.querySelector(".slider-content-main")){
   });
 }
 
-if(document.querySelector(".header_bg__wrap")){
-  $(".header_bg__wrap").slick({
+if(document.querySelector(".header_bg__slider")){
+  $(".header_bg__slider").slick({
   // autoplay: true,
-  autoplaySpeed: 4000,
+  autoplaySpeed: 3500,
   arrows: false
 });
 }
 
 // faq accordion
 if(document.querySelector(".faq_content__carousel")){
+  // js
+
+  // accordion and images close
   let accordion = document.querySelectorAll(".faq_content__header");
   accordion.forEach( (elemAccord) => {
-    elemAccord.addEventListener("click", openItemAcc(elemAccord));
+    elemAccord.addEventListener('click', () => {
+      let nextNode = elemAccord.nextSibling;
+      nextNode.classList.toggle('openAcc');
+      if(elemAccord.querySelector('.faq_content__arrow').getAttribute('src') == 'img/faq-arrow-down.png'){
+      elemAccord.querySelector('.faq_content__arrow').setAttribute('src', 'img/faq-close.png');
+    } else {
+      elemAccord.querySelector('.faq_content__arrow').setAttribute('src', 'img/faq-arrow-down.png');
+    }
+    });
   });
 }
 
+
+// let accordion = document.querySelectorAll(".faq_content__header");
+  // accordion.forEach( (elemAccord) => {
+  //   elemAccord.addEventListener("click", openItemAcc(elemAccord));
+  // });
+
 // todo дописать функцию открывающую итем аккордиона
 
-function openItemAcc(value){
-  let nextElem = value.nextSibling;
-  console.log(nextElem)
-  nextElem.classList.toggle('openAcc');
-}
+// function openItemAcc(value){
+//   let nextElem = value.nextSibling;
+//   console.log(nextElem)
+//   nextElem.classList.toggle('openAcc');
+// }
+

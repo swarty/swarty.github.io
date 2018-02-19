@@ -35,6 +35,7 @@
   .abt_us__title {
     margin-bottom: 40px; }
   .abt_us__text {
+    line-height: 1.5em;
     margin-bottom: 60px; }
   .abt_us button.abt_us__button {
     margin-top: 0;
