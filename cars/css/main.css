@@ -508,6 +508,58 @@ header {
     position: absolute;
     top: 0;
     left: 0; }
+    .header_bg__slider .slick-arrow {
+      position: absolute;
+      z-index: 10;
+      border: none;
+      background-color: inherit;
+      font-size: 0;
+      width: 12px;
+      height: 12px; }
+    .header_bg__slider .slick-next {
+      border-right: 3px solid #e5e5e5;
+      border-bottom: 3px solid #e5e5e5;
+      right: 16px;
+      top: 50%;
+      -webkit-transform: translateY(-50%) rotate(-45deg);
+          -ms-transform: translateY(-50%) rotate(-45deg);
+              transform: translateY(-50%) rotate(-45deg); }
+    .header_bg__slider .slick-prev {
+      left: 16px;
+      top: 50%;
+      -webkit-transform: translateY(-50%) rotate(45deg);
+          -ms-transform: translateY(-50%) rotate(45deg);
+              transform: translateY(-50%) rotate(45deg);
+      border-left: 3px solid #e5e5e5;
+      border-bottom: 3px solid #e5e5e5; }
+    .header_bg__slider .slick-dots {
+      width: 50px;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      bottom: 20px;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      left: 50%;
+      position: absolute;
+      z-index: 1;
+      list-style: none;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .header_bg__slider .slick-dots button {
+        width: 12px;
+        height: 12px;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        border: none;
+        background-color: #9e9e9e;
+        font-size: 0; }
+      .header_bg__slider .slick-dots .slick-active button {
+        background-color: #fff; }
   .header_bg__slide {
     position: relative;
     width: 100%; }
@@ -611,12 +663,16 @@ header {
     margin-right: 0; } }
 
 @media (max-width: 767px) {
-  .header_bg__title {
-    margin-bottom: 15px;
-    font-size: 18px; }
-  .header_bg__text {
-    margin-bottom: 15px;
-    font-size: 12px; } }
+  .header_bg {
+    min-height: 320px; }
+    .header_bg__img-wr {
+      height: 320px; }
+    .header_bg__title {
+      margin-bottom: 15px;
+      font-size: 18px; }
+    .header_bg__text {
+      margin-bottom: 15px;
+      font-size: 12px; } }
 
 .abt_us {
   background-image: url("../img/about_us_cars.png");

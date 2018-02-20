@@ -104,7 +104,6 @@ if(document.querySelector(".slider-content-main")){
   $(".slider-content-main").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    infinite: true,
     adaptiveHeight: true,
     autoplay: true,
     autoplaySpeed: 4000,
@@ -113,11 +112,8 @@ if(document.querySelector(".slider-content-main")){
     dotsClass: 'dots-cla',
     responsive: [
     {
-      breakpoint: 769,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
+      breakpoint: 1283,
+      settings: "unslick"
     }
     ]
   });
@@ -127,7 +123,17 @@ if(document.querySelector(".header_bg__slider")){
   $(".header_bg__slider").slick({
   // autoplay: true,
   autoplaySpeed: 3500,
-  arrows: false
+  arrows: false,
+  responsive: [
+  {
+    breakpoint: 1023,
+    settings:{
+      dots: true,
+      appendDots: ".header_bg__slider",
+      arrows: true,
+      appendArrows: ".header_bg__slider"
+    }
+  }]
 });
 }
 
@@ -142,10 +148,10 @@ if(document.querySelector(".faq_content__carousel")){
       let nextNode = elemAccord.nextSibling;
       nextNode.classList.toggle('openAcc');
       if(elemAccord.querySelector('.faq_content__arrow').getAttribute('src') == 'img/faq-arrow-down.png'){
-      elemAccord.querySelector('.faq_content__arrow').setAttribute('src', 'img/faq-close.png');
-    } else {
-      elemAccord.querySelector('.faq_content__arrow').setAttribute('src', 'img/faq-arrow-down.png');
-    }
+        elemAccord.querySelector('.faq_content__arrow').setAttribute('src', 'img/faq-close.png');
+      } else {
+        elemAccord.querySelector('.faq_content__arrow').setAttribute('src', 'img/faq-arrow-down.png');
+      }
     });
   });
 }
