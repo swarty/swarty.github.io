@@ -9,6 +9,36 @@ if(document.querySelector("#burger")){
 }
 
 
+// price catalog slider
+if(document.querySelector('#price-slider')){
+  $('#price-slider').ionRangeSlider({
+    type: 'double',
+    from: 1000,
+    to: 5000,
+    min: 0,
+    max: 10000
+  });
+
+  //take values to inputs
+  $('.irs-from').mouseout(function(){
+    document.addEventListener("DOMContentLoaded", lal = () =>{
+      console.log("1")
+      let from = +$('.irs-from').html();
+      $('#from-slide').val(from);
+
+
+      let to = +$('.irs-to').html();
+      $('#to-slide').val(to);
+    });
+    //todo следить за изменением from  to
+    
+  });  
+}
+
+
+
+
+
 
 //popup
 if(document.getElementById('myModal')){

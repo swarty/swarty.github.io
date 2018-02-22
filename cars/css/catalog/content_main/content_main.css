@@ -110,10 +110,33 @@
           text-align: center; }
         .content_main .wrap .left .filters .calc .price input {
           margin-right: 0;
-          width: 90px;
+          width: 85px;
           -webkit-border-radius: 20px;
                   border-radius: 20px;
           height: 20px; }
+        .content_main .wrap .left .filters .calc .price .form {
+          text-align: center;
+          margin: 0;
+          margin-top: 15px; }
+        .content_main .wrap .left .filters .calc .price .input {
+          margin: 0;
+          margin-top: 10px;
+          padding: 0 43px; }
+          .content_main .wrap .left .filters .calc .price .input .irs-line {
+            height: 7px;
+            background-color: #fff; }
+          .content_main .wrap .left .filters .calc .price .input .irs-min, .content_main .wrap .left .filters .calc .price .input .irs-max, .content_main .wrap .left .filters .calc .price .input .irs-from, .content_main .wrap .left .filters .calc .price .input .irs-to {
+            display: none; }
+          .content_main .wrap .left .filters .calc .price .input .irs-bar {
+            border: none;
+            height: 6px;
+            background: #f00; }
+          .content_main .wrap .left .filters .calc .price .input .from, .content_main .wrap .left .filters .calc .price .input .to {
+            width: 20px;
+            height: 20px;
+            border: none;
+            background: #fff;
+            border: 5px solid #f00; }
         .content_main .wrap .left .filters .calc button {
           padding: 5px 40px;
           -webkit-align-self: center;
