@@ -20,6 +20,9 @@ if(document.querySelector('#price-slider')){
   });
 
   //take values to inputs
+
+
+  // todo
   $('.irs-from').mouseout(function(){
     document.addEventListener("DOMContentLoaded", lal = () =>{
       console.log("1")
@@ -130,8 +133,10 @@ if(document.querySelector(".feedbacks-slider")){
   });
 }
 
-if(document.querySelector(".slider-content-main")){
-  $(".slider-content-main").slick({
+
+// slider contant
+if(document.querySelector(".contant_main__slider")){
+  $(".contant_main__slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
@@ -139,13 +144,13 @@ if(document.querySelector(".slider-content-main")){
     autoplaySpeed: 4000,
     arrows: false,
     dots: true,
-    dotsClass: 'dots-cla',
-    responsive: [
-    {
-      breakpoint: 1283,
-      settings: "unslick"
-    }
-    ]
+    dotsClass: 'contant_main__slide-dots'
+    // responsive: [
+    // {
+    //   breakpoint: 1283,
+    //   settings: "unslick"
+    // }
+    // ]
   });
 }
 
@@ -186,17 +191,14 @@ if(document.querySelector(".faq_content__carousel")){
   });
 }
 
-
-// let accordion = document.querySelectorAll(".faq_content__header");
-  // accordion.forEach( (elemAccord) => {
-  //   elemAccord.addEventListener("click", openItemAcc(elemAccord));
-  // });
-
-// todo дописать функцию открывающую итем аккордиона
-
-// function openItemAcc(value){
-//   let nextElem = value.nextSibling;
-//   console.log(nextElem)
-//   nextElem.classList.toggle('openAcc');
-// }
+if(document.querySelector(".contant_main__sup-title")){
+  let accordion = document.querySelectorAll('.contant_main__sup-title'); 
+  accordion.forEach( (elemAccord) => {
+    elemAccord.addEventListener('click', () => {
+      let nextNode = elemAccord.nextSibling;
+      nextNode.classList.toggle('openAcc');
+      elemAccord.classList.toggle('contant_main__sup-title-after')
+    })
+  })
+}
 
