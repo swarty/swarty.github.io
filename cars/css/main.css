@@ -35,6 +35,9 @@ h1, h2, h3, h4, h5, p {
   h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, p::selection {
     background-color: #f00; }
 
+.body-overflow {
+  overflow: hidden; }
+
 h1, h2, h3 {
   font-family: "avenir-bold", sans-serif; }
 

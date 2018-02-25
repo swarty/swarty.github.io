@@ -28,3 +28,13 @@
             transform: rotate(-135deg);
     top: 35%;
     left: 20px; }
+
+@media (max-width: 1599px) {
+  .botnav {
+    padding: 0 10px; }
+    .botnav .pages {
+      margin: 35px 0; } }
+
+@media (max-width: 768px) {
+  .botnav {
+    display: none; } }

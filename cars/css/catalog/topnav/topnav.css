@@ -61,3 +61,11 @@
             transform: rotate(-135deg);
     top: 35%;
     left: 20px; }
+
+@media (max-width: 1599px) {
+  .topnav {
+    padding: 0 10px; } }
+
+@media (max-width: 768px) {
+  .topnav {
+    display: none; } }

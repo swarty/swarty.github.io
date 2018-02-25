@@ -51,18 +51,29 @@ var btn = document.getElementById("btn_popup");
 var but = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+  $("#myModal").fadeIn();
+  $('body').toggleClass('body-overflow');
 }
 
 but.onclick = function() {
-  modal.style.display = "none";
+  $('body').removeClass('body-overflow');
+  $("#myModal").fadeOut();
 }
+}
+
+// popup request
+if(document.querySelector('#popupRequest')){
+  $('.request').click( function(){
+    $('#popupRequest').fadeIn();
+    $('body').toggleClass('body-overflow');
+  })
+
+  $('.popup__close, .popup__layer').click( function(){
+    $('body').removeClass('body-overflow');
+    $('#popupRequest').fadeOut();
+  })
+    // 
+  // $('.popup__close').$('#popupRequest').fadeOut();
 }
 
 //popupProduct
@@ -79,6 +90,20 @@ if(document.getElementById('sendRequest')){
   close.onclick = function() {
     newWind.style.display = "none";
   }
+}
+
+// popup gallery catalog
+// .contant_main__open-img
+if(document.querySelector(".contant_main__open-img")){
+  let openGallery = document.querySelectorAll('.contant_main__open-img');
+  openGallery.forEach( (elem) => {
+    elem.addEventListener('click', () => {
+      $('#popupGallery').fadeIn();
+    });
+  });
+  $('.popup__layer').click( function(){
+    $('#popupGallery').fadeOut();
+  });
 }
 
 //yputube api
@@ -144,13 +169,13 @@ if(document.querySelector(".contant_main__slider")){
     autoplaySpeed: 4000,
     arrows: false,
     dots: true,
-    dotsClass: 'contant_main__slide-dots'
-    // responsive: [
-    // {
-    //   breakpoint: 1283,
-    //   settings: "unslick"
-    // }
-    // ]
+    dotsClass: 'contant_main__slide-dots',
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: "unslick"
+    }
+    ]
   });
 }
 
@@ -170,6 +195,28 @@ if(document.querySelector(".header_bg__slider")){
     }
   }]
 });
+}
+
+// slider-car-catalog
+if(document.querySelector(".contant_main__wraps-slider")){
+  $('.contant_main__wraps-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: false,
+    dots: true,
+    dotsClass: 'contant_main__slide-dots',
+    responsive: [
+  {
+    breakpoint: 768,
+    settings:{
+      dots: false
+    }
+  }]
+  });
+
 }
 
 // faq accordion
