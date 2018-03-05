@@ -38,7 +38,64 @@ if(document.querySelector('#price-slider')){
   });  
 }
 
+if(document.querySelector('#player')){
+  var tag = document.createElement('script');
 
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '360',
+          width: '640',
+          videoId: 'M7lc1UVf-VE',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+}
+
+// product popup image resize
+if(document.querySelector('.img-product-slider1')){
+  $('.bg-shop_1').click(function(e){
+    let img = $('.bg-shop_1').prev();
+    let popImg = $('.popImg');
+    let imgVal = img.attr('src');
+    popImg.attr('src', `${imgVal}`);
+    $('.popupImg').fadeIn();
+    $('body').addClass('body-overflow');
+  })
+
+  $('.popupLayer, .close').click(function(e){
+    $('body').removeClass('body-overflow');
+    $('.popupImg').fadeOut();
+  })
+}
 
 
 
@@ -99,9 +156,11 @@ if(document.querySelector(".contant_main__open-img")){
   openGallery.forEach( (elem) => {
     elem.addEventListener('click', () => {
       $('#popupGallery').fadeIn();
+      $('body').toggleClass('body-overflow');
     });
   });
   $('.popup__layer').click( function(){
+    $('body').removeClass('body-overflow');
     $('#popupGallery').fadeOut();
   });
 }
@@ -217,6 +276,34 @@ if(document.querySelector(".contant_main__wraps-slider")){
   }]
   });
 
+}
+
+if(document.querySelector('.img-product-slider1')){
+  $('.img-product-slider1').slick({
+    arrows: false,
+    slideToShow: 1,
+    infinite: true,
+    slideToScroll: 1,
+    autoplay: false,
+    // autoplay: true,
+    // autoplaySpeed: 5000,
+    asNavFor: ".gallery-img-slider2"
+  });
+}
+
+if(document.querySelector('.gallery-img-slider2')){
+  $('.gallery-img-slider2').slick({
+    arrows: false,
+    slidesToShow: 6,
+    infinite: true,
+    centerPadding: "10px",
+    slidesToScroll: 5,
+    centerMode: false,
+    autoplay: false,
+    asNavFor: ".img-product-slider1",
+    dots: true,
+    appendDots: '.gallery-img-slider2'
+  });
 }
 
 // faq accordion

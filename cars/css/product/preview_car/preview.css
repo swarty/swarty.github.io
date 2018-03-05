@@ -1,3 +1,6 @@
+.preview__car {
+  margin-bottom: 95px; }
+
 .wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -39,9 +42,12 @@
     .wrap section:nth-child(1) .descr button {
       max-width: 230px;
       margin-top: 35px;
+      height: 33px;
       width: 100%; }
       .wrap section:nth-child(1) .descr button a {
         font-weight: bold; }
+    .wrap section:nth-child(1) .descr .btn__white a {
+      font-size: 18px; }
   .wrap section:nth-child(1) .descr:last-child {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -51,26 +57,85 @@
     .wrap section:nth-child(1) .descr:last-child div {
       margin-right: 20px; }
   .wrap section:nth-child(2) .img {
-    position: relative; }
-    .wrap section:nth-child(2) .img img {
-      position: relative;
-      width: 100%; }
+    position: relative;
+    max-width: 875px;
+    width: 100%; }
+    .wrap section:nth-child(2) .img .img-slide {
+      margin-bottom: 15px;
+      width: 100%;
+      display: block; }
+      .wrap section:nth-child(2) .img .img-slide img {
+        width: 100%;
+        height: auto;
+        -o-object-fit: cover;
+           object-fit: cover;
+        display: block; }
     .wrap section:nth-child(2) .img .bg-shop_1 {
       position: absolute;
       right: 50px;
       bottom: 30px; }
   .wrap section:nth-child(2) .img:hover .bg-shop_1 {
     display: block; }
-  .wrap section:nth-child(2) .gallery img {
-    margin: 15px 5px 0 5px;
-    width: 140px;
-    height: auto; }
-  .wrap section:nth-child(2) .gallery img:first-child {
-    margin-left: 0; }
-  .wrap section:nth-child(2) .gallery img:last-child {
-    margin-right: 0; }
+  .wrap section:nth-child(2) .gallery {
+    max-width: 875px;
+    width: 100%; }
+    .wrap section:nth-child(2) .gallery .img-gallery-slide {
+      margin: 0 7px;
+      max-width: 140px;
+      width: 100%; }
+      .wrap section:nth-child(2) .gallery .img-gallery-slide:first-child {
+        margin-left: 0; }
+      .wrap section:nth-child(2) .gallery .img-gallery-slide:last-child {
+        margin-right: 0; }
+      .wrap section:nth-child(2) .gallery .img-gallery-slide img {
+        width: 100%;
+        height: auto;
+        display: block; }
+    .wrap section:nth-child(2) .gallery .slick-dots {
+      position: absolute;
+      list-style: none;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      bottom: -40px; }
+      .wrap section:nth-child(2) .gallery .slick-dots .slick-active button {
+        color: #f00; }
+      .wrap section:nth-child(2) .gallery .slick-dots button {
+        border: none;
+        background-color: inherit;
+        margin: 0 5px;
+        cursor: pointer; }
+  .wrap .img-product-slider1 .img-slide {
+    position: relative; }
+  .wrap .img-product-slider1 .bg-shop_1 {
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    cursor: pointer;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .wrap .img-product-slider1 .bg-shop_1:hover {
+      -webkit-transform: scale(1.1) rotate(15deg);
+          -ms-transform: scale(1.1) rotate(15deg);
+              transform: scale(1.1) rotate(15deg); }
   .wrap .modal {
     width: auto; }
+    .wrap .modal .head {
+      position: relative; }
+    .wrap .modal #close {
+      position: absolute;
+      cursor: pointer;
+      right: 20px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
     .wrap .modal div {
       background-color: #e8e8e8;
       display: -webkit-box;
@@ -116,3 +181,36 @@
           outline: none;
           margin-bottom: 2px;
           resize: none; }
+  .wrap .popupImg {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 49; }
+    .wrap .popupImg .popupLayer {
+      position: absolute;
+      z-index: 50;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8); }
+    .wrap .popupImg .popup-wr {
+      position: absolute;
+      z-index: 51;
+      padding: 20px;
+      max-width: 100%;
+      height: auto;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+      .wrap .popupImg .popup-wr .close {
+        position: absolute;
+        z-index: 50;
+        right: -10px;
+        top: -10px;
+        cursor: pointer; }
