@@ -398,6 +398,7 @@ header {
       border-left: 2px solid #f00;
       border-bottom: 2px solid #f00; }
     .header_menu nav ul .dropdown, .header_menu nav li .dropdown {
+      z-index: 10;
       position: absolute;
       padding: 15px 20px;
       left: -20px;
@@ -1020,6 +1021,13 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 40px; }
+
+.sold_stat__services div {
+  margin-right: 10px; }
+
+.sold_stat__services button {
+  max-width: 50%;
+  width: 100%; }
 
 .left_arrow {
   position: relative;

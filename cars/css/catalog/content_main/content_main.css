@@ -1,8 +1,35 @@
+.block-class {
+  display: block !important; }
+
 #from, #to {
   width: 88px;
   height: 20px;
   margin: 0 10px;
   text-align: center; }
+
+.contact_main__input {
+  width: 16px;
+  height: 16px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  cursor: pointer; }
+
+.contact_main__input-in {
+  z-index: 100;
+  display: none;
+  width: 9px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 9px;
+  background-color: #f00;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
 
 .contant_main .openAcc {
   display: block; }
@@ -45,11 +72,13 @@
           flex-direction: column;
   margin-bottom: 35px; }
   .contant_main__selection input {
+    opacity: 0;
     outline: none; }
   .contant_main__selection label {
     margin-left: 15px;
     cursor: pointer; }
   .contant_main__selection p {
+    position: relative;
     margin-bottom: 10px;
     margin-left: 30px; }
 
@@ -441,7 +470,7 @@
     margin: 0 auto;
     position: absolute;
     z-index: 55;
-    top: 45%;
+    top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);

@@ -104,6 +104,13 @@
   font-size: 18px; }
 
 @media (max-width: 1200px) {
+  .sold_stat__services {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
   .sold_stat__header {
     padding-top: 50px;
     margin-bottom: 50px; }
@@ -131,8 +138,6 @@
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around; }
-  .sold_stat__product {
-    max-width: 250px; }
   .sold_stat__car-title, .sold_stat__price {
     font-size: 12px; }
   .sold_stat__oil, .sold_stat__motor {

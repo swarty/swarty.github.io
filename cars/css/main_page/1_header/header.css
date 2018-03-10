@@ -122,6 +122,7 @@ header {
       border-left: 2px solid #f00;
       border-bottom: 2px solid #f00; }
     .header_menu nav ul .dropdown, .header_menu nav li .dropdown {
+      z-index: 10;
       position: absolute;
       padding: 15px 20px;
       left: -20px;

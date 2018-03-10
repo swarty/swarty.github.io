@@ -4,3 +4,10 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 40px; }
+
+.sold_stat__services div {
+  margin-right: 10px; }
+
+.sold_stat__services button {
+  max-width: 50%;
+  width: 100%; }

@@ -41,9 +41,9 @@ if(document.querySelector('#price-slider')){
 if(document.querySelector('#player')){
   var tag = document.createElement('script');
 
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
@@ -78,7 +78,7 @@ if(document.querySelector('#player')){
       function stopVideo() {
         player.stopVideo();
       }
-}
+    }
 
 // product popup image resize
 if(document.querySelector('.img-product-slider1')){
@@ -150,11 +150,16 @@ if(document.getElementById('sendRequest')){
 }
 
 // popup gallery catalog
-// .contant_main__open-img
+
+// .contant_main__open-img open popup and change image on current
 if(document.querySelector(".contant_main__open-img")){
   let openGallery = document.querySelectorAll('.contant_main__open-img');
+  let popupGal = document.querySelector('#popupGallery');
+  let img = popupGal.querySelector('img');
   openGallery.forEach( (elem) => {
     elem.addEventListener('click', () => {
+      let imgGal = elem.previousSibling.getAttribute('src');
+      img.setAttribute('src', imgGal);
       $('#popupGallery').fadeIn();
       $('body').toggleClass('body-overflow');
     });
@@ -164,8 +169,6 @@ if(document.querySelector(".contant_main__open-img")){
     $('#popupGallery').fadeOut();
   });
 }
-
-//yputube api
 
 
 if(document.querySelector(".sold_stat__content")){
@@ -268,12 +271,12 @@ if(document.querySelector(".contant_main__wraps-slider")){
     dots: true,
     dotsClass: 'contant_main__slide-dots',
     responsive: [
-  {
-    breakpoint: 768,
-    settings:{
-      dots: false
-    }
-  }]
+    {
+      breakpoint: 768,
+      settings:{
+        dots: false
+      }
+    }]
   });
 
 }
@@ -307,6 +310,7 @@ if(document.querySelector('.gallery-img-slider2')){
 }
 
 // faq accordion
+
 if(document.querySelector(".faq_content__carousel")){
   // js
 
@@ -336,3 +340,100 @@ if(document.querySelector(".contant_main__sup-title")){
   })
 }
 
+
+// product radiobuttons
+
+// type
+if(document.querySelector('.contant_main__type')){
+  let dom = document.querySelector('.contant_main__type')
+  let input = dom.querySelectorAll('.contact_main__input');
+  let ind = null;
+  input.forEach((elem,index) => {
+    let next = elem.nextSibling;
+    next.addEventListener('click', () =>{
+      // input[number].firstElementChild.classList.remove('block-class');
+      if(typeof ind != "object"){ 
+        input[ind].firstElementChild.classList.remove('block-class')
+      }
+      elem.firstElementChild.classList.toggle('block-class');
+      ind = index;
+    })
+    // val.classList.remove('block-class');
+  })
+}
+
+// brand
+if(document.querySelector('.contant_main__brand')){
+  let dom = document.querySelector('.contant_main__brand')
+  let input = dom.querySelectorAll('.contact_main__input');
+  let ind = null;
+  input.forEach((elem,index) => {
+    let next = elem.nextSibling;
+    next.addEventListener('click', () =>{
+      // input[number].firstElementChild.classList.remove('block-class');
+      if(typeof ind != "object"){ 
+        input[ind].firstElementChild.classList.remove('block-class')
+      }
+      elem.firstElementChild.classList.toggle('block-class');
+      ind = index;
+    })
+    // val.classList.remove('block-class');
+  })
+}
+
+// oil
+if(document.querySelector('.contant_main__oil')){
+  let dom = document.querySelector('.contant_main__oil')
+  let input = dom.querySelectorAll('.contact_main__input');
+  let ind = null;
+  input.forEach((elem,index) => {
+    let next = elem.nextSibling;
+    next.addEventListener('click', () =>{
+      // input[number].firstElementChild.classList.remove('block-class');
+      if(typeof ind != "object"){ 
+        input[ind].firstElementChild.classList.remove('block-class')
+      }
+      elem.firstElementChild.classList.toggle('block-class');
+      ind = index;
+    })
+    // val.classList.remove('block-class');
+  })
+}
+
+// kpp
+if(document.querySelector('.contant_main__kpp')){
+  let dom = document.querySelector('.contant_main__kpp')
+  let input = dom.querySelectorAll('.contact_main__input');
+  let ind = null;
+  input.forEach((elem,index) => {
+    let next = elem.nextSibling;
+    next.addEventListener('click', () =>{
+      // input[number].firstElementChild.classList.remove('block-class');
+      if(typeof ind != "object"){ 
+        input[ind].firstElementChild.classList.remove('block-class')
+      }
+      elem.firstElementChild.classList.toggle('block-class');
+      ind = index;
+    })
+    // val.classList.remove('block-class');
+  })
+}
+
+// privod
+if(document.querySelector('.contant_main__privod')){
+  let dom = document.querySelector('.contant_main__privod')
+  let input = dom.querySelectorAll('.contact_main__input');
+  let ind = null;
+  input.forEach((elem,index) => {
+    let next = elem.nextSibling;
+    next.addEventListener('click', () =>{
+      // input[number].firstElementChild.classList.remove('block-class');
+      if(typeof ind != "object"){ 
+        input[ind].firstElementChild.classList.remove('block-class')
+      }
+      elem.firstElementChild.classList.toggle('block-class');
+      ind = index;
+    })
+    // val.classList.remove('block-class');
+  })
+}
