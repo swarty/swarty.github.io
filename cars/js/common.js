@@ -19,23 +19,18 @@ if(document.querySelector('#price-slider')){
     max: 10000
   });
 
-  //take values to inputs
+  let fromIn = document.querySelector('#from').value = document.querySelector('.irs-from').textContent;
+  let toIn = document.querySelector('#to').value = document.querySelector('.irs-to').textContent;
+  //take values from price slider
+  $('#price-slider').on('change', function(){
+    var $this=$(this),
+        from = $this.data('from'),
+        to = $this.data('to');
 
-
-  // todo
-  $('.irs-from').mouseout(function(){
-    document.addEventListener("DOMContentLoaded", lal = () =>{
-      console.log("1")
-      let from = +$('.irs-from').html();
-      $('#from-slide').val(from);
-
-
-      let to = +$('.irs-to').html();
-      $('#to-slide').val(to);
-    });
-    //todo следить за изменением from  to
-    
-  });  
+    document.querySelector('#from').value = from;
+    document.querySelector('#to').value = to;
+    // console.log(from + " - " + to);
+  })
 }
 
 if(document.querySelector('#player')){
@@ -48,6 +43,49 @@ if(document.querySelector('#player')){
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
       var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '360',
+          width: '640',
+          videoId: 'z5y6LV8lByM',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    }
+
+
+if(document.querySelector('#player')){
+  var tag = document.createElement('script');
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player1;
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
           height: '360',
@@ -79,7 +117,6 @@ if(document.querySelector('#player')){
         player.stopVideo();
       }
     }
-
 // product popup image resize
 if(document.querySelector('.img-product-slider1')){
   $('.bg-shop_1').click(function(e){
@@ -436,4 +473,29 @@ if(document.querySelector('.contant_main__privod')){
     })
     // val.classList.remove('block-class');
   })
+}
+
+// contacts page input
+if(document.querySelector('.contacts__email-in')){
+  let button = document.querySelector('.contacts__email-wr');
+  let input = document.querySelector('.contact_main__input-in');
+  button.addEventListener('click', () => {
+    input.classList.add('block-class');
+  });
+}
+
+
+// map
+if(document.querySelector('#map')){
+  function initMap() {
+    var uluru = {lat: -25.363, lng: 131.044};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
 }

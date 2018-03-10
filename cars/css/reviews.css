@@ -516,6 +516,10 @@ header {
 .reviews__title {
   padding-right: 15px;
   color: #fff; }
+  .reviews__title:nth-child(2)::-moz-selection {
+    background-color: #2A6FD4; }
+  .reviews__title:nth-child(2)::selection {
+    background-color: #2A6FD4; }
 
 .reviews__title:last-child {
   color: #f00; }
@@ -523,6 +527,10 @@ header {
 @media (max-width: 1283px) {
   .head-bg__reviews {
     padding: 80px 115px; } }
+
+@media (max-width: 767px) {
+  .head-bg__reviews {
+    padding: 60px 30px; } }
 
 .topnav nav {
   -webkit-box-align: center;
@@ -549,6 +557,12 @@ header {
       margin: 0 25px; }
     .topnav nav ul li:first-child {
       margin-left: 0; }
+  .topnav nav ul.pages {
+    position: relative;
+    right: 15px; }
+    .topnav nav ul.pages li {
+      position: relative;
+      margin: 0 6px; }
 
 .topnav nav:nth-child(1) {
   -webkit-box-pack: justify;
@@ -582,6 +596,173 @@ header {
     top: 35%;
     left: 20px; }
 
+@media (max-width: 1599px) {
+  .topnav {
+    padding: 0 10px; } }
+
+@media (max-width: 768px) {
+  .topnav {
+    display: none; } }
+
+.reviews .wrap {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
+.reviews__container {
+  margin-bottom: 60px; }
+
+.reviews__content {
+  max-width: 1060px;
+  width: 100%; }
+
+.reviews__header {
+  padding-top: 15px;
+  margin-bottom: 57px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .reviews__header h2 {
+    padding-right: 10px;
+    text-transform: uppercase; }
+  .reviews__header h2:nth-child(2) {
+    color: #f00; }
+    .reviews__header h2:nth-child(2)::-moz-selection {
+      background-color: #2A6FD4; }
+    .reviews__header h2:nth-child(2)::selection {
+      background-color: #2A6FD4; }
+
+.reviews__text {
+  margin-bottom: 60px; }
+
+.reviews__video {
+  max-width: 512px;
+  width: 100%; }
+  .reviews__video img {
+    width: 100%;
+    height: auto;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.reviews__block {
+  margin-bottom: 100px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .reviews__block:last-child {
+    margin-bottom: 0; }
+
+.reviews__text-content {
+  padding-left: 33px;
+  max-width: 734px;
+  width: 100%; }
+
+.reviews__text-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 37px; }
+  .reviews__text-title h3 {
+    text-transform: uppercase; }
+  .reviews__text-title h3:nth-child(2) {
+    color: #f00; }
+    .reviews__text-title h3:nth-child(2)::-moz-selection {
+      background-color: #2A6FD4; }
+    .reviews__text-title h3:nth-child(2)::selection {
+      background-color: #2A6FD4; }
+
+.reviews__look-more {
+  position: relative;
+  top: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .reviews__look-more button {
+    position: absolute;
+    top: 0;
+    height: 30px; }
+
+@media (max-width: 1283px) {
+  .reviews {
+    padding: 0 10px; }
+    .reviews__content {
+      padding: 0 10px; }
+    .reviews__video {
+      max-width: 400px; }
+    .reviews__header h2 {
+      font-size: 27px; }
+    .reviews__text-title h3 {
+      font-size: 20px; } }
+
+@media (max-width: 999px) {
+  .reviews__header {
+    margin-bottom: 30px; }
+    .reviews__header h2 {
+      font-size: 24px; }
+  .reviews__text-content {
+    max-width: 100%;
+    padding: 0 20px; }
+  .reviews__text {
+    margin-bottom: 40px; }
+  .reviews__text-title {
+    margin-bottom: 20px; }
+  .reviews__video {
+    max-width: 100%;
+    margin-bottom: 30px; }
+  .reviews__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 70px; } }
+
+@media (max-width: 768px) {
+  .reviews__header {
+    padding-top: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .reviews__header h2 {
+      font-size: 20px; }
+  .reviews__text-title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .reviews__text-title h3 {
+      font-size: 18px; }
+  .reviews__container {
+    margin-bottom: 100px; }
+  .reviews__look-more {
+    top: -60px; } }
+
 .botnav .wrap {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -600,6 +781,35 @@ header {
   .botnav ul li {
     margin: 0 6px;
     position: relative; }
+
+.botnav {
+  padding-bottom: 80px; }
+  .botnav .wrap {
+    position: relative; }
+  .botnav ul {
+    position: absolute;
+    right: 0px;
+    padding-left: 0; }
+    .botnav ul li:last-child::after {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      border-left: 2px solid #2d2d2d;
+      border-bottom: 2px solid #2d2d2d;
+      -webkit-transform: rotate(-135deg);
+          -ms-transform: rotate(-135deg);
+              transform: rotate(-135deg);
+      top: 35%;
+      left: 20px;
+      content: ""; }
+
+@media (max-width: 1599px) {
+  .botnav ul {
+    right: 25px; } }
+
+@media (max-width: 768px) {
+  .botnav {
+    display: none; } }
 
 .footer_contacts {
   padding-top: 40px;

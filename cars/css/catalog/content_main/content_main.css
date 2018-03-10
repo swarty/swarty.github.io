@@ -226,6 +226,8 @@
           transform: translate(-50%, 0);
   list-style: none;
   position: absolute; }
+  .contant_main__slide-dots li:hover button {
+    background-color: #a1a1a1; }
   .contant_main__slide-dots button {
     width: 15px;
     height: 15px;
@@ -235,7 +237,7 @@
     background-color: #fff;
     font-size: 0;
     margin: 0 3px; }
-  .contant_main__slide-dots .slick-active button {
+  .contant_main__slide-dots .slick-active button, .contant_main__slide-dots .slick-active:hover button {
     border: none;
     background-color: #f00; }
 

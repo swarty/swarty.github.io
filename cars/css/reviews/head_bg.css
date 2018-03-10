@@ -12,6 +12,10 @@
 .reviews__title {
   padding-right: 15px;
   color: #fff; }
+  .reviews__title:nth-child(2)::-moz-selection {
+    background-color: #2A6FD4; }
+  .reviews__title:nth-child(2)::selection {
+    background-color: #2A6FD4; }
 
 .reviews__title:last-child {
   color: #f00; }
@@ -19,3 +23,7 @@
 @media (max-width: 1283px) {
   .head-bg__reviews {
     padding: 80px 115px; } }
+
+@media (max-width: 767px) {
+  .head-bg__reviews {
+    padding: 60px 30px; } }

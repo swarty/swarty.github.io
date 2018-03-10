@@ -1,0 +1,7 @@
+@media (max-width: 1283px) {
+  .topnav {
+    padding: 0 10px; } }
+
+@media (max-width: 768px) {
+  .topnav {
+    display: none; } }

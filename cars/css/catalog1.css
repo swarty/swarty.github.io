@@ -823,6 +823,8 @@ header {
           transform: translate(-50%, 0);
   list-style: none;
   position: absolute; }
+  .contant_main__slide-dots li:hover button {
+    background-color: #a1a1a1; }
   .contant_main__slide-dots button {
     width: 15px;
     height: 15px;
@@ -832,7 +834,7 @@ header {
     background-color: #fff;
     font-size: 0;
     margin: 0 3px; }
-  .contant_main__slide-dots .slick-active button {
+  .contant_main__slide-dots .slick-active button, .contant_main__slide-dots .slick-active:hover button {
     border: none;
     background-color: #f00; }
 
@@ -1415,7 +1417,8 @@ header {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  position: relative; }
 
 .botnav ul {
   position: relative;

@@ -1,0 +1,234 @@
+.contacts__container {
+  max-width: 100%;
+  width: 100%; }
+
+.contacts__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 63px; }
+  .contacts__header h2 {
+    padding-right: 10px; }
+  .contacts__header h2:nth-child(2) {
+    color: #f00; }
+  .contacts__header h2:nth-child(2)::-moz-selection {
+    background-color: #1A8EE4; }
+  .contacts__header h2:nth-child(2)::selection {
+    background-color: #1A8EE4; }
+
+.contacts__block-wr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 128px; }
+
+.contacts__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  padding-left: 80px; }
+  .contacts__block a {
+    line-height: 1.5em; }
+
+.contacts__text {
+  padding-top: 5px;
+  line-height: 1.5em;
+  max-width: 185px;
+  width: 100%; }
+
+.contacts__img-wr {
+  max-width: 40px;
+  width: 100%;
+  left: 0;
+  top: 10%;
+  position: absolute; }
+  .contacts__img-wr img {
+    width: 100%;
+    height: auto;
+    display: block; }
+
+.contacts__inputs-wr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.contacts__inputs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .contacts__inputs:last-child {
+    max-width: 400px;
+    width: 100%; }
+  .contacts__inputs input {
+    border: 1px solid #a3a3a3;
+    margin-bottom: 30px; }
+  .contacts__inputs:first-child {
+    margin-right: 34px; }
+  .contacts__inputs:nth-child(2) {
+    margin-right: 80px; }
+  .contacts__inputs textarea {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    resize: none;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    outline: none;
+    padding-left: 15px;
+    padding-top: 10px; }
+
+.contacts__button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin-bottom: 100px; }
+
+.contacts__email-in {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+  .contacts__email-in .contact_main__input {
+    margin-right: 10px; }
+
+.contacts__email-wr {
+  padding-left: 20px; }
+  .contacts__email-wr label {
+    cursor: pointer;
+    color: #555555; }
+  .contacts__email-wr input {
+    opacity: 0; }
+
+.contact_main__input {
+  width: 16px;
+  height: 16px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #a1a1a1;
+  position: absolute;
+  cursor: pointer; }
+
+.contact_main__input-in {
+  z-index: 100;
+  display: none;
+  width: 9px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 9px;
+  background-color: #f00;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+.block-class {
+  display: block; }
+
+@media (max-width: 1283px) {
+  .contacts {
+    padding: 0 10px; }
+    .contacts__header h2 {
+      font-size: 27px; } }
+
+@media (max-width: 767px) {
+  .contacts__header {
+    margin-bottom: 40px; }
+    .contacts__header h2 {
+      font-size: 20px; }
+  .contacts__block-wr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .contacts__block {
+    max-width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 80px; }
+  .contacts__img-wr {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .contacts__inputs-wr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .contacts__inputs:nth-child(n) {
+    max-width: 400px;
+    width: 100%;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0; }
+    .contacts__inputs:nth-child(n) input {
+      width: 100%; }
+    .contacts__inputs:nth-child(n) textarea {
+      height: 40px; }
+  .contacts__button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+  .contacts__email-in {
+    position: relative;
+    margin-bottom: 20px; } }
