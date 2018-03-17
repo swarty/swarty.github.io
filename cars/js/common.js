@@ -45,8 +45,6 @@ if(document.querySelector('#player')){
       var player;
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-          height: '360',
-          width: '640',
           videoId: 'z5y6LV8lByM',
           events: {
             'onReady': onPlayerReady,

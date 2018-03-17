@@ -502,6 +502,10 @@ header {
   width: 30px;
   height: 20px; }
 
+@media all and (max-width: 999px) {
+  .topnav {
+    display: none; } }
+
 .topnav nav {
   -webkit-box-align: center;
   -webkit-align-items: center;

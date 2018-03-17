@@ -2,9 +2,11 @@
   h2 span.red {
     font-size: 36px; } }
 
-@media (max-width: 1284px) {
+@media (max-width: 1283px) {
   .why-us.why_us.wrap.list h4 {
-    width: 500px; } }
+    width: 500px; }
+  h2 span.red {
+    font-size: 36px; } }
 
 @media (max-width: 1283px) {
   .text h1 {

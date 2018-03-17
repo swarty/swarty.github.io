@@ -763,6 +763,10 @@ header {
   .reviews__look-more {
     top: -60px; } }
 
+@media all and (max-width: 999px) {
+  .botnav {
+    display: none; } }
+
 .botnav .wrap {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
