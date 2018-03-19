@@ -517,6 +517,9 @@ header {
             justify-content: flex-start; }
   .head-bg .text h2 {
     color: #fff; }
+  @media all and (max-width: 999px) {
+    .head-bg .text {
+      padding-left: 10px; } }
 
 @media all and (max-width: 999px) {
   .topnav {
@@ -876,7 +879,20 @@ header {
         margin-bottom: 60px; }
         @media all and (max-width: 1283px) {
           .description .wrap section h2 {
-            margin: 0 auto 60px; } }
+            margin: 0 auto 30px;
+            font-size: 27px; }
+            .description .wrap section h2 span {
+              font-size: 27px; } }
+        @media all and (max-width: 1023px) {
+          .description .wrap section h2 {
+            font-size: 30px; }
+            .description .wrap section h2 span {
+              font-size: 30px; } }
+        @media all and (max-width: 767px) {
+          .description .wrap section h2 {
+            font-size: 20px; }
+            .description .wrap section h2 span {
+              font-size: 20px; } }
       .description .wrap section h5 {
         max-width: 550px; }
     .description .wrap iframe {
@@ -1079,10 +1095,31 @@ header {
 
 .find__title {
   color: #fff; }
+  @media all and (max-width: 1283px) {
+    .find__title {
+      font-size: 27px;
+      margin-bottom: 15px; }
+      .find__title span {
+        font-size: 27px !important; } }
+  @media all and (max-width: 1023px) {
+    .find__title {
+      font-size: 30px;
+      margin-bottom: 5px; }
+      .find__title span {
+        font-size: 30px !important; } }
+  @media all and (max-width: 767px) {
+    .find__title {
+      font-size: 20px; }
+      .find__title span {
+        font-size: 20px !important; } }
 
 .find__title-sec {
   color: #fff;
   margin-bottom: 30px; }
+  @media all and (max-width: 1283px) {
+    .find__title-sec {
+      margin-bottom: 15px;
+      font-size: 20px; } }
 
 .find__content-text {
   color: #fff;
