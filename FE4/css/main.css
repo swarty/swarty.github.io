@@ -1119,7 +1119,7 @@ img {
     position: relative;
     background-color: #fff;
     z-index: 1;
-    min-height: 547px; }
+    min-height: 560px; }
     .s_course__list li {
       position: relative;
       margin-bottom: 20px; }
@@ -1145,7 +1145,3 @@ img {
         padding-left: 60px;
         padding-right: 20px;
         background-color: #eee; } }
-
-.s_lala {
-  padding: 100px;
-  background-color: red; }
