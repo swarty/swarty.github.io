@@ -780,6 +780,12 @@ img {
   padding-bottom: 15px;
   position: relative;
   z-index: 0; }
+  @media all and (max-width: 1599px) {
+    .s_course {
+      padding-bottom: 140px; } }
+  @media all and (max-width: 1365px) {
+    .s_course {
+      padding-bottom: 15px; } }
   @media all and (max-width: 767px) {
     .s_course {
       padding-top: 40px;
@@ -1112,7 +1118,8 @@ img {
     counter-reset: list1;
     position: relative;
     background-color: #fff;
-    z-index: 1; }
+    z-index: 1;
+    min-height: 547px; }
     .s_course__list li {
       position: relative;
       margin-bottom: 20px; }
@@ -1131,7 +1138,8 @@ img {
       .s_course__list {
         padding-top: 40px;
         padding-bottom: 50px;
-        background-color: #fbfbfb; } }
+        background-color: #fbfbfb;
+        min-height: unset; } }
     @media all and (max-width: 767px) {
       .s_course__list {
         padding-left: 60px;
