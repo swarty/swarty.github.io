@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			document.querySelector('.hello').classList.toggle('hello--change');
 
-		}, 6000 )
+		}, 4000 )
 
 	}
    
