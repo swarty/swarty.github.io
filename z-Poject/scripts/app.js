@@ -295,10 +295,4 @@ document.addEventListener('DOMContentLoaded', function () {
             fade: true
         });
     }
-
-    // slider portfolio content
-    if (document.querySelector('.js-display__img')) {
-
-        $('.js-display__img').slick();
-    }
 });
