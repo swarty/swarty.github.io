@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Type Ahead 👀</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form class="search-form">
+    <input type="text" class="search" placeholder="City or State">
+    <ul class="suggestions">
+      <li>Filter for a city</li>
+      <li>or a state</li>
+    </ul>
+  </form>
+<script>
+const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+
+let xhr = new XMLHttpRequest(),
+		filtered = [],
+		input = document.querySelector('input');
+
+xhr.open('get', endpoint, false);
+xhr.send();
+
+function filter(regExp, input){
+	filtered = JSON.parse(xhr.responseText).filter( element => {
+		return element.city.match(regExp) || element.state.match(regExp);
+	})
+}
+
+function print(regExp, mas){
+	list = document.querySelector('.suggestions');
+	list.innerHTML = '';
+
+	let str = mas.sort( (first, next) => {
+		return next.population - first.population;
+	})
+	.map( element => {
+		let line = (element.city + ', ' + element.state).replace(regExp, `<span class="mark">${input.value}</span>`);
+
+		return `<li> 
+			<span> ${line} </span> 
+			<span> ${element.population}</span>
+		</li>`;
+	})
+	.join('');
+
+	list.innerHTML = str;
+}
+
+function drawList(){
+	let regExp = new RegExp(input.value, 'ig');
+	filter(regExp, this);
+	print(regExp, filtered);
+}
+
+input.addEventListener('change', drawList);
+input.addEventListener('keyup', drawList)
+
+
+</script>
+</body>
+</html>

@@ -68,6 +68,9 @@
 
 		inputs.forEach( input => {
 			setStyle(input); // on init
+			input.addEventListener('mousemove', _ => { // on move on element event
+				setStyle(input);
+			})
 			input.addEventListener('change', _ => { // on change event
 				setStyle(input);
 			})
