@@ -32,10 +32,20 @@
 		}
 	});
 
-	canvas.addEventListener('touchstart', click, false);
-	canvas.addEventListener('touchend', _ => canDraw = false, false);
-	canvas.addEventListener('touchcancel', _ => canDraw = false, false);
+	canvas.addEventListener('touchstart', function(e) {
+		e.preventDefault();
+		click();
+	}, false);
+	canvas.addEventListener('touchend', _ => {
+		e.preventDefault();
+		canDraw = false;
+	}, false);
+	canvas.addEventListener('touchcancel', _ => {
+		e.preventDefault();
+		canDraw = false;
+	}, false);
 	canvas.addEventListener('touchmove', (e) => {
+		e.preventDefault();
 		if(canDraw) {
 			draw(e);
 		}
