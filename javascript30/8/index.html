@@ -33,7 +33,7 @@
 
 	canvas.addEventListener('touchstart', click);
 	canvas.addEventListener('touchend', _ => canDraw = false);
-	canvas.addEventListener('touchcancel', _ => canDraw = false);
+	// canvas.addEventListener('touchcancel', _ => canDraw = false);
 	canvas.addEventListener('touchmove', (e) => {
 		if(canDraw) {
 			draw(e);
