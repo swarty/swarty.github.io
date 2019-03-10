@@ -34,13 +34,13 @@
 
 	canvas.addEventListener('touchstart', function(e) {
 		e.preventDefault();
-		click();
+		click(e);
 	}, false);
-	canvas.addEventListener('touchend', _ => {
+	canvas.addEventListener('touchend', (e) => {
 		e.preventDefault();
 		canDraw = false;
 	}, false);
-	canvas.addEventListener('touchcancel', _ => {
+	canvas.addEventListener('touchcancel', (e) => {
 		e.preventDefault();
 		canDraw = false;
 	}, false);
@@ -52,21 +52,22 @@
 	}, false);
 
 	function click(e) {
+		console.log(e)
 		canDraw = true;
-		lastX = e.offsetX;
-		lastY = e.offsetY;
+		setClickedCoords(e);
 	}
 
 	function draw(e) {
+		x = e.offsetX || e.touches[0].pageX;
+		y = e.offsetY || e.touches[0].pageY
 		ctx.beginPath();
 		ctx.lineWidth = lineWidth;
 		ctx.strokeStyle = `hsl(${hsl}, 100%, 50%)`;
 		ctx.moveTo(lastX, lastY);
-		ctx.lineTo(e.offsetX, e.offsetY);
+		ctx.lineTo(x, y);
 		ctx.stroke();
 
-		lastX = e.offsetX;
-		lastY = e.offsetY;
+		setClickedCoords(e);
 		hsl++;
 
 		if(lineWidth >= 100 || lineWidth <= 1){
@@ -78,6 +79,11 @@
 		} else{
 			lineWidth--;
 		}
+	}
+
+	function setClickedCoords(e){
+		lastX = e.offsetX || e.touches[0].pageX;
+		lastY = e.offsetY || e.touches[0].pageY;
 	}
 
 </script>
