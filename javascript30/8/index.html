@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
   <title>HTML5 Canvas</title>
 </head>
 <body>
@@ -31,14 +32,14 @@
 		}
 	});
 
-	canvas.addEventListener('touchstart', click);
-	canvas.addEventListener('touchend', _ => canDraw = false);
-	// canvas.addEventListener('touchcancel', _ => canDraw = false);
+	canvas.addEventListener('touchstart', click, false);
+	canvas.addEventListener('touchend', _ => canDraw = false, false);
+	canvas.addEventListener('touchcancel', _ => canDraw = false, false);
 	canvas.addEventListener('touchmove', (e) => {
 		if(canDraw) {
 			draw(e);
 		}
-	});
+	}, false);
 
 	function click(e) {
 		canDraw = true;
