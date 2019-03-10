@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Canvas</title>
+</head>
+<body>
+<canvas id="draw" width="800" height="800"></canvas>
+<script>
+
+	let canvas = document.querySelector('#draw'),
+			ctx = canvas.getContext('2d'),
+			canDraw = false,
+			lastX = 0,
+			lastY = 0,
+			lineWidth = 50,
+			hsl = 1,
+			way = true;
+
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+	ctx.lineCap = 'round';
+	ctx.lineJoin = 'round';
+
+	canvas.addEventListener('mousedown', click);
+	canvas.addEventListener('mouseup', _ => canDraw = false);
+	canvas.addEventListener('mouseout', _ => canDraw = false);
+	canvas.addEventListener('mousemove', (e) => {
+		if(canDraw) {
+			draw(e);
+		}
+	});
+
+	function click(e) {
+		canDraw = true;
+		lastX = e.offsetX;
+		lastY = e.offsetY;
+	}
+
+	function draw(e) {
+		ctx.beginPath();
+		ctx.lineWidth = lineWidth;
+		ctx.strokeStyle = `hsl(${hsl}, 100%, 50%)`;
+		ctx.moveTo(lastX, lastY);
+		ctx.lineTo(e.offsetX, e.offsetY);
+		ctx.stroke();
+
+		lastX = e.offsetX;
+		lastY = e.offsetY;
+		hsl++;
+
+		if(lineWidth >= 100 || lineWidth <= 1){
+			way = !way;
+		}
+
+		if(way) {
+			lineWidth++;
+		} else{
+			lineWidth--;
+		}
+	}
+
+	function random(e = 255) {
+		return Math.floor(Math.random() * e).toString(16);
+	}
+
+</script>
+
+<style>
+  * {
+    margin: 0;
+		padding: 0;
+  }
+	canvas{
+		border: 1px solid tomato;
+	}
+</style>
+
+</body>
+</html>
