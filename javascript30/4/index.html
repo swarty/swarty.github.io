@@ -76,14 +76,27 @@
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+		let arr7 = people.sort( (last, next) => last.split(',')[0] > next.split(',')[0] );
+		// .forEach( element => element.split(' ').reverse().join(' ') );
+		console.log(arr7)
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
-		// data.forEach( element => {
-		// 	data.indexOf(element);
-		// })
+		
+		let arr8 = data.reduce( (obj, item) => {
+			console.log(obj[item])
+			if(!obj[item]){
+				obj[item] = 0;
+			}
+			obj[item]++;
+			return obj;
+		}, {});
+		
+		console.log(arr8)
 
   </script>
 </body>
 </html>
+
+

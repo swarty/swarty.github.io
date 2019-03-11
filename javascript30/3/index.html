@@ -69,7 +69,12 @@
 
 		inputs.forEach( input => {
 			setStyle(input); // on init
-			input.addEventListener('change', _ => setStyle(input) );
+			input.addEventListener('mousemove', _ => { // on move on element event
+				setStyle(input);
+			})
+			input.addEventListener('change', _ => { // on change event
+				setStyle(input);
+			})
 		});
 
 		// function change variables
