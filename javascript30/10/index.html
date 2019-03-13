@@ -103,18 +103,19 @@
 	inputs.forEach( (input, index) => {
 
 		input.addEventListener('click', function(e) {
-			if(e.shiftKey){
+			if(e.shiftKey && lastClicked){
 
+        inputs.forEach( (el,ind) => {
+          if(lastClicked > index){
+            let mediana = index;
+            index = lastClicked;
+            lastClicked = mediana;
+          }
 
-				
-
-				// inputs.forEach( (el,ind) => {
-				// 	if(ind < lastClicked && lastClicked < index){
-				// 		el.checked = false;
-				// 	} else {
-				// 		el.true = true;
-				// 	}
-				// })
+          if(ind < index && ind > lastClicked){
+            el.checked = true;
+          }
+        })
 
 			}
 
