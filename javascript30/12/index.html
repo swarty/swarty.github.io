@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Detection</title>
+  <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+</head>
+<body>
+
+<script>
+
+	let secretCode = 'swarty';
+	let entryMas = [];
+
+	window.addEventListener('keydown', function(e){
+		entryMas.push(e.key);
+		
+		entryMas.splice(-secretCode.length -1, entryMas.length - secretCode.length);
+		console.log(entryMas)
+		if(entryMas.join('') === secretCode){
+			console.log(true)
+			cornify_add();
+		}
+	})
+
+</script>
+
+</body>
+</html>
