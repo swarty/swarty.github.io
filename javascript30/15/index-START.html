@@ -61,6 +61,7 @@
 						inIndex = index;
 						return element.name === this.name;
 					})
+					// todo
 					items[inIndex].checked = e.target.checked;
 					localStorage.setItem('list-items', JSON.stringify(items));
 				})
