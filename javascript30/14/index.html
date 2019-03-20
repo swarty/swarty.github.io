@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Reference VS Copy</title>
+</head>
+<body>
+
+  <script>
+    // start with strings, numbers and booleans
+
+    // Let's say we have an array
+    const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
+
+    // and we want to make a copy of it.
+    let arr1 = Array.from(players),
+    		arr11 = players.map((el) => el),
+    		arr12 = players.slice(0, players.length),
+    		arr3 = [...players];
+
+    console.log(arr1)
+    console.log(arr11)
+    console.log(arr12)
+
+    // You might think we can just do something like this:
+
+    // however what happens when we update that array?
+
+    // now here is the problem!
+
+    // oh no - we have edited the original array too!
+
+    // Why? It's because that is an array reference, not an array copy. They both point to the same array!
+
+    // So, how do we fix this? We take a copy instead!
+
+    // one way
+
+    // or create a new array and concat the old one in
+
+    // or use the new ES6 Spread
+
+    // now when we update it, the original one isn't changed
+
+    // The same thing goes for objects, let's say we have a person object
+
+    // with Objects
+    const person = {
+      name: 'Wes Bos',
+      age: 80
+    };
+
+    // and think we make a copy:
+    let obj1 = person;
+    console.log(obj1);
+
+    person.name = 'swarty';
+    console.log(obj1)
+    let obj2 = Object.assign({}, person, {some: 'new line'});
+    person.name = 'swarty change';
+    console.log(obj2)
+
+    let obj3 = {};
+
+    let masObj = Object.keys(obj2);
+    masObj.forEach( element => {
+    	obj3[element] = obj2[element];
+    })
+    console.log(obj3)
+
+    let obj4 = JSON.parse(JSON.stringify(obj3))
+    obj3.name = 'Mama';
+    console.log(obj4)
+
+    // how do we take a copy instead?
+
+    // We will hopefully soon see the object ...spread
+
+    // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
+
+  </script>
+
+</body>
+</html>
