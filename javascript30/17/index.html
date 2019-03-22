@@ -47,15 +47,18 @@
 
 <script>
 const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
-
 const exceptions = ['a', 'the', 'an'];
 
 document.querySelector('#bands').innerHTML = bands.map( group => {
 	return group.split(' ');
 })
 .sort( (prev, next) => {
-	let first = exceptions.includes(prev[0].toLowerCase()) ? prev.slice(1).join(' ') : prev.join(' '),
-			second = exceptions.includes(next[0].toLowerCase()) ? next.slice(1).join(' ') : next.join(' ');
+	let first = exceptions.includes(prev[0].toLowerCase()) 
+			? prev.slice(1).join(' ') 
+			: prev.join(' '),
+			second = exceptions.includes(next[0].toLowerCase()) 
+			? next.slice(1).join(' ') 
+			: next.join(' ');
 	return first.localeCompare(second);
 })
 .map( line => {
