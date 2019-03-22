@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mouse Shadow</title>
+</head>
+<body>
+
+  <div class="hero">
+    <h1 contenteditable>🔥WOAH!</h1>
+  </div>
+
+  <style>
+
+  html {
+    color: black;
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+
+  h1 {
+    text-shadow: 10px 10px 0 rgba(0,0,0,1);
+    font-size: 100px;
+		margin: 0;
+		line-height: 0.8;
+		/* pointer-events: none; */
+  }
+  </style>
+
+<script>
+
+	let container = document.querySelector('.hero'),
+			paralaxNode = document.querySelector('h1');
+
+	const step = 50;
+	
+	container.addEventListener('mousemove', dropShadow)
+
+	function dropShadow(e){
+		const { offsetWidth: w, offsetHeight: h } = this;
+		let {offsetX: x, offsetY: y } = e;
+		
+		if(container !== e.target){
+			x = x + e.target.offsetLeft;
+			y = y + e.target.offsetTop;
+		}
+		
+		
+		let positionX = Math.round( (x / w  * step) - (step / 2) );
+		let positionY = Math.round( (y / h * step) - (step / 2) );
+
+
+		paralaxNode.style.textShadow = `${-positionX}px ${-positionY}px 2px rgba(100,100,100,1)`
+	}
+
+</script>
+</body>
+</html>

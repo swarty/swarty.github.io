@@ -40,7 +40,7 @@
 				str +=  `
 					<li>
 						<label>
-							<input type="checkbox" name="${element.name}" ${!!element.checked ? 'checked' : null}> ${element.name}
+							<input type="checkbox" name="${element.name}" ${element.checked ? 'checked' : ''}> ${element.name}
 						</label>
 					</li>
 				`
@@ -48,28 +48,28 @@
 
 			itemsList.innerHTML = str;
 		}
+		filterAndAddEvents();
 	}
 	printList();
 
-	function updateStorageOnChangeInput() {
-		if(document.querySelector('input[type="checkbox"]')){
-			let checkBox = document.querySelectorAll('input[type="checkbox"]');
-			checkBox.forEach( input => {
-				input.addEventListener('change', function(e) {
-					let inIndex;
-					let filteredMas = items.find( (element, index) => {
-						inIndex = index;
-						return element.name === this.name;
-					})
-					// todo
-					items[inIndex].checked = e.target.checked;
-					localStorage.setItem('list-items', JSON.stringify(items));
+
+
+	function filterAndAddEvents(){
+		let checkBox = document.querySelectorAll('input[type="checkbox"]');
+		checkBox.forEach( input => {
+			input.addEventListener('change', function(e) {
+				let inIndex;
+				let filteredMas = items.find( (element, index) => {
+					inIndex = index;
+					return element.name === this.name;
 				})
+				items[inIndex].checked = e.target.checked;
+				localStorage.setItem('list-items', JSON.stringify(items));
 			})
-		}
+		})
 	}
-	updateStorageOnChangeInput();
-	
+
+		
 	
 	addItems.addEventListener('submit', function(e) {
 		e.preventDefault();
@@ -81,8 +81,8 @@
 		items.push(obj);
 		localStorage.setItem('list-items', JSON.stringify(items));
 		printList();
-		updateStorageOnChangeInput();
 	})
+
 
 </script>
 
