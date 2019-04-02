@@ -54,7 +54,16 @@
   </div>
 
 <script>
+	
 
+	function makeStickyNav(e){
+		let menu = document.querySelector('#main'),
+				header = document.querySelector('header');
+
+		header.getBoundingClientRect().bottom <= 0 ? menu.classList.add('fixed-nav') : menu.classList.remove('fixed-nav');
+	}
+
+	window.addEventListener('scroll', makeStickyNav)
 </script>
 
 </body>
