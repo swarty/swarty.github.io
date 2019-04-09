@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div draggable="true" class="items">
+  <div class="items">
     <div class="item item1">01</div>
     <div class="item item2">02</div>
     <div class="item item3">03</div>
@@ -36,13 +36,33 @@
 
 <script>
 
-	let items = document.querySelector('.items');
-	
-	function gradWrapper(e){
-		console.log(e)
-	}
+	let slider = document.querySelector('.items'),
+			mouseDown = false,
+			clickedX,
+			sliderLeft;
 
-	items.addEventListener('drag', gradWrapper, false)
+	slider.addEventListener('mousedown', function(e) {
+		mouseDown = true;
+		slider.classList.add('active')
+		clickedX = e.pageX - slider.offsetLeft;
+		sliderLeft = slider.scrollLeft;
+	}, false)
+
+	slider.addEventListener('mouseup', function(e) {
+		mouseDown = false;
+		slider.classList.remove('active')
+	}, false)
+
+	slider.addEventListener('mouseleave', function() {
+		mouseDown = false;
+		slider.classList.remove('active')
+	}, false)
+
+	slider.addEventListener('mousemove', function(e) {
+		if(!mouseDown) return; // return from event
+		e.preventDefault();
+		slider.scrollLeft = sliderLeft + (clickedX - e.pageX);
+	}, false)
 
 </script>
 
