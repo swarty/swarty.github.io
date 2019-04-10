@@ -24,6 +24,7 @@ function timer() {
 			data: this.dataset.time,
 		};
 		
+		// if function called when entry number from keyboard
 		if(this.querySelector('input')){
 			e.preventDefault();
 			time.minutes = Math.floor(Number(this.querySelector('input').value));
@@ -36,15 +37,14 @@ function timer() {
 
 		timerWasStarted = new Date().getTime();
 		timerWillEnded = timerWasStarted + calcMiliseconds(time);
-		printTimer(time);
+		printTimer();
 	}
 
 	function calcMiliseconds({hours, minutes, seconds}){
 		return Number(hours) * 3600 * 1000 + Number(minutes) * 60 * 1000 + Number(seconds) * 1000
 	}
 
-	function printTimer(obj = {hours: 0, minutes: 0, seconds: 0}){
-		// timeLeftHolder.textContent = `${obj.hours != '0' && obj.hours ? obj.hours + ':' : ''}${obj.minutes}:${(obj.seconds + '').length < 2 ? '0' + obj.seconds : obj.seconds}`;
+	function printTimer(){
 		let backTimer = new Date(timerWillEnded - new Date().getTime());
 		if(timerWillEnded - new Date().getTime() > 0){
 			timeLeftHolder.textContent = `${(backTimer.getMinutes() + '').length < 2 ? '0' + backTimer.getMinutes() : backTimer.getMinutes()}:${(backTimer.getSeconds() + '').length < 2 ? '0' + backTimer.getSeconds() : backTimer.getSeconds()}`;
@@ -56,9 +56,6 @@ function timer() {
 		timeEndHolder.textContent = `Be back at ${futureTimer.getHours()}:${(futureTimer.getMinutes() + '').length < 2 ? '0' + futureTimer.getMinutes() : futureTimer.getMinutes()}`;
 	}
 }
-
-
-
 
 
 timer();

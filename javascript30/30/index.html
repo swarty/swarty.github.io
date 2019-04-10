@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Whack A Mole!</title>
+	<link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1>Whack-a-mole! <span class="score">0</span></h1>
+	<button>Start!</button>
+
+	<div class="game">
+		<div class="hole hole1">
+			<div class="mole"></div>
+		</div>
+		<div class="hole hole2">
+			<div class="mole"></div>
+		</div>
+		<div class="hole hole3">
+			<div class="mole"></div>
+		</div>
+		<div class="hole hole4">
+			<div class="mole"></div>
+		</div>
+		<div class="hole hole5">
+			<div class="mole"></div>
+		</div>
+		<div class="hole hole6">
+			<div class="mole"></div>
+		</div>
+	</div>
+
+	<script>
+		const holes = document.querySelectorAll('.hole'),
+					scoreBoard = document.querySelector('.score'),
+					moles = document.querySelectorAll('.mole'),
+					scoreNode = document.querySelector('.score');
+
+		let random = randomGen(1, 7),
+				canPlay = true;
+				oldValue = null,
+				moleWasClicked = false,
+				counter = 0;
+
+		function startGame(){
+			counter = 0;
+			rool();
+			setTimeout(_ => canPlay = false, 20000)
+		}
+
+		function rool() {
+			if (!canPlay) {
+				hideMoles();
+				canPlay = true;
+				return;
+			}
+
+			setTimeout(_ => {
+				showMoles();
+				return rool();
+			}, randomGen(2, 8) * 200)
+		}
+
+		clickOnMole();
+		function showMoles() {
+			while (random === oldValue) {
+				random = randomGen(1, 7);
+			}
+			hideMoles();
+			holes[random - 1].classList.add('up');
+			oldValue = random;
+		}
+		function hideMoles() {
+			holes.forEach(node => node.classList.remove('up'));
+			setTimeout(_ => moleWasClicked = false, 350);
+		}
+		function clickOnMole() {
+			moles.forEach(function (node, index) {
+				node.addEventListener('click', catchMole)
+			})
+		}
+		function catchMole(e) {
+			if (moleWasClicked && !e.isTrusted) return
+			moleWasClicked = true;
+			counter++;
+			scoreNode.textContent = counter;
+			hideMoles();
+		}
+		function randomGen(min, max) {
+			return Math.floor(Math.random() * (max - min) + min);
+		}
+
+		document.querySelector('button').addEventListener('click', startGame, false);
+	</script>
+</body>
+
+</html>
