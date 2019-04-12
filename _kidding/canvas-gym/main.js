@@ -19,11 +19,14 @@ class Ball{
 		this.y = y || 0;
 		this.radius = radius || 2;
 		this.color = color || '#a1afff';
+		this.originalX = x || 0;
+		this.originalY = y || 0;
 
 		this.speedX = 0;
 		this.speedY = 0;
 
 		this.friction = 0.9;
+		this.springFactor = 0.05;
 	}
 
 	setPosition(x, y){
@@ -46,6 +49,15 @@ class Ball{
 			this.speedY += ty - this.y;
 		}
 
+		// spring
+		let dx1 = this.x - this.originalX;
+		let dy1 = this.y - this.originalY;
+		this.speedX += -1*dx1 * this.springFactor;
+		this.speedY += -1*dy1 * this.springFactor;
+
+
+
+		// friction
 		this.speedX *= this.friction;
 		this.speedY *= this.friction;
 
@@ -76,7 +88,7 @@ let mouse = new Ball(pos.x, pos.y, 20, 'tomato');
 let balls = [];
 
 
-for(let i = 0, length = 100; i < length; i++){
+for(let i = 0, length = 1000; i < length; i++){
 	balls.push(
 		new Ball(
 			Math.random() * canvas.width,
