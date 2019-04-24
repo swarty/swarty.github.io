@@ -51,7 +51,8 @@
 
 <script>
   const msg = new SpeechSynthesisUtterance();
-  let voices = [];
+  let voices = [],
+			paused = false;
   const voicesDropdown = document.querySelector('[name="voice"]');
   const options = document.querySelectorAll('[type="range"], [name="text"]');
   const speakButton = document.querySelector('#speak');
@@ -59,40 +60,39 @@
 	const textarea = document.querySelector('textarea[name="text"]');
 
 	// speach text
-	msg.text = textarea.value;
-
-	options.forEach( element => element.addEventListener('change', function() {
-		msg[this.name] = this.value;
-		console.log(msg[this.name] = this.value, this.name)
-	}))
-
-
-	voices = 
-
-
-	// speechSynthesis.getVoices()
-
-	speakButton.addEventListener('click', speachStart);
-	stopButton.addEventListener('click', speachStop);
+	function getText(){
+		msg.text = textarea.value;
+	}
 
 	function speachStart(){
-		// let utter = new SpeechSynthesisUtterance(text.value);
-		// console.log(text.value)
+		getText();
 
-		// if(!pause){
-		// 	speach.speak(utter);
-		// 	return;
-		// }
+		options.forEach( input => {
+			msg[input.name] = input.value;
+		})
 
-		// pause = false;
-		// speach.resume();
+		speechSynthesis.speak(msg);
 	}
 
 	function speachStop(){
-		// pause = true;
-		// speach.pause();
+		speechSynthesis.cancel();
 	}
 
+	function voicesList() {
+		voices = this.getVoices();
+		voicesDropdown.innerHTML = voices.map( voice => `<option value='${voice.name}'> ${voice.name}, lang: ${voice.lang}</option>`)
+		.join('');
+	}
+
+	function setVoice() {
+		speechSynthesis.cancel();
+		msg[this.name] = this.value;
+	}
+
+	voicesDropdown.addEventListener('change', setVoice);
+	speechSynthesis.addEventListener('voiceschanged', voicesList);
+	speakButton.addEventListener('click', speachStart);
+	stopButton.addEventListener('click', speachStop);
 
 </script>
 
