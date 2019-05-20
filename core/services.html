@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Index Page</title>
+    <title>Services Page</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -26,16 +26,14 @@
     <link rel="shortcut icon" type="img/ico" href="images/favicon_32.png" sizes="32x32">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500,600,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display&amp;display=swap&amp;subset=cyrillic">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/services.css">
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header header--gray">
         <div class="container">
-          <div class="header__container fw">
-            <div class="logo">
-              <p>ядро</p>
-            </div>
+          <div class="header__container fw"><a class="logo logo--link" href="./">
+              <p>ядро</p></a>
             <nav class="navigation">
               <ul class="navigation__list fw">
                 <li><a href="./about.html">О НАС</a></li>
@@ -63,116 +61,109 @@
         </div>
       </header>
       <main class="main">
-        <div class="fp__navigation">
-          <div class="container">
-            <div class="fp__navigation__container">
-              <div class="fp__navigation__wrapper fw">
-                <div class="fp__navigation__item fw">
-                  <p class="fp__navigation__number">01</p>
-                  <p class="fp__navigation__title">Ядро</p>
-                </div>
-                <div class="fp__navigation__progress__wr">
-                  <div class="fp__navigation__progress"></div>
-                </div>
-                <div class="fp__navigation__arrows">
-                  <div class="arrow arrow--prev js-fp__prev"><img class="svg" src="./images/arrow.svg" alt="arrow"></div>
-                  <div class="arrow arrow--next js-fp__next"><img class="svg" src="./images/arrow.svg" alt="arrow"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <section class="section hero" data-slide-name="Ядро">
-          <div class="hero__line-decoration"></div>
-          <div class="hero__line-decoration"></div>
-          <div class="hero__line-decoration"></div>
+        <section class="section hero is-white" data-slide-name="Ядро">
           <div class="square__decor"></div>
+          <div class="hero__background" style="background-image: url(./images/hero-services-bg.jpg)"></div>
           <div class="container">
-            <div class="hero__container hero__container--main fw">
-              <div class="hero__video-wr">
-                <div class="hero__video">
-                  <video poster="./images/core.png">
-                    <source src="./video/core.mp4" type="video/mp4">
-                  </video>
-                  <button class="play-button"></button>
+            <div class="hero__container hero__container--inner fw">
+              <div class="hero__crumbs">
+                <div class="crumbs"><a class="crumbs__from" href="./index.html">Главная</a>
+                  <p class="crumbs__current">Реклама в ТРЦ</p>
                 </div>
               </div>
               <div class="hero__text-wr fw">
                 <div class="hero__title">
-                  <h1>Комплексные решения<br>в сфере BTL, ATL, Digital</h1>
+                  <h1>Команда профессионалов,<br>которая занимается рекламой <br>в Торговых центрах Украины</h1>
                 </div>
-                <div class="hero__agency fw"><img src="./images/dots2.gif" alt="cores">
-                  <p>Агенство Ядро</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section whowe" data-slide-name="Кто мы">
-          <div class="square__full"></div>
-          <div class="whowe__circle-block"><img src="./images/dots1.gif" alt="circle"></div>
-          <div class="container">
-            <div class="whowe__container whowe__container--main">
-              <div class="details-block">
-                <p>Подробнее о нашей агентстве и проектах</p><a class="details-block__button fw" href="/">
-                  <p class="site-button">Перейти</p><img class="svg" src="./images/arrow.svg" alt="arrow link"></a>
-              </div>
-              <div class="whowe__title">
-                <h2>Кто мы</h2>
-              </div>
-              <div class="whowe__content">
-                <div class="whowe__content__title">
-                  <h3>ЯДRO - это рекламное агентство, которое предоставляет весь спектр рекламных услуг.</h3>
-                  <p>Работая с нашей командой, Вам не придётся переживать, так как наше рекламное агентство:</p>
-                </div>
-                <div class="whowe__content__text fw">
-                  <div class="whowe__content__block">
-                    <ul>
-                      <li>
-                        <p>Наличие собственных носителей даёт нам возможность предоставлять одни из лучших цен на рынке</p>
-                      </li>
-                      <li>
-                        <p>Наша команда берет на себя ответственность на всех этапах проекта - от формирования видения и стратегии до проверки Ваших сюжетов на соответствие законам Украины о размещении рекламы и последующего монтажа материалов</p>
-                      </li>
-                      <li>
-                        <p>Довольный клиент - наш главный KPI</p>
-                      </li>
-                      <li>
-                        <p>Качество во всём - основная философия компании</p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="whowe__content__block">
-                    <p>Мы помогаем нашим клиентам достигать их маркетинговых целей, повышаем узнаваемость брендов и лояльность аудитории. Для этого мы используем все рекламные инструменты: анализ целевой аудитории, разработку стратегии и дизайна, производство и установку рекламных материалов, digital продвижение.</p>
-                    <p>Рекламное агентство полного цикла ЯДRO работает со всеми медийными каналами в Киеве, Харькове, Днепре, Одессе, Львове и других городах Украины.</p>
-                  </div>
+                <div class="hero__request">
+                  <button class="details-block__button is-orange fw">
+                    <p class="site-button">Оставить заявку</p><img class="svg" src="./images/arrow.svg" alt="arrow link">
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="section services" data-slide-name="Услуги">
-          <div class="square__full square__full--end"></div>
-          <div class="square__big"></div>
-          <div class="square__circle square__circle--little"></div>
-          <div class="square__circle square__circle--big"></div>
+        <section class="section opportunities">
           <div class="container">
-            <div class="services__container">
-              <div class="services__title">
-                <h2>Услуги</h2>
+            <div class="opportunities__container">
+              <div class="opportunities__title">
+                <h2>Основные возможности <br>рекламных проявлений в ТРЦ</h2>
               </div>
-              <div class="services__wrapper fw">
-                <div class="services__box"><a class="services__link fw" href="">Реклама в ТРЦ<img class="svg" src="./images/arrow.svg" alt="arrow"></a></div>
-                <div class="services__box"><a class="services__link fw" href="">Реклама в наземном транспорте<img class="svg" src="./images/arrow.svg" alt="arrow"></a></div>
-                <div class="services__box"><a class="services__link fw" href="">Digital услуги<img class="svg" src="./images/arrow.svg" alt="arrow"></a></div>
-                <div class="services__box"><a class="services__link fw" href="">BTL реклама<img class="svg" src="./images/arrow.svg" alt="arrow"></a></div>
-                <div class="services__box"><a class="services__link fw" href="">Полиграфия<img class="svg" src="./images/arrow.svg" alt="arrow"></a></div>
-                <div class="services__box"><a class="services__link fw" href="">Реклама в Метро<img class="svg" src="./images/arrow.svg" alt="arrow"></a></div>
-                <div class="services__box"><a class="services__link fw" href="">Наружная реклама<img class="svg" src="./images/arrow.svg" alt="arrow"></a></div>
-                <div class="services__box"><a class="services__link fw" href="">Реклама в Аэропортах<img class="svg" src="./images/arrow.svg" alt="arrow"></a></div>
-                <div class="services__box"><a class="services__link fw" href="">Производство рекламных конструкций<img class="svg" src="./images/arrow.svg" alt="arrow"></a></div>
+              <div class="opportunities__wrapper">
+                <div class="tile fw">
+                  <div class="tile__box"><a class="tile__wrapper" href="./">
+                      <div class="opportunities__img"><img class="lazy" data-src="./images/board.jpg"></div>
+                      <div class="opportunities__text">
+                        <h3>Борды на фасаде ТРЦ<img class="svg" src="./images/arrow.svg" alt="arrow link"></h3>
+                      </div></a></div>
+                  <div class="tile__box"><a class="tile__wrapper" href="./">
+                      <div class="opportunities__img"><img class="lazy" data-src="./images/board.jpg"></div>
+                      <div class="opportunities__text">
+                        <h3>Аудио, видео реклама<img class="svg" src="./images/arrow.svg" alt="arrow link"></h3>
+                      </div></a></div>
+                  <div class="tile__box"><a class="tile__wrapper" href="./">
+                      <div class="opportunities__img"><img class="lazy" data-src="./images/board.jpg"></div>
+                      <div class="opportunities__text">
+                        <h3>Брендирование лифтов, эскалаторов, входных групп<img class="svg" src="./images/arrow.svg" alt="arrow link"></h3>
+                      </div></a></div>
+                  <div class="tile__box"><a class="tile__wrapper" href="./">
+                      <div class="opportunities__img"><img class="lazy" data-src="./images/board.jpg"></div>
+                      <div class="opportunities__text">
+                        <h3>Экспонирование автомобилей<img class="svg" src="./images/arrow.svg" alt="arrow link"></h3>
+                      </div></a></div>
+                  <div class="tile__box"><a class="tile__wrapper" href="./">
+                      <div class="opportunities__img"><img class="lazy" data-src="./images/board.jpg"></div>
+                      <div class="opportunities__text">
+                        <h3>Wi-Fi реклама<img class="svg" src="./images/arrow.svg" alt="arrow link"></h3>
+                      </div></a></div>
+                  <div class="tile__box"><a class="tile__wrapper" href="./">
+                      <div class="opportunities__img"><img class="lazy" data-src="./images/board.jpg"></div>
+                      <div class="opportunities__text">
+                        <h3>Проведение промо акций<img class="svg" src="./images/arrow.svg" alt="arrow link"></h3>
+                      </div></a></div>
+                  <div class="tile__box"><a class="tile__wrapper" href="./">
+                      <div class="opportunities__img"><img class="lazy" data-src="./images/board.jpg"></div>
+                      <div class="opportunities__text">
+                        <h3>Размещение подвесных и нестандартных конструкций<img class="svg" src="./images/arrow.svg" alt="arrow link"></h3>
+                      </div></a></div>
+                  <div class="tile__box"><a class="tile__wrapper" href="./">
+                      <div class="opportunities__img"><img class="lazy" data-src="./images/board.jpg"></div>
+                      <div class="opportunities__text">
+                        <h3>Сити-лайты, лайтбоксы, плакаты внутри ТРЦ<img class="svg" src="./images/arrow.svg" alt="arrow link"></h3>
+                      </div></a></div>
+                </div>
               </div>
-              <div class="services__circle fw"><img src="./images/dots2.gif" alt="animation"></div>
+            </div>
+          </div>
+        </section>
+        <section class="section works">
+          <div class="container">
+            <div class="works__container">
+              <div class="works__title">
+                <h2>ТРЦ с которыми<br>мы работаем</h2>
+              </div>
+              <div class="works__wrapper">
+                <div class="works__tab">
+                  <ul class="works__tab__list fw">
+                    <li class="works__tab__item">
+                      <p>Киев</p>
+                    </li>
+                    <li class="works__tab__item">
+                      <p>Одесса</p>
+                    </li>
+                    <li class="works__tab__item">
+                      <p>Харьков</p>
+                    </li>
+                    <li class="works__tab__item">
+                      <p>Львов</p>
+                    </li>
+                    <li class="works__tab__item">
+                      <p>Днепр</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </section>
