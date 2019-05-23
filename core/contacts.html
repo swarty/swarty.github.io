@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Case IQOS Page</title>
+    <title>Contacts Page</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500,600,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display&amp;display=swap&amp;subset=cyrillic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="styles/case.css">
+    <link rel="stylesheet" href="styles/contacts.css">
   </head>
   <body>
     <div class="wrapper">
@@ -197,123 +197,101 @@
         </div>
       </header>
       <main class="main">
-        <section class="section hero is-white">
-          <div class="square__decor"></div>
-          <div class="hero__background" style="background-image: url(./images/case-bg.jpg)"></div>
-          <div class="container">
-            <div class="hero__container hero__container--inner fw">
-              <div class="hero__crumbs">
-                <div class="crumbs">
-                  <ul class="crumbs__list">
-                    <li class="crumbs__item"><a href="./">Главная</a></li>
-                    <li class="crumbs__item">
-                      <p>Блог</p>
-                    </li>
-                  </ul>
-                  <p class="crumbs__current">Проект</p>
-                </div>
-              </div>
-              <div class="hero__decor">
-                <div class="pulsar">
-                  <div class="pulsar__circle"></div>
-                  <div class="pulsar__circle"></div>
-                  <div class="pulsar__circle"></div>
-                </div>
-              </div>
-              <div class="hero__text-wr fw">
-                <div class="hero__title">
-                  <h1>IQOS промо<br>в Lavina Mall</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section typography">
-          <div class="square__circle square__circle--little typography__circle__4 rellax" data-rellax-speed="-1"></div>
-          <div class="square__circle square__circle--little typography__circle__5 rellax" data-rellax-speed="-2"></div>
-          <div class="container">
-            <div class="typography__container typography__container--case">
-              <div class="typography__title visibility--hidden">
-                <h2>какой-то скрытый заголовок уровня h2 для сео</h2>
-              </div>
-              <div class="typography__wrapper">
-                <div class="side-navigation">
-                  <div class="typography__nav__block">
-                    <div class="side-navigation__row">
-                      <p class="side-navigation__title">ПЕРИОД</p>
-                      <p class="side-navigation__descr">01.2018- 06.2018</p>
-                    </div>
-                    <div class="side-navigation__row">
-                      <p class="side-navigation__title">ГЕОГРАФИЯ</p>
-                      <p class="side-navigation__descr">Киев , Lavina mall</p>
-                    </div>
-                    <div class="side-navigation__row">
-                      <p class="side-navigation__title">РАЗМЕР ПРОМО ЗОНЫ</p>
-                      <p class="side-navigation__descr">12 м2</p>
-                    </div>
-                    <div class="side-navigation__row">
-                      <p class="side-navigation__title">КЛИЕНТ</p>
-                      <p class="side-navigation__descr">IQOS</p>
-                    </div>
+        <section class="section contacts-page">
+          <div class="contacts-page__container">
+            <div class="square__circle square__circle--little contacts-page__circle__1"></div>
+            <div class="square__circle square__circle--little contacts-page__circle__2"></div>
+            <div class="square__circle square__circle--big contacts-page__circle__3"></div>
+            <div class="container">
+              <div class="contacts-page__content">
+                <div class="contacts-page__crumbs fw">
+                  <div class="crumbs">
+                    <ul class="crumbs__list">
+                      <li class="crumbs__item"><a href="./">Главная</a></li>
+                      <li class="crumbs__item">
+                        <p>Контакты</p>
+                      </li>
+                    </ul>
+                    <p class="crumbs__current">Контакты</p>
                   </div>
                 </div>
-                <div class="typography__content">
-                  <div class="typography__text">
-                    <p>На территории бренд зоны IQOS в ТРЦ Lavina Mall посетитель получает возможность ознакомиться и протестировать новую альтернативу сигаретам - аксессуар со специальной системой нагревания табака. Кроме того, бренд зона работает в качестве концептуального пространства, где каждый владелец гаджета может провести бизнес встречу или отдохнуть за чашкой кофе.</p>
+                <div class="contacts-page__wrapper">
+                  <div class="contacts-page__row fw">
+                    <div class="contacts-page__row__block">
+                      <p class="contacts__block__title">Телефон</p><a class="contacts__block__p" href="tel:380680330338">+380 68 033 03 38</a>
+                    </div>
+                    <div class="contacts-page__row__block">
+                      <p class="contacts__block__title">E-mail</p><a class="contacts__block__p" href="mailto:hello@yadro.co">hello@yadro.co</a>
+                    </div>
+                    <div class="contacts-page__row__block">
+                      <p class="contacts__block__title">Адрес</p>
+                      <p class="contacts__block__p">Украина, Киев, ул. Заньковецкой 4, офис 28a</p>
+                    </div>
+                  </div>
+                  <div class="contacts-page__row">
+                    <form class="contacts-page__form js-contacts__form">
+                      <div class="contacts__form__row">
+                        <label class="contacts__form__label">
+                          <input class="contacts__form__input" placeholder="Имя" name="Имя" type="text">
+                        </label>
+                      </div>
+                      <div class="contacts__form__row">
+                        <label class="contacts__form__label">
+                          <input class="contacts__form__input" placeholder="Email" name="Email" type="text">
+                        </label>
+                      </div>
+                      <div class="contacts__form__row">
+                        <label class="contacts__form__label">
+                          <input class="contacts__form__input" placeholder="Телефон" name="Телефон" type="text">
+                        </label>
+                      </div>
+                      <div class="contacts__form__row">
+                        <label class="contacts__form__label">
+                          <textarea class="contacts__form__input" rows="1" placeholder="message" name="Сообщение"></textarea>
+                        </label>
+                      </div>
+                      <div class="contacts__form__row">
+                        <button class="site-button--svg site-button--red">Отправить<img class="svg" src="./images/arrow.svg" alt="arrow"></button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="contacts-page__row fw">
+                    <div class="contacts__footer__policy">
+                      <p>©ЯДRO. Все права защищены</p>
+                    </div>
+                    <div class="contacts__footer__img"><img src="./images/dots1.gif" alt="dots"></div>
+                    <div class="contacts__footer__agency"><a href="https://themoon.agency"><img class="svg" src="./images/by-moon.svg" alt="agency made"></a></div>
                   </div>
                 </div>
-                <div class="socials-links">
-                  <ul class="socials-links__list fw">
-                    <li class="socials-links__item"><a href="./">FACEBOOK</a></li>
-                    <li class="socials-links__item"><a href="./">TWITER</a></li>
-                    <li class="socials-links__item"><a href="./">INSTAGRAM</a></li>
-                  </ul>
-                </div>
+              </div>
+            </div>
+            <div class="contacts-page__decor">
+              <div class="pulsar">
+                <div class="pulsar__circle"></div>
+                <div class="pulsar__circle"></div>
+                <div class="pulsar__circle"></div>
               </div>
             </div>
           </div>
-        </section>
-        <section class="section video video--inner">
-          <div class="video__title visibility--hidden">
-            <h2>Какой-то скритый заголовок уровня h2 для СЕО</h2>
-          </div>
-          <div class="video__block video__block--video">
-            <div class="container">
-              <div class="video__wrapper">
-                <button class="play-button js-play__video"></button><img class="lazy" data-src="./images/video-poster.png" alt="какое-то описание к видео">
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section blog-navigation">
-          <div class="container">
-            <div class="blog-navigation__container fw"><a class="navigation-arrow navigation-arrow--prev" href="./">
-                <p>Назад</p><img class="svg" src="./images/arrow.svg" alt="arrow"></a><a class="navigation-arrow navigation-arrow--next" href="./">
-                <p>Дальше</p><img class="svg" src="./images/arrow.svg" alt="arrow"></a></div>
-          </div>
-          <div class="show-more">
-            <div class="container">
-              <button class="nav-button js-fp__nav"><img class="svg" src="./images/arrow.svg" alt="arrow"></button><a class="show-more__button site-button--svg" href="">Показать больше<img class="svg" src="./images/arrow.svg" alt="arrow"></a>
-            </div>
+          <div class="contacts-page__map">
+            <div class="map" id="map"></div>
           </div>
         </section>
       </main>
-      <footer class="section contacts" data-slide-name="Контакты">
-        <div class="contacts__container">
-          <div class="contacts__content">
-            <div class="contacts__title">
-              <h2>Контакты</h2>
+    </div>
+    <div class="popup js-popup__contact-us">
+      <div class="popup__layer js-popup__close"></div>
+      <div class="popup__container">
+        <div class="popup__wrapper">
+          <div class="popop__close js-popup__close"></div>
+          <div class="popup__content">
+            <div class="popup__content__title">
+              <h2>У Вас есть вопросы?</h2>
+              <p>Связаться с нами</p>
             </div>
-            <div class="contacts__block-wr fw">
-              <div class="square__big"></div>
-              <div class="contacts__block contacts__block--address">
-                <p class="contacts__block__title">Телефон</p><a class="contacts__block__p" href="tel:380680330338">+380 68 033 03 38</a>
-                <p class="contacts__block__title">E-mail</p><a class="contacts__block__p" href="mailto:hello@yadro.co">hello@yadro.co</a>
-                <p class="contacts__block__title">Адрес</p>
-                <p class="contacts__block__p">Украина, Киев, ул. Заньковецкой 4, офис 28a</p>
-              </div>
-              <div class="contacts__block contacts__block--form-wr fw">
-                <form class="contacts__form js-contact__form">
+            <div class="popup__content__blocks fw">
+              <div class="popup__content__row popup__content__row--form">
+                <form class="contacts-page__form js-contacts__form">
                   <div class="contacts__form__row">
                     <label class="contacts__form__label">
                       <input class="contacts__form__input" placeholder="Имя" name="Имя" type="text">
@@ -339,75 +317,16 @@
                   </div>
                 </form>
               </div>
-            </div>
-          </div>
-          <div class="contacts__footer fw">
-            <div class="contacts__footer__wr fw">
-              <div class="contacts__footer__policy">
-                <p>©ЯДRO. Все права защищены</p>
-              </div>
-              <div class="contacts__footer__img"><img src="./images/dots1.gif" alt="dots"></div>
-            </div>
-            <div class="contacts__footer__agency"><a href="https://themoon.agency"><img class="svg" src="./images/by-moon.svg" alt="agency made"></a></div>
-          </div>
-        </div>
-        <div class="contacts__map">
-          <div class="details-block">
-            <p>Смотреть презентацию<br>наших проектов</p><a class="details-block__button fw" href="/">
-              <p class="site-button">Перейти</p><img class="svg" src="./images/arrow.svg" alt="arrow link"></a>
-          </div>
-          <div class="map" id="map"></div>
-        </div>
-      </footer>
-      <div class="popup js-popup__contact-us">
-        <div class="popup__layer js-popup__close"></div>
-        <div class="popup__container">
-          <div class="popup__wrapper">
-            <div class="popop__close js-popup__close"></div>
-            <div class="popup__content">
-              <div class="popup__content__title">
-                <h2>У Вас есть вопросы?</h2>
-                <p>Связаться с нами</p>
-              </div>
-              <div class="popup__content__blocks fw">
-                <div class="popup__content__row popup__content__row--form">
-                  <form class="contacts-page__form js-contacts__form">
-                    <div class="contacts__form__row">
-                      <label class="contacts__form__label">
-                        <input class="contacts__form__input" placeholder="Имя" name="Имя" type="text">
-                      </label>
-                    </div>
-                    <div class="contacts__form__row">
-                      <label class="contacts__form__label">
-                        <input class="contacts__form__input" placeholder="Email" name="Email" type="text">
-                      </label>
-                    </div>
-                    <div class="contacts__form__row">
-                      <label class="contacts__form__label">
-                        <input class="contacts__form__input" placeholder="Телефон" name="Телефон" type="text">
-                      </label>
-                    </div>
-                    <div class="contacts__form__row">
-                      <label class="contacts__form__label">
-                        <textarea class="contacts__form__input" rows="1" placeholder="message" name="Сообщение"></textarea>
-                      </label>
-                    </div>
-                    <div class="contacts__form__row">
-                      <button class="site-button--svg site-button--red">Отправить<img class="svg" src="./images/arrow.svg" alt="arrow"></button>
-                    </div>
-                  </form>
+              <div class="popup__content__row popup__content__row--contacts">
+                <div class="contacts-page__row__block">
+                  <p class="contacts__block__title">Телефон</p><a class="contacts__block__p" href="tel:380680330338">+380 68 033 03 38</a>
                 </div>
-                <div class="popup__content__row popup__content__row--contacts">
-                  <div class="contacts-page__row__block">
-                    <p class="contacts__block__title">Телефон</p><a class="contacts__block__p" href="tel:380680330338">+380 68 033 03 38</a>
-                  </div>
-                  <div class="contacts-page__row__block">
-                    <p class="contacts__block__title">E-mail</p><a class="contacts__block__p" href="mailto:hello@yadro.co">hello@yadro.co</a>
-                  </div>
-                  <div class="contacts-page__row__block">
-                    <p class="contacts__block__title">Адрес</p>
-                    <p class="contacts__block__p">Украина, Киев, ул. Заньковецкой 4, офис 28a</p>
-                  </div>
+                <div class="contacts-page__row__block">
+                  <p class="contacts__block__title">E-mail</p><a class="contacts__block__p" href="mailto:hello@yadro.co">hello@yadro.co</a>
+                </div>
+                <div class="contacts-page__row__block">
+                  <p class="contacts__block__title">Адрес</p>
+                  <p class="contacts__block__p">Украина, Киев, ул. Заньковецкой 4, офис 28a</p>
                 </div>
               </div>
             </div>
