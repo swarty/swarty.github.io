@@ -27,15 +27,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500,600,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display&amp;display=swap&amp;subset=cyrillic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="styles/services-inner.css">
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          <div class="header__container fw"><a class="logo logo--link" href="">
-              <p>ядро</p></a>
+          <div class="header__container fw"><a class="logo logo--link" href="./index.html">
+              <p>ядrо</p></a>
             <nav class="navigation">
               <ul class="navigation__list fw">
                 <li><a href="./about.html">О НАС</a></li>
@@ -200,7 +200,11 @@
       <main class="main">
         <section class="section hero is-white" data-slide-name="Ядро">
           <div class="square__decor"></div>
-          <div class="hero__background" style="background-image: url(./images/services2-bg.jpg)"></div>
+          <div class="hero__background" style="background-image: url(./images/services2-bg.jpg)">
+            <video class="lazy" autoplay muted loop>
+              <source data-src="./video/Seoul-21985.mp4" type="video/mp4">
+            </video>
+          </div>
           <div class="container">
             <div class="hero__container hero__container--inner fw">
               <div class="hero__crumbs">
@@ -226,7 +230,7 @@
                   <h1>Экспонирование<br>автомобилей</h1>
                 </div>
                 <div class="hero__request">
-                  <button class="details-block__button is-orange fw">
+                  <button class="details-block__button is-orange fw js-open__request-popup">
                     <p class="site-button">Оставить заявку</p><img class="svg" src="./images/arrow.svg" alt="arrow link">
                   </button>
                 </div>
@@ -290,9 +294,9 @@
               </div>
             </div>
           </div>
-          <div class="container gallery__arrows js-gallery-controls">
-            <div class="arrow arrow--prev nav-button"><img class="svg" src="./images/arrow.svg" alt="arrow"></div>
-            <div class="arrow arrow--next nav-button"><img class="svg" src="./images/arrow.svg" alt="arrow"></div>
+          <div class="gallery__arrows slider-arrows js-gallery-controls">
+            <div class="slider-arrows__arrow slider-arrows__arrow--prev js-arrow--prev"><img class="svg" src="./images/arrow.svg" alt="arrow nav"></div>
+            <div class="slider-arrows__arrow slider-arrows__arrow--next js-arrow--next"><img class="svg" src="./images/arrow.svg" alt="arrow nav"></div>
           </div>
           <div class="gallery__container">
             <div class="container">
@@ -427,8 +431,8 @@
         </div>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJzKZjPJCzXMrH9yzVVffDgaI7oJf_Gqw&amp;libraries=places"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.9.1/rellax.min.js"></script>

@@ -27,14 +27,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500,600,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display&amp;display=swap&amp;subset=cyrillic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="styles/about.css">
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          <div class="header__container fw"><a class="logo logo--link" href="">
-              <p>ядро</p></a>
+          <div class="header__container fw"><a class="logo logo--link" href="./index.html">
+              <p>ядrо</p></a>
             <nav class="navigation">
               <ul class="navigation__list fw">
                 <li><a href="./about.html">О НАС</a></li>
@@ -230,7 +231,7 @@
             </div>
           </div>
         </section>
-        <section class="section video">
+        <section class="section video section--bottom-reset">
           <div class="video__block">
             <div class="container">
               <div class="video__title visibility--hidden">
@@ -251,195 +252,227 @@
             </div>
           </div>
         </section>
-        <section class="section partners">
-          <div class="square__big"></div>
+        <section class="section advantages">
+          <div class="container">
+            <div class="advantages__container">
+              <div class="advantages__wrapper fw">
+                <div class="square__big"></div>
+                <div class="content-block advantages__block--img">
+                  <div class="advantages__block-logo"><img class="lazy" data-src="./images/big-logo.svg" alt="company logo" title="company logo"></div>
+                  <div class="advantages__block-title">
+                    <h2>Преимущества работы с нашей командой</h2>
+                  </div>
+                </div>
+                <div class="content-block advantages__block--descr">
+                  <ul class="content-block__list">
+                    <li>Команда специалистов составит программу размещений, отвечающую целям вашей рекламной компании</li>
+                    <li>Опытные дизайнеры создадут профессиональный дизайн с учетом всех технических требований макетов для поклейки на транспорт</li>
+                    <li>Специалисты по печати подготовят макет, изготовят в лучшем качестве и доставят в любую точку Украины</li>
+                    <li>Бригада профессиональных монтажников в кратчайшие сроки произведет брендинг выбранного транспорты</li>
+                    <li>После брендинга вы получите профессиональный фотоотчет по каждому транспортному средству</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section partners section--top-reset">
           <div class="square__circle square__circle--little partners__circle__1 rellax" data-rellax-speed="-1"></div>
           <div class="square__circle square__circle--little partners__circle__2 rellax" data-rellax-speed="-2"></div>
           <div class="square__circle square__circle--big partners__circle__3 rellax" data-rellax-speed="-3"></div>
           <div class="container">
-            <div class="partners__title">
-              <h2>Мы работаем с брендами<br>в которые мы верим</h2>
-            </div>
             <div class="partners__container">
-              <div class="tile fw">
-                <div class="tile__box">
-                  <div class="tile__wrapper"><img class="lazy" data-src="./images/allo.svg" alt="allo"></div>
-                </div>
-                <div class="tile__box">
-                  <div class="tile__wrapper"><img class="lazy" data-src="./images/nivea.svg" alt="nivea"></div>
-                </div>
-                <div class="tile__box">
-                  <div class="tile__wrapper"><img class="lazy" data-src="./images/Lexus.svg" alt="lexus"></div>
-                </div>
-                <div class="tile__box">
-                  <div class="tile__wrapper"><img class="lazy" data-src="./images/citrus.svg" alt="citrus"></div>
-                </div>
-                <div class="tile__box">
-                  <div class="tile__wrapper"><img class="lazy" data-src="./images/coca-cola.svg" alt="coca-cola"></div>
-                </div>
-                <div class="tile__box">
-                  <div class="tile__wrapper"><img class="lazy" data-src="./images/Samaung.svg" alt="samsung"></div>
-                </div>
-                <div class="tile__box">
-                  <div class="tile__wrapper"><img class="lazy" data-src="./images/Fiat.svg" alt="fiat"></div>
-                </div>
-                <div class="tile__box">
-                  <div class="tile__wrapper"><img class="lazy" data-src="./images/Milka.svg" alt="milka"></div>
-                </div>
-                <div class="tile__box">
-                  <div class="tile__wrapper"><img class="lazy" data-src="./images/Rafaello.svg" alt="rafaello"></div>
-                </div>
-                <div class="tile__box">
-                  <div class="tile__wrapper"><img class="lazy" data-src="./images/vodafon.svg" alt="vodafon"></div>
-                </div>
-                <div class="tile__box">
-                  <div class="tile__wrapper"><img class="lazy" data-src="./images/nissan.svg" alt="nissan"></div>
-                </div>
-                <div class="tile__box">
-                  <div class="tile__wrapper"><img class="lazy" data-src="./images/huawei.svg" alt="huawei"></div>
-                </div>
-                <div class="tile__box">
-                  <div class="tile__wrapper"><img class="lazy" data-src="./images/iqos.svg" alt="iqos"></div>
-                </div>
-                <div class="tile__box">
-                  <div class="tile__wrapper"><img class="lazy" data-src="./images/visa.svg" alt="visa"></div>
-                </div>
-                <div class="tile__box">
-                  <div class="tile__wrapper"><img class="lazy" data-src="./images/Kinder.svg" alt="kinder"></div>
-                </div>
-                <div class="tile__box">
-                  <div class="tile__wrapper"><img class="lazy" data-src="./images/adidas.svg" alt="sadidas"></div>
+              <div class="partners__title">
+                <h2>Мы работаем с брендами<br>в которые мы верим</h2>
+              </div>
+              <div class="partners__wrapper">
+                <div class="tile fw">
+                  <div class="tile__box">
+                    <div class="tile__wrapper"><img class="lazy" data-src="./images/allo.svg" alt="allo"></div>
+                  </div>
+                  <div class="tile__box">
+                    <div class="tile__wrapper"><img class="lazy" data-src="./images/nivea.svg" alt="nivea"></div>
+                  </div>
+                  <div class="tile__box">
+                    <div class="tile__wrapper"><img class="lazy" data-src="./images/Lexus.svg" alt="lexus"></div>
+                  </div>
+                  <div class="tile__box">
+                    <div class="tile__wrapper"><img class="lazy" data-src="./images/citrus.svg" alt="citrus"></div>
+                  </div>
+                  <div class="tile__box">
+                    <div class="tile__wrapper"><img class="lazy" data-src="./images/coca-cola.svg" alt="coca-cola"></div>
+                  </div>
+                  <div class="tile__box">
+                    <div class="tile__wrapper"><img class="lazy" data-src="./images/Samaung.svg" alt="samsung"></div>
+                  </div>
+                  <div class="tile__box">
+                    <div class="tile__wrapper"><img class="lazy" data-src="./images/Fiat.svg" alt="fiat"></div>
+                  </div>
+                  <div class="tile__box">
+                    <div class="tile__wrapper"><img class="lazy" data-src="./images/Milka.svg" alt="milka"></div>
+                  </div>
+                  <div class="tile__box">
+                    <div class="tile__wrapper"><img class="lazy" data-src="./images/Rafaello.svg" alt="rafaello"></div>
+                  </div>
+                  <div class="tile__box">
+                    <div class="tile__wrapper"><img class="lazy" data-src="./images/vodafon.svg" alt="vodafon"></div>
+                  </div>
+                  <div class="tile__box">
+                    <div class="tile__wrapper"><img class="lazy" data-src="./images/nissan.svg" alt="nissan"></div>
+                  </div>
+                  <div class="tile__box">
+                    <div class="tile__wrapper"><img class="lazy" data-src="./images/huawei.svg" alt="huawei"></div>
+                  </div>
+                  <div class="tile__box">
+                    <div class="tile__wrapper"><img class="lazy" data-src="./images/iqos.svg" alt="iqos"></div>
+                  </div>
+                  <div class="tile__box">
+                    <div class="tile__wrapper"><img class="lazy" data-src="./images/visa.svg" alt="visa"></div>
+                  </div>
+                  <div class="tile__box">
+                    <div class="tile__wrapper"><img class="lazy" data-src="./images/Kinder.svg" alt="kinder"></div>
+                  </div>
+                  <div class="tile__box">
+                    <div class="tile__wrapper"><img class="lazy" data-src="./images/adidas.svg" alt="sadidas"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <section class="section team">
+          <div class="team__decor"><img src="./images/dots2.gif" alt="dots"></div>
           <div class="container">
             <div class="team__container">
               <div class="team__title title">
                 <h2>Наша команда</h2>
+                <div class="slider-arrows">
+                  <div class="slider-arrows__arrow slider-arrows__arrow--prev js-arrow--prev"><img class="svg" src="./images/arrow.svg" alt="arrow nav"></div>
+                  <div class="slider-arrows__arrow slider-arrows__arrow--next js-arrow--next"><img class="svg" src="./images/arrow.svg" alt="arrow nav"></div>
+                </div>
               </div>
-              <div class="tile fw">
-                <div class="tile__box">
-                  <figure class="tile__wrapper">
-                    <div class="team__teammate__img"><img src="./images/team-8.png" alt="Руслан Крапивин"></div>
-                    <div class="team__teammate__text">
-                      <h3>Руслан Крапивин</h3>
-                      <p>CEO, founder</p>
-                      <p>ro@yadro.co</p>
+              <div class="team__slider-wr">
+                <div class="team__slider js-team__slider">
+                  <div class="team__slide">
+                    <div class="team__slide__wrapper">
+                      <div class="team__slide__img"><img class="lazy" data-src="./images/team-8.png" alt="Руслан Крапивин" title="Руслан Крапивин"></div>
+                      <div class="team__slide__text">
+                        <h3>Руслан Крапивин</h3>
+                        <p>CEO, founder</p>
+                        <p>ro@yadro.co</p>
+                      </div>
                     </div>
-                  </figure>
-                </div>
-                <div class="tile__box">
-                  <figure class="tile__wrapper">
-                    <div class="team__teammate__img"><img src="./images/team-1.png" alt="Руслан Крапивин"></div>
-                    <div class="team__teammate__text">
-                      <h3>Руслан Крапивин</h3>
-                      <p>CEO, founder</p>
-                      <p>ro@yadro.co</p>
+                  </div>
+                  <div class="team__slide">
+                    <div class="team__slide__wrapper">
+                      <div class="team__slide__img"><img class="lazy" data-src="./images/team-1.png" alt="Руслан Крапивин" title="Руслан Крапивин"></div>
+                      <div class="team__slide__text">
+                        <h3>Руслан Крапивин</h3>
+                        <p>CEO, founder</p>
+                        <p>ro@yadro.co</p>
+                      </div>
                     </div>
-                  </figure>
-                </div>
-                <div class="tile__box">
-                  <figure class="tile__wrapper">
-                    <div class="team__teammate__img"><img src="./images/team-2.png" alt="Руслан Крапивин"></div>
-                    <div class="team__teammate__text">
-                      <h3>Руслан Крапивин</h3>
-                      <p>CEO, founder</p>
-                      <p>ro@yadro.co</p>
+                  </div>
+                  <div class="team__slide">
+                    <div class="team__slide__wrapper">
+                      <div class="team__slide__img"><img class="lazy" data-src="./images/team-2.png" alt="Руслан Крапивин" title="Руслан Крапивин"></div>
+                      <div class="team__slide__text">
+                        <h3>Руслан Крапивин</h3>
+                        <p>CEO, founder</p>
+                        <p>ro@yadro.co</p>
+                      </div>
                     </div>
-                  </figure>
-                </div>
-                <div class="tile__box">
-                  <figure class="tile__wrapper">
-                    <div class="team__teammate__img"><img src="./images/team-3.png" alt="Руслан Крапивин"></div>
-                    <div class="team__teammate__text">
-                      <h3>Руслан Крапивин</h3>
-                      <p>CEO, founder</p>
-                      <p>ro@yadro.co</p>
+                  </div>
+                  <div class="team__slide">
+                    <div class="team__slide__wrapper">
+                      <div class="team__slide__img"><img class="lazy" data-src="./images/team-3.png" alt="Руслан Крапивин" title="Руслан Крапивин"></div>
+                      <div class="team__slide__text">
+                        <h3>Руслан Крапивин</h3>
+                        <p>CEO, founder</p>
+                        <p>ro@yadro.co</p>
+                      </div>
                     </div>
-                  </figure>
-                </div>
-                <div class="tile__box">
-                  <figure class="tile__wrapper">
-                    <div class="team__teammate__img"><img src="./images/team-4.png" alt="Руслан Крапивин"></div>
-                    <div class="team__teammate__text">
-                      <h3>Руслан Крапивин</h3>
-                      <p>CEO, founder</p>
-                      <p>ro@yadro.co</p>
+                  </div>
+                  <div class="team__slide">
+                    <div class="team__slide__wrapper">
+                      <div class="team__slide__img"><img class="lazy" data-src="./images/team-4.png" alt="Руслан Крапивин" title="Руслан Крапивин"></div>
+                      <div class="team__slide__text">
+                        <h3>Руслан Крапивин</h3>
+                        <p>CEO, founder</p>
+                        <p>ro@yadro.co</p>
+                      </div>
                     </div>
-                  </figure>
-                </div>
-                <div class="tile__box">
-                  <figure class="tile__wrapper">
-                    <div class="team__teammate__img"><img src="./images/team-5.png" alt="Руслан Крапивин"></div>
-                    <div class="team__teammate__text">
-                      <h3>Руслан Крапивин</h3>
-                      <p>CEO, founder</p>
-                      <p>ro@yadro.co</p>
+                  </div>
+                  <div class="team__slide">
+                    <div class="team__slide__wrapper">
+                      <div class="team__slide__img"><img class="lazy" data-src="./images/team-5.png" alt="Руслан Крапивин" title="Руслан Крапивин"></div>
+                      <div class="team__slide__text">
+                        <h3>Руслан Крапивин</h3>
+                        <p>CEO, founder</p>
+                        <p>ro@yadro.co</p>
+                      </div>
                     </div>
-                  </figure>
-                </div>
-                <div class="tile__box">
-                  <figure class="tile__wrapper">
-                    <div class="team__teammate__img"><img src="./images/team-6.png" alt="Руслан Крапивин"></div>
-                    <div class="team__teammate__text">
-                      <h3>Руслан Крапивин</h3>
-                      <p>CEO, founder</p>
-                      <p>ro@yadro.co</p>
+                  </div>
+                  <div class="team__slide">
+                    <div class="team__slide__wrapper">
+                      <div class="team__slide__img"><img class="lazy" data-src="./images/team-6.png" alt="Руслан Крапивин" title="Руслан Крапивин"></div>
+                      <div class="team__slide__text">
+                        <h3>Руслан Крапивин</h3>
+                        <p>CEO, founder</p>
+                        <p>ro@yadro.co</p>
+                      </div>
                     </div>
-                  </figure>
-                </div>
-                <div class="tile__box">
-                  <figure class="tile__wrapper">
-                    <div class="team__teammate__img"><img src="./images/team-7.png" alt="Руслан Крапивин"></div>
-                    <div class="team__teammate__text">
-                      <h3>Руслан Крапивин</h3>
-                      <p>CEO, founder</p>
-                      <p>ro@yadro.co</p>
+                  </div>
+                  <div class="team__slide">
+                    <div class="team__slide__wrapper">
+                      <div class="team__slide__img"><img class="lazy" data-src="./images/team-7.png" alt="Руслан Крапивин" title="Руслан Крапивин"></div>
+                      <div class="team__slide__text">
+                        <h3>Руслан Крапивин</h3>
+                        <p>CEO, founder</p>
+                        <p>ro@yadro.co</p>
+                      </div>
                     </div>
-                  </figure>
-                </div>
-                <div class="tile__box">
-                  <figure class="tile__wrapper">
-                    <div class="team__teammate__img"><img src="./images/team-4.png" alt="Руслан Крапивин"></div>
-                    <div class="team__teammate__text">
-                      <h3>Руслан Крапивин</h3>
-                      <p>CEO, founder</p>
-                      <p>ro@yadro.co</p>
+                  </div>
+                  <div class="team__slide">
+                    <div class="team__slide__wrapper">
+                      <div class="team__slide__img"><img class="lazy" data-src="./images/team-4.png" alt="Руслан Крапивин" title="Руслан Крапивин"></div>
+                      <div class="team__slide__text">
+                        <h3>Руслан Крапивин</h3>
+                        <p>CEO, founder</p>
+                        <p>ro@yadro.co</p>
+                      </div>
                     </div>
-                  </figure>
-                </div>
-                <div class="tile__box">
-                  <figure class="tile__wrapper">
-                    <div class="team__teammate__img"><img src="./images/team-5.png" alt="Руслан Крапивин"></div>
-                    <div class="team__teammate__text">
-                      <h3>Руслан Крапивин</h3>
-                      <p>CEO, founder</p>
-                      <p>ro@yadro.co</p>
+                  </div>
+                  <div class="team__slide">
+                    <div class="team__slide__wrapper">
+                      <div class="team__slide__img"><img class="lazy" data-src="./images/team-5.png" alt="Руслан Крапивин" title="Руслан Крапивин"></div>
+                      <div class="team__slide__text">
+                        <h3>Руслан Крапивин</h3>
+                        <p>CEO, founder</p>
+                        <p>ro@yadro.co</p>
+                      </div>
                     </div>
-                  </figure>
-                </div>
-                <div class="tile__box">
-                  <figure class="tile__wrapper">
-                    <div class="team__teammate__img"><img src="./images/team-6.png" alt="Руслан Крапивин"></div>
-                    <div class="team__teammate__text">
-                      <h3>Руслан Крапивин</h3>
-                      <p>CEO, founder</p>
-                      <p>ro@yadro.co</p>
+                  </div>
+                  <div class="team__slide">
+                    <div class="team__slide__wrapper">
+                      <div class="team__slide__img"><img class="lazy" data-src="./images/team-6.png" alt="Руслан Крапивин" title="Руслан Крапивин"></div>
+                      <div class="team__slide__text">
+                        <h3>Руслан Крапивин</h3>
+                        <p>CEO, founder</p>
+                        <p>ro@yadro.co</p>
+                      </div>
                     </div>
-                  </figure>
-                </div>
-                <div class="tile__box">
-                  <figure class="tile__wrapper">
-                    <div class="team__teammate__img"><img src="./images/team-7.png" alt="Руслан Крапивин"></div>
-                    <div class="team__teammate__text">
-                      <h3>Руслан Крапивин</h3>
-                      <p>CEO, founder</p>
-                      <p>ro@yadro.co</p>
+                  </div>
+                  <div class="team__slide">
+                    <div class="team__slide__wrapper">
+                      <div class="team__slide__img"><img class="lazy" data-src="./images/team-7.png" alt="Руслан Крапивин" title="Руслан Крапивин"></div>
+                      <div class="team__slide__text">
+                        <h3>Руслан Крапивин</h3>
+                        <p>CEO, founder</p>
+                        <p>ro@yadro.co</p>
+                      </div>
                     </div>
-                  </figure>
+                  </div>
                 </div>
               </div>
             </div>
@@ -611,6 +644,7 @@
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJzKZjPJCzXMrH9yzVVffDgaI7oJf_Gqw&amp;libraries=places"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.9.1/rellax.min.js"></script>

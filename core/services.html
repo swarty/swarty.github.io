@@ -33,8 +33,8 @@
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          <div class="header__container fw"><a class="logo logo--link" href="">
-              <p>ядро</p></a>
+          <div class="header__container fw"><a class="logo logo--link" href="./index.html">
+              <p>ядrо</p></a>
             <nav class="navigation">
               <ul class="navigation__list fw">
                 <li><a href="./about.html">О НАС</a></li>
@@ -199,7 +199,11 @@
       <main class="main">
         <section class="section hero is-white" data-slide-name="Ядро">
           <div class="square__decor"></div>
-          <div class="hero__background" style="background-image: url(./images/hero-services-bg.jpg)"></div>
+          <div class="hero__background" style="background-image: url(./images/hero-services-bg.jpg)">
+            <video class="lazy" autoplay muted loop>
+              <source data-src="./video/Seoul-21985.mp4" type="video/mp4">
+            </video>
+          </div>
           <div class="container">
             <div class="hero__container hero__container--inner fw">
               <div class="hero__crumbs">
@@ -218,7 +222,7 @@
                   <h1>Команда профессионалов,<br>которая занимается рекламой <br>в Торговых центрах Украины</h1>
                 </div>
                 <div class="hero__request">
-                  <button class="details-block__button is-orange fw">
+                  <button class="details-block__button is-orange fw js-open__request-popup">
                     <p class="site-button">Оставить заявку</p><img class="svg" src="./images/arrow.svg" alt="arrow link">
                   </button>
                 </div>
@@ -226,7 +230,50 @@
             </div>
           </div>
         </section>
-        <section class="section opportunities">
+        <section class="section info">
+          <div class="container">
+            <div class="info__title visibility--hidden">
+              <h2>какой-то скрытый заголовок уровня h2 для СЕО</h2>
+            </div>
+            <div class="info__container">
+              <div class="info__wrapper">
+                <div class="info__box fw">
+                  <div class="content-block info__box__img">
+                    <div class="info__decor"><img class="lazy" data-src="./images/dots1.gif" alt="decor img"></div>
+                    <div class="content-block__subtitle-wr">
+                      <h3>Реклама в торговых центрах</h3>
+                    </div>
+                  </div>
+                  <div class="content-block info__box__descr">
+                    <div class="content-block__text">
+                      <p>Любой крупный торговый центр Укрины- это колоссальное количество людей в день, которые явно пришли с целью деньги не экономить, а тратить. Огромные потоки поситителей гарантируют большое количество контактов с вашей рекламой. Реклама в ТРЦ Киева может быть самой разнообразной, она дает плотный контакт с потребительски активными поситителями и возможность воздействовать на аудиторию по целевым группам. Креативная реклама в ТЦ - реклама, которую нельзя игнорировать.</p>
+                      <p>И любой бихнесмен, заинтересованный в процветании своего дела, понимает, что главная цель не в том, чтобы заставить клиента расстаться со своими кровными, а в том, чтобы убедить его выбрать для этого именно свой бренд.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info__box fw">
+                  <div class="content-block info__box__img">
+                    <div class="content-block__subtitle-wr">
+                      <h3>Преимущества рекламы в ТРЦ</h3>
+                    </div>
+                  </div>
+                  <div class="content-block info__box__descr">
+                    <ul class="content-block__list">
+                      <li>широкий охват целевой аудитории</li>
+                      <li>прямой контакт с потенциальными покупателями</li>
+                      <li>80% всех решений о пукупке чего-либо принимается в непосредственной близости к месту продаж</li>
+                      <li>возможность креативного подхода в подаче рекламы</li>
+                      <li>целевая аудиторию - представители экономически активной части населения</li>
+                      <li>тематическая реклама и промо-акции в ТЦ, привлекают внимание поситителей и отличаются продолжительностью контакта</li>
+                      <li>наружная реклама в ТРЦ ориентирована на различные возрастные и социальные группы.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section opportunities section--top-reset">
           <div class="container">
             <div class="opportunities__container">
               <div class="opportunities__title">
@@ -234,42 +281,42 @@
               </div>
               <div class="opportunities__wrapper">
                 <div class="tile fw">
-                  <div class="tile__box"><a class="tile__wrapper" href="./">
+                  <div class="tile__box"><a class="tile__wrapper" href="./services-inner.html">
                       <div class="opportunities__img"><img class="lazy" data-src="./images/board.jpg"></div>
                       <div class="opportunities__text">
                         <h3>Борды на фасаде ТРЦ<img class="svg" src="./images/arrow.svg" alt="arrow link"></h3>
                       </div></a></div>
-                  <div class="tile__box"><a class="tile__wrapper" href="./">
+                  <div class="tile__box"><a class="tile__wrapper" href="./services-inner.html">
                       <div class="opportunities__img"><img class="lazy" data-src="./images/board.jpg"></div>
                       <div class="opportunities__text">
                         <h3>Аудио, видео реклама<img class="svg" src="./images/arrow.svg" alt="arrow link"></h3>
                       </div></a></div>
-                  <div class="tile__box"><a class="tile__wrapper" href="./">
+                  <div class="tile__box"><a class="tile__wrapper" href="./services-inner.html">
                       <div class="opportunities__img"><img class="lazy" data-src="./images/board.jpg"></div>
                       <div class="opportunities__text">
                         <h3>Брендирование лифтов, эскалаторов, входных групп<img class="svg" src="./images/arrow.svg" alt="arrow link"></h3>
                       </div></a></div>
-                  <div class="tile__box"><a class="tile__wrapper" href="./">
+                  <div class="tile__box"><a class="tile__wrapper" href="./services-inner.html">
                       <div class="opportunities__img"><img class="lazy" data-src="./images/board.jpg"></div>
                       <div class="opportunities__text">
                         <h3>Экспонирование автомобилей<img class="svg" src="./images/arrow.svg" alt="arrow link"></h3>
                       </div></a></div>
-                  <div class="tile__box"><a class="tile__wrapper" href="./">
+                  <div class="tile__box"><a class="tile__wrapper" href="./services-inner.html">
                       <div class="opportunities__img"><img class="lazy" data-src="./images/board.jpg"></div>
                       <div class="opportunities__text">
                         <h3>Wi-Fi реклама<img class="svg" src="./images/arrow.svg" alt="arrow link"></h3>
                       </div></a></div>
-                  <div class="tile__box"><a class="tile__wrapper" href="./">
+                  <div class="tile__box"><a class="tile__wrapper" href="./services-inner.html">
                       <div class="opportunities__img"><img class="lazy" data-src="./images/board.jpg"></div>
                       <div class="opportunities__text">
                         <h3>Проведение промо акций<img class="svg" src="./images/arrow.svg" alt="arrow link"></h3>
                       </div></a></div>
-                  <div class="tile__box"><a class="tile__wrapper" href="./">
+                  <div class="tile__box"><a class="tile__wrapper" href="./services-inner.html">
                       <div class="opportunities__img"><img class="lazy" data-src="./images/board.jpg"></div>
                       <div class="opportunities__text">
                         <h3>Размещение подвесных и нестандартных конструкций<img class="svg" src="./images/arrow.svg" alt="arrow link"></h3>
                       </div></a></div>
-                  <div class="tile__box"><a class="tile__wrapper" href="./">
+                  <div class="tile__box"><a class="tile__wrapper" href="./services-inner.html">
                       <div class="opportunities__img"><img class="lazy" data-src="./images/board.jpg"></div>
                       <div class="opportunities__text">
                         <h3>Сити-лайты, лайтбоксы, плакаты внутри ТРЦ<img class="svg" src="./images/arrow.svg" alt="arrow link"></h3>
