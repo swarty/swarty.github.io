@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500,600,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display&amp;display=swap&amp;subset=cyrillic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="styles/services.css">
   </head>
   <body>
@@ -37,8 +38,8 @@
               <p>ядrо</p></a>
             <nav class="navigation">
               <ul class="navigation__list fw">
-                <li><a href="./about.html">О НАС</a></li>
-                <li><a href="./services.html">УСЛУГИ</a>
+                <li><a href="./about.html">О Нас</a></li>
+                <li><a href="./services.html">Услуги</a>
                   <div class="header__services">
                     <div class="header__services__close-wr">
                       <div class="header__services__close js-header__close"></div>
@@ -174,9 +175,9 @@
                     </div>
                   </div>
                 </li>
-                <li><a href="./portfolio.html">ПОРТФОЛИО</a></li>
-                <li><a href="./blog.html">БЛОГ</a></li>
-                <li><a href="./contacts.html">КОНТАКТЫ</a></li>
+                <li><a href="./portfolio.html">Портфолио</a></li>
+                <li><a href="./blog.html">Блог</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
               </ul>
             </nav>
             <div class="header__action-button">
@@ -197,7 +198,7 @@
         </div>
       </header>
       <main class="main">
-        <section class="section hero is-white" data-slide-name="Ядро">
+        <section class="section hero is-white">
           <div class="square__decor"></div>
           <div class="hero__background" style="background-image: url(./images/hero-services-bg.jpg)">
             <video class="lazy" autoplay muted loop>
@@ -221,11 +222,11 @@
                 <div class="hero__title">
                   <h1>Команда профессионалов,<br>которая занимается рекламой <br>в Торговых центрах Украины</h1>
                 </div>
-                <div class="hero__request">
-                  <button class="details-block__button is-orange fw js-open__request-popup">
-                    <p class="site-button">Оставить заявку</p><img class="svg" src="./images/arrow.svg" alt="arrow link">
-                  </button>
-                </div>
+              </div>
+              <div class="hero__request">
+                <button class="details-block__button is-orange fw js-open__request-popup">
+                  <p class="site-button">Оставить заявку</p><img class="svg" src="./images/arrow.svg" alt="arrow link">
+                </button>
               </div>
             </div>
           </div>
@@ -279,7 +280,7 @@
               <div class="opportunities__title">
                 <h2>Основные возможности <br>рекламных проявлений в ТРЦ</h2>
               </div>
-              <div class="opportunities__wrapper">
+              <div class="opportunities__wrapper js-opportunities__slider">
                 <div class="tile fw">
                   <div class="tile__box"><a class="tile__wrapper" href="./services-inner.html">
                       <div class="opportunities__img"><img class="lazy" data-src="./images/board.jpg"></div>
@@ -510,19 +511,19 @@
             </div>
           </div>
           <div class="projects__container">
-            <div class="projects__wrapper">
+            <div class="projects__wrapper js-projects__wrapper">
               <div class="projects__case">
                 <div class="container">
                   <div class="projects__case__wrapper fw">
                     <div class="projects__block projects__block--text">
                       <div class="projects__case__title">
-                        <h3>Case 1 длинное название в 2 строки<span class="rellax" data-rellax-speed="2"></span></h3>
+                        <h3>Case 1 длинное название в 2 строки<span>01</span></h3>
                       </div>
                       <div class="projects__case__line"></div>
                       <div class="projects__case__descr">
-                        <p class="projects__case__subtitle">Клиент</p>
+                        <p class="projects__case__subtitle projects__case__client-name">Клиент</p>
                         <p class="projects__case__p">Свиточ</p>
-                        <p class="projects__case__subtitle">Тип услуги</p>
+                        <p class="projects__case__subtitle projects__case__client-type">Тип услуги</p>
                         <p class="projects__case__p">Реклама в Торгово-развлекательных центрах</p>
                       </div>
                     </div>
@@ -531,7 +532,7 @@
                       <div class="details-block">
                         <p>Подробнее <br>о проекте</p><a class="details-block__button fw" href="./case.html">
                           <p class="site-button">Перейти</p><img class="svg" src="./images/arrow.svg" alt="arrow link"></a>
-                      </div><img class="lazy project__case__img" data-src="./images/case1.png" alt="case img">
+                      </div><img class="lazy project__case__img" data-src="./images/case1.png" alt="case img" title="case img">
                     </div>
                   </div>
                 </div>
@@ -541,13 +542,13 @@
                   <div class="projects__case__wrapper fw">
                     <div class="projects__block projects__block--text">
                       <div class="projects__case__title">
-                        <h3>Case 1 длинное название в 2 строки<span class="rellax" data-rellax-speed="2"></span></h3>
+                        <h3>Case 1 длинное название в 2 строки<span>02</span></h3>
                       </div>
                       <div class="projects__case__line"></div>
                       <div class="projects__case__descr">
-                        <p class="projects__case__subtitle">Клиент</p>
+                        <p class="projects__case__subtitle projects__case__client-name">Клиент</p>
                         <p class="projects__case__p">Свиточ</p>
-                        <p class="projects__case__subtitle">Тип услуги</p>
+                        <p class="projects__case__subtitle projects__case__client-type">Тип услуги</p>
                         <p class="projects__case__p">Реклама в Торгово-развлекательных центрах</p>
                       </div>
                     </div>
@@ -556,7 +557,7 @@
                       <div class="details-block">
                         <p>Подробнее <br>о проекте</p><a class="details-block__button fw" href="./case.html">
                           <p class="site-button">Перейти</p><img class="svg" src="./images/arrow.svg" alt="arrow link"></a>
-                      </div><img class="lazy project__case__img" data-src="./images/case2.png" alt="case img">
+                      </div><img class="lazy project__case__img" data-src="./images/case2.png" alt="case img" title="case img">
                     </div>
                   </div>
                 </div>
@@ -566,13 +567,13 @@
                   <div class="projects__case__wrapper fw">
                     <div class="projects__block projects__block--text">
                       <div class="projects__case__title">
-                        <h3>Case 1 длинное название в 2 строки<span class="rellax" data-rellax-speed="2"></span></h3>
+                        <h3>Case 1 длинное название в 2 строки<span>03</span></h3>
                       </div>
                       <div class="projects__case__line"></div>
                       <div class="projects__case__descr">
-                        <p class="projects__case__subtitle">Клиент</p>
+                        <p class="projects__case__subtitle projects__case__client-name">Клиент</p>
                         <p class="projects__case__p">Свиточ</p>
-                        <p class="projects__case__subtitle">Тип услуги</p>
+                        <p class="projects__case__subtitle projects__case__client-type">Тип услуги</p>
                         <p class="projects__case__p">Реклама в Торгово-развлекательных центрах</p>
                       </div>
                     </div>
@@ -581,7 +582,7 @@
                       <div class="details-block">
                         <p>Подробнее <br>о проекте</p><a class="details-block__button fw" href="./case.html">
                           <p class="site-button">Перейти</p><img class="svg" src="./images/arrow.svg" alt="arrow link"></a>
-                      </div><img class="lazy project__case__img" data-src="./images/case3.png" alt="case img">
+                      </div><img class="lazy project__case__img" data-src="./images/case3.png" alt="case img" title="case img">
                     </div>
                   </div>
                 </div>
@@ -591,13 +592,13 @@
                   <div class="projects__case__wrapper fw">
                     <div class="projects__block projects__block--text">
                       <div class="projects__case__title">
-                        <h3>Case 1 длинное название в 2 строки<span class="rellax" data-rellax-speed="2"></span></h3>
+                        <h3>Case 1 длинное название в 2 строки<span>04</span></h3>
                       </div>
                       <div class="projects__case__line"></div>
                       <div class="projects__case__descr">
-                        <p class="projects__case__subtitle">Клиент</p>
+                        <p class="projects__case__subtitle projects__case__client-name">Клиент</p>
                         <p class="projects__case__p">Свиточ</p>
-                        <p class="projects__case__subtitle">Тип услуги</p>
+                        <p class="projects__case__subtitle projects__case__client-type">Тип услуги</p>
                         <p class="projects__case__p">Реклама в Торгово-развлекательных центрах</p>
                       </div>
                     </div>
@@ -606,7 +607,7 @@
                       <div class="details-block">
                         <p>Подробнее <br>о проекте</p><a class="details-block__button fw" href="./case.html">
                           <p class="site-button">Перейти</p><img class="svg" src="./images/arrow.svg" alt="arrow link"></a>
-                      </div><img class="lazy project__case__img" data-src="./images/projects-4.png" alt="case img">
+                      </div><img class="lazy project__case__img" data-src="./images/projects-4.png" alt="case img" title="case img">
                     </div>
                   </div>
                 </div>
@@ -622,7 +623,8 @@
           </div>
           <div class="show-more">
             <div class="container">
-              <button class="nav-button js-fp__nav"><img class="svg" src="./images/arrow.svg" alt="arrow"></button><a class="show-more__button site-button--svg" href="">Показать больше<img class="svg" src="./images/arrow.svg" alt="arrow"></a>
+              <button class="nav-button js-fp__nav"><img class="svg" src="./images/arrow.svg" alt="arrow"></button>
+              <button class="show-more__button site-button--svg js-show-more">Показать больше<img class="svg" src="./images/arrow.svg" alt="arrow"></button>
             </div>
           </div>
         </section>
@@ -650,12 +652,12 @@
                   </div>
                   <div class="contacts__form__row">
                     <label class="contacts__form__label">
-                      <input class="contacts__form__input" placeholder="Email" name="Email" type="text">
+                      <input class="contacts__form__input" placeholder="Email" name="Email" type="email">
                     </label>
                   </div>
                   <div class="contacts__form__row">
                     <label class="contacts__form__label">
-                      <input class="contacts__form__input" placeholder="Телефон" name="Телефон" type="text">
+                      <input class="contacts__form__input" placeholder="Телефон" name="Телефон" type="tel">
                     </label>
                   </div>
                   <div class="contacts__form__row">
@@ -670,15 +672,6 @@
               </div>
             </div>
           </div>
-          <div class="contacts__footer fw">
-            <div class="contacts__footer__wr fw">
-              <div class="contacts__footer__policy">
-                <p>©ЯДRO. Все права защищены</p>
-              </div>
-              <div class="contacts__footer__img"><img src="./images/dots1.gif" alt="dots"></div>
-            </div>
-            <div class="contacts__footer__agency"><a href="https://themoon.agency"><img class="svg" src="./images/by-moon.svg" alt="agency made"></a></div>
-          </div>
         </div>
         <div class="contacts__map">
           <div class="details-block">
@@ -687,12 +680,21 @@
           </div>
           <div class="map" id="map"></div>
         </div>
+        <div class="contacts__footer fw">
+          <div class="contacts__footer__wr fw">
+            <div class="contacts__footer__policy">
+              <p>©ЯДRO. Все права защищены</p>
+            </div>
+            <div class="contacts__footer__img"><img src="./images/dots1.gif" alt="dots"></div>
+          </div>
+          <div class="contacts__footer__agency"><a href="https://themoon.agency"><img class="svg" src="./images/by-moon.svg" alt="agency made"></a></div>
+        </div>
       </footer>
       <div class="popup js-popup__contact-us">
         <div class="popup__layer js-popup__close"></div>
         <div class="popup__container">
           <div class="popup__wrapper">
-            <div class="popop__close js-popup__close"></div>
+            <div class="popup__close js-popup__close"></div>
             <div class="popup__content">
               <div class="popup__content__title">
                 <h2>У Вас есть вопросы?</h2>
@@ -743,11 +745,24 @@
           </div>
         </div>
       </div>
+      <div class="popup popup--video js-popup__video">
+        <div class="popup__layer js-popup__close"></div>
+        <div class="popup__container popup__container--video">
+          <div class="popup__wrapper">
+            <div class="popup__close js-popup__close"></div>
+            <div class="popup__content">
+              <iframe iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJzKZjPJCzXMrH9yzVVffDgaI7oJf_Gqw&amp;libraries=places"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.9.1/rellax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
     <script src="scripts/app.js"></script>
   </body>
 </html>

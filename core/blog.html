@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Blog Inner Page</title>
+    <title>Blog Page</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -37,8 +37,8 @@
               <p>ядrо</p></a>
             <nav class="navigation">
               <ul class="navigation__list fw">
-                <li><a href="./about.html">О НАС</a></li>
-                <li><a href="./services.html">УСЛУГИ</a>
+                <li><a href="./about.html">О Нас</a></li>
+                <li><a href="./services.html">Услуги</a>
                   <div class="header__services">
                     <div class="header__services__close-wr">
                       <div class="header__services__close js-header__close"></div>
@@ -174,9 +174,9 @@
                     </div>
                   </div>
                 </li>
-                <li><a href="./portfolio.html">ПОРТФОЛИО</a></li>
-                <li><a href="./blog.html">БЛОГ</a></li>
-                <li><a href="./contacts.html">КОНТАКТЫ</a></li>
+                <li><a href="./portfolio.html">Портфолио</a></li>
+                <li><a href="./blog.html">Блог</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
               </ul>
             </nav>
             <div class="header__action-button">
@@ -199,11 +199,7 @@
       <main class="main">
         <section class="section hero">
           <div class="square__decor"></div>
-          <div class="hero__background" style="background-image: url(./images/blog-bg.jpg)">
-            <video class="lazy" autoplay muted loop>
-              <source data-src="./video/Seoul-21985.mp4" type="video/mp4">
-            </video>
-          </div>
+          <div class="hero__background" style="background-image: url(./images/blog-bg.jpg)"></div>
           <div class="container">
             <div class="hero__container hero__container--inner fw">
               <div class="hero__crumbs">
@@ -221,20 +217,20 @@
                 <div class="hero__title">
                   <h1>Подпишитесь<br>на ядрёные новости</h1>
                 </div>
-                <div class="hero__form fw">
-                  <form class="form">
-                    <div class="form__row">
-                      <label>
-                        <input class="form__input" type="email" required pattern="" placeholder="email">
-                      </label>
-                    </div>
-                    <div class="form__row">
-                      <button class="details-block__button is-orange fw">
-                        <p class="site-button">Подписаться</p><img class="svg" src="./images/arrow.svg" alt="arrow link">
-                      </button>
-                    </div>
-                  </form>
-                </div>
+              </div>
+              <div class="hero__form fw">
+                <form class="form">
+                  <div class="form__row">
+                    <label>
+                      <input class="form__input" type="email" required pattern="" placeholder="email">
+                    </label>
+                  </div>
+                  <div class="form__row">
+                    <button class="details-block__button is-orange fw">
+                      <p class="site-button">Подписаться</p><img class="svg" src="./images/arrow.svg" alt="arrow link">
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -264,7 +260,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="news__content fw">
+                <div class="news__content fw js-news__wrapper">
                   <div class="news__block">
                     <div class="box">
                       <div class="box__img-wr"><img class="lazy" data-src="./images/news-1.jpg" alt="some alt" title="some alt">
@@ -374,7 +370,8 @@
           </div>
           <div class="show-more">
             <div class="container">
-              <button class="nav-button js-fp__nav"><img class="svg" src="./images/arrow.svg" alt="arrow"></button><a class="show-more__button site-button--svg" href="">Показать больше<img class="svg" src="./images/arrow.svg" alt="arrow"></a>
+              <button class="nav-button js-fp__nav"><img class="svg" src="./images/arrow.svg" alt="arrow"></button>
+              <button class="show-more__button site-button--svg js-show-more">Показать больше<img class="svg" src="./images/arrow.svg" alt="arrow"></button>
             </div>
           </div>
         </section>
@@ -402,12 +399,12 @@
                   </div>
                   <div class="contacts__form__row">
                     <label class="contacts__form__label">
-                      <input class="contacts__form__input" placeholder="Email" name="Email" type="text">
+                      <input class="contacts__form__input" placeholder="Email" name="Email" type="email">
                     </label>
                   </div>
                   <div class="contacts__form__row">
                     <label class="contacts__form__label">
-                      <input class="contacts__form__input" placeholder="Телефон" name="Телефон" type="text">
+                      <input class="contacts__form__input" placeholder="Телефон" name="Телефон" type="tel">
                     </label>
                   </div>
                   <div class="contacts__form__row">
@@ -422,15 +419,6 @@
               </div>
             </div>
           </div>
-          <div class="contacts__footer fw">
-            <div class="contacts__footer__wr fw">
-              <div class="contacts__footer__policy">
-                <p>©ЯДRO. Все права защищены</p>
-              </div>
-              <div class="contacts__footer__img"><img src="./images/dots1.gif" alt="dots"></div>
-            </div>
-            <div class="contacts__footer__agency"><a href="https://themoon.agency"><img class="svg" src="./images/by-moon.svg" alt="agency made"></a></div>
-          </div>
         </div>
         <div class="contacts__map">
           <div class="details-block">
@@ -439,12 +427,21 @@
           </div>
           <div class="map" id="map"></div>
         </div>
+        <div class="contacts__footer fw">
+          <div class="contacts__footer__wr fw">
+            <div class="contacts__footer__policy">
+              <p>©ЯДRO. Все права защищены</p>
+            </div>
+            <div class="contacts__footer__img"><img src="./images/dots1.gif" alt="dots"></div>
+          </div>
+          <div class="contacts__footer__agency"><a href="https://themoon.agency"><img class="svg" src="./images/by-moon.svg" alt="agency made"></a></div>
+        </div>
       </footer>
       <div class="popup js-popup__contact-us">
         <div class="popup__layer js-popup__close"></div>
         <div class="popup__container">
           <div class="popup__wrapper">
-            <div class="popop__close js-popup__close"></div>
+            <div class="popup__close js-popup__close"></div>
             <div class="popup__content">
               <div class="popup__content__title">
                 <h2>У Вас есть вопросы?</h2>
@@ -495,11 +492,23 @@
           </div>
         </div>
       </div>
+      <div class="popup popup--video js-popup__video">
+        <div class="popup__layer js-popup__close"></div>
+        <div class="popup__container popup__container--video">
+          <div class="popup__wrapper">
+            <div class="popup__close js-popup__close"></div>
+            <div class="popup__content">
+              <iframe iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJzKZjPJCzXMrH9yzVVffDgaI7oJf_Gqw&amp;libraries=places"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.9.1/rellax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
     <script src="scripts/app.js"></script>
   </body>
 </html>
