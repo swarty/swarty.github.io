@@ -10,14 +10,9 @@ window.addEventListener('DOMContentLoaded', function () {
 		valueArray: null,
 	};
 
-	console.log(data)
-
 	window.addEventListener('click', audioTrigger);
 
-
 	function audioTrigger() {
-		console.log(data.context)
-		console.log(data.audio.paused)
 		if(!data.context) preparation();
 		if(data.audio.paused) {
 			data.audio.play();
@@ -38,10 +33,11 @@ window.addEventListener('DOMContentLoaded', function () {
 	}
 
 	function loop() {
-		// window.requestAnimationFrame(loop);
-		if(!data.audio.paused) {
-			console.log('shit')
-		}
+		// console.log(data.audio.paused)
+		// if(!data.audio.paused) {
+		window.requestAnimationFrame(loop);
+		// 	console.log('shit')
+		// }
 
 		data.valueArray = new Uint8Array(data.analyzer.frequencyBinCount);
 		data.analyzer.getByteFrequencyData(data.valueArray);
