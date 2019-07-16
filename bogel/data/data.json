@@ -1,0 +1,1631 @@
+{
+	"bogels": [
+		{
+			"id": 1,
+			"cat-img": "./dynamicImages/shrimp-cat.svg",
+			"prod-img": "./dynamicImages/bogel-shrimp-1.png",
+			"title": {
+				"ru": "Бейгл с креветкой",
+				"ua": "Бейгл з креветкою",
+				"en": "Bogel with shrimp"
+			},
+			"price": 69,
+			"portion-price": [
+				{
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Русский текст",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "Английский текст"
+			},
+			"ingredients": [
+				{
+					"name": {
+						"ru": "Лосось",
+						"ua": "Лосось",
+						"en": "Salmon"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "пряный крем с каперсами",
+						"ua": "Пряний крем сир з каперсами",
+						"en": "english text text"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				}
+			],
+			"gallery": [
+				"./dynamicImages/bogel-shrimp-1.png",
+				"./dynamicImages/bogel-shrimp-1.png",
+				"./dynamicImages/bogel-shrimp-1.png"
+			]
+		},
+		{
+			"id": 2,
+			"cat-img": "./dynamicImages/salmon-cat.svg",
+			"prod-img": "./dynamicImages/bogel-salmon-1.png",
+			"title": {
+				"ru": "Лосось",
+				"ua": "Бейгл з слабосоленої лососем",
+				"en": "Salmon"
+			},
+			"price": 69,
+			"portion-price": [
+				{
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Лосось",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "Salmon"
+			},
+			"ingredients": [
+				{
+					"name": {
+						"ru": "Лосось",
+						"ua": "Лосось",
+						"en": "Salmon"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "пряный крем с каперсами",
+						"ua": "Пряний крем сир з каперсами",
+						"en": "english text text"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				}
+			],
+			"gallery": [
+				"./dynamicImages/bogel-salmon-1.png",
+				"./dynamicImages/bogel-salmon-1.png",
+				"./dynamicImages/bogel-salmon-1.png"
+			]
+		},
+		{
+			"id": 3,
+			"cat-img": "./dynamicImages/chicken-cat.svg",
+			"prod-img": "./dynamicImages/bogel-chicken-1.png",
+			"title": {
+				"ru": "Лосось",
+				"ua": "Бейгл з куркою",
+				"en": "Salmon"
+			},
+			"price": 69,
+			"portion-price": [
+				{
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Лосось",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "Salmon"
+			},
+			"ingredients": [
+				{
+					"name": {
+						"ru": "Лосось",
+						"ua": "Лосось",
+						"en": "Salmon"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "пряный крем с каперсами",
+						"ua": "Пряний крем сир з каперсами",
+						"en": "english text text"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				}
+			],
+			"gallery": [
+				"./dynamicImages/bogel-chicken-1.png",
+				"./dynamicImages/bogel-chicken-1.png",
+				"./dynamicImages/bogel-chicken-1.png"
+			]
+		},
+		{
+			"id": 4,
+			"cat-img": "./dynamicImages/chicken-cat.svg",
+			"prod-img": "./dynamicImages/bogel-chicken-1.png",
+			"title": {
+				"ru": "Огурцы",
+				"ua": "Бейгл вегетарианский",
+				"en": "cucumber"
+			},
+			"price": 69,
+			"portion-price": [
+				{
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Огурцы",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "cucumber"
+			},
+			"ingredients": [
+				{
+					"name": {
+						"ru": "Лосось",
+						"ua": "Лосось",
+						"en": "Salmon"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "пряный крем с каперсами",
+						"ua": "Пряний крем сир з каперсами",
+						"en": "english text text"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				}
+			],
+			"gallery": [
+				"./dynamicImages/bogel-chicken-1.png",
+				"./dynamicImages/bogel-chicken-1.png",
+				"./dynamicImages/bogel-chicken-1.png"
+			]
+		}
+	],
+	"desserts": [
+		{
+			"id": 1,
+			"cat-img": "./dynamicImages/cake-cat-1.svg",
+			"prod-img": "./dynamicImages/cake-img-1.png",
+			"title": {
+				"ru": "Огурцы",
+				"ua": "Название десерта 2 строки",
+				"en": "cucumber"
+			},
+			"price": 69,
+			"portion-price": [
+				{
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Огурцы",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "cucumber"
+			},
+			"ingredients": [
+				{
+					"name": {
+						"ru": "Лосось",
+						"ua": "Лосось",
+						"en": "Salmon"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "пряный крем с каперсами",
+						"ua": "Пряний крем сир з каперсами",
+						"en": "english text text"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				}
+			],
+			"gallery": [
+				"./dynamicImages/cake-img-1.png",
+				"./dynamicImages/cake-img-1.png",
+				"./dynamicImages/cake-img-1.png"
+			]
+		},
+		{
+			"id": 2,
+			"cat-img": "./dynamicImages/cake-cat-2.svg",
+			"prod-img": "./dynamicImages/cake-img-2.png",
+			"title": {
+				"ru": "Огурцы",
+				"ua": "Бейгл з креветкою",
+				"en": "cucumber"
+			},
+			"price": 69,
+			"portion-price": [
+				{
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Огурцы",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "cucumber"
+			},
+			"ingredients": [
+				{
+					"name": {
+						"ru": "Лосось",
+						"ua": "Лосось",
+						"en": "Salmon"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "пряный крем с каперсами",
+						"ua": "Пряний крем сир з каперсами",
+						"en": "english text text"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				}
+			],
+			"gallery": [
+				"./dynamicImages/cake-img-2.png",
+				"./dynamicImages/cake-img-2.png",
+				"./dynamicImages/cake-img-2.png"
+			]
+		},
+		{
+			"id": 3,
+			"cat-img": "./dynamicImages/cake-cat-3.svg",
+			"prod-img": "./dynamicImages/cake-img-3.png",
+			"title": {
+				"ru": "Огурцы",
+				"ua": "Бейгл з креветкою",
+				"en": "cucumber"
+			},
+			"price": 69,
+			"portion-price": [
+				{
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Огурцы",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "cucumber"
+			},
+			"ingredients": [
+				{
+					"name": {
+						"ru": "Лосось",
+						"ua": "Лосось",
+						"en": "Salmon"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "пряный крем с каперсами",
+						"ua": "Пряний крем сир з каперсами",
+						"en": "english text text"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				}
+			],
+			"gallery": [
+				"./dynamicImages/cake-img-3.png",
+				"./dynamicImages/cake-img-3.png",
+				"./dynamicImages/cake-img-3.png"
+			]
+		},
+		{
+			"id": 4,
+			"cat-img": "./dynamicImages/cake-cat-4.svg",
+			"prod-img": "./dynamicImages/cake-img-4.png",
+			"title": {
+				"ru": "Огурцы",
+				"ua": "Бейгл з креветкою",
+				"en": "cucumber"
+			},
+			"price": 69,
+			"portion-price": [
+				{
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Огурцы",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "cucumber"
+			},
+			"ingredients": [
+				{
+					"name": {
+						"ru": "Лосось",
+						"ua": "Лосось",
+						"en": "Salmon"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "пряный крем с каперсами",
+						"ua": "Пряний крем сир з каперсами",
+						"en": "english text text"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				}
+			],
+			"gallery": [
+				"./dynamicImages/cake-img-4.png",
+				"./dynamicImages/cake-img-4.png",
+				"./dynamicImages/cake-img-4.png"
+			]
+		},
+		{
+			"id": 5,
+			"cat-img": "./dynamicImages/cake-cat-1.svg",
+			"prod-img": "./dynamicImages/cake-img-5.png",
+			"title": {
+				"ru": "Огурцы",
+				"ua": "Бейгл з креветкою",
+				"en": "cucumber"
+			},
+			"price": 69,
+			"portion-price": [
+				{
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Огурцы",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "cucumber"
+			},
+			"ingredients": [
+				{
+					"name": {
+						"ru": "Лосось",
+						"ua": "Лосось",
+						"en": "Salmon"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "пряный крем с каперсами",
+						"ua": "Пряний крем сир з каперсами",
+						"en": "english text text"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				}
+			],
+			"gallery": [
+				"./dynamicImages/cake-img-5.png",
+				"./dynamicImages/cake-img-5.png",
+				"./dynamicImages/cake-img-5.png"
+			]
+		}
+	],
+	"drinks": [
+		{
+			"id": 1,
+			"cat-img": "./dynamicImages/juice.svg",
+			"prod-img": "./dynamicImages/drink-img-1.png",
+			"title": {
+				"ru": "Огурцы",
+				"ua": "Бейгл з креветкою",
+				"en": "cucumber"
+			},
+			"price": 69,
+			"portion-price": [
+				{
+					"type": "маленькое",
+					"price": 69,
+					"weight": 189
+				},
+				{
+					"type": "Среднее",
+					"price": 69,
+					"weight": 189
+				},
+				{
+					"type": "Большое",
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Огурцы",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "cucumber"
+			},
+			"ingredients": [
+				{
+					"name": {
+						"ru": "Лосось",
+						"ua": "Лосось",
+						"en": "Salmon"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "пряный крем с каперсами",
+						"ua": "Пряний крем сир з каперсами",
+						"en": "english text text"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				}
+			],
+			"gallery": [
+				"./dynamicImages/drink-img-1.png",
+				"./dynamicImages/drink-img-1.png",
+				"./dynamicImages/drink-img-1.png"
+			]
+		},
+		{
+			"id": 2,
+			"cat-img": "./dynamicImages/green-tea.svg",
+			"prod-img": "./dynamicImages/drink-img-2.png",
+			"title": {
+				"ru": "Огурцы",
+				"ua": "Бейгл з креветкою",
+				"en": "cucumber"
+			},
+			"price": 69,
+			"portion-price": [
+				{
+					"type": {
+						"ru": "Огурцы",
+						"ua": "маленькое",
+						"en": "cucumber"
+					},
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Огурцы",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "cucumber"
+			},
+			"ingredients": [
+				{
+					"name": {
+						"ru": "Лосось",
+						"ua": "Лосось",
+						"en": "Salmon"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "пряный крем с каперсами",
+						"ua": "Пряний крем сир з каперсами",
+						"en": "english text text"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				}
+			],
+			"gallery": [
+				"./dynamicImages/drink-img-2.png",
+				"./dynamicImages/drink-img-2.png",
+				"./dynamicImages/drink-img-2.png"
+			]
+		},
+		{
+			"id": 3,
+			"cat-img": "./dynamicImages/soda.svg",
+			"prod-img": "./dynamicImages/drink-img-3.png",
+			"title": {
+				"ru": "Огурцы",
+				"ua": "Бейгл з креветкою",
+				"en": "cucumber"
+			},
+			"price": 69,
+			"portion-price": [
+				{
+					"type": {
+						"ru": "Огурцы",
+						"ua": "маленька",
+						"en": "cucumber"
+					},
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Огурцы",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "cucumber"
+			},
+			"ingredients": [
+				{
+					"name": {
+						"ru": "Лосось",
+						"ua": "Лосось",
+						"en": "Salmon"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "пряный крем с каперсами",
+						"ua": "Пряний крем сир з каперсами",
+						"en": "english text text"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				}
+			],
+			"gallery": [
+				"./dynamicImages/drink-img-1.png",
+				"./dynamicImages/drink-img-1.png",
+				"./dynamicImages/drink-img-1.png"
+			]
+		},
+		{
+			"id": 4,
+			"cat-img": "./dynamicImages/coffee.svg",
+			"prod-img": "./dynamicImages/drink-img-1.png",
+			"title": {
+				"ru": "Огурцы",
+				"ua": "Бейгл з креветкою",
+				"en": "cucumber"
+			},
+			"price": 69,
+			"portion-price": [
+				{
+					"type": {
+						"ru": "Огурцы",
+						"ua": "Бейгл з креветкою",
+						"en": "cucumber"
+					},
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Огурцы",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "cucumber"
+			},
+			"ingredients": [
+				{
+					"name": {
+						"ru": "Лосось",
+						"ua": "Лосось",
+						"en": "Salmon"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "пряный крем с каперсами",
+						"ua": "Пряний крем сир з каперсами",
+						"en": "english text text"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				}
+			],
+			"gallery": [
+				"./dynamicImages/drink-img-1.png",
+				"./dynamicImages/drink-img-1.png",
+				"./dynamicImages/drink-img-1.png"
+			]
+		},
+		{
+			"id": 5,
+			"cat-img": "./dynamicImages/juice.svg",
+			"prod-img": "./dynamicImages/drink-img-1.png",
+			"title": {
+				"ru": "Огурцы",
+				"ua": "Бейгл з креветкою",
+				"en": "cucumber"
+			},
+			"price": 69,
+			"portion-price": [
+				{
+					"type": {
+						"ru": "Огурцы",
+						"ua": "Бейгл з креветкою",
+						"en": "cucumber"
+					},
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Огурцы",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "cucumber"
+			},
+			"ingredients": [
+				{
+					"name": {
+						"ru": "Лосось",
+						"ua": "Лосось",
+						"en": "Salmon"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "пряный крем с каперсами",
+						"ua": "Пряний крем сир з каперсами",
+						"en": "english text text"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				}
+			],
+			"gallery": [
+				"./dynamicImages/drink-img-1.png",
+				"./dynamicImages/drink-img-1.png",
+				"./dynamicImages/drink-img-1.png"
+			]
+		},
+		{
+			"id": 6,
+			"cat-img": "./dynamicImages/green-tea.svg",
+			"prod-img": "./dynamicImages/drink-img-2.png",
+			"title": {
+				"ru": "Огурцы",
+				"ua": "Бейгл з креветкою",
+				"en": "cucumber"
+			},
+			"price": 69,
+			"portion-price": [
+				{
+					"type": {
+						"ru": "Огурцы",
+						"ua": "Бейгл з креветкою",
+						"en": "cucumber"
+					},
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Огурцы",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "cucumber"
+			},
+			"ingredients": [
+				{
+					"name": {
+						"ru": "Лосось",
+						"ua": "Лосось",
+						"en": "Salmon"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "пряный крем с каперсами",
+						"ua": "Пряний крем сир з каперсами",
+						"en": "english text text"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				},
+				{
+					"name": {
+						"ru": "Огурцы",
+						"ua": "Огірки",
+						"en": "cucumber"
+					},
+					"logo": "./dynamicImages/shrimp-cat.svg"
+				}
+			],
+			"gallery": [
+				"./dynamicImages/drink-img-2.png",
+				"./dynamicImages/drink-img-2.png",
+				"./dynamicImages/drink-img-2.png"
+			]
+		}
+	],
+	"sales": [
+		{
+			"id": 1,
+			"consist-products-id": [
+				{
+					"id": 1,
+					"category": "bogels"
+				},
+				{
+					"id": 2,
+					"category": "drinks"
+				}
+			],
+			"cat-img": "./dynamicImages/sales-cat-1.svg",
+			"prod-img": "./dynamicImages/sales-1.png",
+			"title": {
+				"ru": "Огурцы",
+				"ua": "Бейгл з слабосоленої лососем + напій на вибір",
+				"en": "cucumber"
+			},
+			"price": 99,
+			"portion-price": [
+				{
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Огурцы",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "cucumber"
+			},
+			"gallery": [
+				"./dynamicImages/sales-1.png",
+				"./dynamicImages/sales-1.png",
+				"./dynamicImages/sales-1.png"
+			]
+		},
+		{
+			"id": 2,
+			"consist-products-id": [
+				{
+					"id": 1,
+					"category": "bogels"
+				},
+				{
+					"id": 2,
+					"category": "drinks"
+				}
+			],
+			"cat-img": "./dynamicImages/sales-cat-1.svg",
+			"prod-img": "./dynamicImages/sales-2.png",
+			"title": {
+				"ru": "Огурцы",
+				"ua": "Бейгл з слабосоленої лососем + напій на вибір",
+				"en": "cucumber"
+			},
+			"price": 99,
+			"portion-price": [
+				{
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Огурцы",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "cucumber"
+			},
+			"gallery": [
+				"./dynamicImages/sales-1.png",
+				"./dynamicImages/sales-1.png",
+				"./dynamicImages/sales-1.png"
+			]
+		},
+		{
+			"id": 3,
+			"consist-products-id": [
+				{
+					"id": 1,
+					"category": "bogels"
+				},
+				{
+					"id": 2,
+					"category": "drinks"
+				}
+			],
+			"cat-img": "./dynamicImages/sales-cat-1.svg",
+			"prod-img": "./dynamicImages/sales-1.png",
+			"title": {
+				"ru": "Огурцы",
+				"ua": "Бейгл з слабосоленої лососем + напій на вибір",
+				"en": "cucumber"
+			},
+			"price": 99,
+			"portion-price": [
+				{
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Огурцы",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "cucumber"
+			},
+			"gallery": [
+				"./dynamicImages/sales-1.png",
+				"./dynamicImages/sales-1.png",
+				"./dynamicImages/sales-1.png"
+			]
+		},
+		{
+			"id": 4,
+			"consist-products-id": [
+				{
+					"id": 1,
+					"category": "bogels"
+				},
+				{
+					"id": 2,
+					"category": "drinks"
+				}
+			],
+			"cat-img": "./dynamicImages/sales-cat-1.svg",
+			"prod-img": "./dynamicImages/sales-2.png",
+			"title": {
+				"ru": "Огурцы",
+				"ua": "Бейгл з слабосоленої лососем + напій на вибір",
+				"en": "cucumber"
+			},
+			"price": 99,
+			"portion-price": [
+				{
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Огурцы",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "cucumber"
+			},
+			"gallery": [
+				"./dynamicImages/sales-1.png",
+				"./dynamicImages/sales-1.png",
+				"./dynamicImages/sales-1.png"
+			]
+		},
+		{
+			"id": 5,
+			"consist-products-id": [
+				{
+					"id": 1,
+					"category": "bogels"
+				},
+				{
+					"id": 2,
+					"category": "drinks"
+				}
+			],
+			"cat-img": "./dynamicImages/sales-cat-1.svg",
+			"prod-img": "./dynamicImages/sales-1.png",
+			"title": {
+				"ru": "Огурцы",
+				"ua": "Бейгл з слабосоленої лососем + напій на вибір",
+				"en": "cucumber"
+			},
+			"price": 99,
+			"portion-price": [
+				{
+					"price": 69,
+					"weight": 189
+				}
+			],
+			"descr": {
+				"ru": "Огурцы",
+				"ua": "Кажуть, що бейгли придумали віденські євреї. Але своє друге життя ці своєрідні бублики безсумнівно знайшли в Нью-Йорку. Стараннями багатьох поколінь пекарів бейгли стали одним із символів Нью-Йорка і справді культовим американським стравою.",
+				"en": "cucumber"
+			},
+			"gallery": [
+				"./dynamicImages/sales-1.png",
+				"./dynamicImages/sales-1.png",
+				"./dynamicImages/sales-1.png"
+			]
+		}
+	],
+	"category-images": {
+		"bogels": "./dynamicImages/shrimp-cat.svg",
+		"desserts": "./dynamicImages/cake-cat-1.svg",
+		"drinks": "./dynamicImages/juice.svg"
+	}
+}
