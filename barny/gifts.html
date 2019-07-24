@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Barny Main</title>
+    <title>Gifts page</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -21,14 +21,14 @@
     <link rel="shortcut icon" type="img/ico" href="images/favicon_32.png" sizes="32x32">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700&amp;display=swap&amp;subset=cyrillic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/gifts.css">
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper is-inner">
       <header class="header">
         <div class="container">
           <div class="header__container fw">
-            <div class="logo"><img src="./images/logo.png" alt="logo"></div>
+            <div class="logo"><a href="./"><img src="./images/logo.png" alt="logo"></a></div>
             <div class="header__content">
               <div class="contacts fw">
                 <div class="contacts__item"><img class="svg" src="./images/phone.svg" alt="phone"><a href="tel:88000700315">8800 070 0315</a></div>
@@ -81,86 +81,76 @@
         </div>
       </header>
       <main class="main">
-        <section class="media">
-          <picture class="media__bg">
-            <source srcset="./images/bg.jpg" media="(min-width: 1023px)">
-            <source srcset="./images/bg-767.jpg" media="(min-width: 767px)">
-            <source srcset="./images/bg-320.jpg" media="(min-width: 320px)"><img src="./images/bg.jpg" alt="barny bg">
-          </picture>
-          <div class="media__title visibility--hidden">
-            <h1>Какой-то скрытый заголовок уровня h1</h1>
-          </div>
+        <section class="gifts start-section">
           <div class="container">
-            <div class="media__container js-media__container">
-              <div class="media__wr fw">
-                <div class="media__video-wr fw">
-                  <div class="media__video-main">
-                    <video>
-                      <source src="" type="video/mp4">
-                    </video>
-                    <button class="video-button"></button>
-                  </div>
-                  <div class="media__series fw">
-                    <div class="media__slider js-media__slider">
-                      <div class="media__item fw js-video__open">
-                        <p>1 выпуск</p>
-                      </div>
-                      <div class="media__item fw js-video__open">
-                        <p>2 выпуск</p>
-                      </div>
-                      <div class="media__item fw js-video__open">
-                        <p>3 выпуск</p>
-                      </div>
-                      <div class="media__item is-soon fw js-video__open">
-                        <p>скоро</p>
-                      </div>
-                      <div class="media__item is-soon fw js-video__open">
-                        <p>скоро</p>
-                      </div>
-                      <div class="media__item is-soon fw js-video__open">
-                        <p>скоро</p>
+            <div class="gifts__container">
+              <div class="gifts__title">
+                <h1>Призы от Барни для крутых стендаперов</h1>
+              </div>
+              <div class="gifts__steps">
+                <ul class="gifts__steps__list">
+                  <li class="gifts__steps__item"><span></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                  </li>
+                  <li class="gifts__steps__item"><span></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                  </li>
+                  <li class="gifts__steps__item"><span></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                  </li>
+                  <li class="gifts__steps__item"><span></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="gifts__place">
+                <div class="tile">
+                  <div class="tile__box is-20">
+                    <div class="gifts__position">
+                      <div class="gifts__img-wr"><img class="gifts__form-image" src="./images/gift-1.png" alt="some img"><img src="./images/product-1.png" alt="gift 0"></div>
+                      <div class="gifts__descr">
+                        <p class="gifts__place">1 место</p>
+                        <p class="gifts__p">Lorem ipsum dolor sit amet consectetur adipisicing</p>
                       </div>
                     </div>
-                    <button class="media__slider__nav is-prev js-media__prev"></button>
-                    <button class="media__slider__nav is-next js-media__next"></button>
-                    <div class="media__future">
-                      <p>Ждите новый ролик <br> на следующей неделе!</p>
+                  </div>
+                  <div class="tile__box is-20">
+                    <div class="gifts__position">
+                      <div class="gifts__img-wr"><img class="gifts__form-image" src="./images/gift-2.png" alt="some img"><img src="./images/product-1.png" alt="gift 1"></div>
+                      <div class="gifts__descr">
+                        <p class="gifts__place">2 место</p>
+                        <p class="gifts__p">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tile__box is-20">
+                    <div class="gifts__position">
+                      <div class="gifts__img-wr"><img class="gifts__form-image" src="./images/gift-3.png" alt="some img"><img src="./images/product-1.png" alt="gift 2"></div>
+                      <div class="gifts__descr">
+                        <p class="gifts__place">3 место</p>
+                        <p class="gifts__p">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tile__box is-20">
+                    <div class="gifts__position">
+                      <div class="gifts__img-wr"><img class="gifts__form-image" src="./images/gift-4.png" alt="some img"><img src="./images/product-1.png" alt="gift 3"></div>
+                      <div class="gifts__descr">
+                        <p class="gifts__place">4 место</p>
+                        <p class="gifts__p">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tile__box is-20">
+                    <div class="gifts__position">
+                      <div class="gifts__img-wr"><img class="gifts__form-image" src="./images/gift-5.png" alt="some img"><img src="./images/product-1.png" alt="gift 4"></div>
+                      <div class="gifts__descr">
+                        <p class="gifts__place">5 место</p>
+                        <p class="gifts__p">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="media__content">
-                  <div class="media__subtitle">
-                    <h2>Как правильно <br> общаться? <br> С улыбкой!</h2>
-                  </div>
-                  <div class="media__descr">
-                    <p>Смотрите Барни Fun шоу и участвуйте в конкурсе!</p>
-                  </div>
-                  <div class="media__future">
-                    <p>Ждите новый ролик <br> на следующей неделе!</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="stickers">
-          <div class="stickers__title visibility--hidden">
-            <h2>Какой-то скрытый заголовок уровня h2</h2>
-          </div>
-          <div class="container">
-            <div class="stickers__container fw">
-              <div class="stickers__block fw">
-                <div class="stickers__subblock">
-                  <h3>Делитесь эмоциями <br> в соцсетях!</h3>
-                  <p>Скачайте самый позитивный стикерпак</p>
-                </div>
-                <div class="stickers__button-wr">
-                  <button class="site-button--invert stickers__button">Скачать стикерпак</button>
-                </div>
-              </div>
-              <div class="stickers__block">
-                <h3>Участвуй <br> в конкурсе</h3>
-                <p>и выигрывайте крутые призы</p>
               </div>
             </div>
           </div>
