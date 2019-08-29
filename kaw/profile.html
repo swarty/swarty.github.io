@@ -394,7 +394,7 @@
                             <p class="order__date">{{item.date}}</p>
                             <div class="order__descr">
                               <div class="order__row fw">
-                                <div class="order__img"><img class="lazy" :data-src="item.img" :alt="item.title"></div>
+                                <div class="order__img"><img class="lazy" :data-src="'.' + item.img" :alt="item.title"></div>
                                 <div class="order__head">
                                   <p class="order__category">{{item.cat}}</p>
                                   <h3 class="order__title">{{item.title}}</h3>
