@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.419" height="15.968" viewBox="0 0 23.419 15.968">
+  <g id="visibility-button" transform="translate(0 -89.25)">
+    <g id="visibility" transform="translate(0 89.25)">
+      <path id="Path_24" data-name="Path 24" d="M11.709,89.25A12.542,12.542,0,0,0,0,97.234a12.579,12.579,0,0,0,23.419,0A12.542,12.542,0,0,0,11.709,89.25Zm0,13.306a5.322,5.322,0,1,1,5.322-5.322A5.271,5.271,0,0,1,11.709,102.556Zm0-8.516A3.193,3.193,0,1,0,14.9,97.234,3.136,3.136,0,0,0,11.709,94.04Z" transform="translate(0 -89.25)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
