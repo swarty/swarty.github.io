@@ -1,0 +1,41 @@
+{
+	"option": "",
+	"records": [
+		{
+			"id": 1,
+			"title": "Case 1 длинное название ",
+			"client": "Свиточ",
+			"services_type": "Реклама в Торгово-развлекательных центрах",
+			"link": "case-link",
+			"img": "./images/case1.png",
+			"img_alt": "alt"
+		},
+		{
+			"id": 2,
+			"title": "Case 1 длинное название ",
+			"client": "Свиточ",
+			"services_type": "Реклама в Торгово-развлекательных центрах",
+			"link": "case-link",
+			"img": "./images/case1.png",
+			"img_alt": "alt"
+		},
+		{
+			"id": 3,
+			"title": "Case 1 длинное название ",
+			"client": "Свиточ",
+			"services_type": "Реклама в Торгово-развлекательных центрах",
+			"link": "case-link",
+			"img": "./images/case1.png",
+			"img_alt": "alt"
+		},
+		{
+			"id": 4,
+			"title": "Case 1 длинное название ",
+			"client": "Свиточ",
+			"services_type": "Реклама в Торгово-развлекательных центрах",
+			"link": "case-link",
+			"img": "./images/case1.png",
+			"img_alt": "alt"
+		}
+	]
+}
