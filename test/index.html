@@ -36,13 +36,10 @@
                   <a data-text="Hello" href="./index.html#introduce">Hello</a>
                 </li>
                 <li class="navigation__item">
-                  <a data-text="About me" href="./index.html#about">About me</a>
-                </li>
-                <li class="navigation__item">
                   <a data-text="Portfolio" href="./index.html#portfolio">Portfolio</a>
                 </li>
                 <li class="navigation__item">
-                  <a data-text="Blog" href="./blog.html">Blog</a>
+                  <a data-text="About me" href="./index.html#about">About me</a>
                 </li>
               </ul>
             </nav>
@@ -361,14 +358,199 @@
         <div class="word-icon__circle _309"></div>
       </div>
       <main class="main" id="main">
-        <article class="introduce first-section" id="introduce">
+        <article class="s-introduce first-section" id="introduce">
           <div class="block-wrapper dc vc hc">
             <div class="container">
               <div class="block-content dc hc">
                 <div class="block-title is-main is-short">
-                  <h1>Hi, I'm Swarty <br>
+                  <h1>Hi, I'm Swarty<br>
                     <span class="smaller">a Frontend Developer <br> and this is my Web business card</span>
                   </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="s-portfolio" id="portfolio">
+          <div class="s-portfolio__modal modal js__modal">
+            <div class="modal__container dc">
+              <div class="modal__pictures js__modal-pictures">
+              </div>
+              <div class="modal__content js__modal-content"></div>
+              <button class="modal__close js__modal-close"></button>
+            </div>
+          </div>
+          <div class="block-wrapper dc">
+            <div class="container">
+              <div class="block-title">
+                <h2>Works</h2>
+              </div>
+              <div class="block-content dc">
+                <div class="s-portfolio__body">
+                  <div class="s-portfolio__content dc">
+                    <section class="case-block dc ">
+                      <button class="case-block__inner dc js__show-case" data-proj-info="{&quot;name&quot;:&quot;Bogel&quot;,&quot;description&quot;:&quot;Spa for interactive panel in coffee house&quot;,&quot;technologies&quot;:[&quot;Vue.js&quot;,&quot;VueRouter&quot;,&quot;Vuex&quot;,&quot;SASS&quot;,&quot;RestApi&quot;],&quot;images&quot;:[{&quot;src&quot;:&quot;/img/bogel-1.jpg&quot;,&quot;alt&quot;:&quot;img 1&quot;},{&quot;src&quot;:&quot;/img/bogel-2.jpg&quot;,&quot;alt&quot;:&quot;img 2&quot;},{&quot;src&quot;:&quot;/img/bogel-3.jpg&quot;,&quot;alt&quot;:&quot;img 3&quot;},{&quot;src&quot;:&quot;/img/bogel-4.jpg&quot;,&quot;alt&quot;:&quot;img 4&quot;}]}">
+                        <div class="case-block__descr">
+                          <h2 class="case-block__title">Bogel Application</h2>
+                          <span class="case-block__counter">00</span>
+                          <div class="case-block__arrow">
+                            <svg class="icon-arrow">
+                              <use xlink:href="./img/sprite.svg#arrow"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="case-block__picture">
+                          <picture>
+                            <img src="/img/bogel-preview.jpg" alt="Bogel Application">
+                          </picture>
+                        </div>
+                      </button>
+                    </section>
+                    <section class="case-block dc ">
+                      <button class="case-block__inner dc js__show-case" data-proj-info="{&quot;name&quot;:&quot;WhollyKaw&quot;,&quot;description&quot;:&quot;Frontend development for ecommerce, Corporative online shop with basket and personal account.&quot;,&quot;technologies&quot;:[&quot;HTML5&quot;,&quot;PUG&quot;,&quot;SASS&quot;,&quot;JavaScript(ES6+)&quot;,&quot;THREE.js&quot;,&quot;GLSL&quot;,&quot;RestApi&quot;],&quot;link&quot;:&quot;https://whollykaw.com/&quot;,&quot;images&quot;:[{&quot;src&quot;:&quot;/img/whollykaw-1.jpg&quot;,&quot;alt&quot;:&quot;img 1&quot;},{&quot;src&quot;:&quot;/img/whollykaw-2.jpg&quot;,&quot;alt&quot;:&quot;img 2&quot;},{&quot;src&quot;:&quot;/img/whollykaw-3.jpg&quot;,&quot;alt&quot;:&quot;img 3&quot;},{&quot;src&quot;:&quot;/img/whollykaw-4.jpg&quot;,&quot;alt&quot;:&quot;img 4&quot;},{&quot;src&quot;:&quot;/img/whollykaw-5.jpg&quot;,&quot;alt&quot;:&quot;img 5&quot;},{&quot;src&quot;:&quot;/img/whollykaw-6.jpg&quot;,&quot;alt&quot;:&quot;img 6&quot;},{&quot;src&quot;:&quot;/img/whollykaw-7.jpg&quot;,&quot;alt&quot;:&quot;img 7&quot;},{&quot;src&quot;:&quot;/img/whollykaw-8.jpg&quot;,&quot;alt&quot;:&quot;img 8&quot;}]}">
+                        <div class="case-block__descr">
+                          <h2 class="case-block__title">Whollykaw</h2>
+                          <span class="case-block__counter">01</span>
+                          <div class="case-block__arrow">
+                            <svg class="icon-arrow">
+                              <use xlink:href="./img/sprite.svg#arrow"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="case-block__picture">
+                          <picture>
+                            <img src="/img/whollykaw-preview.jpg" alt="Whollykaw">
+                          </picture>
+                        </div>
+                      </button>
+                    </section>
+                    <section class="case-block dc ">
+                      <button class="case-block__inner dc js__show-case" data-proj-info="{&quot;name&quot;:&quot;The Partners&quot;,&quot;description&quot;:&quot;Small corporative site for official partners of taxi company Uber in Ukraine.&quot;,&quot;technologies&quot;:[&quot;HTML5&quot;,&quot;SASS&quot;,&quot;JavaScript(ES6+)&quot;,&quot;Nunjucks&quot;,&quot;GoogleMAPS&quot;],&quot;link&quot;:&quot;https://thepartners.in.ua&quot;,&quot;images&quot;:[{&quot;src&quot;:&quot;/img/thepartners-1.jpg&quot;,&quot;alt&quot;:&quot;img 1&quot;},{&quot;src&quot;:&quot;/img/thepartners-2.jpg&quot;,&quot;alt&quot;:&quot;img 2&quot;},{&quot;src&quot;:&quot;/img/thepartners-3.jpg&quot;,&quot;alt&quot;:&quot;img 3&quot;},{&quot;src&quot;:&quot;/img/thepartners-4.jpg&quot;,&quot;alt&quot;:&quot;img 4&quot;},{&quot;src&quot;:&quot;/img/thepartners-5.jpg&quot;,&quot;alt&quot;:&quot;img 5&quot;}]}">
+                        <div class="case-block__descr">
+                          <h2 class="case-block__title">The Partners</h2>
+                          <span class="case-block__counter">02</span>
+                          <div class="case-block__arrow">
+                            <svg class="icon-arrow">
+                              <use xlink:href="./img/sprite.svg#arrow"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="case-block__picture">
+                          <picture>
+                            <img src="/img/thepartners-preview.jpg" alt="The Partners">
+                          </picture>
+                        </div>
+                      </button>
+                    </section>
+                    <section class="case-block dc ">
+                      <button class="case-block__inner dc js__show-case" data-proj-info="{&quot;name&quot;:&quot;My Profi&quot;,&quot;description&quot;:&quot;Landing for law company.&quot;,&quot;technologies&quot;:[&quot;HTML5&quot;,&quot;SASS&quot;,&quot;JavaScript(ES6+)&quot;,&quot;Nunjucks&quot;,&quot;GoogleMAPS&quot;],&quot;link&quot;:&quot;http://myprofi.com.ua&quot;,&quot;images&quot;:[{&quot;src&quot;:&quot;/img/myprofi-1.jpg&quot;,&quot;alt&quot;:&quot;img 1&quot;},{&quot;src&quot;:&quot;/img/myprofi-2.jpg&quot;,&quot;alt&quot;:&quot;img 2&quot;},{&quot;src&quot;:&quot;/img/myprofi-3.jpg&quot;,&quot;alt&quot;:&quot;img 3&quot;}]}">
+                        <div class="case-block__descr">
+                          <h2 class="case-block__title">My profi</h2>
+                          <span class="case-block__counter">03</span>
+                          <div class="case-block__arrow">
+                            <svg class="icon-arrow">
+                              <use xlink:href="./img/sprite.svg#arrow"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="case-block__picture">
+                          <picture>
+                            <img src="/img/myprofi-preview.jpg" alt="My profi">
+                          </picture>
+                        </div>
+                      </button>
+                    </section>
+                    <section class="case-block dc ">
+                      <button class="case-block__inner dc js__show-case" data-proj-info="{&quot;name&quot;:&quot;Happy kids&quot;,&quot;description&quot;:&quot;Site for amusement park&quot;,&quot;technologies&quot;:[&quot;HTML5&quot;,&quot;SASS&quot;,&quot;JavaScript(ES6+)&quot;,&quot;Nunjucks&quot;,&quot;GoogleMAPS&quot;,&quot;VUE.js&quot;],&quot;link&quot;:&quot;https://happykids-park.com.ua&quot;,&quot;images&quot;:[{&quot;src&quot;:&quot;/img/happykids-1.jpg&quot;,&quot;alt&quot;:&quot;img 1&quot;},{&quot;src&quot;:&quot;/img/happykids-2.jpg&quot;,&quot;alt&quot;:&quot;img 2&quot;},{&quot;src&quot;:&quot;/img/happykids-3.jpg&quot;,&quot;alt&quot;:&quot;img 3&quot;},{&quot;src&quot;:&quot;/img/happykids-4.jpg&quot;,&quot;alt&quot;:&quot;img 4&quot;},{&quot;src&quot;:&quot;/img/happykids-5.jpg&quot;,&quot;alt&quot;:&quot;img 5&quot;}]}">
+                        <div class="case-block__descr">
+                          <h2 class="case-block__title">Happy kids</h2>
+                          <span class="case-block__counter">04</span>
+                          <div class="case-block__arrow">
+                            <svg class="icon-arrow">
+                              <use xlink:href="./img/sprite.svg#arrow"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="case-block__picture">
+                          <picture>
+                            <img src="/img/happykids-preview.jpg" alt="Happy kids">
+                          </picture>
+                        </div>
+                      </button>
+                    </section>
+                    <section class="case-block dc ">
+                      <button class="case-block__inner dc js__show-case" data-proj-info="{&quot;name&quot;:&quot;Lion&quot;,&quot;description&quot;:&quot;Development components and support of product promo site&quot;,&quot;technologies&quot;:[&quot;HTML5&quot;,&quot;SASS&quot;,&quot;JavaScript&quot;],&quot;link&quot;:&quot;https://www.lion.ua/&quot;,&quot;images&quot;:[{&quot;src&quot;:&quot;/img/lion-1.jpg&quot;,&quot;alt&quot;:&quot;img 1&quot;},{&quot;src&quot;:&quot;/img/lion-2.jpg&quot;,&quot;alt&quot;:&quot;img 2&quot;},{&quot;src&quot;:&quot;/img/lion-3.jpg&quot;,&quot;alt&quot;:&quot;img 3&quot;},{&quot;src&quot;:&quot;/img/lion-4.jpg&quot;,&quot;alt&quot;:&quot;img 4&quot;},{&quot;src&quot;:&quot;/img/lion-5.jpg&quot;,&quot;alt&quot;:&quot;img 5&quot;},{&quot;src&quot;:&quot;/img/lion-6.jpg&quot;,&quot;alt&quot;:&quot;img 6&quot;},{&quot;src&quot;:&quot;/img/lion-7.jpg&quot;,&quot;alt&quot;:&quot;img 7&quot;},{&quot;src&quot;:&quot;/img/lion-8.jpg&quot;,&quot;alt&quot;:&quot;img 8&quot;},{&quot;src&quot;:&quot;/img/lion-9.jpg&quot;,&quot;alt&quot;:&quot;img 9&quot;},{&quot;src&quot;:&quot;/img/lion-10.jpg&quot;,&quot;alt&quot;:&quot;img 10&quot;}]}">
+                        <div class="case-block__descr">
+                          <h2 class="case-block__title">Lion</h2>
+                          <span class="case-block__counter">05</span>
+                          <div class="case-block__arrow">
+                            <svg class="icon-arrow">
+                              <use xlink:href="./img/sprite.svg#arrow"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="case-block__picture">
+                          <picture>
+                            <img src="/img/lion-preview.jpg" alt="Lion">
+                          </picture>
+                        </div>
+                      </button>
+                    </section>
+                    <section class="case-block dc ">
+                      <button class="case-block__inner dc js__show-case" data-proj-info="{&quot;name&quot;:&quot;Stozhar&quot;,&quot;description&quot;:&quot;Frontend development&quot;,&quot;technologies&quot;:[&quot;HTML5&quot;,&quot;SASS&quot;,&quot;JavaScript(ES6+)&quot;,&quot;Jquery&quot;,&quot;GSAP&quot;,&quot;PArallax.js&quot;],&quot;link&quot;:&quot;https://www.lion.ua/&quot;,&quot;images&quot;:[{&quot;src&quot;:&quot;/img/stozhar-1.jpg&quot;,&quot;alt&quot;:&quot;img 1&quot;},{&quot;src&quot;:&quot;/img/stozhar-2.jpg&quot;,&quot;alt&quot;:&quot;img 2&quot;},{&quot;src&quot;:&quot;/img/stozhar-3.jpg&quot;,&quot;alt&quot;:&quot;img 3&quot;},{&quot;src&quot;:&quot;/img/stozhar-4.jpg&quot;,&quot;alt&quot;:&quot;img 4&quot;},{&quot;src&quot;:&quot;/img/stozhar-5.jpg&quot;,&quot;alt&quot;:&quot;img 5&quot;},{&quot;src&quot;:&quot;/img/stozhar-6.jpg&quot;,&quot;alt&quot;:&quot;img 6&quot;},{&quot;src&quot;:&quot;/img/stozhar-7.jpg&quot;,&quot;alt&quot;:&quot;img 7&quot;},{&quot;src&quot;:&quot;/img/stozhar-8.jpg&quot;,&quot;alt&quot;:&quot;img 8&quot;},{&quot;src&quot;:&quot;/img/stozhar-9.jpg&quot;,&quot;alt&quot;:&quot;img 9&quot;},{&quot;src&quot;:&quot;/img/stozhar-10.jpg&quot;,&quot;alt&quot;:&quot;img 10&quot;}]}">
+                        <div class="case-block__descr">
+                          <h2 class="case-block__title">Stozhar</h2>
+                          <span class="case-block__counter">06</span>
+                          <div class="case-block__arrow">
+                            <svg class="icon-arrow">
+                              <use xlink:href="./img/sprite.svg#arrow"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="case-block__picture">
+                          <picture>
+                            <img src="/img/stozhar-preview.jpg" alt="Stozhar">
+                          </picture>
+                        </div>
+                      </button>
+                    </section>
+                    <section class="case-block dc ">
+                      <button class="case-block__inner dc js__show-case" data-proj-info="{&quot;name&quot;:&quot;Lestro&quot;,&quot;description&quot;:&quot;Corporate website&quot;,&quot;technologies&quot;:[&quot;HTML5&quot;,&quot;SASS&quot;,&quot;JavaScript(ES6+)&quot;,&quot;Vue.js&quot;,&quot;Vuex&quot;,&quot;Vuerouter&quot;,&quot;Fullpage.js&quot;,&quot;Bodymovin.js&quot;],&quot;link&quot;:&quot;https://www.lestro.com/&quot;,&quot;images&quot;:[{&quot;src&quot;:&quot;/img/lestro-1.jpg&quot;,&quot;alt&quot;:&quot;img 1&quot;},{&quot;src&quot;:&quot;/img/lestro-2.jpg&quot;,&quot;alt&quot;:&quot;img 2&quot;},{&quot;src&quot;:&quot;/img/lestro-3.jpg&quot;,&quot;alt&quot;:&quot;img 3&quot;},{&quot;src&quot;:&quot;/img/lestro-4.jpg&quot;,&quot;alt&quot;:&quot;img 4&quot;},{&quot;src&quot;:&quot;/img/lestro-6.jpg&quot;,&quot;alt&quot;:&quot;img 6&quot;},{&quot;src&quot;:&quot;/img/lestro-5.jpg&quot;,&quot;alt&quot;:&quot;img 5&quot;}]}">
+                        <div class="case-block__descr">
+                          <h2 class="case-block__title">Lestro</h2>
+                          <span class="case-block__counter">07</span>
+                          <div class="case-block__arrow">
+                            <svg class="icon-arrow">
+                              <use xlink:href="./img/sprite.svg#arrow"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="case-block__picture">
+                          <picture>
+                            <img src="/img/lestro-preview.jpg" alt="Lestro">
+                          </picture>
+                        </div>
+                      </button>
+                    </section>
+                    <section class="case-block dc ">
+                      <button class="case-block__inner dc js__show-case" data-proj-info="{&quot;name&quot;:&quot;Lestro&quot;,&quot;description&quot;:&quot;Prostokvashino promo website&quot;,&quot;technologies&quot;:[&quot;HTML5&quot;,&quot;SASS&quot;,&quot;JavaScript(ES6+)&quot;,&quot;Jquery&quot;],&quot;link&quot;:&quot;https://www.lestro.com/&quot;,&quot;images&quot;:[{&quot;src&quot;:&quot;/img/prostokvashino-1.jpg&quot;,&quot;alt&quot;:&quot;img 1&quot;},{&quot;src&quot;:&quot;/img/prostokvashino-2.jpg&quot;,&quot;alt&quot;:&quot;img 2&quot;},{&quot;src&quot;:&quot;/img/prostokvashino-3.jpg&quot;,&quot;alt&quot;:&quot;img 3&quot;},{&quot;src&quot;:&quot;/img/prostokvashino-4.jpg&quot;,&quot;alt&quot;:&quot;img 4&quot;}]}">
+                        <div class="case-block__descr">
+                          <h2 class="case-block__title">Prostokvashino</h2>
+                          <span class="case-block__counter">08</span>
+                          <div class="case-block__arrow">
+                            <svg class="icon-arrow">
+                              <use xlink:href="./img/sprite.svg#arrow"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="case-block__picture">
+                          <picture>
+                            <img src="/img/prostokvashino-preview.jpg" alt="Prostokvashino">
+                          </picture>
+                        </div>
+                      </button>
+                    </section>
+                  </div>
                 </div>
               </div>
             </div>
@@ -378,15 +560,18 @@
           <div class="block-wrapper dc">
             <div class="container">
               <div class="block-title">
-                <h2>About me <span class="sr-only">Swarty(Dmytro)</span></h2>
+                <h2>About me</h2>
               </div>
               <div class="block-content dc">
                 <section class="about__block">
                   <div class="about__typography typography media-align-right">
-                    <img src="./img/загруженное.png" alt="me">
+                    <picture>
+                      <source srcset="./img/me.png" media="(max-width: 767px)">
+                      <img src="./img/me.png" alt="me">
+                    </picture>
                     <p> Hi, my name is Dmytro Ohorodnykov<span>(Swarty in Network)</span> i am Front-end developer. This is my bussines card cite where i am introduce myself and place information from CV. </p>
                     <p> In comertial i am working almost 2.5 year. Own principle is user experience first of all. Main Framework Vue.js. Create animations with GSAP and Canvas. Documenting and testing own code. Most of experience using MVC, MVVM architecture. Have experience as Teamlead and mentor. </p>
-                    <p> Location: Kiev, Ukraine. <br> Schedule: Full time, Partial remote.<br> Technologies: HTML5, CCS3, Vue.js, Canvas, TypeScript. </p>
+                    <p> Location: Kiev, Ukraine. <br> Technologies: HTML5, CCS3, Vue.js, Canvas, TypeScript. </p>
                     <p> Feel free to contact me for cooperation or proposals. </p>
                   </div>
                   <div class="about__contacts dc">
@@ -429,9 +614,9 @@
                 </section>
                 <section class="about__block">
                   <div class="block-title">
-                    <h3>Skills</h3>
+                    <h3>Tech skills</h3>
                   </div>
-                  <ul class="about__list skills dc wrap">
+                  <ul class="skills dc wrap">
                     <li class="skills__skill">HTML5.1</li>
                     <li class="skills__skill">CSS[3,4]</li>
                     <li class="skills__skill">SASS/SCSS</li>
@@ -464,7 +649,22 @@
                     <li class="skills__skill">Git/Cvs</li>
                     <li class="skills__skill">Npm/Yarn</li>
                     <li class="skills__skill">Photoshop/Illustrator</li>
-                    <li class="skills__skill">MVC</li>
+                    <li class="skills__skill">MVC/MVVM/Design patterns</li>
+                  </ul>
+                </section>
+                <section class="about__block">
+                  <div class="block-title">
+                    <h3>Soft skills</h3>
+                  </div>
+                  <ul class="skills dc wrap">
+                    <li class="skills__skill">Stress resistance</li>
+                    <li class="skills__skill">Sociable</li>
+                    <li class="skills__skill">Quick learning</li>
+                    <li class="skills__skill">Persistent</li>
+                    <li class="skills__skill">Initiative</li>
+                    <li class="skills__skill">Responsible</li>
+                    <li class="skills__skill">Creative</li>
+                    <li class="skills__skill">Focus on result</li>
                   </ul>
                 </section>
                 <section class="about__block">
@@ -497,7 +697,7 @@
                         </tr>
                       </tbody>
                     </table>
-                    <p class="about__total-experience js-work-experience"> Total experience: <span>2 year 5 month</span>
+                    <p class="about__total-experience js-work-experience"> Total experience: <span>2.5 year</span>
                     </p>
                   </div>
                 </section>
@@ -516,7 +716,7 @@
                         <tr>
                           <td>Master, Computer Science</td>
                           <td>Kiev Politechnical Unstitute</td>
-                          <td>2012 - 2015</td>
+                          <td>2017 - 2019</td>
                         </tr>
                         <tr>
                           <td>Bachelor, Computer Science</td>
@@ -536,30 +736,16 @@
             </div>
           </div>
         </article>
-        <article class="portfolio" id="portfolio">
-          <div class="portfolio__modal">
-          </div>
-          <div class="block-wrapper dc">
-            <div class="container">
-              <div class="block-title">
-                <h2>Portfolio</h2>
-              </div>
-              <div class="block-content dc">
-                <section class="portfolio__body">
-                  <div class="portfolio__title">
-                    <h3>Portfolio</h3>
-                  </div>
-                  <div class="portfolio__content">
-                    <section class="portfolio__block">
-                    </section>
-                  </div>
-                </section>
-              </div>
-            </div>
-          </div>
-        </article>
       </main>
       <footer aria-label="footer" class="footer">
+        <div class="container">
+          <div class="block-content">
+            <div class="footer__body dc">
+              <p class="footer__swarty"> Swarty, 2020 </p>
+              <p class="footer__version">v 1.0.0</p>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
