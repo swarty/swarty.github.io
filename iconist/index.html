@@ -19,6 +19,41 @@
     <meta property="twitter:domain" content="300">
     <meta property="twitter:site" content="">
     <link rel="icon" sizes="32x32" type="img/png" href="./img/favicon.png">
+    <style>
+      .preloader {
+        position: fixed;
+        z-index: 35;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../img/background.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .preloader--hidden {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.35s;
+      }
+      .preloader__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1200px;
+        height: 1200px;
+      }
+      
+    </style>
     <link rel="stylesheet" href="./css/app.css">
   </head>
   <body>
