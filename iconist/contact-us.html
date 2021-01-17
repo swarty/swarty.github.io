@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru" ontouchmove>
+  <head>
+    <meta charset="utf-8">
+    <title>Topic page</title>
+    <meta name="description" content="topic page">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-control" content="public">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="description">
+    <meta property="og:image" content="./img/share.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="description">
+    <meta property="twitter:image:src" content="./img/share.jpg">
+    <meta property="twitter:domain" content="300">
+    <meta property="twitter:site" content="">
+    <link rel="icon" sizes="32x32" type="img/png" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/app.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- start header-->
+      <header class="header js__header">
+        <div class="header__wrapper">
+          <div class="container">
+            <div class="header__container"><a class="header__icon" href="./index.html"><img class="lazy" src="" data-src="./img/logo.svg" alt="logo"></a>
+              <div class="header__navigation">
+                <div class="header__navigation-social block-social"><a class="block-social__item" href="#"><img class="lazy" src="" data-src="./img/google-play.svg" alt="google play"></a><a class="block-social__item" href="#"><img class="lazy" src="" data-src="./img/app-store.svg" alt="app store"></a></div>
+                <button class="header__navigation-burger burger js__header-burger-open"><span class="burger__item"></span><span class="burger__item"></span></button>
+              </div>
+            </div>
+            <div class="header__modal js__header-modal">
+              <div class="header__modal-container">
+                <div class="header__modal-container-head"><a class="header__icon header__icon--modal" href="#"><img class="lazy" src="" data-src="./img/logo-white.svg" alt="logo"></a>
+                  <button class="header__modal-burger burger burger--opened js__header-burger-close"><span class="burger__item"></span><span class="burger__item"></span>
+                    <p class="burger__text">Close</p>
+                  </button>
+                </div>
+                <ul class="header__modal-navigation">
+                  <li class="header__modal-navigation-item header__modal-navigation-item--active"><a class="header__modal-navigation-item-link" href="./index.html">Home</a></li>
+                  <li class="header__modal-navigation-item"><a class="header__modal-navigation-item-link" href="./blog.html">Blog</a></li>
+                  <li class="header__modal-navigation-item"><a class="header__modal-navigation-item-link" href="./policy.html">Privacy policy</a></li>
+                  <li class="header__modal-navigation-item"><a class="header__modal-navigation-item-link" href="./contact-us.html">Contact us</a></li>
+                </ul>
+                <div class="header__modal-social block-social"><a class="block-social__item" href="#"><img class="lazy" src="" data-src="./img/google-play.svg" alt="google play"></a><a class="block-social__item" href="#"><img class="lazy" src="" data-src="./img/app-store.svg" alt="app store"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header-->
+      <!-- start main-->
+      <main class="main main--bg">
+        <article class="contact-us js__contact-us">
+          <div class="container">
+            <div class="contact-us__container">
+              <div class="contact-us__header">
+                <div class="contact-us__header-block">
+                  <div class="contact-us__header-icon"><img class="lazy" src="" data-src="./img/hi.svg" alt="ask us"></div>
+                  <div class="contact-us__header-title">
+                    <p class="font-color-blue">Questions? Comments?</p>
+                    <p>Contact us!</p>
+                  </div>
+                </div>
+                <div class="contact-us__header-block contact-us__header-block--hidden js__contact-us-error">
+                  <div class="contact-us__header-icon"><img class="lazy" src="" data-src="./img/error.svg" alt="ask us"></div>
+                  <div class="contact-us__header-title">
+                    <p class="font-color-red">Oops! Message not sent.</p>
+                    <p>Please try again.</p>
+                  </div>
+                </div>
+                <div class="contact-us__header-block contact-us__header-block--hidden js__contact-us-thanks">
+                  <div class="contact-us__header-icon"><img class="lazy" src="" data-src="./img/sended.svg" alt="ask us"></div>
+                  <div class="contact-us__header-title">
+                    <p class="font-color-blue">Thanks for your message!</p>
+                    <p>We will contact you soon.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-us__content">
+                <form class="contact-us__form js__contact-us-form">
+                  <label class="input__label contact-us__label">
+                    <input class="input__input-tag" type="text" name="name" placeholder="Name">
+                  </label>
+                  <label class="input__label contact-us__label">
+                    <input class="input__input-tag" type="email" name="email" placeholder="Email">
+                  </label>
+                  <label class="input__label contact-us__label">
+                    <input class="input__input-tag" type="text" name="subject" placeholder="Message subject">
+                  </label>
+                  <label class="input__label contact-us__label">
+                    <textarea class="input__input-tag input__input-tag--textarea" type="texarea" name="message" placeholder="Your message"></textarea>
+                  </label>
+                  <button class="button button--primary contact-us__form-button" type="submit">Send</button>
+                </form>
+                <div class="contact-us__success"><a class="contact-us__success-button button button--primary" href="#">Back to home</a></div>
+                <div class="contact-us__footer">
+                  <div class="contact-us__footer-location">
+                    <p class="contact-us__footer-location-country"><span class="font-color-blue">London, </span>United Kingdom</p>
+                    <p class="contact-us__footer-location-city">67-68 Hatton Garden, 34 New House, London, United Kingdom, EC1N 8JY </p>
+                  </div>
+                  <ul class="contact-us__footer-web">
+                    <li class="contact-us__footer-web-item font-color-blue"><a href="#" target="_blank">iconist.app</a></li>
+                    <li class="contact-us__footer-web-item font-color-blue"><a href="hello@iconist.app">hello@iconist.app</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </main>
+      <!-- end main-->
+    </div>
+    <script type="text/javascript" src="./scripts/app.js"></script>
+  </body>
+</html>
