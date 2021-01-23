@@ -73,7 +73,7 @@
                     <p>Please try again.</p>
                   </div>
                 </div>
-                <div class="contact-us__header-block contact-us__header-block--hidden js__contact-us-thanks">
+                <div class="contact-us__header-block contact-us__header-block--success contact-us__header-block--hidden js__contact-us-thanks">
                   <div class="contact-us__header-icon"><img class="lazy" src="" data-src="./img/sended.svg" alt="ask us"></div>
                   <div class="contact-us__header-title">
                     <p class="font-color-blue">Thanks for your message!</p>
@@ -82,7 +82,7 @@
                 </div>
               </div>
               <div class="contact-us__content">
-                <form class="contact-us__form js__contact-us-form" data-route="./data/api.json">
+                <form class="contact-us__form js__contact-us-form" data-route="./api.json">
                   <input type="hidden" name="csrf" value="random value">
                   <label class="input__label contact-us__label">
                     <input class="input__input-tag" type="text" name="name" placeholder="Name">
@@ -98,7 +98,8 @@
                   </label>
                   <button class="button button--primary contact-us__form-button" type="submit">Send</button>
                 </form>
-                <div class="contact-us__success js__contact-us-success"><a class="contact-us__success-button button button--primary" href="#">Back to home</a></div>
+                <div class="contact-us__fail js__contact-us-fail"><a class="contact-us__fail-button button button--primary" href="./contact-us.html">try again</a></div>
+                <div class="contact-us__success js__contact-us-success"><a class="contact-us__success-button button button--primary" href="./index.html">Back to home</a></div>
                 <div class="contact-us__footer">
                   <div class="contact-us__footer-location">
                     <p class="contact-us__footer-location-country"><span class="font-color-blue">London, </span>United Kingdom</p>
