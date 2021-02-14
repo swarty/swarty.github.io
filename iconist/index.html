@@ -4,6 +4,13 @@
     <meta charset="utf-8">
     <title>main page</title>
     <meta name="description" content="main page">
+    <!-- todo: эти стили только для главной страницы-->
+    <style>
+      article.section, .header {
+        opacity: 0;
+      }
+      
+    </style>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Cache-control" content="public">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -20,13 +27,6 @@
     <meta property="twitter:site" content="">
     <link rel="icon" sizes="32x32" type="img/png" href="./img/favicon.png">
     <link rel="stylesheet" href="./css/app.css">
-    <style>
-      .section {
-        opacity 1;
-      }
-      
-      
-    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -34,7 +34,12 @@
       <header class="header js__header">
         <div class="header__wrapper">
           <div class="container">
-            <div class="header__container"><a class="header__icon" href="./index.html"><img class="lazy" src="" data-src="./img/logo.svg" alt="logo"></a>
+            <div class="header__container"><a class="header__icon" href="./index.html">
+                <!-- todo: add header logo as svg--><svg width="164" height="45" viewBox="0 0 164 45" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path d="M63.1387 14.8373C63.3189 15.1979 63.4203 15.536 63.443 15.8516C63.4879 16.1672 63.5106 16.742 63.5106 17.5759C63.5106 18.41 63.1387 21.3741 62.3949 26.4682C61.651 31.5624 61.2791 35.1352 61.2791 37.1863C61.2791 39.215 61.437 40.6012 61.7524 41.3451C59.8363 40.8492 58.5293 40.1955 57.8304 39.384C57.1314 38.5501 56.7822 37.4005 56.7822 35.9353C56.7822 35.0788 57.0189 32.9036 57.4923 29.4098C58.3264 23.6169 58.7433 19.1312 58.7433 15.953C58.7433 15.2768 58.6983 14.3526 58.608 13.1805C60.3213 13.2707 61.5723 13.5412 62.361 13.992C62.6992 14.1723 62.9585 14.4541 63.1387 14.8373ZM71.7184 32.6557C71.7184 36.42 72.8225 38.3021 75.0318 38.3021C75.8882 38.3021 76.7562 38.0091 77.6353 37.423C78.5144 36.837 79.2804 36.0255 79.9344 34.9886C80.7459 35.169 81.1516 35.586 81.1516 36.2396C80.2049 37.8851 79.0438 39.0572 77.6691 39.756C76.294 40.4547 74.9188 40.8041 73.5441 40.8041C71.6957 40.8041 70.1177 40.1279 68.8106 38.7754C67.5258 37.4005 66.8834 35.4169 66.8834 32.8247C66.8834 29.5112 67.7963 26.6824 69.6221 24.3381C71.4479 21.9714 73.9161 20.788 77.0267 20.788C78.7622 20.788 80.0697 21.2163 80.9488 22.0728C81.8278 22.9068 82.2674 23.9099 82.2674 25.082C82.2674 26.2316 81.9066 27.2346 81.1854 28.0912C80.4865 28.9477 79.5847 29.376 78.4806 29.376C77.9396 29.376 77.3986 29.2633 76.8576 29.0379C77.1957 28.6547 77.5112 28.0574 77.8043 27.2459C78.0971 26.4119 78.2439 25.6455 78.2439 24.9467C78.2439 23.5718 77.6464 22.8843 76.4519 22.8843C75.0541 22.8843 73.9161 23.9099 73.037 25.9611C72.1579 28.0123 71.7184 30.2438 71.7184 32.6557ZM95.1466 23.3576C93.6816 23.3576 92.3741 24.3494 91.2245 26.333C90.075 28.294 89.5002 30.2551 89.5002 32.2161C89.5002 36.3185 90.5594 38.3697 92.6784 38.3697C94.1888 38.3697 95.4171 37.3892 96.3638 35.4282C97.3105 33.4446 97.7839 31.2243 97.7839 28.7674C97.7839 25.1609 96.9048 23.3576 95.1466 23.3576ZM97.2429 20.8894C98.5953 20.8894 99.7449 21.5544 100.692 22.8843C101.638 24.2142 102.112 25.9949 102.112 28.2264C102.112 30.7284 101.605 33.0276 100.59 35.1239C99.4633 37.4906 97.8626 39.1249 95.789 40.0265C94.6167 40.5449 93.3319 40.8041 91.9346 40.8041C89.9735 40.8041 88.2603 40.049 86.7953 38.5388C85.3525 37.006 84.6314 34.8196 84.6314 31.9794C84.6314 29.1168 85.3303 26.6035 86.7277 24.4396C88.125 22.2532 89.9735 20.8782 92.2727 20.3146C92.5205 20.3146 92.746 20.3936 92.9489 20.5513C93.1745 20.6866 93.287 20.8331 93.287 20.9909C91.0105 22.5687 89.6465 24.7664 89.1959 27.584C89.6692 26.3217 90.244 25.2285 90.9202 24.3043C91.6191 23.3802 92.3403 22.6814 93.0841 22.2081C94.5042 21.329 95.8904 20.8894 97.2429 20.8894ZM118.28 20.788C119.61 20.788 120.556 21.205 121.12 22.039C121.706 22.8505 121.999 23.9662 121.999 25.3863C121.999 26.7838 121.773 28.7561 121.323 31.3032C120.894 33.8503 120.68 35.7099 120.68 36.882C120.68 38.0316 120.827 38.8769 121.12 39.4179C121.413 39.9363 121.909 40.3871 122.608 40.7703C122.314 40.7929 121.898 40.8041 121.357 40.8041C119.463 40.8041 118.111 40.5111 117.299 39.925C116.51 39.339 116.116 38.3134 116.116 36.8482C116.116 36.0142 116.341 34.3913 116.792 31.9794C117.243 29.545 117.468 27.7305 117.468 26.5359C117.468 25.0482 117.017 24.3043 116.116 24.3043C115.597 24.3043 115.011 24.6086 114.358 25.2172C113.704 25.8258 113.073 26.6598 112.464 27.7192C111.856 28.7561 111.349 30.0973 110.943 31.7428C110.537 33.3882 110.334 35.0337 110.334 36.6792C110.334 38.3021 110.402 39.508 110.537 40.2969C109.815 40.3421 109.342 40.3646 109.117 40.3646C107.832 40.3646 106.908 40.1392 106.345 39.6883C105.781 39.2375 105.499 38.4937 105.499 37.4568C105.499 37.006 105.736 35.2704 106.209 32.2499C106.683 29.2295 106.919 26.8289 106.919 25.0482C106.919 23.2449 106.728 21.5882 106.345 20.078C107.99 20.5964 109.139 21.3403 109.793 22.3095C110.447 23.2562 110.774 24.3494 110.774 25.5892C110.774 26.8063 110.639 28.2264 110.368 29.8493C111.112 27.3248 112.284 25.1834 113.884 23.4252C115.485 21.6671 116.95 20.788 118.28 20.788ZM126.563 34.7519C126.563 33.8052 126.743 32.0922 127.104 29.6127C127.464 27.1332 127.645 25.206 127.645 23.831C127.645 22.456 127.577 21.3966 127.442 20.6527C127.938 20.6077 128.399 20.5851 128.828 20.5851C130.135 20.5851 131.037 20.8105 131.533 21.2613C132.051 21.6896 132.31 22.4335 132.31 23.4929C132.31 23.831 132.029 25.6117 131.465 28.835C130.924 32.0358 130.643 34.6843 130.62 36.7806C130.62 38.8544 130.755 40.1955 131.026 40.8041C129.267 40.3533 128.084 39.6771 127.475 38.7754C126.867 37.8513 126.563 36.5101 126.563 34.7519ZM131.161 17.745C128.839 17.745 127.678 16.9335 127.678 15.3106C127.678 14.7246 127.847 13.9244 128.186 12.91C128.817 12.8199 129.369 12.7748 129.842 12.7748C132.164 12.7748 133.325 13.5862 133.325 15.2092C133.325 15.7953 133.156 16.5954 132.818 17.6098C132.186 17.6999 131.634 17.745 131.161 17.745ZM143.41 22.7828C142.779 22.7828 142.216 22.997 141.72 23.4252C141.224 23.831 140.976 24.4171 140.976 25.1834C140.976 25.9498 141.235 26.6711 141.753 27.3473C142.294 28.0235 142.948 28.6209 143.714 29.1393C144.481 29.6352 145.248 30.1536 146.014 30.6946C146.803 31.2131 147.49 31.8667 148.076 32.6557C148.662 33.422 148.989 34.2786 149.057 35.2253C149.057 36.8482 148.358 38.212 146.96 39.3164C145.563 40.4209 143.827 40.9732 141.753 40.9732C139.68 40.9732 138.046 40.5562 136.851 39.7222C135.679 38.8882 135.093 37.9302 135.093 36.8482C135.093 35.7663 135.42 34.8985 136.073 34.2448C136.749 33.5685 137.584 33.2304 138.575 33.2304C139.094 33.2304 139.578 33.3206 140.029 33.5009C139.308 34.2673 138.947 35.0788 138.947 35.9353C138.947 36.7919 139.184 37.4794 139.657 37.9978C140.131 38.5163 140.773 38.7754 141.584 38.7754C142.396 38.7754 143.072 38.5726 143.613 38.1668C144.177 37.7386 144.458 37.1976 144.458 36.5439C144.458 35.8677 144.267 35.2704 143.884 34.7519C143.501 34.2335 143.016 33.7827 142.43 33.3995C141.866 32.9938 141.246 32.543 140.57 32.0471C139.894 31.5512 139.263 31.0553 138.677 30.5594C138.113 30.041 137.64 29.3985 137.257 28.6321C136.874 27.8432 136.682 26.9867 136.682 26.0625C136.682 24.4621 137.336 23.1548 138.643 22.1404C139.973 21.1036 141.618 20.5851 143.579 20.5851C145.563 20.5851 147.006 20.9683 147.907 21.7347C148.832 22.5011 149.293 23.4027 149.293 24.4396C149.293 25.4539 148.967 26.3217 148.313 27.043C147.682 27.7644 146.859 28.125 145.845 28.125C145.349 28.125 144.785 28.0235 144.154 27.8207C144.65 27.3924 145.033 26.9078 145.304 26.3668C145.574 25.8033 145.709 25.251 145.709 24.7101C145.709 24.1691 145.484 23.7183 145.033 23.3576C144.582 22.9744 144.041 22.7828 143.41 22.7828ZM158.725 28.6321C158.364 30.6383 158.083 32.419 157.88 33.9743C157.677 35.5296 157.576 37.1187 157.576 38.7416C157.576 40.3646 157.733 41.5254 158.049 42.2242C156.313 41.7734 155.119 41.0859 154.465 40.1617C153.811 39.215 153.484 37.8851 153.484 36.172C153.484 34.6618 153.721 32.5993 154.195 29.9846C154.668 27.3473 154.972 25.5666 155.107 24.6424C153.935 24.8453 152.684 25.2398 151.354 25.8258C151.309 25.33 151.287 24.958 151.287 24.7101C151.287 23.5154 151.647 22.704 152.369 22.2757C153.09 21.8249 154.127 21.5882 155.479 21.5656C155.637 19.8751 155.716 18.6579 155.716 17.9141C155.716 17.1702 155.704 16.5504 155.682 16.0544C155.682 15.5586 155.682 15.1867 155.682 14.9387C157.17 15.0965 158.252 15.5473 158.928 16.2911C159.604 17.0125 159.942 18.0493 159.942 19.4017C159.942 19.9427 159.886 20.6979 159.773 21.6671C161.667 21.622 163.053 21.2501 163.932 20.5513C163.977 21.0022 164 21.3403 164 21.5656C164 22.6476 163.808 23.4027 163.425 23.831C163.041 24.2367 162.399 24.4396 161.498 24.4396C160.596 24.4396 159.909 24.4283 159.435 24.4058C159.322 25.2172 159.086 26.626 158.725 28.6321Z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M30.157 7.43876C29.7951 11.0532 27.1376 12.8801 25.333 12.8801C23.5284 12.8801 21.6502 12.2927 20.4739 10.2035C17.8967 5.62623 21.1078 2.51616e-05 24.7268 0C27.5349 -1.95236e-05 30.6095 2.92071 30.157 7.43876ZM6.49638 23.0848L6.49636 23.0848C2.75091 21.4707 -1.12846 19.7988 0.305098 16.3101C2.39322 12.5734 16.935 13.9503 26.2353 17.2123C30.1555 18.5873 33.3528 21.521 35.5591 25.062C35.4669 24.0923 35.2633 23.0557 34.8476 22.2242C33.6031 19.7351 31.4012 17.6705 30.2249 17.246C34.6998 16.3576 38.0543 13.6001 40.4402 11.6389C42.5805 9.87956 43.9413 8.76097 44.6322 10.2074C46.5357 16.3454 40.617 24.5342 36.8028 27.3374C36.8045 27.3409 36.8061 27.3444 36.8078 27.3479C39.9016 33.8655 43.2941 42.2498 40.0731 43.9335C37.6134 45.2192 34.6561 42.5945 31.6632 39.9383C29.3999 37.9295 27.1162 35.9026 25.0121 35.5354C22.7159 35.1347 20.0814 37.6155 17.4935 40.0526C14.5741 42.8018 11.7139 45.4953 9.4652 43.9335C6.90874 42.158 8.53517 37.8181 10.0694 33.7241C11.4197 30.1211 12.6986 26.7086 10.9921 25.4022C9.85685 24.5331 8.19031 23.8148 6.49638 23.0848Z"/>
+</svg>
+                <!--end todo--></a>
               <div class="header__navigation">
                 <div class="header__navigation-social block-social"><a class="block-social__item" href="#"><img class="lazy" src="" data-src="./img/google-play.svg" alt="google play"></a><a class="block-social__item" href="#"><img class="lazy" src="" data-src="./img/app-store.svg" alt="app store"></a></div>
                 <button class="header__navigation-burger burger js__header-burger-open"><span class="burger__item"></span><span class="burger__item"></span></button>
@@ -67,11 +72,17 @@
         <!-- start hero-->
         <article class="section hero js__hero">
           <div class="section__wrapper">
+            <!-- todo добавить на всех секциях перед контейнером,-->
+            <!-- в data-header-white вставлять 1(true) если хедер на этой секции надо перекрашивать в белый-->
+            <div class="section__bg js__section-bg" data-header-white="1" style="background-image: url('../img/blue-bg.jpg')"></div>
             <div class="container">
               <div class="section__container hero__container">
                 <div class="hero__logo js__hero-logo"><img class="lazy" src="" data-src="./img/logo.svg" alt="iconist logo"></div>
                 <div class="hero__block-title block-title">
-                  <h1 class="headline-1 js__hero-title"><span class="font-color-blue">Find people you can</span><br>really connect with</h1>
+                  <!-- todo, добавлять цвет тексту белый, если дают фон-->
+                  <h1 class="headline-1 js__hero-title" style="color: #fff">
+                    <!-- не вставлять span с классом, если вставляют задний фон--><span class="font-color-blue">Find people you can</span><br>really connect with
+                  </h1>
                 </div>
                 <figure class="hero__illustration js__hero-illustration">
                   <div class="hero__illustration-icon icon-1">
@@ -159,13 +170,14 @@
         <!-- start everybody-->
         <article class="section everybody js__everybody">
           <div class="section__wrapper">
+            <div class="section__bg js__section-bg" data-header-white="1" style="background-image: url('../img/blue-bg.jpg')"></div>
             <div class="container">
               <div class="section__container everybody__container">
                 <div class="everybody__content">
                   <div class="everybody__title block-title">
-                    <h2 class="headline-1"><span class="font-color-blue">Everybody </span><br>is an icon</h2>
+                    <h2 class="headline-1" style="color: #fff"><span class="font-color-blue">Everybody </span><br>is an icon</h2>
                   </div>
-                  <div class="block-text">
+                  <div class="block-text" style="color: #fff">
                     <p class="paragraph-1">Iconist matches you with other people based on your personality type, hobbies, interests and so much more!</p>
                   </div>
                 </div>
@@ -226,10 +238,12 @@
         <!-- start create-->
         <article class="section create js__create">
           <div class="section__wrapper create__wrapper">
+            <div class="section__bg js__section-bg" data-header-white="1" style="background-image: url('../img/blue-bg.jpg')"></div>
             <div class="container">
               <div class="section__container create__container">
                 <div class="create__title block-title">
-                  <h2 class="headline-3">With the Iconist app you can create <span class="font-color-blue">close friendships, real relationships and meaningful partnerships</span></h2>
+                  <!-- todo: color for section with bg, and remove span if there will be background-->
+                  <h2 class="headline-3" style="color: #fff">With the Iconist app you can create<span class="font-color-blue">close friendships, real relationships and meaningful partnerships</span></h2>
                 </div>
                 <div class="create__media">
                   <div class="create__media-inner">
@@ -295,17 +309,20 @@
         <!-- start tired-->
         <article class="section tired js__tired">
           <div class="section__wrapper tired__wrapper">
+            <div class="section__bg js__section-bg" data-header-white="1" style="background-image: url('../img/red-bg.jpg')"></div>
             <div class="container">
               <div class="section__container tired__container">
                 <div class="tired__title block-title">
-                  <h2 class="headline-3">Are you tired of wasting<br>your time on useless dating apps?<br><span class="font-color-blue">Explore a whole new way of meeting people with Iconist</span></h2>
+                  <!-- todo, add style with color white if in section bg, and remove span-->
+                  <h2 class="headline-3" style="color: #fff">Are you tired of wasting<br>your time on useless dating apps?<br><span class="font-color-blue">Explore a whole new way of meeting people with Iconist</span></h2>
                 </div>
                 <div class="tired__content">
                   <div class="tired__tile">
                     <section class="tired__tile-item">
                       <div class="tired__tile-item-row">
-                        <div class="tired__tile-item-icon"><img class="lazy" src="" data-src="./img/tried-icon-1.svg" alt="tried"></div>
-                        <p class="tired__tile-item-title">Free advanced features</p>
+                        <!-- todo: цвет-->
+                        <div class="tired__tile-item-icon" style="color: #fff"><img class="lazy" src="" data-src="./img/tried-icon-1.svg" alt="tried"></div>
+                        <p class="tired__tile-item-title" style="color: #fff">Free advanced features</p>
                       </div>
                       <div class="tired__tile-item-image block-phone-container">
                         <picture>
@@ -315,8 +332,9 @@
                     </section>
                     <section class="tired__tile-item">
                       <div class="tired__tile-item-row">
-                        <div class="tired__tile-item-icon"><img class="lazy" src="" data-src="./img/tried-icon-2.svg" alt="tried"></div>
-                        <p class="tired__tile-item-title">Visual relationship map</p>
+                        <!-- todo: цвет-->
+                        <div class="tired__tile-item-icon" style="color: #fff"><img class="lazy" src="" data-src="./img/tried-icon-2.svg" alt="tried"></div>
+                        <p class="tired__tile-item-title" style="color: #fff">Visual relationship map</p>
                       </div>
                       <div class="tired__tile-item-image block-phone-container">
                         <picture>
@@ -326,8 +344,9 @@
                     </section>
                     <section class="tired__tile-item">
                       <div class="tired__tile-item-row">
-                        <div class="tired__tile-item-icon"><img class="lazy" src="" data-src="./img/tried-icon-3.svg" alt="tried"></div>
-                        <p class="tired__tile-item-title">Icon-based profile</p>
+                        <!-- todo: цвет-->
+                        <div class="tired__tile-item-icon" style="color: #fff"><img class="lazy" src="" data-src="./img/tried-icon-3.svg" alt="tried"></div>
+                        <p class="tired__tile-item-title" style="color: #fff">Icon-based profile</p>
                       </div>
                       <div class="tired__tile-item-image block-phone-container">
                         <picture>
@@ -337,8 +356,9 @@
                     </section>
                     <section class="tired__tile-item">
                       <div class="tired__tile-item-row">
-                        <div class="tired__tile-item-icon"><img class="lazy" src="" data-src="./img/tried-icon-4.svg" alt="tried"></div>
-                        <p class="tired__tile-item-title">Matching by personality type</p>
+                        <!-- todo: цвет-->
+                        <div class="tired__tile-item-icon" style="color: #fff"><img class="lazy" src="" data-src="./img/tried-icon-4.svg" alt="tried"></div>
+                        <p class="tired__tile-item-title" style="color: #fff">Matching by personality type</p>
                       </div>
                       <div class="tired__tile-item-image block-phone-container">
                         <picture>
@@ -348,8 +368,9 @@
                     </section>
                     <section class="tired__tile-item">
                       <div class="tired__tile-item-row">
-                        <div class="tired__tile-item-icon"><img class="lazy" src="" data-src="./img/tried-icon-5.svg" alt="tried"></div>
-                        <p class="tired__tile-item-title">Location-based search</p>
+                        <!-- todo: цвет-->
+                        <div class="tired__tile-item-icon" style="color: #fff"><img class="lazy" src="" data-src="./img/tried-icon-5.svg" alt="tried"></div>
+                        <p class="tired__tile-item-title" style="color: #fff">Location-based search</p>
                       </div>
                       <div class="tired__tile-item-image block-phone-container">
                         <picture>
@@ -367,48 +388,58 @@
         <!-- start features-->
         <article class="section features js__features">
           <div class="section__wrapper features__wrapper">
+            <div class="section__bg js__section-bg" data-header-white="1" style="background-image: url('../img/wave-bg.png')"></div>
             <div class="container">
               <div class="features__container">
+                <!-- todo: стили для цвета полоски в меню секции, менять если вставляют задний фон, формат decimal (255,255,255)-->
+                <style>
+                  :root {
+                    --features-bg-color: #fff;
+                  }
+                  
+                </style>
                 <div class="features__navigation">
                   <ul class="features__navigation-list">
-                    <li class="features__navigation-list-item features__navigation-list-item--active">
-                      <div class="features__navigation-list-item-block"><img class="lazy features__navigation-list-item-icon" src="./img/feature-small-1.svg" data-src="" alt="feature step">
+                    <!-- todo: мето где может быть изменен цвет текста и иконок-->
+                    <li class="features__navigation-list-item features__navigation-list-item--active" style="color: #fff">
+                      <div class="features__navigation-list-item-block">
+                        <!-- todo: эти иконки свг можно будет вшивать в код?--><img class="lazy features__navigation-list-item-icon" src="./img/feature-small-1.svg" data-src="" alt="feature step">
                         <p class="features__navigation-list-item-text">1/8 Feature</p>
                       </div>
                     </li>
                     <li class="features__navigation-list-item">
                       <div class="features__navigation-list-item-block"><img class="lazy features__navigation-list-item-icon" src="./img/feature-small-2.svg" data-src="" alt="feature step">
-                        <p class="features__navigation-list-item-text">2/8 Feature</p>
+                        <p class="features__navigation-list-item-text" style="color: #fff">2/8 Feature</p>
                       </div>
                     </li>
                     <li class="features__navigation-list-item">
                       <div class="features__navigation-list-item-block"><img class="lazy features__navigation-list-item-icon" src="./img/feature-small-3.svg" data-src="" alt="feature step">
-                        <p class="features__navigation-list-item-text">3/8 Feature</p>
+                        <p class="features__navigation-list-item-text" style="color: #fff">3/8 Feature</p>
                       </div>
                     </li>
                     <li class="features__navigation-list-item">
                       <div class="features__navigation-list-item-block"><img class="lazy features__navigation-list-item-icon" src="./img/feature-small-4.svg" data-src="" alt="feature step">
-                        <p class="features__navigation-list-item-text">4/8 Feature</p>
+                        <p class="features__navigation-list-item-text" style="color: #fff">4/8 Feature</p>
                       </div>
                     </li>
                     <li class="features__navigation-list-item">
                       <div class="features__navigation-list-item-block"><img class="lazy features__navigation-list-item-icon" src="./img/feature-small-5.svg" data-src="" alt="feature step">
-                        <p class="features__navigation-list-item-text">5/8 Feature</p>
+                        <p class="features__navigation-list-item-text" style="color: #fff">5/8 Feature</p>
                       </div>
                     </li>
                     <li class="features__navigation-list-item">
                       <div class="features__navigation-list-item-block"><img class="lazy features__navigation-list-item-icon" src="./img/feature-small-6.svg" data-src="" alt="feature step">
-                        <p class="features__navigation-list-item-text">6/8 Feature</p>
+                        <p class="features__navigation-list-item-text" style="color: #fff">6/8 Feature</p>
                       </div>
                     </li>
                     <li class="features__navigation-list-item">
                       <div class="features__navigation-list-item-block"><img class="lazy features__navigation-list-item-icon" src="./img/feature-small-7.svg" data-src="" alt="feature step">
-                        <p class="features__navigation-list-item-text">7/8 Feature</p>
+                        <p class="features__navigation-list-item-text" style="color: #fff">7/8 Feature</p>
                       </div>
                     </li>
                     <li class="features__navigation-list-item">
                       <div class="features__navigation-list-item-block"><img class="lazy features__navigation-list-item-icon" src="./img/feature-small-8.svg" data-src="" alt="feature step">
-                        <p class="features__navigation-list-item-text">8/8 Feature</p>
+                        <p class="features__navigation-list-item-text" style="color: #fff">8/8 Feature</p>
                       </div>
                     </li>
                   </ul>
@@ -420,9 +451,10 @@
                       <div class="features__slider-slide-content">
                         <div class="features__slider-slide-content-icon block-icon"><img class="block-icon__icon block-icon__icon--blue lazy" src="" data-src="./img/feature-1.svg" alt="feature 1"></div>
                         <div class="block-title">
-                          <h2 class="headline-1"><span class="font-color-blue">Let your</span><br>personality show</h2>
+                          <!-- todo: пример куда вставлять стиль с белым цветом если будет фон-->
+                          <h2 class="headline-1" style="color: #fff"><span class="font-color-blue">Let your</span><br>personality show</h2>
                         </div>
-                        <div class="block-subtitle">
+                        <div class="block-subtitle" style="color: #fff">
                           <p class="paragraph-2">Take our free personality test to find out what type of character you are and how you match up with other personality types.</p>
                         </div>
                       </div>
@@ -710,6 +742,7 @@
         <!-- start be iconist-->
         <article class="section be-iconist js__be-iconist">
           <div class="section__wrapper">
+            <div class="section__bg js__section-bg" data-header-white="1" style="background-image: url('../img/blue-bg.jpg')"></div>
             <div class="container">
               <div class="section__container be-iconist__container">
                 <div class="be-iconist__logo"><img class="lazy" src="" data-src="./img/logo.svg" alt="iconist logo"></div>
