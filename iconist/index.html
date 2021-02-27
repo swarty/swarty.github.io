@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>main page</title>
     <meta name="description" content="main page">
-    <!-- todo: эти стили только для главной страницы-->
     <style>
       article.section, .header {
         opacity: 0;
@@ -72,17 +71,12 @@
         <!-- start hero-->
         <article class="section hero js__hero">
           <div class="section__wrapper">
-            <!-- todo добавить на всех секциях перед контейнером,-->
-            <!-- в data-header-white вставлять 1(true) если хедер на этой секции надо перекрашивать в белый-->
             <div class="section__bg js__section-bg" data-header-white="1" style="background-image: url('./img/blue-bg.jpg')"></div>
             <div class="container">
               <div class="section__container hero__container">
                 <div class="hero__logo js__hero-logo"><img class="lazy" src="" data-src="./img/logo.svg" alt="iconist logo"></div>
                 <div class="hero__block-title block-title">
-                  <!-- todo, добавлять цвет тексту белый, если дают фон-->
-                  <h1 class="headline-1 js__hero-title" style="color: #fff">
-                    <!-- не вставлять span с классом, если вставляют задний фон--><span class="font-color-blue">Find people you can</span><br>really connect with
-                  </h1>
+                  <h1 class="headline-1 js__hero-title" style="color: #fff"><span class="font-color-blue">Find people you can</span><br>really connect with</h1>
                 </div>
                 <figure class="hero__illustration js__hero-illustration">
                   <div class="hero__illustration-icon icon-1">
@@ -242,7 +236,6 @@
             <div class="container">
               <div class="section__container create__container">
                 <div class="create__title block-title">
-                  <!-- todo: color for section with bg, and remove span if there will be background-->
                   <h2 class="headline-3" style="color: #fff">With the Iconist app you can create<span class="font-color-blue">close friendships, real relationships and meaningful partnerships</span></h2>
                 </div>
                 <div class="create__media">
@@ -313,14 +306,12 @@
             <div class="container">
               <div class="section__container tired__container">
                 <div class="tired__title block-title">
-                  <!-- todo, add style with color white if in section bg, and remove span-->
                   <h2 class="headline-3" style="color: #fff">Are you tired of wasting<br>your time on useless dating apps?<br><span class="font-color-blue">Explore a whole new way of meeting people with Iconist</span></h2>
                 </div>
                 <div class="tired__content">
                   <div class="tired__tile">
                     <section class="tired__tile-item">
                       <div class="tired__tile-item-row">
-                        <!-- todo: цвет-->
                         <div class="tired__tile-item-icon" style="color: #fff"><img class="lazy" src="" data-src="./img/tried-icon-1.svg" alt="tried"></div>
                         <p class="tired__tile-item-title" style="color: #fff">Free advanced features</p>
                       </div>
@@ -334,7 +325,6 @@
                     </section>
                     <section class="tired__tile-item">
                       <div class="tired__tile-item-row">
-                        <!-- todo: цвет-->
                         <div class="tired__tile-item-icon" style="color: #fff"><img class="lazy" src="" data-src="./img/tried-icon-2.svg" alt="tried"></div>
                         <p class="tired__tile-item-title" style="color: #fff">Visual relationship map</p>
                       </div>
@@ -348,7 +338,6 @@
                     </section>
                     <section class="tired__tile-item">
                       <div class="tired__tile-item-row">
-                        <!-- todo: цвет-->
                         <div class="tired__tile-item-icon" style="color: #fff"><img class="lazy" src="" data-src="./img/tried-icon-3.svg" alt="tried"></div>
                         <p class="tired__tile-item-title" style="color: #fff">Icon-based profile</p>
                       </div>
@@ -362,7 +351,6 @@
                     </section>
                     <section class="tired__tile-item">
                       <div class="tired__tile-item-row">
-                        <!-- todo: цвет-->
                         <div class="tired__tile-item-icon" style="color: #fff"><img class="lazy" src="" data-src="./img/tried-icon-4.svg" alt="tried"></div>
                         <p class="tired__tile-item-title" style="color: #fff">Matching by personality type</p>
                       </div>
@@ -376,7 +364,6 @@
                     </section>
                     <section class="tired__tile-item">
                       <div class="tired__tile-item-row">
-                        <!-- todo: цвет-->
                         <div class="tired__tile-item-icon" style="color: #fff"><img class="lazy" src="" data-src="./img/tried-icon-5.svg" alt="tried"></div>
                         <p class="tired__tile-item-title" style="color: #fff">Location-based search</p>
                       </div>
@@ -395,360 +382,441 @@
           </div>
         </article>
         <!-- end tried-->
-        <!-- start features-->
-        <article class="section features js__features">
+        <!-- TODO: все что ниже изменено, разметка для секций осталась без изменений, только слайды высунул и features, для всех features задний фон привязывай к одному полю (один фон для всех features)-->
+        <style>
+          :root {
+            --features-bg-color: #fff;
+          }
+          
+        </style>
+        <!-- start features1-->
+        <article class="section features js__features1">
           <div class="section__wrapper features__wrapper">
             <div class="section__bg js__section-bg" data-header-white="1" style="background-image: url('./img/wave-bg.png')"></div>
             <div class="container">
               <div class="features__container">
-                <!-- todo: стили для цвета полоски в меню секции, менять если вставляют задний фон, формат decimal (255,255,255)-->
-                <style>
-                  :root {
-                    --features-bg-color: #fff;
-                  }
-                  
-                </style>
-                <div class="features__navigation">
-                  <ul class="features__navigation-list">
-                    <!-- todo: мето где может быть изменен цвет текста и иконок-->
-                    <li class="features__navigation-list-item features__navigation-list-item--active" style="color: #fff">
-                      <div class="features__navigation-list-item-block">
-                        <!-- todo: эти иконки свг можно будет вшивать в код?--><img class="lazy features__navigation-list-item-icon" src="./img/feature-small-1.svg" data-src="" alt="feature step">
-                        <p class="features__navigation-list-item-text">1/8 Feature</p>
-                      </div>
-                    </li>
-                    <li class="features__navigation-list-item">
-                      <div class="features__navigation-list-item-block"><img class="lazy features__navigation-list-item-icon" src="./img/feature-small-2.svg" data-src="" alt="feature step">
-                        <p class="features__navigation-list-item-text" style="color: #fff">2/8 Feature</p>
-                      </div>
-                    </li>
-                    <li class="features__navigation-list-item">
-                      <div class="features__navigation-list-item-block"><img class="lazy features__navigation-list-item-icon" src="./img/feature-small-3.svg" data-src="" alt="feature step">
-                        <p class="features__navigation-list-item-text" style="color: #fff">3/8 Feature</p>
-                      </div>
-                    </li>
-                    <li class="features__navigation-list-item">
-                      <div class="features__navigation-list-item-block"><img class="lazy features__navigation-list-item-icon" src="./img/feature-small-4.svg" data-src="" alt="feature step">
-                        <p class="features__navigation-list-item-text" style="color: #fff">4/8 Feature</p>
-                      </div>
-                    </li>
-                    <li class="features__navigation-list-item">
-                      <div class="features__navigation-list-item-block"><img class="lazy features__navigation-list-item-icon" src="./img/feature-small-5.svg" data-src="" alt="feature step">
-                        <p class="features__navigation-list-item-text" style="color: #fff">5/8 Feature</p>
-                      </div>
-                    </li>
-                    <li class="features__navigation-list-item">
-                      <div class="features__navigation-list-item-block"><img class="lazy features__navigation-list-item-icon" src="./img/feature-small-6.svg" data-src="" alt="feature step">
-                        <p class="features__navigation-list-item-text" style="color: #fff">6/8 Feature</p>
-                      </div>
-                    </li>
-                    <li class="features__navigation-list-item">
-                      <div class="features__navigation-list-item-block"><img class="lazy features__navigation-list-item-icon" src="./img/feature-small-7.svg" data-src="" alt="feature step">
-                        <p class="features__navigation-list-item-text" style="color: #fff">7/8 Feature</p>
-                      </div>
-                    </li>
-                    <li class="features__navigation-list-item">
-                      <div class="features__navigation-list-item-block"><img class="lazy features__navigation-list-item-icon" src="./img/feature-small-8.svg" data-src="" alt="feature step">
-                        <p class="features__navigation-list-item-text" style="color: #fff">8/8 Feature</p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
                 <div class="features__content">
-                  <div class="features__slider">
-                    <!-- 1-->
-                    <section class="features__slider-slide">
-                      <div class="features__slider-slide-content">
-                        <div class="features__slider-slide-content-icon block-icon"><img class="block-icon__icon block-icon__icon--blue lazy" src="" data-src="./img/feature-1.svg" alt="feature 1"></div>
-                        <div class="block-title">
-                          <!-- todo: пример куда вставлять стиль с белым цветом если будет фон-->
-                          <h2 class="headline-1" style="color: #fff"><span class="font-color-blue">Let your</span><br>personality show</h2>
-                        </div>
-                        <div class="block-subtitle" style="color: #fff">
-                          <p class="paragraph-2">Take our free personality test to find out what type of character you are and how you match up with other personality types.</p>
+                  <section class="features__slider-slide">
+                    <div class="features__slider-slide-content">
+                      <div class="features__slider-slide-content-icon block-icon"><img class="block-icon__icon block-icon__icon--blue lazy" src="" data-src="./img/feature-1.svg" alt="feature 1"></div>
+                      <div class="block-title">
+                        <h2 class="headline-1" style="color: #fff"><span class="font-color-blue">Let your</span><br>personality show</h2>
+                      </div>
+                      <div class="block-subtitle" style="color: #fff">
+                        <p class="paragraph-2">Take our free personality test to find out what type of character you are and how you match up with other personality types.</p>
+                      </div>
+                    </div>
+                    <div class="features__slider-slide-media">
+                      <div class="features__slider-slide-media-image">
+                        <div class="features__slider-slide-media-icon icon-1 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-icon-1.svg" alt="feature 1"></div>
+                        <div class="features__slider-slide-media-icon icon-2 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-icon-2.png" alt="feature 1"></div>
+                        <div class="block-phone-container">
+                          <picture>
+                            <source srcset="./img/create-2@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-1.jpg" alt="personality">
+                          </picture>
                         </div>
                       </div>
-                      <div class="features__slider-slide-media">
-                        <div class="features__slider-slide-media-image">
-                          <div class="features__slider-slide-media-icon icon-1 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-icon-1.svg" alt="feature 1"></div>
-                          <div class="features__slider-slide-media-icon icon-2 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-icon-2.png" alt="feature 1"></div>
-                          <div class="block-phone-container">
-                            <picture>
-                              <source srcset="./img/create-2@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-1.jpg" alt="personality">
-                            </picture>
-                          </div>
-                        </div>
-                        <div class="features__slider-slide-media-image">
-                          <div class="features__slider-slide-media-icon icon-3 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-icon-3.png" alt="feature 2"></div>
-                          <div class="features__slider-slide-media-icon icon-4 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-icon-4.svg" alt="feature 2"></div>
-                          <div class="block-phone-container">
-                            <picture>
-                              <source srcset="./img/create-1@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-2.jpg" alt="personality">
-                            </picture>
-                          </div>
+                      <div class="features__slider-slide-media-image">
+                        <div class="features__slider-slide-media-icon icon-3 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-icon-3.png" alt="feature 2"></div>
+                        <div class="features__slider-slide-media-icon icon-4 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-icon-4.svg" alt="feature 2"></div>
+                        <div class="block-phone-container">
+                          <picture>
+                            <source srcset="./img/create-1@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-2.jpg" alt="personality">
+                          </picture>
                         </div>
                       </div>
-                    </section>
-                    <!-- 2-->
-                    <section class="features__slider-slide">
-                      <div class="features__slider-slide-content">
-                        <div class="features__slider-slide-content-icon block-icon"><img class="block-icon__icon block-icon__icon--blue lazy" src="" data-src="./img/feature-2.svg" alt="feature 2"></div>
-                        <div class="block-title">
-                          <h2 class="headline-1"><span class="font-color-blue">Create an iconic</span><br>profile</h2>
-                        </div>
-                        <div class="block-subtitle">
-                          <p class="paragraph-2">Express your iconic self in an eye-catching way with our beautiful icons. Share your hobbies, interests, preferences, views, lifestyle and more.</p>
-                        </div>
-                      </div>
-                      <div class="features__slider-slide-media">
-                        <div class="features__slider-slide-media-image">
-                          <div class="features__slider-slide-media-icon icon-5 block-icon"><img class="block-icon__icon block-icon__icon--shadow lazy" src="" data-src="./img/clubs.svg" alt="feature 3"></div>
-                          <div class="features__slider-slide-media-icon icon-6 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/chats.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-7 block-icon"><img class="block-icon__icon block-icon__icon--shadow lazy" src="" data-src="./img/icon-bird.svg" alt="feature 5"></div>
-                          <div class="block-phone-container">
-                            <picture>
-                              <source srcset="./img/emma-grin-image@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/emma-grin-image.jpg" alt="personality">
-                            </picture>
-                          </div>
-                        </div>
-                        <div class="features__slider-slide-media-image">
-                          <div class="features__slider-slide-media-icon icon-8 block-icon"><img class="block-icon__icon block-icon__icon--shadow lazy" src="" data-src="./img/icon-music.svg" alt="feature 6"></div>
-                          <div class="features__slider-slide-media-icon icon-9 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/hero-icon-16.svg" alt="feature 7"></div>
-                          <div class="block-phone-container">
-                            <picture>
-                              <source srcset="./img/feature-4@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-4.jpg" alt="personality">
-                            </picture>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                    <!-- 3-->
-                    <section class="features__slider-slide">
-                      <div class="features__slider-slide-content">
-                        <div class="features__slider-slide-content-icon block-icon"><img class="block-icon__icon block-icon__icon--blue lazy" src="" data-src="./img/feature-3.svg" alt="feature 3"></div>
-                        <div class="block-title">
-                          <h2 class="headline-1"><span class="font-color-blue">Don’t just search...</span><br>find!</h2>
-                        </div>
-                        <div class="block-subtitle">
-                          <p class="paragraph-2">Easy-to-use advanced search options and filters offer a powerful way of getting to know new people.</p>
-                        </div>
-                      </div>
-                      <div class="features__slider-slide-media">
-                        <div class="features__slider-slide-media-image">
-                          <div class="features__slider-slide-media-icon icon-10 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/create-interface-icon.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-11 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-icon-fem-male.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-12 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-icon-position.png" alt="feature 4"></div>
-                          <div class="block-phone-container">
-                            <picture>
-                              <source srcset="./img/feature-5@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-5.jpg" alt="personality">
-                            </picture>
-                          </div>
-                        </div>
-                        <div class="features__slider-slide-media-image">
-                          <div class="features__slider-slide-media-icon icon-13 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/geature-icon-activity.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-14 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-icon-lgbt.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-15 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-icon-drive.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-16 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-icon-message.png" alt="feature 4"></div>
-                          <div class="block-phone-container">
-                            <picture>
-                              <source srcset="./img/feature-6@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-6.jpg" alt="personality">
-                            </picture>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                    <!-- 4-->
-                    <section class="features__slider-slide">
-                      <div class="features__slider-slide-content">
-                        <div class="features__slider-slide-content-icon block-icon"><img class="block-icon__icon block-icon__icon--blue lazy" src="" data-src="./img/feature-4.svg" alt="feature 4"></div>
-                        <div class="block-title">
-                          <h2 class="headline-1"><span class="font-color-blue">Find friends next door</span><br>or miles away</h2>
-                        </div>
-                        <div class="block-subtitle">
-                          <p class="paragraph-2">Use the map to search for people near you. Are you traveling? A unique feature allows you to add a travel destination to your current location.</p>
-                        </div>
-                      </div>
-                      <div class="features__slider-slide-media"><img class="lazy features__slider-slide-media-bg icon-1" src="" data-src="./img/earth.png" alt="earth">
-                        <div class="features__slider-slide-media-image">
-                          <div class="features__slider-slide-media-icon icon-17 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-skills.png" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-18 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-p-1.png" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-19 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-p-2.png" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-20 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-p-3.png" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-21 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-p-4.png" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-22 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-distance.png" alt="feature 4"></div>
-                          <div class="block-phone-container">
-                            <picture>
-                              <source srcset="./img/feature-7@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-7.jpg" alt="personality">
-                            </picture>
-                          </div>
-                        </div>
-                        <div class="features__slider-slide-media-image">
-                          <div class="features__slider-slide-media-icon icon-23 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-gb-flag.png" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-24 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-america-flag.png" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-25 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-weather.png" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-26 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-german-flag.png" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-27 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-china-flag.png" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-28 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-travel.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-29 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-italy-flag.png" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-30 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-travel-icon.png" alt="feature 4"></div>
-                          <div class="block-phone-container">
-                            <picture>
-                              <source srcset="./img/feature-8@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-8.jpg" alt="personality">
-                            </picture>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                    <!-- 5-->
-                    <section class="features__slider-slide">
-                      <div class="features__slider-slide-content">
-                        <div class="features__slider-slide-content-icon block-icon"><img class="block-icon__icon block-icon__icon--blue lazy" src="" data-src="./img/feature-5.svg" alt="feature 5"></div>
-                        <div class="block-title">
-                          <h2 class="headline-1"><span class="font-color-blue">Safe for</span><br>monogamous persons</h2>
-                        </div>
-                        <div class="block-subtitle">
-                          <p class="paragraph-2">Use the map to search for people near you. Are you traveling? A unique feature allows you to add a travel destination to your current location.</p>
-                        </div>
-                      </div>
-                      <div class="features__slider-slide-media"><img class="lazy features__slider-slide-media-bg icon-2" src="" data-src="./img/feature-protected.svg" alt="protected"><img class="lazy features__slider-slide-media-bg icon-3" src="" data-src="./img/feature-mask.svg" alt="mask">
-                        <div class="features__slider-slide-media-image">
-                          <div class="features__slider-slide-media-icon icon-31 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-relationship-status.png" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-32 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-private.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-33 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-delete-chat.svg" alt="feature 4"></div>
-                          <div class="block-phone-container">
-                            <picture>
-                              <source srcset="./img/feature-9@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-9.jpg" alt="personality">
-                            </picture>
-                          </div>
-                        </div>
-                        <div class="features__slider-slide-media-image">
-                          <div class="features__slider-slide-media-icon icon-34 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-delete-status.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-35 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-hide-profile.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-36 block-icon"><img class="block-icon__icon lazy" src="" data-src="./img/feature-person-happy.png" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-37 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-group.png" alt="feature 4"></div>
-                          <div class="block-phone-container">
-                            <picture>
-                              <source srcset="./img/feature-10@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-10.jpg" alt="personality">
-                            </picture>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                    <!-- 6-->
-                    <section class="features__slider-slide">
-                      <div class="features__slider-slide-content">
-                        <div class="features__slider-slide-content-icon block-icon"><img class="block-icon__icon block-icon__icon--blue lazy" src="" data-src="./img/feature-6.png" alt="feature 6"></div>
-                        <div class="block-title">
-                          <h2 class="headline-1"><span class="font-color-blue">Build your own</span><br>relationship map</h2>
-                        </div>
-                        <div class="block-subtitle">
-                          <p class="paragraph-2">Iconist is the first truly polyamory-friendly app. You can connect your profile with that of your partenr(s) to create a visual map which shows your relations and personality types.</p>
-                        </div>
-                      </div>
-                      <div class="features__slider-slide-media">
-                        <div class="features__slider-slide-media-image">
-                          <div class="features__slider-slide-media-icon icon-38 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-partner.png" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-39 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-status.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-40 block-icon"><img class="block-icon__icon lazy" src="" data-src="./img/feature-person-icon.png" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-41 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-partner-status.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-42 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-partner-list.svg" alt="feature 4"></div>
-                          <div class="block-phone-container">
-                            <picture>
-                              <source srcset="./img/feature-11@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-11.jpg" alt="personality">
-                            </picture>
-                          </div>
-                        </div>
-                        <div class="features__slider-slide-media-image">
-                          <div class="features__slider-slide-media-icon icon-43 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-partners.png" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-44 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-polyamorus.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-45 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-from.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-46 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-breakup.svg" alt="feature 4"></div>
-                          <div class="block-phone-container">
-                            <picture>
-                              <source srcset="./img/feature-12@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-12.jpg" alt="personality">
-                            </picture>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                    <!-- 7-->
-                    <section class="features__slider-slide">
-                      <div class="features__slider-slide-content">
-                        <div class="features__slider-slide-content-icon block-icon"><img class="block-icon__icon block-icon__icon--blue lazy" src="" data-src="./img/feature-7.svg" alt="feature 6"></div>
-                        <div class="block-title">
-                          <h2 class="headline-1">Let people get to know you better</h2>
-                        </div>
-                        <div class="block-subtitle">
-                          <p class="paragraph-2">Answer some of the questions on the list to reveal something more about yourself. For example, what’s your biggest dream?</p>
-                        </div>
-                      </div>
-                      <div class="features__slider-slide-media">
-                        <div class="features__slider-slide-media-image">
-                          <div class="features__slider-slide-media-icon icon-47 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-quotes.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-48 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-red-message.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-49 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-about.png" alt="feature 4"></div>
-                          <div class="block-phone-container">
-                            <picture>
-                              <source srcset="./img/feature-13@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-13.jpg" alt="personality">
-                            </picture>
-                          </div>
-                        </div>
-                        <div class="features__slider-slide-media-image">
-                          <div class="features__slider-slide-media-icon icon-50 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-answer.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-51 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-red-bloquote.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-52 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-entry-message.svg" alt="feature 4"></div>
-                          <div class="block-phone-container">
-                            <picture>
-                              <source srcset="./img/feature-14@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-14.jpg" alt="personality">
-                            </picture>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                    <!-- 8-->
-                    <section class="features__slider-slide">
-                      <div class="features__slider-slide-content">
-                        <div class="features__slider-slide-content-icon block-icon"><img class="block-icon__icon block-icon__icon--blue lazy" src="" data-src="./img/feature-7.svg" alt="feature 6"></div>
-                        <div class="block-title">
-                          <h2 class="headline-1"><span class="font-color-blue">100% free</span><br>No ads or hidden fees</h2>
-                        </div>
-                        <div class="block-subtitle">
-                          <p class="paragraph-2">Iconist is absolutely free: no subscription fees, no hidden costs, no locked features and no ads.</p>
-                        </div>
-                      </div>
-                      <div class="features__slider-slide-media">
-                        <div class="features__slider-slide-media-image">
-                          <div class="features__slider-slide-media-icon icon-53 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-micro.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-54 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-track.svg" alt="feature 4"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-voice.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-55 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-chating.svg" alt="feature 4"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-actions.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-56 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-man.png" alt="feature 4"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-photos.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-57 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-map.png" alt="feature 4"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-map-text.svg" alt="feature 4"></div>
-                          <div class="block-phone-container">
-                            <picture>
-                              <source srcset="./img/feature-15@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-15.jpg" alt="personality">
-                            </picture>
-                          </div>
-                        </div>
-                        <div class="features__slider-slide-media-image">
-                          <div class="features__slider-slide-media-icon icon-58 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-new-group.png" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-59 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-girl-status.png" alt="feature 4"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-message.svg" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-60 block-icon"><img class="block-icon__icon lazy" src="" data-src="./img/icon-heart-bdsm.svg" alt="feature 4"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-meet.png" alt="feature 4"></div>
-                          <div class="features__slider-slide-media-icon icon-61 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-girl-2.png" alt="feature 4"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-answer-2.svg" alt="feature 4"></div>
-                          <div class="block-phone-container">
-                            <picture>
-                              <source srcset="./img/feature-16@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-16.jpg" alt="personality">
-                            </picture>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                  </div>
+                    </div>
+                  </section>
                 </div>
               </div>
             </div>
           </div>
         </article>
-        <!-- end features-->
+        <!-- end features1-->
+        <!-- start features2-->
+        <article class="section features js__features2">
+          <div class="section__wrapper features__wrapper">
+            <div class="section__bg js__section-bg" data-header-white="1" style="background-image: url('./img/wave-bg.png')"></div>
+            <div class="container">
+              <div class="features__container">
+                <div class="features__content">
+                  <section class="features__slider-slide">
+                    <div class="features__slider-slide-content">
+                      <div class="features__slider-slide-content-icon block-icon"><img class="block-icon__icon block-icon__icon--blue lazy" src="" data-src="./img/feature-2.svg" alt="feature 2"></div>
+                      <div class="block-title">
+                        <h2 class="headline-1"><span class="font-color-blue">Create an iconic</span><br>profile</h2>
+                      </div>
+                      <div class="block-subtitle">
+                        <p class="paragraph-2">Express your iconic self in an eye-catching way with our beautiful icons. Share your hobbies, interests, preferences, views, lifestyle and more.</p>
+                      </div>
+                    </div>
+                    <div class="features__slider-slide-media">
+                      <div class="features__slider-slide-media-image">
+                        <div class="features__slider-slide-media-icon icon-5 block-icon"><img class="block-icon__icon block-icon__icon--shadow lazy" src="" data-src="./img/clubs.svg" alt="feature 3"></div>
+                        <div class="features__slider-slide-media-icon icon-6 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/chats.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-7 block-icon"><img class="block-icon__icon block-icon__icon--shadow lazy" src="" data-src="./img/icon-bird.svg" alt="feature 5"></div>
+                        <div class="block-phone-container">
+                          <picture>
+                            <source srcset="./img/emma-grin-image@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/emma-grin-image.jpg" alt="personality">
+                          </picture>
+                        </div>
+                      </div>
+                      <div class="features__slider-slide-media-image">
+                        <div class="features__slider-slide-media-icon icon-8 block-icon"><img class="block-icon__icon block-icon__icon--shadow lazy" src="" data-src="./img/icon-music.svg" alt="feature 6"></div>
+                        <div class="features__slider-slide-media-icon icon-9 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/hero-icon-16.svg" alt="feature 7"></div>
+                        <div class="block-phone-container">
+                          <picture>
+                            <source srcset="./img/feature-4@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-4.jpg" alt="personality">
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- end features2-->
+        <!-- start features3-->
+        <article class="section features js__features3">
+          <div class="section__wrapper features__wrapper">
+            <div class="section__bg js__section-bg" data-header-white="1" style="background-image: url('./img/wave-bg.png')"></div>
+            <div class="container">
+              <div class="features__container">
+                <div class="features__content">
+                  <!-- 3-->
+                  <section class="features__slider-slide">
+                    <div class="features__slider-slide-content">
+                      <div class="features__slider-slide-content-icon block-icon"><img class="block-icon__icon block-icon__icon--blue lazy" src="" data-src="./img/feature-3.svg" alt="feature 3"></div>
+                      <div class="block-title">
+                        <h2 class="headline-1"><span class="font-color-blue">Don’t just search...</span><br>find!</h2>
+                      </div>
+                      <div class="block-subtitle">
+                        <p class="paragraph-2">Easy-to-use advanced search options and filters offer a powerful way of getting to know new people.</p>
+                      </div>
+                    </div>
+                    <div class="features__slider-slide-media">
+                      <div class="features__slider-slide-media-image">
+                        <div class="features__slider-slide-media-icon icon-10 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/create-interface-icon.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-11 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-icon-fem-male.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-12 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-icon-position.png" alt="feature 4"></div>
+                        <div class="block-phone-container">
+                          <picture>
+                            <source srcset="./img/feature-5@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-5.jpg" alt="personality">
+                          </picture>
+                        </div>
+                      </div>
+                      <div class="features__slider-slide-media-image">
+                        <div class="features__slider-slide-media-icon icon-13 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/geature-icon-activity.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-14 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-icon-lgbt.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-15 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-icon-drive.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-16 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-icon-message.png" alt="feature 4"></div>
+                        <div class="block-phone-container">
+                          <picture>
+                            <source srcset="./img/feature-6@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-6.jpg" alt="personality">
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- end features3-->
+        <!-- start features4-->
+        <article class="section features js__features4">
+          <div class="section__wrapper features__wrapper">
+            <div class="section__bg js__section-bg" data-header-white="1" style="background-image: url('./img/wave-bg.png')"></div>
+            <div class="container">
+              <div class="features__container">
+                <div class="features__content">
+                  <section class="features__slider-slide">
+                    <div class="features__slider-slide-content">
+                      <div class="features__slider-slide-content-icon block-icon"><img class="block-icon__icon block-icon__icon--blue lazy" src="" data-src="./img/feature-4.svg" alt="feature 4"></div>
+                      <div class="block-title">
+                        <h2 class="headline-1"><span class="font-color-blue">Find friends next door</span><br>or miles away</h2>
+                      </div>
+                      <div class="block-subtitle">
+                        <p class="paragraph-2">Use the map to search for people near you. Are you traveling? A unique feature allows you to add a travel destination to your current location.</p>
+                      </div>
+                    </div>
+                    <div class="features__slider-slide-media"><img class="lazy features__slider-slide-media-bg icon-1" src="" data-src="./img/earth.png" alt="earth">
+                      <div class="features__slider-slide-media-image">
+                        <div class="features__slider-slide-media-icon icon-17 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-skills.png" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-18 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-p-1.png" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-19 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-p-2.png" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-20 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-p-3.png" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-21 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-p-4.png" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-22 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-distance.png" alt="feature 4"></div>
+                        <div class="block-phone-container">
+                          <picture>
+                            <source srcset="./img/feature-7@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-7.jpg" alt="personality">
+                          </picture>
+                        </div>
+                      </div>
+                      <div class="features__slider-slide-media-image">
+                        <div class="features__slider-slide-media-icon icon-23 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-gb-flag.png" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-24 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-america-flag.png" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-25 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-weather.png" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-26 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-german-flag.png" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-27 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-china-flag.png" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-28 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-travel.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-29 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-italy-flag.png" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-30 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-travel-icon.png" alt="feature 4"></div>
+                        <div class="block-phone-container">
+                          <picture>
+                            <source srcset="./img/feature-8@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-8.jpg" alt="personality">
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- end features4-->
+        <!-- start features5-->
+        <article class="section features js__features5">
+          <div class="section__wrapper features__wrapper">
+            <div class="section__bg js__section-bg" data-header-white="1" style="background-image: url('./img/wave-bg.png')"></div>
+            <div class="container">
+              <div class="features__container">
+                <div class="features__content">
+                  <section class="features__slider-slide">
+                    <div class="features__slider-slide-content">
+                      <div class="features__slider-slide-content-icon block-icon"><img class="block-icon__icon block-icon__icon--blue lazy" src="" data-src="./img/feature-5.svg" alt="feature 5"></div>
+                      <div class="block-title">
+                        <h2 class="headline-1"><span class="font-color-blue">Safe for</span><br>monogamous persons</h2>
+                      </div>
+                      <div class="block-subtitle">
+                        <p class="paragraph-2">Use the map to search for people near you. Are you traveling? A unique feature allows you to add a travel destination to your current location.</p>
+                      </div>
+                    </div>
+                    <div class="features__slider-slide-media"><img class="lazy features__slider-slide-media-bg icon-2" src="" data-src="./img/feature-protected.svg" alt="protected"><img class="lazy features__slider-slide-media-bg icon-3" src="" data-src="./img/feature-mask.svg" alt="mask">
+                      <div class="features__slider-slide-media-image">
+                        <div class="features__slider-slide-media-icon icon-31 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-relationship-status.png" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-32 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-private.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-33 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-delete-chat.svg" alt="feature 4"></div>
+                        <div class="block-phone-container">
+                          <picture>
+                            <source srcset="./img/feature-9@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-9.jpg" alt="personality">
+                          </picture>
+                        </div>
+                      </div>
+                      <div class="features__slider-slide-media-image">
+                        <div class="features__slider-slide-media-icon icon-34 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-delete-status.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-35 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-hide-profile.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-36 block-icon"><img class="block-icon__icon lazy" src="" data-src="./img/feature-person-happy.png" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-37 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-group.png" alt="feature 4"></div>
+                        <div class="block-phone-container">
+                          <picture>
+                            <source srcset="./img/feature-10@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-10.jpg" alt="personality">
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- start features5-->
+        <!-- start features6-->
+        <article class="section features js__features6">
+          <div class="section__wrapper features__wrapper">
+            <div class="section__bg js__section-bg" data-header-white="1" style="background-image: url('./img/wave-bg.png')"></div>
+            <div class="container">
+              <div class="features__container">
+                <div class="features__content">
+                  <section class="features__slider-slide">
+                    <div class="features__slider-slide-content">
+                      <div class="features__slider-slide-content-icon block-icon"><img class="block-icon__icon block-icon__icon--blue lazy" src="" data-src="./img/feature-6.png" alt="feature 6"></div>
+                      <div class="block-title">
+                        <h2 class="headline-1"><span class="font-color-blue">Build your own</span><br>relationship map</h2>
+                      </div>
+                      <div class="block-subtitle">
+                        <p class="paragraph-2">Iconist is the first truly polyamory-friendly app. You can connect your profile with that of your partenr(s) to create a visual map which shows your relations and personality types.</p>
+                      </div>
+                    </div>
+                    <div class="features__slider-slide-media">
+                      <div class="features__slider-slide-media-image">
+                        <div class="features__slider-slide-media-icon icon-38 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-partner.png" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-39 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-status.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-40 block-icon"><img class="block-icon__icon lazy" src="" data-src="./img/feature-person-icon.png" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-41 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-partner-status.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-42 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-partner-list.svg" alt="feature 4"></div>
+                        <div class="block-phone-container">
+                          <picture>
+                            <source srcset="./img/feature-11@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-11.jpg" alt="personality">
+                          </picture>
+                        </div>
+                      </div>
+                      <div class="features__slider-slide-media-image">
+                        <div class="features__slider-slide-media-icon icon-43 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-partners.png" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-44 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-polyamorus.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-45 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-from.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-46 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-breakup.svg" alt="feature 4"></div>
+                        <div class="block-phone-container">
+                          <picture>
+                            <source srcset="./img/feature-12@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-12.jpg" alt="personality">
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- end features6-->
+        <!--start features7-->
+        <article class="section features js__features7">
+          <div class="section__wrapper features__wrapper">
+            <div class="section__bg js__section-bg" data-header-white="1" style="background-image: url('./img/wave-bg.png')"></div>
+            <div class="container">
+              <div class="features__container">
+                <div class="features__content">
+                  <section class="features__slider-slide">
+                    <div class="features__slider-slide-content">
+                      <div class="features__slider-slide-content-icon block-icon"><img class="block-icon__icon block-icon__icon--blue lazy" src="" data-src="./img/feature-7.svg" alt="feature 6"></div>
+                      <div class="block-title">
+                        <h2 class="headline-1">Let people get to know you better</h2>
+                      </div>
+                      <div class="block-subtitle">
+                        <p class="paragraph-2">Answer some of the questions on the list to reveal something more about yourself. For example, what’s your biggest dream?</p>
+                      </div>
+                    </div>
+                    <div class="features__slider-slide-media">
+                      <div class="features__slider-slide-media-image">
+                        <div class="features__slider-slide-media-icon icon-47 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-quotes.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-48 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-red-message.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-49 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-about.png" alt="feature 4"></div>
+                        <div class="block-phone-container">
+                          <picture>
+                            <source srcset="./img/feature-13@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-13.jpg" alt="personality">
+                          </picture>
+                        </div>
+                      </div>
+                      <div class="features__slider-slide-media-image">
+                        <div class="features__slider-slide-media-icon icon-50 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-answer.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-51 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-red-bloquote.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-52 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-entry-message.svg" alt="feature 4"></div>
+                        <div class="block-phone-container">
+                          <picture>
+                            <source srcset="./img/feature-14@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-14.jpg" alt="personality">
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!--end features7-->
+        <!--start features8-->
+        <article class="section features js__features8">
+          <div class="section__wrapper features__wrapper">
+            <div class="section__bg js__section-bg" data-header-white="1" style="background-image: url('./img/wave-bg.png')"></div>
+            <div class="container">
+              <div class="features__container">
+                <div class="features__content">
+                  <section class="features__slider-slide">
+                    <div class="features__slider-slide-content">
+                      <div class="features__slider-slide-content-icon block-icon"><img class="block-icon__icon block-icon__icon--blue lazy" src="" data-src="./img/feature-7.svg" alt="feature 6"></div>
+                      <div class="block-title">
+                        <h2 class="headline-1"><span class="font-color-blue">100% free</span><br>No ads or hidden fees</h2>
+                      </div>
+                      <div class="block-subtitle">
+                        <p class="paragraph-2">Iconist is absolutely free: no subscription fees, no hidden costs, no locked features and no ads.</p>
+                      </div>
+                    </div>
+                    <div class="features__slider-slide-media">
+                      <div class="features__slider-slide-media-image">
+                        <div class="features__slider-slide-media-icon icon-53 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-micro.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-54 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-track.svg" alt="feature 4"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-voice.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-55 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-chating.svg" alt="feature 4"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-actions.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-56 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-man.png" alt="feature 4"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-photos.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-57 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-map.png" alt="feature 4"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-map-text.svg" alt="feature 4"></div>
+                        <div class="block-phone-container">
+                          <picture>
+                            <source srcset="./img/feature-15@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-15.jpg" alt="personality">
+                          </picture>
+                        </div>
+                      </div>
+                      <div class="features__slider-slide-media-image">
+                        <div class="features__slider-slide-media-icon icon-58 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-new-group.png" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-59 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-girl-status.png" alt="feature 4"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-message.svg" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-60 block-icon"><img class="block-icon__icon lazy" src="" data-src="./img/icon-heart-bdsm.svg" alt="feature 4"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-meet.png" alt="feature 4"></div>
+                        <div class="features__slider-slide-media-icon icon-61 block-icon"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-girl-2.png" alt="feature 4"><img class="block-icon__icon block-icon__icon--empty lazy" src="" data-src="./img/feature-answer-2.svg" alt="feature 4"></div>
+                        <div class="block-phone-container">
+                          <picture>
+                            <source srcset="./img/feature-16@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"><img class="lazy" src="" data-src="./img/feature-16.jpg" alt="personality">
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!--end features8-->
+        <div class="features-navigation js__features-navigation">
+          <div class="container">
+            <ul class="features-navigation__list">
+              <li class="features-navigation__list-item features-navigation__list-item--active" style="color: #fff">
+                <div class="features-navigation__list-item-block"><img class="lazy features-navigation__list-item-icon" src="./img/feature-small-1.svg" data-src="" alt="feature step">
+                  <p class="features-navigation__list-item-text">1/8 Feature</p>
+                </div>
+              </li>
+              <li class="features-navigation__list-item">
+                <div class="features-navigation__list-item-block"><img class="lazy features-navigation__list-item-icon" src="./img/feature-small-2.svg" data-src="" alt="feature step">
+                  <p class="features-navigation__list-item-text" style="color: #fff">2/8 Feature</p>
+                </div>
+              </li>
+              <li class="features-navigation__list-item">
+                <div class="features-navigation__list-item-block"><img class="lazy features-navigation__list-item-icon" src="./img/feature-small-3.svg" data-src="" alt="feature step">
+                  <p class="features-navigation__list-item-text" style="color: #fff">3/8 Feature</p>
+                </div>
+              </li>
+              <li class="features-navigation__list-item">
+                <div class="features-navigation__list-item-block"><img class="lazy features-navigation__list-item-icon" src="./img/feature-small-4.svg" data-src="" alt="feature step">
+                  <p class="features-navigation__list-item-text" style="color: #fff">4/8 Feature</p>
+                </div>
+              </li>
+              <li class="features-navigation__list-item">
+                <div class="features-navigation__list-item-block"><img class="lazy features-navigation__list-item-icon" src="./img/feature-small-5.svg" data-src="" alt="feature step">
+                  <p class="features-navigation__list-item-text" style="color: #fff">5/8 Feature</p>
+                </div>
+              </li>
+              <li class="features-navigation__list-item">
+                <div class="features-navigation__list-item-block"><img class="lazy features-navigation__list-item-icon" src="./img/feature-small-6.svg" data-src="" alt="feature step">
+                  <p class="features-navigation__list-item-text" style="color: #fff">6/8 Feature</p>
+                </div>
+              </li>
+              <li class="features-navigation__list-item">
+                <div class="features-navigation__list-item-block"><img class="lazy features-navigation__list-item-icon" src="./img/feature-small-7.svg" data-src="" alt="feature step">
+                  <p class="features-navigation__list-item-text" style="color: #fff">7/8 Feature</p>
+                </div>
+              </li>
+              <li class="features-navigation__list-item">
+                <div class="features-navigation__list-item-block"><img class="lazy features-navigation__list-item-icon" src="./img/feature-small-8.svg" data-src="" alt="feature step">
+                  <p class="features-navigation__list-item-text" style="color: #fff">8/8 Feature</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
         <!-- start be iconist-->
         <article class="section be-iconist js__be-iconist">
           <div class="section__wrapper">
