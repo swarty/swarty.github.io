@@ -1,5 +1,29 @@
 [
   {
+    "@tag": "stone_sword",
+    "data": {
+      "class": "weapon",
+      "order": "100",
+      "name": "Каменный Меч",
+      "name_rm": "Каменный Меч",
+      "name_v": "Каменный Меч",
+      "image": "/st/items/guns/stone_sword.gif",
+      "image_small": "/st/items/guns/stone_sword.gif",
+      "image_item": "/st/items/guns/stone_sword.gif",
+      "add_element_defense": "0",
+      "equip": "1",
+      "equip_slot_6": "1",
+      "equip_slot_7": "1",
+      "min_magic": "1",
+      "price_copper": "20",
+      "scarcity": "1",
+      "time_cost": "alchemy=180,artisan=1620,common=510",
+      "uses": "30",
+      "volume": "5",
+      "wipe_discarded": "1"
+    }
+  },
+  {
      "@tag": "staff_noob",
      "data": {
         "class": "weapon",
