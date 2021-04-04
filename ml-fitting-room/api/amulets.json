@@ -594,5 +594,41 @@
         "volume": "2",
         "wipe_discarded": "1"
      }
-  }
+  },
+  {
+    "@tag": "amulet_bug_handler",
+    "data": {
+       "class": "amulet",
+       "order": "168",
+       "name": "Амулет Баголова",
+       "name_rm": "Амулет Баголова",
+       "name_v": "Амулет Баголова",
+       "image": "/st/items/amulets/bug.png",
+       "image_small": "/st/items/amulets/bug.png",
+       "image_item": "/st/items/amulets/bug.png",
+       "add_max_hp": "50",
+       "add_element_damage": "5",
+       "add_element_defense": "5",
+       "add_chaos_damage": "5",
+       "add_chaos_defense": "5",
+       "add_blood_damage": "5",
+       "add_blood_defense": "5",
+       "add_mental_attack": "5",
+       "add_mental_defense": "5",
+       "amulet_level": "1",
+       "break_on_victory": "1",
+       "equip": "1",
+       "equip_slot_1": "1",
+       "equip_slot_2": "1",
+       "equip_slot_4": "1",
+       "equip_slot_5": "1",
+       "expiration_weeks": "4",
+       "min_magic": "1",
+       "scarcity": "3",
+       "time_cost": "alchemy=2120,artisan=10640,common=14790,jeweller=1240",
+       "uses": "30",
+       "volume": "2",
+       "wipe_discarded": "1"
+    }
+ }
 ]
