@@ -20,6 +20,11 @@
     <meta property="twitter:site" content="">
     <link rel="icon" sizes="32x32" type="img/png" href="./img/favicon.png">
     <link rel="stylesheet" href="./css/app.css">
+    <style>
+      [data-aos] {
+      	opacity: 0;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -27,7 +32,7 @@
       <header class="header js__header">
         <div class="header__container container container_fluid">
           <div class="header__content">
-            <div class="header__logo">
+            <div class="header__logo" data-aos="fade-right">
               <svg class="icon-logo">
                 <use xlink:href="./img/sprite.svg#logo"></use>
               </svg>
@@ -35,13 +40,13 @@
             <div class="header__navigation">
               <button class="header__burger js__burger"><span class="header__burger-line"></span><span class="header__burger-line"></span><span class="header__burger-line"></span></button>
               <nav class="header__navigation-container js__navigation-container">
-                <div class="header__navigation-list"><a class="header__navigation-list-item" href="#"><span class="header__navigation-list-item-line"></span>
-                    <p class="header__navigation-list-item-link">introduction</p></a><a class="header__navigation-list-item" href="#"><span class="header__navigation-list-item-line"></span>
-                    <p class="header__navigation-list-item-link">about us</p></a><a class="header__navigation-list-item" href="#"><span class="header__navigation-list-item-line"></span>
-                    <p class="header__navigation-list-item-link">what we do</p></a><a class="header__navigation-list-item" href="#"><span class="header__navigation-list-item-line"></span>
-                    <p class="header__navigation-list-item-link">portfolio</p></a><a class="header__navigation-list-item" href="#"><span class="header__navigation-list-item-line"></span>
-                    <p class="header__navigation-list-item-link">investment focus</p></a><a class="header__navigation-list-item" href="#"><span class="header__navigation-list-item-line"></span>
-                    <p class="header__navigation-list-item-link">team</p></a><a class="header__navigation-list-item" href="#"><span class="header__navigation-list-item-line"></span>
+                <div class="header__navigation-list" data-aos="fade-left" data-aos-delay="200"><a class="header__navigation-list-item js__anchor" href="#intro"><span class="header__navigation-list-item-line"></span>
+                    <p class="header__navigation-list-item-link">introduction</p></a><a class="header__navigation-list-item js__anchor" href="#about"><span class="header__navigation-list-item-line"></span>
+                    <p class="header__navigation-list-item-link">about us</p></a><a class="header__navigation-list-item js__anchor" href="#wwd"><span class="header__navigation-list-item-line"></span>
+                    <p class="header__navigation-list-item-link">what we do</p></a><a class="header__navigation-list-item js__anchor" href="#portfolio"><span class="header__navigation-list-item-line"></span>
+                    <p class="header__navigation-list-item-link">portfolio</p></a><a class="header__navigation-list-item js__anchor" href="#investment-focus"><span class="header__navigation-list-item-line"></span>
+                    <p class="header__navigation-list-item-link">investment focus</p></a><a class="header__navigation-list-item js__anchor" href="#team"><span class="header__navigation-list-item-line"></span>
+                    <p class="header__navigation-list-item-link">team</p></a><a class="header__navigation-list-item js__anchor" href="#contact"><span class="header__navigation-list-item-line"></span>
                     <p class="header__navigation-list-item-link">contacts</p></a></div>
               </nav>
             </div>
@@ -55,52 +60,53 @@
           <picture class="hero__bg"><img src="./img/hero-image.jpg" alt="hero"></picture>
           <div class="hero__body container">
             <div class="hero__content">
-              <h1 class="hero__title text-headline-1">we are quartz capital.</h1>
-              <p class="hero__subtitle text-headline-1">we invest <span class="text-yellow">in fast growing companies </span>that are shaping the future through technology.</p>
+              <h1 class="hero__title text-headline-1" data-aos="fade-up" data-aos-delay="600">we are quartz capital.</h1>
+              <p class="hero__subtitle text-headline-1" data-aos="fade-up" data-aos-delay="800">we invest <span class="text-yellow">in fast growing companies </span>that are shaping the future through technology.</p>
             </div>
           </div>
           <div class="hero__footer container container_fluid">
-            <button class="hero__scroll-button">
+            <div class="hero__scroll-button" data-aos="fade-right" data-aos-delay="400">
               <p class="hero__scroll-button-text text-paragraph-2">begin scrolling</p><span class="hero__scroll-button-icon"></span>
-            </button>
+            </div>
           </div>
         </article>
         <article class="about" id="about">
           <div class="container">
             <div class="about__content">
-              <div class="section-title about__section-title">
+              <div class="section-title about__section-title" data-aos="fade-right" data-aos-delay="200">
                 <p class="section-title__number">2</p><span class="section-title__line"></span>
-                <p class="section-title__name">about us</p>
+                <h2 class="section-title__name">about us</h2>
               </div>
-              <h2 class="about__title text-paragraph-1">Quartz Capital is a global investment firm based in London, Moscow and Munich working with Venture Capital firms, family offices and individual investors.</h2>
-              <p class="about__invest-in text-paragraph-2">we invest in:</p>
+              <h2 class="about__title text-paragraph-1" data-aos="fade-up" data-aos-delay="400">Quartz Capital is a global investment firm based in London, Moscow and Munich working with Venture Capital firms, family offices and individual investors.</h2>
+              <p class="about__invest-in text-paragraph-2" data-aos="fade-up" data-aos-delay="600">we invest in:</p>
               <div class="about__tile">
-                <div class="about__tile-item"><span class="about__tile-line about__tile-row"></span>
-                  <p class="about__tile-row text-paragraph-2">disruptive technology companies</p><span class="about__tile-line about__tile-row"></span>
+                <div class="about__tile-item" data-aos="fade-up" data-aos-delay="800"><span class="about__tile-line about__tile-row"></span>
+                  <p class="about__tile-row text-paragraph-2">disruptive technology<br>companies</p><span class="about__tile-line about__tile-row"></span>
                 </div>
-                <div class="about__tile-item"><span class="about__tile-line about__tile-row"></span>
-                  <p class="about__tile-row text-paragraph-2">category leaders</p><span class="about__tile-line about__tile-row"></span>
+                <div class="about__tile-item" data-aos="fade-up" data-aos-delay="1000"><span class="about__tile-line about__tile-row"></span>
+                  <p class="about__tile-row text-paragraph-2">category<br>leaders</p><span class="about__tile-line about__tile-row"></span>
                 </div>
-                <div class="about__tile-item"><span class="about__tile-line about__tile-row"></span>
-                  <p class="about__tile-row text-paragraph-2">fast scaling software companies</p><span class="about__tile-line about__tile-row"></span>
+                <div class="about__tile-item" data-aos="fade-up" data-aos-delay="1200"><span class="about__tile-line about__tile-row"></span>
+                  <p class="about__tile-row text-paragraph-2">fast scaling software<br>companies</p><span class="about__tile-line about__tile-row"></span>
                 </div>
-                <div class="about__tile-item"><span class="about__tile-line about__tile-row"></span>
-                  <p class="about__tile-row text-paragraph-2">companies with an ethos in solving complex challenges</p><span class="about__tile-line about__tile-row"></span>
+                <div class="about__tile-item" data-aos="fade-up" data-aos-delay="1400"><span class="about__tile-line about__tile-row"></span>
+                  <p class="about__tile-row text-paragraph-2">companies with an ethos in<br>solving complex challenges</p><span class="about__tile-line about__tile-row"></span>
                 </div>
               </div>
             </div>
           </div>
         </article>
+        <!-- end about-->
         <article class="wwd" id="wwd">
           <div class="container">
             <div class="wwd__content">
-              <div class="section-title wwd__section-title">
+              <div class="section-title wwd__section-title" data-aos="fade-right" data-aos-delay="200">
                 <p class="section-title__number">3</p><span class="section-title__line"></span>
-                <p class="section-title__name">what we do</p>
+                <h2 class="section-title__name">what we do</h2>
               </div>
             </div>
             <div class="wwd__tile">
-              <div class="wwd__tile-item">
+              <div class="wwd__tile-item" data-aos="fade-up" data-aos-delay="400">
                 <div class="wwd__tile-item-name"><img class="wwd__tile-item-name-image" src="./img/wwd-a.png" alt="a">
                   <div class="wwd__tile-item-name-text text-headline-1">a.</div>
                 </div>
@@ -112,7 +118,7 @@
                   <p>we closely work with leading ventures funds and value our partnerships</p>
                 </div>
               </div>
-              <div class="wwd__tile-item">
+              <div class="wwd__tile-item" data-aos="fade-up" data-aos-delay="600">
                 <div class="wwd__tile-item-name"><img class="wwd__tile-item-name-image" src="./img/wwd-b.png" alt="b">
                   <div class="wwd__tile-item-name-text text-headline-1">b.</div>
                 </div>
@@ -124,7 +130,7 @@
                   <p>we closely work with partners who advice us on emerging pre ipo deals</p>
                 </div>
               </div>
-              <div class="wwd__tile-item">
+              <div class="wwd__tile-item" data-aos="fade-up" data-aos-delay="800">
                 <div class="wwd__tile-item-name"><img class="wwd__tile-item-name-image" src="./img/wwd-c.png" alt="c">
                   <div class="wwd__tile-item-name-text text-headline-1">c.</div>
                 </div>
@@ -136,7 +142,7 @@
                   <p>we build a global due diligence network powered by thought leadership</p>
                 </div>
               </div>
-              <div class="wwd__tile-item">
+              <div class="wwd__tile-item" data-aos="fade-up" data-aos-delay="1000">
                 <div class="wwd__tile-item-name"><img class="wwd__tile-item-name-image" src="./img/wwd-d.png" alt="d">
                   <div class="wwd__tile-item-name-text text-headline-1">d.</div>
                 </div>
@@ -150,56 +156,288 @@
             </div>
           </div>
         </article>
-        <article class="portfolio">
+        <article class="portfolio" id="portfolio">
           <div class="container">
-            <div class="portfolio__section-title section-title">
+            <div class="portfolio__section-title section-title" data-aos="fade-right" data-aos-delay="200">
               <p class="section-title__number">4</p><span class="section-title__line"></span>
-              <p class="section-title__name">portfolio</p>
+              <h2 class="section-title__name">portfolio</h2>
             </div>
             <div class="portfolio__content">
               <div class="portfolio__content-partners">
-                <p class="portfolio__content-partners-title text-paragraph-1">exists</p>
-                <div class="portfolio__content-partners-tile">
-                  <div class="portfolio__content-partners-tile-item"><img src="./img/path.png" alt="uipath"></div>
-                  <div class="portfolio__content-partners-tile-item"><img src="./img/plantir.png" alt="palantir"></div>
-                  <div class="portfolio__content-partners-tile-item"><img src="./img/confluent.png" alt="confluent"></div>
-                  <div class="portfolio__content-partners-tile-item"><img src="./img/udemy.png" alt="udemy"></div>
+                <p class="portfolio__content-partners-title text-paragraph-1" data-aos="fade-up" data-aos-delay="400">exists</p>
+                <div class="portfolio__content-partners-tile" data-aos="fade-up" data-aos-delay="600">
+                  <div class="portfolio__content-partners-tile-item"><img src="./img/path.svg" alt="uipath"></div>
+                  <div class="portfolio__content-partners-tile-item"><img src="./img/palantir.svg" alt="palantir"></div>
+                  <div class="portfolio__content-partners-tile-item"><img src="./img/confluent.svg" alt="confluent"></div>
+                  <div class="portfolio__content-partners-tile-item"><img src="./img/udemy.svg" alt="udemy"></div>
                 </div>
               </div>
               <div class="portfolio__content-partners">
-                <p class="portfolio__content-partners-title text-paragraph-1">active</p>
-                <div class="portfolio__content-partners-tile">
-                  <div class="portfolio__content-partners-tile-item"><img src="./img/klarna.png" alt="klarna"></div>
-                  <div class="portfolio__content-partners-tile-item"><img src="./img/tanium.png" alt="tanium"></div>
-                  <div class="portfolio__content-partners-tile-item"><img src="./img/automatium.png" alt="automation anywhere"></div>
-                  <div class="portfolio__content-partners-tile-item"><img src="./img/kraken.png" alt="kraken"></div>
-                  <div class="portfolio__content-partners-tile-item"><img src="./img/intercom.png" alt="intercom"></div>
-                  <div class="portfolio__content-partners-tile-item"><img src="./img/byjus.png" alt="byjus"></div>
+                <p class="portfolio__content-partners-title text-paragraph-1" data-aos="fade-up" data-aos-delay="800">active</p>
+                <div class="portfolio__content-partners-tile" data-aos="fade-up" data-aos-delay="1000">
+                  <div class="portfolio__content-partners-tile-item"><img src="./img/klarna.svg" alt="klarna"></div>
+                  <div class="portfolio__content-partners-tile-item"><img src="./img/tanium.svg" alt="tanium"></div>
+                  <div class="portfolio__content-partners-tile-item"><img src="./img/automation.svg" alt="automation anywhere"></div>
+                  <div class="portfolio__content-partners-tile-item"><img src="./img/kraken.svg" alt="kraken"></div>
+                  <div class="portfolio__content-partners-tile-item"><img src="./img/intercom.svg" alt="intercom"></div>
+                  <div class="portfolio__content-partners-tile-item"><img src="./img/byjus.svg" alt="byjus"></div>
                 </div>
               </div>
               <div class="portfolio__content-statistic">
-                <div class="portfolio__content-statistic-item">
-                  <p class="portfolio__content-statistic-item-headline text-headline-1 js__counter"><span data-number="23">0</span></p>
+                <div class="portfolio__content-statistic-item" data-aos="fade-up" data-aos-delay="1200">
+                  <p class="portfolio__content-statistic-item-headline js__counter"><span data-number="23">0</span></p>
                   <p class="portfolio__content-statistic-item-description text-paragraph-2">active investments</p>
                 </div>
-                <div class="portfolio__content-statistic-item">
-                  <p class="portfolio__content-statistic-item-headline text-headline-1 js__counter">$<span data-number="21">0</span>m</p>
+                <div class="portfolio__content-statistic-item" data-aos="fade-up" data-aos-delay="1400">
+                  <p class="portfolio__content-statistic-item-headline js__counter">$<span data-number="21">0</span>m</p>
                   <p class="portfolio__content-statistic-item-description text-paragraph-2">under management</p>
                 </div>
-                <div class="portfolio__content-statistic-item">
-                  <p class="portfolio__content-statistic-item-headline text-headline-1 js__counter"><span data-number="4">0</span></p>
+                <div class="portfolio__content-statistic-item" data-aos="fade-up" data-aos-delay="1600">
+                  <p class="portfolio__content-statistic-item-headline js__counter"><span data-number="4">0</span></p>
                   <p class="portfolio__content-statistic-item-description text-paragraph-2">IPOs / direct listings</p>
                 </div>
               </div>
               <div class="portfolio__content-line"></div>
-              <p class="portfolio__content-description text-paragraph-2">We've funded more than 500 portfolio companies across all stages and sectors, with an emphasis on enterprise, life sciences, consumer, and frontier technology.</p>
+              <p class="portfolio__content-description text-paragraph-2" data-aos="fade-up" data-aos-delay="1800">we've funded more than 500 portfolio companies across all stages and sectors, with an emphasis on enterprise, life sciences, consumer, and frontier technology.</p>
+            </div>
+          </div>
+        </article>
+        <article class="investment-focus" id="investment-focus">
+          <picture class="investment-focus__bg"><img src="./img/investment-focus-image.jpg" alt="investment focus"></picture>
+          <div class="investment-focus__content">
+            <div class="container investment-focus__content-header">
+              <div class="investment-focus__section-title section-title" data-aos="fade-right" data-aos-delay="200">
+                <p class="section-title__number">5</p><span class="section-title__line"></span>
+                <h2 class="section-title__name">investment focus</h2>
+              </div>
+            </div>
+            <div class="container container_fluid investment-focus__content-body">
+              <div class="investment-focus__body js__investment">
+                <nav class="investment-focus__navigation" data-aos="fade-right" data-aos-delay="400">
+                  <button class="investment-focus__navigation-item section-title is-active" data-investment-nav="0">
+                    <p class="section-title__number">a.</p><span class="section-title__line"></span>
+                    <p class="section-title__name">ml /ai</p>
+                  </button>
+                  <button class="investment-focus__navigation-item section-title" data-investment-nav="1">
+                    <p class="section-title__number">b.</p><span class="section-title__line"></span>
+                    <p class="section-title__name">data</p>
+                  </button>
+                  <button class="investment-focus__navigation-item section-title" data-investment-nav="2">
+                    <p class="section-title__number">c.</p><span class="section-title__line"></span>
+                    <p class="section-title__name">ed tech</p>
+                  </button>
+                  <button class="investment-focus__navigation-item section-title" data-investment-nav="3">
+                    <p class="section-title__number">d.</p><span class="section-title__line"></span>
+                    <p class="section-title__name">fintech</p>
+                  </button>
+                  <button class="investment-focus__navigation-item section-title" data-investment-nav="4">
+                    <p class="section-title__number">e.</p><span class="section-title__line"></span>
+                    <p class="section-title__name">automation</p>
+                  </button>
+                  <button class="investment-focus__navigation-item section-title" data-investment-nav="5">
+                    <p class="section-title__number">f.</p><span class="section-title__line"></span>
+                    <p class="section-title__name">cybersecurity</p>
+                  </button>
+                </nav>
+                <div class="investment-focus__tile" data-aos="fade-up" data-aos-delay="600">
+                  <div class="investment-focus__tile-item is-active" data-investment-tab="0">
+                    <div class="investment-focus__tile-item-inner">
+                      <h3 class="investment-focus__tile-item-headline text-headline-1">ml /ai</h3>
+                      <div class="investment-focus__tile-item-description text-paragraph-2">
+                        <p>
+                          superior performance and better accuracy are just two of the many current challenges in ml/ai and teams that have made fundamental breakthroughs by putting AI at the heart of their philosophy, is what excite us</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="investment-focus__tile-item" data-investment-tab="1">
+                    <div class="investment-focus__tile-item-inner">
+                      <h3 class="investment-focus__tile-item-headline text-headline-1">data</h3>
+                      <div class="investment-focus__tile-item-description text-paragraph-2">
+                        <p>
+                          software startups that utlise all benefits of data will drive the next decade and bring astonishing results.fostering industry agnostic data development plays a major role in empowering businesses to make better decisions, resulting in upskilling and general efficiency increase</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="investment-focus__tile-item" data-investment-tab="2">
+                    <div class="investment-focus__tile-item-inner">
+                      <h3 class="investment-focus__tile-item-headline text-headline-1">ed tech</h3>
+                      <div class="investment-focus__tile-item-description text-paragraph-2">
+                        <p>digitalised education is a new reality where people from around the world can get access to the highest quality education. digital products and educational platforms will be the new “norm” ensuring people’s competency to be driven further. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="investment-focus__tile-item" data-investment-tab="3">
+                    <div class="investment-focus__tile-item-inner">
+                      <h3 class="investment-focus__tile-item-headline text-headline-1">fintech</h3>
+                      <div class="investment-focus__tile-item-description text-paragraph-2">
+                        <p>horizontal fintech, regTech & insureTech firms who are able to show core competency in driving change, re-innovate and solve major obstacles are needed. we like to see firms that have the potential to turn into multi-layered tech giants servicing all needs of their clients.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="investment-focus__tile-item" data-investment-tab="4">
+                    <div class="investment-focus__tile-item-inner">
+                      <h3 class="investment-focus__tile-item-headline text-headline-1">automation</h3>
+                      <div class="investment-focus__tile-item-description text-paragraph-2">
+                        <p>we believe that certain enterprise automation solutions will become a de facto standard in organisations, helping the workforce to upskill and onboard more complex tasks. the pace of automation is accelerating and more business value is generated through smart technological solutions.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="investment-focus__tile-item" data-investment-tab="5">
+                    <div class="investment-focus__tile-item-inner">
+                      <h3 class="investment-focus__tile-item-headline text-headline-1">cybersecurity</h3>
+                      <div class="investment-focus__tile-item-description text-paragraph-2">
+                        <p>with an increase of technological devices and general shift towards digitalisation, cyberSecurity is ever more important. threats have become more sophisticated with entire infrastructures being vulnerable. as we are creating more and more value from our data we start to carry larger risks, with data-fueled applications projected to generate $13 trillion worth of new economic activity by 2030.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="team" id="team">
+          <div class="container container_fluid">
+            <div class="team__section-title section-title" data-aos="fade-right" data-aos-delay="200">
+              <p class="section-title__number">6</p><span class="section-title__line"></span>
+              <h2 class="section-title__name">team</h2>
+            </div>
+            <div class="team__content">
+              <section class="team__content-section">
+                <div class="team__content-block team__content-block_media">
+                  <div class="team__content-block-picture" data-aos="fade-right" data-aos-delay="400"><img src="./img/maxim.jpg" alt="maxim matias"></div>
+                </div>
+                <div class="team__content-block team__content-block_body">
+                  <p class="team__content-block-title text-headline-1" data-aos="fade-up" data-aos-delay="600">maxim matias</p>
+                  <p class="team__content-block-position text-paragraph-2" data-aos="fade-up" data-aos-delay="700">managing partner</p>
+                  <div class="team__content-block-line" data-aos="fade-up" data-aos-delay="800"></div>
+                  <div class="team__content-block-description text-paragraph-2" data-aos="fade-up" data-aos-delay="900">
+                    <p>Maxim has co-founded several startups after which he entered the early-stage Venture Capital space. Prior to Quartz Capital, Maxim was working at OpenOcean where his main focus was to create and scale a venture platform, form a global DD network of data-leaders subsequently creating a stable source of deal flow. </p>
+                    <p>At Quartz Capital, Maxim is responsible for global partnerships, expanding the investor network and building new relationships to gain access to the best deals.</p>
+                  </div>
+                  <ul class="team__content-block-social" data-aos="fade-up" data-aos-delay="1000">
+                    <li class="team__content-block-social-item"><a class="team__content-block-social-item-link" href="#" rel="nofollow noreferrer" target="_blank">
+                        <svg class="icon-linkedin">
+                          <use xlink:href="./img/sprite.svg#linkedin"></use>
+                        </svg></a></li>
+                    <li class="team__content-block-social-item"><a class="team__content-block-social-item-link" href="#" rel="nofollow noreferrer" target="_blank">
+                        <svg class="icon-twitter">
+                          <use xlink:href="./img/sprite.svg#twitter"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+              </section>
+              <section class="team__content-section">
+                <div class="team__content-block team__content-block_media">
+                  <div class="team__content-block-picture" data-aos="fade-left" data-aos-delay="400"><img src="./img/egor.jpg" alt="egor galkin"></div>
+                </div>
+                <div class="team__content-block team__content-block_body">
+                  <p class="team__content-block-title text-headline-1" data-aos="fade-up" data-aos-delay="600">egor galkin</p>
+                  <p class="team__content-block-position text-paragraph-2" data-aos="fade-up" data-aos-delay="700">managing partner</p>
+                  <div class="team__content-block-line" data-aos="fade-up" data-aos-delay="800"></div>
+                  <div class="team__content-block-description text-paragraph-2" data-aos="fade-up" data-aos-delay="900">
+                    <p>Prior to founding Quartz, Egor worked in asset management with various HNWI and Family offices. Egor has successfully participated in dozens of late stage venture deals such as (UiPath, Palantir, Udemy, Rubrik, Klarna), and has also participated in over 90 IPOs. </p>
+                    <p>At Quartz Egor Galkin is responsible for investment analysis and relations in Eastern Europe and Russia.</p>
+                  </div>
+                  <ul class="team__content-block-social" data-aos="fade-up" data-aos-delay="1000">
+                    <li class="team__content-block-social-item"><a class="team__content-block-social-item-link" href="#" rel="nofollow noreferrer" target="_blank">
+                        <svg class="icon-linkedin">
+                          <use xlink:href="./img/sprite.svg#linkedin"></use>
+                        </svg></a></li>
+                    <li class="team__content-block-social-item"><a class="team__content-block-social-item-link" href="#" rel="nofollow noreferrer" target="_blank">
+                        <svg class="icon-twitter">
+                          <use xlink:href="./img/sprite.svg#twitter"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+              </section>
+              <section class="team__content-section">
+                <div class="team__content-block team__content-block_media">
+                  <div class="team__content-block-picture" data-aos="fade-right" data-aos-delay="400"><img src="./img/alex.jpg" alt="alex tarlo"></div>
+                </div>
+                <div class="team__content-block team__content-block_body">
+                  <p class="team__content-block-title text-headline-1" data-aos="fade-up" data-aos-delay="500">alex tarlo</p>
+                  <p class="team__content-block-position text-paragraph-2" data-aos="fade-up" data-aos-delay="600">non executive director</p>
+                  <div class="team__content-block-line" data-aos="fade-up" data-aos-delay="700"></div>
+                  <div class="team__content-block-description text-paragraph-2" data-aos="fade-up" data-aos-delay="800">
+                    <p>After a career in Barclays Capital derivative sales Alex went on to build a real estate business in London with AUM in excess of USD $1.5B. Currently Alexander advices Quartz with everything from legal structuring to providing relevant contacts within the industries who can help and assess Quartz investments forensically. Also Alex graduated from University College London with a degree in Economics.</p>
+                  </div>
+                  <ul class="team__content-block-social" data-aos="fade-up" data-aos-delay="1000">
+                    <li class="team__content-block-social-item"><a class="team__content-block-social-item-link" href="#" rel="nofollow noreferrer" target="_blank">
+                        <svg class="icon-linkedin">
+                          <use xlink:href="./img/sprite.svg#linkedin"></use>
+                        </svg></a></li>
+                    <li class="team__content-block-social-item"><a class="team__content-block-social-item-link" href="#" rel="nofollow noreferrer" target="_blank">
+                        <svg class="icon-twitter">
+                          <use xlink:href="./img/sprite.svg#twitter"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+              </section>
             </div>
           </div>
         </article>
       </main>
       <!-- end main-->
       <!-- start footer-->
-      <footer class="footer" aria-label="Footer"></footer>
+      <footer class="footer" id="contact">
+        <div class="container">
+          <div class="footer__section-title section-title" data-aos="fade-right" data-aos-delay="200">
+            <p class="section-title__number">7</p><span class="section-title__line"></span>
+            <h2 class="section-title__name">footer</h2>
+          </div>
+          <div class="footer__content">
+            <ul class="footer__address-list" data-aos="fade-up" data-aos-delay="400">
+              <li class="footer__address-list-item">
+                <p class="footer__address-list-item-city">london</p>
+                <p class="footer__address-list-item-address text-paragraph-2"><span>10th floor</span><span>240 blackfriars road</span><span>london se1 8nw</span></p>
+              </li>
+              <li class="footer__address-list-item">
+                <p class="footer__address-list-item-city">moscow</p>
+                <p class="footer__address-list-item-address text-paragraph-2"><span>BC "Gallery 76",</span><span>st. Profsoyuznaya, 76, 117393,</span><span>Moscow, Russia</span></p>
+              </li>
+              <li class="footer__address-list-item">
+                <p class="footer__address-list-item-city">munich</p>
+                <p class="footer__address-list-item-address text-paragraph-2"><span>?</span></p>
+              </li>
+            </ul>
+            <ul class="footer__address-list" data-aos="fade-up" data-aos-delay="400">
+              <li class="footer__address-list-item">
+                <p class="footer__address-list-item-city">contact us:</p>
+                <p class="footer__address-list-item-address text-paragraph-2"><a href="tel:02000000000">(020) xxxx xxxx</a><a href="mailto:info@quartzcapital.co.uk">info@quartzcapital.co.uk</a></p>
+                <div class="footer__address-line"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__address-line" data-aos="fade-up" data-aos-delay="500"></div>
+          <ul class="footer__social-list" data-aos="fade-up" data-aos-delay="600">
+            <li class="footer__social-list-item"><a class="footer__social-list-item-link text-paragraph-2" href="#" target="_blank" rel="nofollow noreferrer">
+                <div class="footer__social-list-item-link-icon">
+                  <div class="footer__social-list-item-link-icon-inner">
+                    <svg class="icon-arrow">
+                      <use xlink:href="./img/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+                </div><span>twitter</span></a></li>
+            <li class="footer__social-list-item"><a class="footer__social-list-item-link text-paragraph-2" href="#" target="_blank" rel="nofollow noreferrer">
+                <div class="footer__social-list-item-link-icon">
+                  <div class="footer__social-list-item-link-icon-inner">
+                    <svg class="icon-arrow">
+                      <use xlink:href="./img/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+                </div><span>instagram</span></a></li>
+            <li class="footer__social-list-item"><a class="footer__social-list-item-link text-paragraph-2" href="#" target="_blank" rel="nofollow noreferrer">
+                <div class="footer__social-list-item-link-icon">
+                  <div class="footer__social-list-item-link-icon-inner">
+                    <svg class="icon-arrow">
+                      <use xlink:href="./img/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+                </div><span>linkedin</span></a></li>
+          </ul>
+          <p class="footer__copyright" data-aos="fade-up" data-aos-delay="700">© Copyright Quartz Capital 2021</p>
+        </div>
+      </footer>
       <!-- end footer-->
       <!-- start popups-->
       <!-- start video modal-->
