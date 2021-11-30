@@ -683,7 +683,9 @@ a { text-decoration: none; color: inherit; background-color: transparent; -webki
 
 .section-title__line { width: 24px; height: 1px; background-color: #F2C71A; transition: backround-color 0.35s; }
 
-.header { position: fixed; z-index: 10; top: 0; left: 0; width: 100%; padding-top: 82px; padding-bottom: 20px; }
+.header { position: fixed; z-index: 10; top: 0; left: 0; width: 100%; padding-top: 82px; padding-bottom: 20px; transition: background-color .5s; background-color: transparent; }
+
+@media all and (max-width: 1023px) { .header.is-scrolled { background-color: rgba(40, 39, 55, 0.35); } }
 
 @media all and (max-width: 374px) { .header { padding-top: 50px; } }
 
