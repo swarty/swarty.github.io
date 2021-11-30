@@ -40,14 +40,16 @@
             <div class="header__navigation">
               <button class="header__burger js__burger"><span class="header__burger-line"></span><span class="header__burger-line"></span><span class="header__burger-line"></span></button>
               <nav class="header__navigation-container js__navigation-container">
-                <div class="header__navigation-list" data-aos="fade-left" data-aos-delay="200"><a class="header__navigation-list-item js__anchor" href="#intro"><span class="header__navigation-list-item-line"></span>
-                    <p class="header__navigation-list-item-link">introduction</p></a><a class="header__navigation-list-item js__anchor" href="#about"><span class="header__navigation-list-item-line"></span>
-                    <p class="header__navigation-list-item-link">about us</p></a><a class="header__navigation-list-item js__anchor" href="#wwd"><span class="header__navigation-list-item-line"></span>
-                    <p class="header__navigation-list-item-link">what we do</p></a><a class="header__navigation-list-item js__anchor" href="#portfolio"><span class="header__navigation-list-item-line"></span>
-                    <p class="header__navigation-list-item-link">portfolio</p></a><a class="header__navigation-list-item js__anchor" href="#investment-focus"><span class="header__navigation-list-item-line"></span>
-                    <p class="header__navigation-list-item-link">investment focus</p></a><a class="header__navigation-list-item js__anchor" href="#team"><span class="header__navigation-list-item-line"></span>
-                    <p class="header__navigation-list-item-link">team</p></a><a class="header__navigation-list-item js__anchor" href="#contact"><span class="header__navigation-list-item-line"></span>
-                    <p class="header__navigation-list-item-link">contacts</p></a></div>
+                <div class="header__navigation-container-wrap" data-aos="fade-left" data-aos-delay="200">
+                  <div class="header__navigation-list"><a class="header__navigation-list-item js__anchor" href="#intro"><span class="header__navigation-list-item-line"></span>
+                      <p class="header__navigation-list-item-link">introduction</p></a><a class="header__navigation-list-item js__anchor" href="#about"><span class="header__navigation-list-item-line"></span>
+                      <p class="header__navigation-list-item-link">about us</p></a><a class="header__navigation-list-item js__anchor" href="#wwd"><span class="header__navigation-list-item-line"></span>
+                      <p class="header__navigation-list-item-link">what we do</p></a><a class="header__navigation-list-item js__anchor" href="#portfolio"><span class="header__navigation-list-item-line"></span>
+                      <p class="header__navigation-list-item-link">portfolio</p></a><a class="header__navigation-list-item js__anchor" href="#investment-focus"><span class="header__navigation-list-item-line"></span>
+                      <p class="header__navigation-list-item-link">investment focus</p></a><a class="header__navigation-list-item js__anchor" href="#team"><span class="header__navigation-list-item-line"></span>
+                      <p class="header__navigation-list-item-link">team</p></a><a class="header__navigation-list-item js__anchor" href="#contact"><span class="header__navigation-list-item-line"></span>
+                      <p class="header__navigation-list-item-link">contacts</p></a></div>
+                </div>
               </nav>
             </div>
           </div>
@@ -107,7 +109,7 @@
             </div>
             <div class="wwd__tile">
               <div class="wwd__tile-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="wwd__tile-item-name"><img class="wwd__tile-item-name-image" src="./img/wwd-a.png" alt="a">
+                <div class="wwd__tile-item-name">
                   <div class="wwd__tile-item-name-text text-headline-1">a.</div>
                 </div>
                 <h2 class="wwd__tile-item-title text-paragraph-1">mid & late stage venture deals</h2>
@@ -119,7 +121,7 @@
                 </div>
               </div>
               <div class="wwd__tile-item" data-aos="fade-up" data-aos-delay="600">
-                <div class="wwd__tile-item-name"><img class="wwd__tile-item-name-image" src="./img/wwd-b.png" alt="b">
+                <div class="wwd__tile-item-name">
                   <div class="wwd__tile-item-name-text text-headline-1">b.</div>
                 </div>
                 <h2 class="wwd__tile-item-title text-paragraph-1">pre ipo investments</h2>
@@ -131,7 +133,7 @@
                 </div>
               </div>
               <div class="wwd__tile-item" data-aos="fade-up" data-aos-delay="800">
-                <div class="wwd__tile-item-name"><img class="wwd__tile-item-name-image" src="./img/wwd-c.png" alt="c">
+                <div class="wwd__tile-item-name">
                   <div class="wwd__tile-item-name-text text-headline-1">c.</div>
                 </div>
                 <h2 class="wwd__tile-item-title text-paragraph-1">investments in venture funds</h2>
@@ -143,7 +145,7 @@
                 </div>
               </div>
               <div class="wwd__tile-item" data-aos="fade-up" data-aos-delay="1000">
-                <div class="wwd__tile-item-name"><img class="wwd__tile-item-name-image" src="./img/wwd-d.png" alt="d">
+                <div class="wwd__tile-item-name">
                   <div class="wwd__tile-item-name-text text-headline-1">d.</div>
                 </div>
                 <h2 class="wwd__tile-item-title text-paragraph-1">deal advisory</h2>
@@ -239,54 +241,66 @@
                     <p class="section-title__name">cybersecurity</p>
                   </button>
                 </nav>
-                <div class="investment-focus__tile" data-aos="fade-up" data-aos-delay="600">
+                <div class="investment-focus__tile">
                   <div class="investment-focus__tile-item is-active" data-investment-tab="0">
                     <div class="investment-focus__tile-item-inner">
-                      <h3 class="investment-focus__tile-item-headline text-headline-1">ml /ai</h3>
-                      <div class="investment-focus__tile-item-description text-paragraph-2">
-                        <p>
-                          superior performance and better accuracy are just two of the many current challenges in ml/ai and teams that have made fundamental breakthroughs by putting AI at the heart of their philosophy, is what excite us</p>
+                      <div class="investment-focus__tile-item-box" data-aos="fade-up" data-aos-delay="600">
+                        <h3 class="investment-focus__tile-item-headline text-headline-1">ml /ai</h3>
+                        <div class="investment-focus__tile-item-description text-paragraph-2">
+                          <p>
+                            superior performance and better accuracy are just two of the many current challenges in ml/ai and teams that have made fundamental breakthroughs by putting AI at the heart of their philosophy, is what excite us</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="investment-focus__tile-item" data-investment-tab="1">
                     <div class="investment-focus__tile-item-inner">
-                      <h3 class="investment-focus__tile-item-headline text-headline-1">data</h3>
-                      <div class="investment-focus__tile-item-description text-paragraph-2">
-                        <p>
-                          software startups that utlise all benefits of data will drive the next decade and bring astonishing results.fostering industry agnostic data development plays a major role in empowering businesses to make better decisions, resulting in upskilling and general efficiency increase</p>
+                      <div class="investment-focus__tile-item-box" data-aos="fade-up" data-aos-delay="600">
+                        <h3 class="investment-focus__tile-item-headline text-headline-1">data</h3>
+                        <div class="investment-focus__tile-item-description text-paragraph-2">
+                          <p>
+                            software startups that utlise all benefits of data will drive the next decade and bring astonishing results.fostering industry agnostic data development plays a major role in empowering businesses to make better decisions, resulting in upskilling and general efficiency increase</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="investment-focus__tile-item" data-investment-tab="2">
                     <div class="investment-focus__tile-item-inner">
-                      <h3 class="investment-focus__tile-item-headline text-headline-1">ed tech</h3>
-                      <div class="investment-focus__tile-item-description text-paragraph-2">
-                        <p>digitalised education is a new reality where people from around the world can get access to the highest quality education. digital products and educational platforms will be the new “norm” ensuring people’s competency to be driven further. </p>
+                      <div class="investment-focus__tile-item-box" data-aos="fade-up" data-aos-delay="600">
+                        <h3 class="investment-focus__tile-item-headline text-headline-1">ed tech</h3>
+                        <div class="investment-focus__tile-item-description text-paragraph-2">
+                          <p>digitalised education is a new reality where people from around the world can get access to the highest quality education. digital products and educational platforms will be the new “norm” ensuring people’s competency to be driven further. </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="investment-focus__tile-item" data-investment-tab="3">
                     <div class="investment-focus__tile-item-inner">
-                      <h3 class="investment-focus__tile-item-headline text-headline-1">fintech</h3>
-                      <div class="investment-focus__tile-item-description text-paragraph-2">
-                        <p>horizontal fintech, regTech & insureTech firms who are able to show core competency in driving change, re-innovate and solve major obstacles are needed. we like to see firms that have the potential to turn into multi-layered tech giants servicing all needs of their clients.</p>
+                      <div class="investment-focus__tile-item-box" data-aos="fade-up" data-aos-delay="600">
+                        <h3 class="investment-focus__tile-item-headline text-headline-1">fintech</h3>
+                        <div class="investment-focus__tile-item-description text-paragraph-2">
+                          <p>horizontal fintech, regTech & insureTech firms who are able to show core competency in driving change, re-innovate and solve major obstacles are needed. we like to see firms that have the potential to turn into multi-layered tech giants servicing all needs of their clients.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="investment-focus__tile-item" data-investment-tab="4">
                     <div class="investment-focus__tile-item-inner">
-                      <h3 class="investment-focus__tile-item-headline text-headline-1">automation</h3>
-                      <div class="investment-focus__tile-item-description text-paragraph-2">
-                        <p>we believe that certain enterprise automation solutions will become a de facto standard in organisations, helping the workforce to upskill and onboard more complex tasks. the pace of automation is accelerating and more business value is generated through smart technological solutions.</p>
+                      <div class="investment-focus__tile-item-box" data-aos="fade-up" data-aos-delay="600">
+                        <h3 class="investment-focus__tile-item-headline text-headline-1">automation</h3>
+                        <div class="investment-focus__tile-item-description text-paragraph-2">
+                          <p>we believe that certain enterprise automation solutions will become a de facto standard in organisations, helping the workforce to upskill and onboard more complex tasks. the pace of automation is accelerating and more business value is generated through smart technological solutions.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="investment-focus__tile-item" data-investment-tab="5">
                     <div class="investment-focus__tile-item-inner">
-                      <h3 class="investment-focus__tile-item-headline text-headline-1">cybersecurity</h3>
-                      <div class="investment-focus__tile-item-description text-paragraph-2">
-                        <p>with an increase of technological devices and general shift towards digitalisation, cyberSecurity is ever more important. threats have become more sophisticated with entire infrastructures being vulnerable. as we are creating more and more value from our data we start to carry larger risks, with data-fueled applications projected to generate $13 trillion worth of new economic activity by 2030.</p>
+                      <div class="investment-focus__tile-item-box" data-aos="fade-up" data-aos-delay="600">
+                        <h3 class="investment-focus__tile-item-headline text-headline-1">cybersecurity</h3>
+                        <div class="investment-focus__tile-item-description text-paragraph-2">
+                          <p>with an increase of technological devices and general shift towards digitalisation, cyberSecurity is ever more important. threats have become more sophisticated with entire infrastructures being vulnerable. as we are creating more and more value from our data we start to carry larger risks, with data-fueled applications projected to generate $13 trillion worth of new economic activity by 2030.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -296,11 +310,13 @@
           </div>
         </article>
         <article class="team" id="team" data-observer="team">
-          <div class="container container_fluid">
+          <div class="container">
             <div class="team__section-title section-title" data-aos="fade-right" data-aos-delay="200">
               <p class="section-title__number">6</p><span class="section-title__line"></span>
               <h2 class="section-title__name">team</h2>
             </div>
+          </div>
+          <div class="container container_fluid">
             <div class="team__content">
               <section class="team__content-section">
                 <div class="team__content-block team__content-block_media">
@@ -381,61 +397,59 @@
       <!-- start footer-->
       <footer class="footer" id="contact" data-observer="contact">
         <div class="container">
-          <div class="footer__section-title section-title" data-aos="fade-right" data-aos-delay="200">
-            <p class="section-title__number">7</p><span class="section-title__line"></span>
-            <h2 class="section-title__name">contact us</h2>
-          </div>
-          <div class="footer__content">
-            <ul class="footer__address-list" data-aos="fade-up" data-aos-delay="400">
-              <li class="footer__address-list-item">
-                <p class="footer__address-list-item-city">london</p>
-                <p class="footer__address-list-item-address text-paragraph-2"><span>10th floor</span><span>240 blackfriars road</span><span>london se1 8nw</span></p>
-              </li>
-              <li class="footer__address-list-item">
-                <p class="footer__address-list-item-city">moscow</p>
-                <p class="footer__address-list-item-address text-paragraph-2"><span>BC "Gallery 76",</span><span>st. Profsoyuznaya, 76, 117393,</span><span>Moscow, Russia</span></p>
-              </li>
-              <li class="footer__address-list-item">
-                <p class="footer__address-list-item-city">munich</p>
-                <p class="footer__address-list-item-address text-paragraph-2"><span>?</span></p>
-              </li>
+          <div class="footer__container">
+            <div class="footer__section-title section-title" data-aos="fade-right" data-aos-delay="200">
+              <p class="section-title__number">7</p><span class="section-title__line"></span>
+              <h2 class="section-title__name">contact us</h2>
+            </div>
+            <div class="footer__content">
+              <ul class="footer__address-list" data-aos="fade-up" data-aos-delay="400">
+                <li class="footer__address-list-item">
+                  <p class="footer__address-list-item-city">london</p>
+                  <p class="footer__address-list-item-address text-paragraph-2"><span>10th floor</span><span>240 blackfriars road</span><span>london se1 8nw</span></p>
+                </li>
+                <li class="footer__address-list-item">
+                  <p class="footer__address-list-item-city">moscow</p>
+                  <p class="footer__address-list-item-address text-paragraph-2"><span>"Moscow-City" City of</span><span>Capitals, Presnenskaya</span><span>embankment, 8, 51 floor</span></p>
+                </li>
+              </ul>
+              <ul class="footer__address-list" data-aos="fade-up" data-aos-delay="400">
+                <li class="footer__address-list-item">
+                  <p class="footer__address-list-item-city">contact us:</p>
+                  <p class="footer__address-list-item-address text-paragraph-2"><a href="mailto:info@quartzcapital.co.uk">info@quartzcapital.co.uk</a></p>
+                  <div class="footer__address-line"></div>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__address-line" data-aos="fade-up" data-aos-delay="500"></div>
+            <ul class="footer__social-list" data-aos="fade-up" data-aos-delay="600">
+              <li class="footer__social-list-item"><a class="footer__social-list-item-link text-paragraph-2" href="#" target="_blank" rel="nofollow noreferrer">
+                  <div class="footer__social-list-item-link-icon">
+                    <div class="footer__social-list-item-link-icon-inner">
+                      <svg class="icon-arrow">
+                        <use xlink:href="./img/sprite.svg#arrow"></use>
+                      </svg>
+                    </div>
+                  </div><span>twitter</span></a></li>
+              <li class="footer__social-list-item"><a class="footer__social-list-item-link text-paragraph-2" href="#" target="_blank" rel="nofollow noreferrer">
+                  <div class="footer__social-list-item-link-icon">
+                    <div class="footer__social-list-item-link-icon-inner">
+                      <svg class="icon-arrow">
+                        <use xlink:href="./img/sprite.svg#arrow"></use>
+                      </svg>
+                    </div>
+                  </div><span>instagram</span></a></li>
+              <li class="footer__social-list-item"><a class="footer__social-list-item-link text-paragraph-2" href="#" target="_blank" rel="nofollow noreferrer">
+                  <div class="footer__social-list-item-link-icon">
+                    <div class="footer__social-list-item-link-icon-inner">
+                      <svg class="icon-arrow">
+                        <use xlink:href="./img/sprite.svg#arrow"></use>
+                      </svg>
+                    </div>
+                  </div><span>linkedin</span></a></li>
             </ul>
-            <ul class="footer__address-list" data-aos="fade-up" data-aos-delay="400">
-              <li class="footer__address-list-item">
-                <p class="footer__address-list-item-city">contact us:</p>
-                <p class="footer__address-list-item-address text-paragraph-2"><a href="tel:02000000000">(020) xxxx xxxx</a><a href="mailto:info@quartzcapital.co.uk">info@quartzcapital.co.uk</a></p>
-                <div class="footer__address-line"></div>
-              </li>
-            </ul>
+            <p class="footer__copyright" data-aos="fade-up" data-aos-delay="700">© Copyright Quartz Capital 2021</p>
           </div>
-          <div class="footer__address-line" data-aos="fade-up" data-aos-delay="500"></div>
-          <ul class="footer__social-list" data-aos="fade-up" data-aos-delay="600">
-            <li class="footer__social-list-item"><a class="footer__social-list-item-link text-paragraph-2" href="#" target="_blank" rel="nofollow noreferrer">
-                <div class="footer__social-list-item-link-icon">
-                  <div class="footer__social-list-item-link-icon-inner">
-                    <svg class="icon-arrow">
-                      <use xlink:href="./img/sprite.svg#arrow"></use>
-                    </svg>
-                  </div>
-                </div><span>twitter</span></a></li>
-            <li class="footer__social-list-item"><a class="footer__social-list-item-link text-paragraph-2" href="#" target="_blank" rel="nofollow noreferrer">
-                <div class="footer__social-list-item-link-icon">
-                  <div class="footer__social-list-item-link-icon-inner">
-                    <svg class="icon-arrow">
-                      <use xlink:href="./img/sprite.svg#arrow"></use>
-                    </svg>
-                  </div>
-                </div><span>instagram</span></a></li>
-            <li class="footer__social-list-item"><a class="footer__social-list-item-link text-paragraph-2" href="#" target="_blank" rel="nofollow noreferrer">
-                <div class="footer__social-list-item-link-icon">
-                  <div class="footer__social-list-item-link-icon-inner">
-                    <svg class="icon-arrow">
-                      <use xlink:href="./img/sprite.svg#arrow"></use>
-                    </svg>
-                  </div>
-                </div><span>linkedin</span></a></li>
-          </ul>
-          <p class="footer__copyright" data-aos="fade-up" data-aos-delay="700">© Copyright Quartz Capital 2021</p>
         </div>
       </footer>
       <!-- end footer-->
