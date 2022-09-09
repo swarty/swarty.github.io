@@ -3,6 +3,14 @@
     "file": "assets/images/favicon-17e50649.svg",
     "src": "src/image/favicon.svg"
   },
+  "src/audio/bounce.flac": {
+    "file": "assets/bounce-80abfe50.flac",
+    "src": "src/audio/bounce.flac"
+  },
+  "src/audio/well-done.ogg": {
+    "file": "assets/well-done-8ef5cdf2.ogg",
+    "src": "src/audio/well-done.ogg"
+  },
   "src/image/snake-sprite.png": {
     "file": "assets/images/snake-sprite-f324a521.png",
     "src": "src/image/snake-sprite.png"
@@ -11,26 +19,28 @@
     "file": "assets/fonts/Montserrat-SemiBold-0da8ca13.woff2",
     "src": "src/fonts/Montserrat-SemiBold.woff2"
   },
-  "src/fonts/Montserrat-Medium.woff2": {
-    "file": "assets/fonts/Montserrat-Medium-32af198d.woff2",
-    "src": "src/fonts/Montserrat-Medium.woff2"
+  "src/fonts/Montserrat-Regular.woff2": {
+    "file": "assets/fonts/Montserrat-Regular-03ca7488.woff2",
+    "src": "src/fonts/Montserrat-Regular.woff2"
   },
   "src/fonts/Montserrat-Thin.woff2": {
     "file": "assets/fonts/Montserrat-Thin-d0f634c1.woff2",
     "src": "src/fonts/Montserrat-Thin.woff2"
   },
-  "src/fonts/Montserrat-Regular.woff2": {
-    "file": "assets/fonts/Montserrat-Regular-03ca7488.woff2",
-    "src": "src/fonts/Montserrat-Regular.woff2"
+  "src/fonts/Montserrat-Medium.woff2": {
+    "file": "assets/fonts/Montserrat-Medium-32af198d.woff2",
+    "src": "src/fonts/Montserrat-Medium.woff2"
   },
   "index.html": {
-    "file": "assets/js/main-478610ed.js",
+    "file": "assets/js/main-0ae5ba8e.js",
     "src": "index.html",
     "isEntry": true,
     "css": [
-      "assets/css/index-742dc6db.css"
+      "assets/css/index-1363def0.css"
     ],
     "assets": [
+      "assets/bounce-80abfe50.flac",
+      "assets/well-done-8ef5cdf2.ogg",
       "assets/images/snake-sprite-f324a521.png",
       "assets/fonts/Montserrat-Thin-d0f634c1.woff2",
       "assets/fonts/Montserrat-Regular-03ca7488.woff2",
@@ -39,7 +49,7 @@
     ]
   },
   "index.css": {
-    "file": "assets/css/index-742dc6db.css",
+    "file": "assets/css/index-1363def0.css",
     "src": "index.css"
   }
 }
